@@ -154,6 +154,74 @@
         "padding-top": 40,
         "padding-bottom": 13
       }
+    },
+    "custom_faq_NpyNPE": {
+      "type": "custom-faq",
+      "blocks": {
+        "faq_item_NVJxTn": {
+          "type": "faq-item",
+          "settings": {
+            "title": "Shipping",
+            "question_1": "ABCDEFGHIJKLM",
+            "answer_1": "<p>NOPQRSTUVWXYZ</p>",
+            "question_2": "ABCDEFGHIJKLM",
+            "answer_2": "<p>NOPQRSTUVWXYZ</p>",
+            "image_2": "shopify://shop_images/first.jpg",
+            "question_3": "",
+            "answer_3": ""
+          }
+        },
+        "faq_item_mXrNcF": {
+          "type": "faq-item",
+          "settings": {
+            "title": "Track & Trace",
+            "question_1": "ABCDEFGHIJKLM",
+            "answer_1": "<p>NOPQRSTUVWXYZ</p>",
+            "question_2": "ABCDEFGHIJKLM",
+            "answer_2": "<p>NOPQRSTUVWXYZ</p>",
+            "question_3": "",
+            "answer_3": ""
+          }
+        },
+        "faq_item_YebPBn": {
+          "type": "faq-item",
+          "settings": {
+            "title": "Returns",
+            "question_1": "ABCDEFGHIJKLM",
+            "answer_1": "<p>NOPQRSTUVWXYZ</p>",
+            "image_1": "shopify://shop_images/access2.webp",
+            "question_2": "",
+            "answer_2": "",
+            "question_3": "",
+            "answer_3": ""
+          }
+        },
+        "faq_item_XTBPfb": {
+          "type": "faq-item",
+          "settings": {
+            "title": "Payment methods",
+            "question_1": "ABCDEFGHIJKLM",
+            "answer_1": "<p>NOPQRSTUVWXYZ</p>",
+            "question_2": "",
+            "answer_2": "",
+            "question_3": "",
+            "answer_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_NVJxTn",
+        "faq_item_mXrNcF",
+        "faq_item_YebPBn",
+        "faq_item_XTBPfb"
+      ],
+      "name": "Custom FAQ",
+      "settings": {
+        "title": "FAQ",
+        "section_max_width": 700,
+        "padding-top": 40,
+        "padding-bottom": 40
+      }
     }
   },
   "order": [
@@ -161,6 +229,7 @@
     "contact-form",
     "why_work_with_nakao_bR97bX",
     "why_work_with_nakao_64QPEX",
-    "why_work_with_nakao_V6XiVy"
+    "why_work_with_nakao_V6XiVy",
+    "custom_faq_NpyNPE"
   ]
 }
