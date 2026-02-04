@@ -39,6 +39,7 @@
         "heading_AtEYig",
         "richtext_d6BnWM"
       ],
+      "custom_css": [],
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
         "color_scheme": "",
@@ -46,6 +47,18 @@
         "content_width": "sm",
         "text_position": "center",
         "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_block_8Khtgt": {
+      "type": "image-with-text-block",
+      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "md",
+        "image": "shopify://shop_images/q1.jpg",
+        "content_width": "sm",
+        "enable_parallax": false,
+        "remove_vertical_spacing": true
       }
     },
     "about_nakao_hero_qRDaga": {
@@ -443,17 +456,56 @@
         "margin-top": 40,
         "margin-bottom": 40
       }
+    },
+    "1770202076d7c2fcdd": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a200ea1_krK6kF": {
+          "type": "ai_gen_block_a200ea1",
+          "settings": {
+            "layout": "image_left",
+            "desktop_width_percent": 100,
+            "gap": 40,
+            "mobile_gap": 30,
+            "image_width": 50,
+            "image_border_radius": 0,
+            "content_gap": 20,
+            "heading": "Image with text",
+            "heading_size": 32,
+            "heading_color": "#000000",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": 16,
+            "text_color": "#5c5c5c",
+            "button_text": "Learn more",
+            "button_link": "",
+            "button_text_size": 16,
+            "button_padding_vertical": 12,
+            "button_padding_horizontal": 24,
+            "button_background": "#5c5c5c",
+            "button_text_color": "#ffffff",
+            "button_hover_background": "#000000",
+            "button_border_radius": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a200ea1_krK6kF"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "main",
     "rich_text_TkHtJF",
+    "image_with_text_block_8Khtgt",
     "about_nakao_hero_qRDaga",
     "company_profile_ye4FzG",
     "access_nakao_page_JVQ69V",
     "company_profile_WNwcdh",
     "management_philosophy_xtyeim",
     "delivery_record_jn7DUk",
-    "custom_news_section_DkzQ8w"
+    "custom_news_section_DkzQ8w",
+    "1770202076d7c2fcdd"
   ]
 }
