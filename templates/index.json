@@ -11,6 +11,7 @@
   "sections": {
     "custom_image_with_text_thdDDi": {
       "type": "custom-image-with-text",
+      "disabled": true,
       "name": "Custom Image with Text",
       "settings": {
         "background_image": "shopify://shop_images/msg_bg_0478d09e-120a-47dc-a04b-27ad57bb4723.webp",
