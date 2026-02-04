@@ -1,0 +1,428 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "about_nakao_hero_qRDaga": {
+      "type": "about-nakao-hero",
+      "name": "About Nakao",
+      "settings": {
+        "title": "更なる美味しさを求めて",
+        "description": "<p>蒟蒻本来の歯触り、食感、美味しさを</p><p>伝承し、それを基本に置いた上で</p><p>常に新しい解釈や試みを怠る事なく、</p><p>そして皆様が安心して美味しい</p><p>蒟蒻料理を楽しんで頂けますよう、</p><p>更なる「美味しさ」を</p><p>探求しております。</p><p>その為には、</p><p>更なる学びと励み、技術の向上など</p><p>いくつものハードルはありますが</p><p>蒟蒻屋としての誇りと志を胸に、</p><p>お客様の『笑顔あふれる人生』に</p><p>貢献すべく、</p><p>これまでもそしてこれからも</p><p>四代目蒟蒻屋として頑張って参ります。</p>",
+        "section_background_image": "shopify://shop_images/msg_bg_0478d09e-120a-47dc-a04b-27ad57bb4723.webp",
+        "representative_image": "shopify://shop_images/gaiyo_51b32fec-d0ce-4ed8-b8f4-d826c80a08a0.webp",
+        "representative_name": "代表　中尾　友彦",
+        "margin-top": 40,
+        "margin-bottom": 40
+      }
+    },
+    "company_profile_ye4FzG": {
+      "type": "company-profile",
+      "blocks": {
+        "company_profile_item_yqGQXd": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "会社名",
+            "description": "中尾食品工業株式会社"
+          }
+        },
+        "company_profile_item_drHbBU": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "業務内容",
+            "description": "こんにゃく、ところてん等の製造・販売"
+          }
+        },
+        "company_profile_item_NwBA8F": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "従業員数",
+            "description": "18名（2021.5時点）"
+          }
+        },
+        "company_profile_item_PdnGcp": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "資本金",
+            "description": "3,000万円"
+          }
+        },
+        "company_profile_item_iYz8Bc": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "設立 ",
+            "description": "1975年4月3日"
+          }
+        },
+        "company_profile_item_EaFCb4": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "代表者名",
+            "description": "中尾　友彦"
+          }
+        },
+        "company_profile_item_Rxz3bj": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "本社住所",
+            "description": "大阪府堺市西区草部715"
+          }
+        }
+      },
+      "block_order": [
+        "company_profile_item_yqGQXd",
+        "company_profile_item_drHbBU",
+        "company_profile_item_NwBA8F",
+        "company_profile_item_PdnGcp",
+        "company_profile_item_iYz8Bc",
+        "company_profile_item_EaFCb4",
+        "company_profile_item_Rxz3bj"
+      ],
+      "name": "Company Profile",
+      "settings": {
+        "title": "会社概要",
+        "padding-top": 40,
+        "padding-bottom": 40
+      }
+    },
+    "access_nakao_page_JVQ69V": {
+      "type": "access-nakao-page",
+      "blocks": {
+        "transportation_item_yTTF6B": {
+          "type": "transportation_item",
+          "settings": {
+            "title": "電車の場合",
+            "description": "JR西日本 阪和線「鳳駅（東出口）」から南東へ徒歩約25分JR西日本 阪和線「津久野駅」から南海バス（泉ヶ丘行き又は栂・美木多行き）「毛穴南バス停」下車、西へ徒歩5分※津久野駅は快速が止まりません"
+          }
+        },
+        "transportation_item_Y7TwTD": {
+          "type": "transportation_item",
+          "settings": {
+            "title": "お車の場合",
+            "description": "来客用駐車場3台（門左手）納入業者の方へ：最大10ｔ車まで進入可能（10ｔ車の場合のみ交通整理が必要なため事前連絡必須）"
+          }
+        },
+        "transportation_item_RfmY6N": {
+          "type": "transportation_item",
+          "settings": {
+            "title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "transportation_item_yTTF6B",
+        "transportation_item_Y7TwTD",
+        "transportation_item_RfmY6N"
+      ],
+      "name": "Access Nakao Page",
+      "settings": {
+        "title": "アクセス",
+        "image_1": "shopify://shop_images/access1.webp",
+        "image_2": "shopify://shop_images/access2.webp",
+        "google_map_btn_text": "Google Mapはこちら",
+        "google_map_btn_link": "https://www.google.com/search?client=firefox-b-d&q=%E4%B8%AD%E5%B0%BE%E9%A3%9F%E5%93%81&sxsrf=ALeKk03KiTXICLLKA4c4zrSCqGaGDp0Q_w:1586668736917&npsic=0&rflfq=1&rlha=0&rllag=34408783,134695982,72143&tbm=lcl&rldimm=3416592950860020471&ved=2ahUKEwiRscLTkeLoAhVV-WEKHXcwBM4QvS4wA3oECAsQFQ&rldoc=1&tbs=lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2&rlst=f#rlfi=hd:;si:;mv:[[34.52800332363106,135.47964505126566],[34.52079043329982,135.4635517971763],null,[34.52439695654484,135.47159842422099],17]",
+        "address_text": "住所",
+        "address": "〒593-8312　大阪府堺市西区草部715",
+        "phone_text": "電話 ",
+        "phone": "072-273-4545",
+        "transportation": "交通 ",
+        "business_hours": "◇ 電車の場合\nJR西日本 阪和線「鳳駅（東出口）」から南東へ徒歩約25分\nJR西日本 阪和線「津久野駅」から南海バス（泉ヶ丘行き又は栂・美木多行き）「毛穴南バス停」下車、西へ徒歩5分\n※津久野駅は快速が止まりません\n◇ お車の場合\n来客用駐車場3台（門左手）\n納入業者の方へ：最大10ｔ車まで進入可能（10ｔ車の場合のみ交通整理が必要なため事前連絡必須）",
+        "padding-top": 40,
+        "padding-bottom": 40
+      }
+    },
+    "company_profile_WNwcdh": {
+      "type": "company-profile",
+      "blocks": {
+        "company_profile_item_cEcWCa": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "1927年",
+            "description": "中尾菊松が「中尾商店」を創業、こんにゃくの製造開始"
+          }
+        },
+        "company_profile_item_zVQbbg": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "1969年",
+            "description": "粉末原料使用のところてん製造開始"
+          }
+        },
+        "company_profile_item_HhtMpJ": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "1975年",
+            "description": "「中尾食品工業株式会社」を設立、2代目「中尾忠雄」が代表取締役に就任"
+          }
+        },
+        "company_profile_item_EKjFBQ": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "1980年",
+            "description": "本拠地を大阪府堺市西区草部に移転"
+          }
+        },
+        "company_profile_item_JCQB9w": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "1982年",
+            "description": "天草から作るところてんの製造開始"
+          }
+        },
+        "company_profile_item_7tUGJr": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "1985年",
+            "description": "くずきり製品の製造開始"
+          }
+        },
+        "company_profile_item_fkPewQ": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "1989年",
+            "description": "社名を「株式会社なかしょく」に変更、2代目の妻「中尾裕子」が代表取締役に就任"
+          }
+        },
+        "company_profile_item_PfnPRw": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "1998年",
+            "description": "特別栽培芋を100％使用し、昔ながらの灰で固めたこんにゃくの製造開始"
+          }
+        },
+        "company_profile_item_8k9me3": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "2002年",
+            "description": "社名を「中尾食品工業株式会社」に変更、3代目「中尾康司」が代表取締役に就任"
+          }
+        },
+        "company_profile_item_LEeqKA": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "",
+            "description": "有機製造業者認定取得"
+          }
+        },
+        "company_profile_item_apcyjx": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "2005年",
+            "description": "有機栽培蒟蒻芋100％、昔ながらの灰で固めたこんにゃくの製造開始"
+          }
+        },
+        "company_profile_item_mfyMex": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "",
+            "description": "わらびもち風こんにゃくスイーツの製造開始"
+          }
+        },
+        "company_profile_item_dm7ULp": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "2008年",
+            "description": "煮出したことろてんを保存水無しで充填した「生ところてん」の製造開始"
+          }
+        },
+        "company_profile_item_xLiWkP": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "2013年",
+            "description": "4代目「中尾友彦」が代表取締役に就任"
+          }
+        },
+        "company_profile_item_wiXY4x": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "2016年",
+            "description": "くずきり製品を外部製造委託へ切替"
+          }
+        },
+        "company_profile_item_DjFRF4": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "",
+            "description": "コンビニ向け手結び白滝の製造開始"
+          }
+        },
+        "company_profile_item_HaQQbA": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "2017年",
+            "description": "そうざい製造業の許可取得"
+          }
+        },
+        "company_profile_item_KeQjXX": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "2018年",
+            "description": "こんにゃく直売会開始"
+          }
+        },
+        "company_profile_item_zTKNrE": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "2019年",
+            "description": "大阪版食の安全安心認証制度を取得"
+          }
+        },
+        "company_profile_item_wC6xKU": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "",
+            "description": "直売所開店"
+          }
+        },
+        "company_profile_item_mUg3X9": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "",
+            "description": "タピオカこんにゃく製造挑戦"
+          }
+        },
+        "company_profile_item_gbBK4V": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "2020年",
+            "description": "X線検査装置を設置"
+          }
+        },
+        "company_profile_item_pzBHpH": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "2021年",
+            "description": "SHAPE MEN発売開始"
+          }
+        },
+        "company_profile_item_nDNTpJ": {
+          "type": "company_profile_item",
+          "settings": {
+            "title": "",
+            "description": "JFS-B取得"
+          }
+        }
+      },
+      "block_order": [
+        "company_profile_item_cEcWCa",
+        "company_profile_item_zVQbbg",
+        "company_profile_item_HhtMpJ",
+        "company_profile_item_EKjFBQ",
+        "company_profile_item_JCQB9w",
+        "company_profile_item_7tUGJr",
+        "company_profile_item_fkPewQ",
+        "company_profile_item_PfnPRw",
+        "company_profile_item_8k9me3",
+        "company_profile_item_LEeqKA",
+        "company_profile_item_apcyjx",
+        "company_profile_item_mfyMex",
+        "company_profile_item_dm7ULp",
+        "company_profile_item_xLiWkP",
+        "company_profile_item_wiXY4x",
+        "company_profile_item_DjFRF4",
+        "company_profile_item_HaQQbA",
+        "company_profile_item_KeQjXX",
+        "company_profile_item_zTKNrE",
+        "company_profile_item_wC6xKU",
+        "company_profile_item_mUg3X9",
+        "company_profile_item_gbBK4V",
+        "company_profile_item_pzBHpH",
+        "company_profile_item_nDNTpJ"
+      ],
+      "name": "Company Profile",
+      "settings": {
+        "title": "沿革",
+        "padding-top": 40,
+        "padding-bottom": 40
+      }
+    },
+    "management_philosophy_xtyeim": {
+      "type": "management-philosophy",
+      "blocks": {
+        "management_philosophy_wbweVA": {
+          "type": "management_philosophy",
+          "settings": {
+            "title": "企業理念",
+            "description": "伝統と創造を持って笑顔あふれる人生に貢献します。"
+          }
+        },
+        "management_philosophy_WrJVKU": {
+          "type": "management_philosophy",
+          "settings": {
+            "title": "企業姿勢",
+            "description": "私達は、コンプライアンスにのっとり安全・適切な食品提供を行います。\n\n私達は、他にない技術で社会を豊かにします。"
+          }
+        },
+        "management_philosophy_Lcn6hc": {
+          "type": "management_philosophy",
+          "settings": {
+            "title": "行動指針",
+            "description": "私達は、常に相手に感謝の気持ちを持ち、明るく元気な挨拶をします。\n\n私達は、常に「より良く」を考えます。\n\n私達は、人が見ていなくても、責任を持って業務を行います。\n\n私達は、目標を掲げ、臨機応変かつ迅速に業務を全うします。\n\n私達は、目先の損得よりも、善悪で物事を判断し行動します。\n\n私達は、喜ばれる商品をお客様とともに作ります。\n\n私達は、選ばれる会社であり続けます。\n\n私達は、必要な情報を積極的に開示します。\n\n私達は、法令や社会のルールを守り、責任ある行動を取ります。\n\n私達は、社会に貢献できる会社であり続けます。"
+          }
+        }
+      },
+      "block_order": [
+        "management_philosophy_wbweVA",
+        "management_philosophy_WrJVKU",
+        "management_philosophy_Lcn6hc"
+      ],
+      "name": "Management Philosophy",
+      "settings": {
+        "title": "経営理念",
+        "padding-top": 40,
+        "padding-bottom": 40
+      }
+    },
+    "delivery_record_jn7DUk": {
+      "type": "delivery-record",
+      "name": "Delivery Record",
+      "settings": {
+        "title": "納入実績",
+        "subtitle": "実績一覧",
+        "description": "旭水産株式会社, 石神商店, 一般社団法人日本自動車連盟（JAF）, 株式会社一穂, 有限会社いんやん倶楽部, 有限会社う我萬, 大北食品株式会社, 大阪市学校給食協会, 有限会社大矢商店, オーガニック料理マンマ, 株式会社オーゾラ, 岡山フードサービス株式会社, 株式会社オハラ, 株式会社オルター, 香川うどん, 株式会社カオリ, 株式会社元祖たこ昌, 株式会社グランドフードホール, ケイ低温フーズ株式会社, 光明院, 株式会社コンシェルジュ, 株式会社五味商店, ササベフーズ, 株式会社　佐海たちばな, 株式会社三共, 自然農場まほろば, 先喜青果, 株式会社 泉州ドットコム, 誠晃貿易株式会社, 泉南生活協同組合(ｵﾚﾝｼﾞｺｰﾌﾟ), 株式会社髙島屋　泉北店, ﾀﾞｲｺｰ株式会社, 株式会社田中商店, 株式会社大和商会, ダイワフード株式会社, 株式会社高丸食品, 株式会社タケマス, 田村食品株式会社, 月舟苫家, 株式会社デリコジャパン, 株式会社天理物産, 有限会社トスカ, ナチュラルガーデン, 株式会社ナチュラル・ハーモニー, 株式会社名古屋生活クラブ, にしむら　交野店, 日本珈琲貿易株式会社, 信田食品, 株式会社のっぽくん, 浜力, 葉菜の森, 株式会社阪急阪神百貨店, 株式会社聖食品, 株式会社ひこばえ, 株式会社日之出屋岩橋, フードコア　サピー, 福生会, 認定NPO法人 ふーどばんくOSAKA, 株式会社プラス, 株式会社ヘルプ, 松井豆腐店, 松本商店, 株式会社松井泉, 溝内　英男, 三井食品株式会社, 株式会社ミートモリタ屋, ムソー株式会社, 株式会社むそう商事, 株式会社メルカートピッコロ, 百舌鳥八幡宮, 株式会社森こん, 株式会社ヤマエ大栄商店, 有限会社やさい工場, やまこう, ヤマトー桜井南店, 株式会社柚子辛凛",
+        "footer_text": "（五十音順・敬称略）",
+        "padding-top": 40,
+        "padding-bottom": 40
+      }
+    },
+    "custom_news_section_DkzQ8w": {
+      "type": "custom-news-section",
+      "name": "Custom News Section",
+      "settings": {
+        "title": "ニュース一覧",
+        "subtitle": "- NEWS -",
+        "btn_text": ">>過去のニュースはこちら",
+        "btn_link": "https://nakaoshokuhin.co.jp/news/",
+        "section_bg_color": "",
+        "margin-top": 40,
+        "margin-bottom": 40
+      }
+    }
+  },
+  "order": [
+    "main",
+    "about_nakao_hero_qRDaga",
+    "company_profile_ye4FzG",
+    "access_nakao_page_JVQ69V",
+    "company_profile_WNwcdh",
+    "management_philosophy_xtyeim",
+    "delivery_record_jn7DUk",
+    "custom_news_section_DkzQ8w"
+  ]
+}

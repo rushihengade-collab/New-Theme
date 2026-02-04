@@ -1,0 +1,321 @@
+<div class="section slide-image-with-text-section">
+  <div class="slide-image-with-text-section-container">
+    {% for block in section.blocks %}
+      {% assign is_even_index = forloop.index0 | modulo: 2 %}
+      <div class="slide-image-with-text-section-item slide-image-with-text-section-item--{% if is_even_index == 0 %}image-left{% else %}text-left{% endif %}" {{ block.shopify_attributes }}>
+        <div class="slide-image-with-text-images" id="slide-images-{{ section.id }}-{{ block.id }}" data-slide-interval="2000">
+          {% if block.settings.image_1 %}
+            <img
+              class="slide-image-with-text-img active"
+              src="{{ block.settings.image_1 | image_url: width: 1000 }}"
+              alt="{{ block.settings.title }}"
+              width="1000"
+              height="1000"
+              loading="lazy"
+            >
+          {% endif %}
+          {% if block.settings.image_2 %}
+            <img
+              class="slide-image-with-text-img"
+              src="{{ block.settings.image_2 | image_url: width: 1000 }}"
+              alt="{{ block.settings.title }}"
+              width="1000"
+              height="1000"
+              loading="lazy"
+            >
+          {% endif %}
+          {% if block.settings.image_3 %}
+            <img
+              class="slide-image-with-text-img"
+              src="{{ block.settings.image_3 | image_url: width: 1000 }}"
+              alt="{{ block.settings.title }}"
+              width="1000"
+              height="1000"
+              loading="lazy"
+            >
+          {% endif %}
+          {% if block.settings.image_4 %}
+            <img
+              class="slide-image-with-text-img"
+              src="{{ block.settings.image_4 | image_url: width: 1000 }}"
+              alt="{{ block.settings.title }}"
+              width="1000"
+              height="1000"
+              loading="lazy"
+            >
+          {% endif %}
+        </div>
+        <div class="slide-image-with-text-content">
+          {% if block.settings.title != blank %}
+            <h3 class="slide-image-with-text-content-title">{{ block.settings.title }}</h3>
+          {% endif %}
+          {% if block.settings.description != blank %}
+            <div class="slide-image-with-text-content-description">{{ block.settings.description }}</div>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .slide-image-with-text-section {
+    padding-top: {{ section.settings.padding-top }}px;
+    padding-bottom: {{ section.settings.padding-bottom }}px;
+    max-width:1180px;
+    margin:0 auto;
+  }
+
+  .slide-image-with-text-section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .slide-image-with-text-section-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 280px;
+  }
+
+  .slide-image-with-text-section-item:last-child {
+    border-bottom: none;
+  }
+
+  .slide-image-with-text-section-item--text-left .slide-image-with-text-images {
+    order: 2;
+  }
+
+  .slide-image-with-text-section-item--text-left .slide-image-with-text-content {
+    order: 1;
+  }
+
+  .slide-image-with-text-images {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+
+  .slide-image-with-text-images .slide-image-with-text-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+    z-index: 0;
+  }
+
+  .slide-image-with-text-images .slide-image-with-text-img.active {
+    transform: translateX(0);
+    z-index: 1;
+  }
+
+  .slide-image-with-text-images .slide-image-with-text-img.slide-out {
+    transform: translateX(-100%);
+    z-index: 0;
+  }
+
+  .slide-image-with-text-content {
+    padding: 16px 30px;
+  }
+
+  .slide-image-with-text-content-title {
+    margin: 0 0 12px 0;
+  }
+
+  .slide-image-with-text-content-description p {
+    margin: 0 0 0.75em 0;
+  }
+
+  .slide-image-with-text-content-description p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    .slide-image-with-text-section {
+      padding-top: {{ section.settings.padding-top | times: 0.9 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.9 }}px;
+    }
+
+    .slide-image-with-text-content {
+        padding: 16px 0px;
+      }
+
+    .slide-image-with-text-section-item {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      min-height: auto;
+    }
+
+    .slide-image-with-text-section-item--text-left .slide-image-with-text-images,
+    .slide-image-with-text-section-item--text-left .slide-image-with-text-content {
+      order: unset;
+    }
+
+    .slide-image-with-text-images {
+      aspect-ratio: 16 / 10;
+    }
+
+    .slide-image-with-text-content-title {
+      font-size: 1.5rem;
+    }
+
+    .slide-image-with-text-content-description {
+      font-size: 1rem;
+    }
+    .slide-image-with-text-section-container{
+        gap:60px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .slide-image-with-text-section {
+      padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
+    }
+
+    .slide-image-with-text-section-item {
+      gap: 10px;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    var transitionMs = 1000;
+
+    function initSliders() {
+      document.querySelectorAll('.slide-image-with-text-images[data-slide-interval]').forEach(function (container) {
+        if (container.getAttribute('data-slider-initialized') === 'true') return;
+
+        var images = container.querySelectorAll('.slide-image-with-text-img');
+        if (images.length <= 1) return;
+
+        container.setAttribute('data-slider-initialized', 'true');
+
+        var interval = parseInt(container.getAttribute('data-slide-interval'), 10) || 2000;
+        var current = 0;
+        var timer = null;
+
+        function showNext() {
+          var prev = current;
+          current = (current + 1) % images.length;
+          images[prev].classList.add('slide-out');
+          images[current].classList.add('active');
+          setTimeout(function () {
+            images[prev].classList.remove('active', 'slide-out');
+          }, transitionMs);
+        }
+
+        function startTimer() {
+          if (timer) clearInterval(timer);
+          timer = setInterval(showNext, interval);
+        }
+
+        function stopTimer() {
+          if (timer) {
+            clearInterval(timer);
+            timer = null;
+          }
+        }
+
+        startTimer();
+
+        {% comment %} container.addEventListener('mouseenter', stopTimer);
+        container.addEventListener('mouseleave', startTimer); {% endcomment %}
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initSliders);
+    } else {
+      initSliders();
+    }
+
+    document.addEventListener('shopify:section:load', initSliders);
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Slide Image with Text",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide-image-with-text",
+      "name": "Slide Image with Text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_3",
+          "label": "Image 3"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_4",
+          "label": "Image 4"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slide Image with Text",
+      "blocks": [
+        {
+          "type": "slide-image-with-text"
+        },
+        {
+          "type": "slide-image-with-text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

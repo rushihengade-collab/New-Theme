@@ -1,0 +1,214 @@
+<div class="container">
+  <div class="product-collection-info">
+    {% render 'custom-section-header', section: section %}
+    <div class="product-collection-info-content">
+      {% for block in section.blocks %}
+        <a
+          class="product-collection-info-content-item"
+          href="{{ block.settings.block_link }}"
+        >
+          <div class="product-collection-info-content-item-image">
+            <img
+              src="{{ block.settings.image | image_url: width: 100, height: 100 }}"
+              alt="{{ block.settings.title }}"
+              height="200"
+              width="300"
+            >
+          </div>
+          <div class="product-collection-info-content-item-title">
+            <h4>{{ block.settings.title }}</h4>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<style>
+  .product-collection-info {
+    padding-top: {{ section.settings.padding-top }}px;
+    padding-bottom: {{ section.settings.padding-bottom }}px;
+  }
+
+  .product-collection-info-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .product-collection-info-content-item {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    padding: 15px;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 1px 9px -3px rgba(0, 0, 0, .23);
+  }
+
+  .product-collection-info-content-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+
+  .product-collection-info-content-item-image {
+    flex-shrink: 0;
+    width: 50%;
+    height: 130px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-collection-info-content-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .product-collection-info-content-item-title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-collection-info-content-item-title h4 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    .product-collection-info {
+      padding-top: {{ section.settings.padding-top | times: 0.9 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.9 }}px;
+    }
+
+    .product-collection-info-content {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .product-collection-info-content-item-title h4 {
+      font-size: 18px;
+    }
+
+    .product-collection-info-content-item {
+      padding: 12px;
+    }
+
+    .product-collection-info-content-item-image {
+      width: 80px;
+      height: 80px;
+      margin-right: 12px;
+    }
+
+  }
+
+  @media (max-width: 480px) {
+    .product-collection-info {
+      padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
+    }
+    .product-collection-info-content-item-title h4 {
+      font-size: 1rem;
+    }
+
+    .product-collection-info-content {
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .product-collection-info-content-item {
+      padding: 10px;
+    }
+
+    .product-collection-info-content-item-image {
+      width: 70px;
+      height: 70px;
+      margin-right: 10px;
+    }
+  }
+  @media (max-width: 360px) {
+    .product-collection-info-content {
+      grid-template-columns: 1fr;
+    }
+    .product-collection-info-content-item-image {
+      width: 40%;
+      max-width:140px;
+      height: 80px;
+      margin-right: 10px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Custom Product Info",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product-info",
+      "name": "Product Info",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "block_link",
+          "label": "Block Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Product Info"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,142 @@
+<div class="container featured-products-section featured-products-section--{{ section.id }}">
+  <div class="featured-products-content page-width">
+    {% render 'custom-section-header', section: section %}
+
+    <div class="featured-products-grid" role="list">
+      {% for block in section.blocks %}
+        <a
+          class="featured-products-item"
+          href="{{ block.settings.link }}"
+          role="listitem"
+          {{ block.shopify_attributes }}
+        >
+          {% if block.settings.image != blank %}
+            <img
+              class="featured-products-image"
+              src="{{ block.settings.image | image_url: width: 900 }}"
+              alt="{{ block.settings.image.alt }}"
+              width="500"
+              height="300"
+            >
+          {% endif %}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .featured-products-section--{{ section.id }} .featured-products-content {
+    padding-top: {{ section.settings.padding-top }}px;
+    padding-bottom: {{ section.settings.padding-bottom }}px;
+  }
+
+  .featured-products-section--{{ section.id }} .featured-products-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+  }
+
+  .featured-products-section--{{ section.id }} .featured-products-item {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+  }
+  .featured-products-section--{{ section.id }} .featured-products-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  @media (max-width: 768px) {
+    .featured-products-section--{{ section.id }} .featured-products-content {
+      padding-top: {{ section.settings.padding-top | times: 0.9 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.9 }}px;
+    }
+
+    .featured-products-section--{{ section.id }} .featured-products-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 45px 30px;
+      align-items: center;
+    }
+  }
+  @media (max-width: 480px) {
+    .featured-products-section--{{ section.id }} .featured-products-content {
+      padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
+    }
+    .featured-products-section--{{ section.id }} .featured-products-grid {
+        gap: 35px 30px;
+      }
+  }
+  @media (max-width: 360px) {
+    .featured-products-section--{{ section.id }} .featured-products-grid {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 45px 30px;
+        align-items: center;
+      }
+  }
+</style>
+{% schema %}
+{
+  "name": "Featured Products",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Products"
+    }
+  ]
+}
+{% endschema %}

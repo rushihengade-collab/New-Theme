@@ -1,0 +1,170 @@
+<div class="container why-work-with-nakao-section">
+  <div class="why-work-with-nakao-section-container">
+    <h2 class="why-work-with-nakao-section-title">{{ section.settings.title }}</h2>
+    {% if section.settings.image != blank %}
+      <div class="why-work-with-nakao-section-image">
+        <img
+          src="{{ section.settings.image | image_url: width: 1000 }}"
+          alt="{{ section.settings.image.alt }}"
+          width="1000"
+          height="1000"
+        >
+      </div>
+    {% endif %}
+    {% if section.settings.intro_text != blank %}
+      <p class="why-work-with-nakao-section-intro">{{ section.settings.intro_text }}</p>
+    {% endif %}
+    <div class="why-work-with-nakao-section-content">
+      {% for block in section.blocks %}
+        <div class="why-work-with-nakao-section-content-item">
+          <h3 class="why-work-with-nakao-section-content-item-title">
+            {{ block.settings.content_item_title }}
+          </h3>
+          <p class="why-work-with-nakao-section-content-item-description">
+            {{ block.settings.content_item_description }}
+          </p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .why-work-with-nakao-section {
+    padding-top: {{ section.settings.padding-top }}px;
+    padding-bottom: {{ section.settings.padding-bottom }}px;
+    background: #fff;
+  }
+
+  .why-work-with-nakao-section-container {
+    max-width: {{ section.settings.section_max_width }}px;
+    margin: 0 auto;
+  }
+
+  .why-work-with-nakao-section-title {
+    text-align: center;
+    margin: 0 0 1.5rem;
+  }
+
+  .why-work-with-nakao-section-image {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .why-work-with-nakao-section-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    object-fit: cover;
+    max-height: 500px;
+  }
+
+  .why-work-with-nakao-section-intro {
+    margin: 0 auto 1rem;
+  }
+
+  .why-work-with-nakao-section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .why-work-with-nakao-section {
+      padding-top: {{ section.settings.padding-top | times: 0.9 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.9 }}px;
+    }
+    .why-work-with-nakao-section-title {
+      margin-bottom: 1rem;
+    }
+    .why-work-with-nakao-section-image {
+      margin-bottom: 1.75rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .why-work-with-nakao-section {
+      padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Why Work with Nakao",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "textarea",
+      "id": "intro_text",
+      "label": "Intro paragraph",
+      "default": "Woodworking professionals and hobbyists in Japan have long valued Kakuri products. In recent years, we have begun selling internationally with great success. As our customer base grows, we attribute this success to continuing our mission of providing professional-quality tools at affordable prices."
+    },
+    {
+      "type": "range",
+      "id": "section_max_width",
+      "label": "Section Max Width",
+      "min": 500,
+      "max": 1000,
+      "step": 5,
+      "unit": "px",
+      "default": 700
+    },
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "content_item",
+      "name": "Content Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "content_item_title",
+          "label": "Content Item Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content_item_description",
+          "label": "Content Item Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Why Work with Nakao"
+    }
+  ]
+}
+{% endschema %}

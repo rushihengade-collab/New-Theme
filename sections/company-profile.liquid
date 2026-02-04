@@ -1,0 +1,121 @@
+<div class="section">
+  <div class="company-profile-section-{{ section.id }}">
+    <h2 class="company-profile-section-title">{{ section.settings.title }}</h2>
+    <div class="company-profile-section-content">
+      {% for block in section.blocks %}
+        <div class="company-profile-section-content-item">
+          <h4 class="company-profile-section-content-item-title">{{ block.settings.title }}</h4>
+          <div class="company-profile-section-content-item-description">{{ block.settings.description }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .company-profile-section-{{ section.id }} {
+    width: 1180px;
+    margin: 0 auto;
+    padding-top: {{ section.settings.padding-top }}px;
+    padding-bottom: {{ section.settings.padding-bottom }}px;
+  }
+  .company-profile-section-{{ section.id }} .company-profile-section-content {
+    border-top: 1px solid #ddd;
+  }
+
+  .company-profile-section-{{ section.id }} .company-profile-section-content-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 12px 100px;
+    padding: 14px 0;
+    border-bottom: 1px solid #ddd;
+  }
+    .company-profile-section-content-item-title{
+        font-size:1rem;
+        margin:0;
+        line-height:1.7;
+        min-width:220px;
+    }
+  @media (max-width: 768px) {
+    .company-profile-section-{{ section.id }} {
+      padding-top: {{ section.settings.padding-top | times: 0.9 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.9 }}px;
+    }
+    .company-profile-section-{{ section.id }} .company-profile-section-content-item {
+      flex-direction: column;
+      gap: 4px;
+    }
+    .company-profile-section-{{ section.id }} .company-profile-section-content-item-title {
+      min-width: 0;
+    }
+    .company-profile-section-{{ section.id }} {
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .company-profile-section-{{ section.id }} {
+      padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
+    }
+    .company-profile-section-{{ section.id }} .company-profile-section-content-item-title{
+      font-size: 1.2rem;
+    }
+  }
+</style>
+{% schema %}
+{
+  "name": "Company Profile",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "company_profile_item",
+      "name": "Company Profile Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Company Profile"
+    }
+  ]
+}
+{% endschema %}

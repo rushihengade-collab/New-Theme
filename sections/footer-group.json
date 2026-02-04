@@ -1,0 +1,55 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "text_R4xeqQ": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "content": "<p>こんにゃく・ところてん製造卸販売中尾食品工業株式会社</p><p>〒593-8312　大阪府堺市西区草部715番地<br/>TEL : 072-273-4545　FAX :  072-273-2121</p>",
+            "enable_follow_on_shop": true
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "content": "<p><strong>メルマガ登録はこちら</strong><br/>今なら新規ご登録で<br/>トライアルクーポンプレゼント中！！</p>",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_R4xeqQ",
+        "newsletter"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "show_social_media": true,
+        "show_payment_icons": true,
+        "show_country_selector": false,
+        "show_country_name": false,
+        "show_country_flag": false,
+        "show_locale_selector": false
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

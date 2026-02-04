@@ -1,0 +1,372 @@
+<div class="container custom-faq-section">
+  <div class="custom-faq-section-container">
+    <h2 class="custom-faq-section-title">{{ section.settings.title }}</h2>
+    <div class="custom-faq-section-content">
+      {% for block in section.blocks %}
+        {% assign category_title = block.settings.title | strip %}
+        {% if category_title != blank %}
+          <div class="custom-faq-accordion-item" {{ block.shopify_attributes }}>
+            <button type="button" class="custom-faq-accordion-trigger" aria-expanded="false" aria-controls="faq-panel-{{ block.id }}" id="faq-trigger-{{ block.id }}" data-faq-trigger>
+              <span class="custom-faq-accordion-trigger-text">{{ block.settings.title }}</span>
+              <span class="custom-faq-accordion-icon" aria-hidden="true">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="custom-faq-accordion-panel" id="faq-panel-{{ block.id }}" role="region" aria-labelledby="faq-trigger-{{ block.id }}" hidden>
+              <div class="custom-faq-accordion-panel-inner">
+                {% for i in (1..3) %}
+                  {% assign q_key = 'question_' | append: i %}
+                  {% assign a_key = 'answer_' | append: i %}
+                  {% assign img_key = 'image_' | append: i %}
+                  {% assign question_text = block.settings[q_key] | strip %}
+                  {% if question_text != blank %}
+                    <div class="custom-faq-qa-pair">
+                      <div class="custom-faq-question-row">
+                        <span class="custom-faq-q-icon" aria-hidden="true">Q</span>
+                        <span class="custom-faq-question-text">{{ block.settings[q_key] }}</span>
+                      </div>
+                      <div class="custom-faq-answer-row">
+                        <span class="custom-faq-a-icon" aria-hidden="true">A</span>
+                        <div class="custom-faq-answer-content">
+                          {{ block.settings[a_key] }}
+                          {% assign faq_image = block.settings[img_key] %}
+                          {% if faq_image != blank %}
+                            <div class="custom-faq-answer-image">
+                              <img
+                                src="{{ faq_image | image_url: width: 1000 }}"
+                                alt="{{ faq_image.alt | default: question_text | escape }}"
+                                width="1000"
+                                height="1000"
+                                loading="lazy"
+                              >
+                            </div>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .custom-faq-section {
+    padding-top: {{ section.settings.padding-top }}px;
+    padding-bottom: {{ section.settings.padding-bottom }}px;
+  }
+  .custom-faq-section-container {
+    max-width: {{ section.settings.section_max_width }}px;
+    margin: 0 auto;
+  }
+
+  .custom-faq-section-title {
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 1rem;
+  }
+
+  .custom-faq-section-content {
+    border-top: 1px solid #000;
+  }
+
+  .custom-faq-accordion-item {
+    border-bottom: 1px solid #000;
+  }
+
+  .custom-faq-accordion-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 0.75rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    text-align: left;
+    transition: background 0.2s ease;
+  }
+  .custom-faq-accordion-trigger:hover {
+    background: #e5e5e5;
+  }
+  .custom-faq-accordion-trigger[aria-expanded="true"] {
+    background: #f0f0f0;
+  }
+  .custom-faq-accordion-trigger[aria-expanded="true"] .custom-faq-accordion-icon {
+    transform: rotate(180deg);
+  }
+  .custom-faq-accordion-icon {
+    flex-shrink: 0;
+    margin-left: 0.5rem;
+    transition: transform 0.2s ease;
+  }
+  .custom-faq-accordion-trigger-text {
+    flex: 1;
+  }
+
+  .custom-faq-accordion-panel {
+    overflow: hidden;
+  }
+  .custom-faq-accordion-panel[hidden] {
+    display: none;
+  }
+  .custom-faq-accordion-panel-inner {
+    padding: 1rem 1rem 1.25rem;
+    background: #fff;
+  }
+
+  .custom-faq-qa-pair {
+    border-bottom: 1px solid #d0d0d0;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  .custom-faq-qa-pair:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .custom-faq-question-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  .custom-faq-q-icon {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    background: #000;
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .custom-faq-question-text {
+    flex: 1;
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.4;
+  }
+
+  .custom-faq-answer-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  .custom-faq-a-icon {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    background: #e0e0e0;
+    color: #333;
+    font-size: 0.875rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .custom-faq-answer-content {
+    flex: 1;
+    font-size: 0.9375rem;
+    color: #000;
+    line-height: 1.5;
+  }
+  .custom-faq-answer-content p {
+    margin: 0 0 0.5rem;
+  }
+  .custom-faq-answer-content p:last-child {
+    margin-bottom: 0;
+  }
+  .custom-faq-answer-content a {
+    color: #0066cc;
+    text-decoration: underline;
+  }
+  .custom-faq-answer-image {
+    margin-top: 0.75rem;
+    width: 100%;
+  }
+  .custom-faq-answer-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    vertical-align: middle;
+  }
+
+  @media (max-width: 768px) {
+    .custom-faq-section {
+      padding-top: {{ section.settings.padding-top | times: 0.9 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.9 }}px;
+    }
+    .custom-faq-accordion-trigger {
+      padding: 0.875rem 0.5rem;
+      font-size: 0.9375rem;
+    }
+    .custom-faq-accordion-panel-inner {
+      padding: 0.75rem 0.5rem 1rem;
+    }
+  }
+  @media (max-width: 480px) {
+    .custom-faq-section {
+      padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    const section = document.querySelector('.custom-faq-section');
+    if (!section) return;
+    const triggers = section.querySelectorAll('[data-faq-trigger]');
+    triggers.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        const panelId = this.getAttribute('aria-controls');
+        const panel = panelId ? document.getElementById(panelId) : null;
+        this.setAttribute('aria-expanded', !expanded);
+        if (panel) {
+          panel.hidden = expanded;
+        }
+      });
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Custom FAQ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "range",
+      "id": "section_max_width",
+      "label": "Section Max Width",
+      "min": 500,
+      "max": 1000,
+      "step": 5,
+      "unit": "px",
+      "default": 700
+    },
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq-item",
+      "name": "FAQ Category",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Category Title",
+          "info": "e.g. Shipping, Track & Trace, Returns, Payment methods"
+        },
+        {
+          "type": "header",
+          "content": "FAQ 1"
+        },
+        {
+          "type": "text",
+          "id": "question_1",
+          "label": "Question 1"
+        },
+        {
+          "type": "richtext",
+          "id": "answer_1",
+          "label": "Answer 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image 1"
+        },
+        {
+          "type": "header",
+          "content": "FAQ 2"
+        },
+        {
+          "type": "text",
+          "id": "question_2",
+          "label": "Question 2"
+        },
+        {
+          "type": "richtext",
+          "id": "answer_2",
+          "label": "Answer 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image 2"
+        },
+        {
+          "type": "header",
+          "content": "FAQ 3"
+        },
+        {
+          "type": "text",
+          "id": "question_3",
+          "label": "Question 3"
+        },
+        {
+          "type": "richtext",
+          "id": "answer_3",
+          "label": "Answer 3"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_3",
+          "label": "Image 3"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom FAQ",
+      "blocks": [
+        { "type": "faq-item", "settings": { "title": "Shipping" } },
+        { "type": "faq-item", "settings": { "title": "Track & Trace" } },
+        { "type": "faq-item", "settings": { "title": "Returns" } },
+        { "type": "faq-item", "settings": { "title": "Payment methods" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

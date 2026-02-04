@@ -1,0 +1,40 @@
+<div class="custom-section-header">
+  <div class="header-snippet-borders"></div>
+  <h2>{{ section.settings.title }}</h2>
+  <div class="header-snippet-borders"></div>
+</div>
+
+<style>
+  .custom-section-header {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .custom-section-header h2 {
+    margin: 0;
+  }
+
+  .header-snippet-borders {
+    flex: 1;
+    height: 3px;
+    background-color: #191971;
+    max-width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .custom-section-header {
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .custom-section-header {
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+  }
+</style>

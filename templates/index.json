@@ -1,0 +1,775 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_image_with_text_thdDDi": {
+      "type": "custom-image-with-text",
+      "name": "Custom Image with Text",
+      "settings": {
+        "background_image": "shopify://shop_images/msg_bg_0478d09e-120a-47dc-a04b-27ad57bb4723.webp",
+        "background_image_size": "cover",
+        "background_image_position": "center",
+        "image": "shopify://shop_images/top2.webp",
+        "image_position": "left",
+        "header1": "<h2>安心と安全を心がけた、<br/>真っ当な蒟蒻を90年以上<br/>作り続けてきました。</h2>",
+        "text": "<p>今では堺で唯一のこんにゃく屋</p><p>こんにゃくの産地でもない堺のこんにゃく屋が、なぜお客様から愛されているか。それは、こんにゃく本来の美味しさや安全性を保つため、90年以上真っ当な作り方を研究し続けてきたからです。</p><p>じっくりと熟成させる為に労力や時間を惜しまない。</p><p>大切な部分は必ず人の手で行い、目で見て品質を確認する。</p><p>『 中尾のこんにゃくでなければ 』と、ご指名頂き続けられるように、これからも頑張ってまいります。</p>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "margin-top": 40,
+        "margin-bottom": 40
+      }
+    },
+    "custom_product_info_qhGePP": {
+      "type": "custom-product-info",
+      "blocks": {
+        "product_info_jqG3dU": {
+          "type": "product-info",
+          "settings": {
+            "title": "こんにゃく",
+            "image": "shopify://shop_images/0b73826e33dd4114470d953318280a8a_69471688-322f-4adc-9242-55c4fa706c9b.jpg",
+            "block_link": ""
+          }
+        },
+        "product_info_rt8Cbq": {
+          "type": "product-info",
+          "settings": {
+            "title": "ところてん",
+            "image": "shopify://shop_images/ONECUP_0f7665a2-baac-4101-b8fb-5979c533f69d.jpg",
+            "block_link": "/products_preview?preview_key=2ae096b00a59f44a2a26ce9c71747291"
+          }
+        },
+        "product_info_FqxPmf": {
+          "type": "product-info",
+          "settings": {
+            "title": "Training Noodle",
+            "image": "shopify://shop_images/445dc40b70029ceda8f8bd5510b401c5_5f72e02c-60d4-403f-8250-5ac5c1e09bca.jpg",
+            "block_link": "shopify://products/57970561"
+          }
+        },
+        "product_info_QgNcfb": {
+          "type": "product-info",
+          "settings": {
+            "title": "業務用商品",
+            "image": "shopify://shop_images/2025-09-26105506_fc3c3158-091e-4928-b6af-2aac6e81035c.jpg",
+            "block_link": "shopify://products/無地有機かのここんにゃく35-35-251-10個セット-同梱不可"
+          }
+        }
+      },
+      "block_order": [
+        "product_info_jqG3dU",
+        "product_info_rt8Cbq",
+        "product_info_FqxPmf",
+        "product_info_QgNcfb"
+      ],
+      "name": "Custom Product Info",
+      "settings": {
+        "title": "商品情報",
+        "collection": "",
+        "padding-top": 60,
+        "padding-bottom": 70
+      }
+    },
+    "information_links_dGf8Tt": {
+      "type": "information-links",
+      "blocks": {
+        "link_q83fcj": {
+          "type": "link",
+          "settings": {
+            "title": "中尾の情報リンク",
+            "link": "shopify://pages/about-nakao",
+            "image": "shopify://shop_images/top_img02.webp"
+          }
+        },
+        "link_emHttX": {
+          "type": "link",
+          "settings": {
+            "title": "商品紹介",
+            "link": "shopify://pages/product-information",
+            "image": "shopify://shop_images/top_img03.webp"
+          }
+        },
+        "link_PAh7GY": {
+          "type": "link",
+          "settings": {
+            "title": "製造について",
+            "link": "shopify://pages/manufacturing",
+            "image": "shopify://shop_images/top_img04.webp"
+          }
+        },
+        "link_aqnqJD": {
+          "type": "link",
+          "settings": {
+            "title": "菊松について",
+            "link": "shopify://pages/about-kikumatsu",
+            "image": "shopify://shop_images/top_img05.webp"
+          }
+        },
+        "link_ex4exf": {
+          "type": "link",
+          "settings": {
+            "title": "品質管理",
+            "link": "shopify://pages/quality",
+            "image": "shopify://shop_images/top_img06.webp"
+          }
+        },
+        "link_3gPPQ6": {
+          "type": "link",
+          "settings": {
+            "title": "四代目のこんにゃく話",
+            "link": "shopify://blogs/第四十八話-こんにゃくと慣用句２",
+            "image": "shopify://shop_images/top_img07.webp"
+          }
+        }
+      },
+      "block_order": [
+        "link_q83fcj",
+        "link_emHttX",
+        "link_PAh7GY",
+        "link_aqnqJD",
+        "link_ex4exf",
+        "link_3gPPQ6"
+      ],
+      "name": "Information Links",
+      "settings": {
+        "title": "中尾の情報リンク",
+        "padding-top": 40,
+        "padding-bottom": 40
+      }
+    },
+    "featured_products_U3k3P4": {
+      "type": "featured-products",
+      "blocks": {
+        "product_KkCKCr": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/IRONMEN.webp",
+            "link": "shopify://products/57970561"
+          }
+        },
+        "product_4VhR4n": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/kikumatu_ita_b-2.webp",
+            "link": "shopify://products/10323198"
+          }
+        },
+        "product_nygrJy": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/kikumatsu_ito_b-2_3fa55d24-a34a-4a33-9ef2-7d4081be9d36.webp",
+            "link": "shopify://products/10323186"
+          }
+        },
+        "product_f9tCad": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/88510ec127e86da29b0240997622330a.webp",
+            "link": "shopify://products/10459891"
+          }
+        }
+      },
+      "block_order": [
+        "product_KkCKCr",
+        "product_4VhR4n",
+        "product_nygrJy",
+        "product_f9tCad"
+      ],
+      "name": "Featured Products",
+      "settings": {
+        "title": "おすすめ商品",
+        "padding-top": 70,
+        "padding-bottom": 70
+      }
+    },
+    "custom_news_section_9x4zw4": {
+      "type": "custom-news-section",
+      "name": "Custom News Section",
+      "settings": {
+        "title": "ニュース一覧",
+        "subtitle": "- NEWS -",
+        "btn_text": ">>過去のニュースはこちら",
+        "btn_link": "shopify://blogs/第四十八話-こんにゃくと慣用句２",
+        "section_bg_color": "",
+        "margin-top": 40,
+        "margin-bottom": 40
+      }
+    },
+    "custom_blogs_ebMYQ7": {
+      "type": "custom-blogs",
+      "name": "Custom Blogs",
+      "settings": {
+        "blog": "第四十八話-こんにゃくと慣用句２",
+        "title": "四代目のこんにゃく話",
+        "subtitle": "BLOG",
+        "button_text": ">>四代目のこんにゃく話を全て見る",
+        "button_link": "shopify://blogs/第四十八話-こんにゃくと慣用句２",
+        "padding-top": 50,
+        "padding-bottom": 70
+      }
+    },
+    "image_with_text_MyC9tR": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_w8FMfM": {
+          "type": "heading",
+          "settings": {
+            "text": "HOW IT'S MADE",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_67JDp4": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Konjac was introduced to Japan around 600 A.D. by Japanese envoys to Sui Dynasty China as a medicine with intestinal regulating properties. Konnyaku potato was cultivated and eaten near Nara, the capital of Japan at that time, because of its poor preservation and perishability. At that time, it was a luxury food that only the nobility could eat.</p>"
+          }
+        },
+        "button_gmqjnj": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "HOW IT'S MADE",
+            "url": "shopify://pages/manufacturing",
+            "background": "#1c1c1c",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "heading_w8FMfM",
+        "richtext_67JDp4",
+        "button_gmqjnj"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/howToStart.jpg",
+        "mobile_image": "shopify://shop_images/howToStart.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "lg",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_jVYAxm": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JcpKHR": {
+          "type": "heading",
+          "settings": {
+            "text": "QUALITY",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_6wbmCh": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Konnyaku potato is harvested only once a year, and because of its tendency to rot as soon as the soil is removed, it is necessary to purchase, wash, and freeze several tons of konnyaku at a time. Although this requires transportation, labor, and freezing and preservation costs, we believe it is essential to produce delicious konjac.</p>"
+          }
+        },
+        "button_KXLTjh": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "Button text",
+            "url": "shopify://pages/quality",
+            "background": "#1c1c1c",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JcpKHR",
+        "richtext_6wbmCh",
+        "button_KXLTjh"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/q1.jpg",
+        "mobile_image": "shopify://shop_images/q1.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "lg",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_8bV9et": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_x9pxBN": {
+          "type": "heading",
+          "settings": {
+            "text": "PRODUCT",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_e6DrUy": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>This konjac was successfully developed by Koji III through trial and error in his quest to create the real thing. He named it \"Kikumatsu Konnyaku\" after Kikumatsu Nakao, the founder of the company. We will continue to carefully produce this product so that it will be loved by everyone for a long time to come as a representative product of our company.</p>"
+          }
+        },
+        "button_L97Q6b": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "PRODUCT",
+            "url": "shopify://pages/product-information",
+            "background": "#1c1c1c",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "heading_x9pxBN",
+        "richtext_e6DrUy",
+        "button_L97Q6b"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/p1.jpg",
+        "mobile_image": "shopify://shop_images/p1.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "lg",
+        "remove_vertical_spacing": true
+      }
+    },
+    "image_with_text_iDw7iD": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_pKX6Dm": {
+          "type": "heading",
+          "settings": {
+            "text": "RECIPE",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_hP3hj7": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Konjac also has small voids. By utilizing this phenomenon, the broth is absorbed into the voids when the konjac is repeatedly heated and cooled down, resulting in oden and nimeshime with good flavor. Ito konnyaku is suitable for one-pot dishes that are eaten immediately after heating, as it has many voids that allow the flavor to soak in. Also, if the konnyaku is drained in the preparation as described above, it can be seasoned well.</p>"
+          }
+        },
+        "button_XnzXUP": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "RECIPE",
+            "url": "shopify://pages/recipe",
+            "background": "#1c1c1c",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pKX6Dm",
+        "richtext_hP3hj7",
+        "button_XnzXUP"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/Rec1.jpg",
+        "mobile_image": "shopify://shop_images/Rec1.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "lg",
+        "remove_vertical_spacing": false
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "image_rBanJf": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "shopify://products/10323198",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(NaN, NaN, NaN, 0), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        },
+        "image_FMr9rG": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "shopify://products/19106848",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(NaN, NaN, NaN, 0), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        },
+        "image_4G6yji": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 49,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(NaN, NaN, NaN, 0), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "image_rBanJf",
+        "image_FMr9rG",
+        "image_4G6yji"
+      ],
+      "disabled": true,
+      "settings": {
+        "allow_transparent_header": false,
+        "show_next_section_button": false,
+        "media_size": "auto",
+        "show_initial_transition": false,
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
+    "newsletter_UtcyRV": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "subheading": "",
+        "title": "<strong>メルマガ登録はこちら</strong>",
+        "content": "<p>新規ご登録でクリックポスト送料分(198円)がOFFになる、トライアルクーポンプレゼント中！！</p>",
+        "button_text": "登録",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "featured_collections_qrAkmG": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_X6jgU4": {
+          "type": "collection",
+          "settings": {
+            "collection": "ギフト",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "collection_X6jgU4"
+      ],
+      "disabled": true,
+      "name": "t:sections.featured_collections.presets.featured_collections.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "Featured collection"
+      }
+    },
+    "featured_collections_XNxqnX": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_kyPVpj": {
+          "type": "collection",
+          "settings": {
+            "collection": "セット商品",
+            "products_count": 50,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_kyPVpj"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
+    },
+    "featured_collections_Lcz9UY": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_bTfEMc": {
+          "type": "collection",
+          "settings": {
+            "collection": "中尾のこんにゃく",
+            "products_count": 50,
+            "title": "",
+            "link_url": "shopify://collections/中尾のこんにゃく",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_bTfEMc"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
+    },
+    "featured_collections_9WbKPQ": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_4QqUbE": {
+          "type": "collection",
+          "settings": {
+            "collection": "中尾のスイーツ",
+            "products_count": 50,
+            "title": "",
+            "link_url": "shopify://collections/中尾のスイーツ",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_4QqUbE"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
+    },
+    "featured_collections_DMWW9X": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_NAazfX": {
+          "type": "collection",
+          "settings": {
+            "collection": "training-noodle-栄養豊富な低糖質麺-1",
+            "products_count": 50,
+            "title": "",
+            "link_url": "shopify://collections/training-noodle-栄養豊富な低糖質麺-1",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_NAazfX"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
+    },
+    "featured_collections_kMkHLc": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_HpDdiU": {
+          "type": "collection",
+          "settings": {
+            "collection": "業務用",
+            "products_count": 23,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_HpDdiU"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
+    },
+    "1725774729c55495cc": {
+      "type": "apps",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "custom_liquid_7xtkzc": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (min-width: 960px) {.img-box {margin: 0 auto; width: 50%; }}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"img-box\">\n<a href=\"https://page.line.me/496voamx?openQrModal=true\"><img src=\"https://cdn.shopify.com/s/files/1/0886/9802/8316/files/line_friends.png?v=1729565498\" ></a>\n</div>",
+        "text_alignment": "center"
+      }
+    },
+    "rich_text_bh4qyB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_g7JrXe": {
+          "type": "heading",
+          "settings": {
+            "text": "WHERE TO BUY",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_Y4Xezn": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>We have plans available at attractive prices.</strong></p>"
+          }
+        },
+        "button_QP3jgz": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "WHERE TO BUY",
+            "url": "shopify://pages/where-to-buy",
+            "background": "#1c1c1c",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "heading_g7JrXe",
+        "richtext_Y4Xezn",
+        "button_QP3jgz"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    }
+  },
+  "order": [
+    "custom_image_with_text_thdDDi",
+    "custom_product_info_qhGePP",
+    "information_links_dGf8Tt",
+    "featured_products_U3k3P4",
+    "custom_news_section_9x4zw4",
+    "custom_blogs_ebMYQ7",
+    "image_with_text_MyC9tR",
+    "image_with_text_jVYAxm",
+    "image_with_text_8bV9et",
+    "image_with_text_iDw7iD",
+    "slideshow",
+    "newsletter_UtcyRV",
+    "featured_collections_qrAkmG",
+    "featured_collections_XNxqnX",
+    "featured_collections_Lcz9UY",
+    "featured_collections_9WbKPQ",
+    "featured_collections_DMWW9X",
+    "featured_collections_kMkHLc",
+    "1725774729c55495cc",
+    "custom_liquid_7xtkzc",
+    "rich_text_bh4qyB"
+  ]
+}

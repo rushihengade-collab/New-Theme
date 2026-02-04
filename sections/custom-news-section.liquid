@@ -1,0 +1,241 @@
+{% assign news_items = blogs.news.articles | sort: 'published_at' | reverse %}
+
+<div class="custom-news-section">
+  <div class="container">
+    <div class="custom-news-section-content">
+      <div class="custom-news-section-content-header">
+        <h2>{{ section.settings.title }}</h2>
+        <p class="custom-news-section-content-header-subtitle">{{ section.settings.subtitle }}</p>
+      </div>
+      <div class="custom-news-section-content-body">
+        {% for article in news_items limit: 4 %}
+          <div class="custom-news-section-content-body-item">
+            <div class="news-item-left-box">
+              <p class="news-item-left-text">{{ article.title }}</p>
+            </div>
+            <div class="news-item-right-content">
+              <p class="news-date">{{ article.published_at | date: '%Y.%m.%d' }}</p>
+              <a href="{{ article.url }}" class="news-title">{{ article.title }}</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      {% if section.settings.btn_text != blank and section.settings.btn_link != blank %}
+        <div class="custom-news-section-button-wrapper">
+          <a href="{{ section.settings.btn_link }}" class="custom-news-section-button">
+            {{ section.settings.btn_text }}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .custom-news-section {
+    margin-top: {{ section.settings.margin-top }}px;
+    margin-bottom: {{ section.settings.margin-bottom }}px;
+    background-color: {{ section.settings.section_bg_color | default: '#F8F8F8' }};
+    padding-block:50px;
+  }
+
+  .custom-news-section-content-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .custom-news-section-content-header h2 {
+    margin: 0;
+  }
+
+  .custom-news-section-content-header-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: #191971;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .custom-news-section-content-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:60px 30px;
+    margin-bottom: 50px;
+    max-width:1200px;
+    margin:0 auto;
+  }
+
+  .custom-news-section-content-body-item {
+    display: flex;
+    gap: 20px;
+  }
+
+  .news-item-left-box {
+    background-color: #212B60;
+    border-radius: 8px;
+    padding: 0 10px;
+    width:130px;
+    height:135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius:10px;
+  }
+
+  .news-item-left-text {
+    color: #fff;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .news-item-right-content {
+    flex: 1;
+  }
+
+  .news-date {
+    color: #FF8200;
+    font-size: 1rem;
+    margin: 0 0 5px 0;
+  }
+
+  .news-title {
+    font-size: 1rem;
+    margin:0;
+    font-weight: 500;
+  }
+
+  .custom-news-section-button-wrapper {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .custom-news-section-button {
+    display: inline-block;
+    background-color: #212B60;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+  }
+
+  .custom-news-section-button:hover {
+    opacity: 0.9;
+  }
+
+  @media (max-width: 768px) {
+    .custom-news-section {
+      margin-top: {{ section.settings.margin-top | times: 0.9 }}px;
+      margin-bottom: {{ section.settings.margin-bottom | times: 0.9 }}px;
+    }
+
+    .custom-news-section-content-body {
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+
+    .custom-news-section-content-body-item {
+      align-items: flex-start;
+    }
+
+    .news-item-left-box {
+      min-width: auto;
+      min-height: 100px;
+      padding:0 8px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .custom-news-section {
+      margin-top: {{ section.settings.margin-top | times: 0.85 }}px;
+      margin-bottom: {{ section.settings.margin-bottom | times: 0.85 }}px;
+      padding-block:40px;
+    }
+
+    .custom-news-section-content-header {
+      margin-bottom: 30px;
+    }
+
+    .news-item-left-box {
+      min-height: 80px;
+    }
+
+    .news-item-left-text {
+      font-size: 0.85rem;
+    }
+
+    .custom-news-section-button {
+      padding: 12px 30px;
+      font-size: 0.9rem;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Custom News Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "btn_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "Section Background Color"
+    },
+    {
+      "type": "range",
+      "id": "margin-top",
+      "label": "Margin Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "margin-bottom",
+      "label": "Margin Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom News Section"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,215 @@
+<div class="container">
+    <div class="information-links-content">
+      {% render 'custom-section-header', section: section %}
+      <div class="information-links-grid">
+        {% for block in section.blocks %}
+          <div class="information-links-content-item">
+            <a href="{{ block.settings.link }}">
+              <div class="information-links-image-wrapper">
+                <img
+                  src="{{ block.settings.image | image_url: width: 500, height: 300 }}"
+                  alt="{{ block.settings.title }}"
+                  width="100"
+                  height="100"
+                >
+                <div class="information-links-overlay">
+                  <h3 class="information-links-hover-title">{{ block.settings.title }}</h3>
+                </div>
+              </div>
+              <h3 class="information-links-content-item-title">{{ block.settings.title }}</h3>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  
+  <style>
+    .information-links-content {
+      padding-top: {{ section.settings.padding-top }}px;
+      padding-bottom: {{ section.settings.padding-bottom }}px;
+    }
+  
+    .information-links-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px 30px;
+    }
+  
+    .information-links-content-item {
+      width: 100%;
+    }
+  
+    .information-links-content-item a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+  
+    .information-links-image-wrapper {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 4px;
+    }
+  
+    .information-links-image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+      object-fit: cover;
+      aspect-ratio: 16 / 9;
+    }
+  
+    .information-links-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(0 0 0 / 58%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+  
+    .information-links-hover-title {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 600;
+      text-align: center;
+      margin: 0;
+      padding: 0 20px;
+    }
+  
+    .information-links-content-item:hover .information-links-overlay {
+      opacity: 1;
+    }
+  
+    .information-links-content-item:hover .information-links-image-wrapper img {
+      transform: scale(1.05);
+    }
+  
+    .information-links-content-item-title {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+  
+    .information-links-overlay h3{
+      margin:0;
+      font-weight:500;
+    }
+    @media (max-width: 992px) {
+      .information-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 20px;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .information-links-content {
+        padding-top: {{ section.settings.padding-top | times: 0.9 }}px;
+        padding-bottom: {{ section.settings.padding-bottom | times: 0.9 }}px;
+      }
+  
+      .information-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap:25px 15px;
+      }
+  
+      .information-links-hover-title {
+        font-size: 20px;
+      }
+  
+      .information-links-content-item-title {
+        margin-top: 12px;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .information-links-content {
+        padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
+        padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
+      }
+  
+      .information-links-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .information-links-image-wrapper{
+        aspect-ratio: 1 / 0.8;
+      }
+      .information-links-image-wrapper img{
+          aspect-ratio: 1 / 0.8;
+      }
+    }
+  </style>
+  
+  {% schema %}
+  {
+    "name": "Information Links",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "range",
+        "id": "padding-top",
+        "label": "Padding Top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "padding-bottom",
+        "label": "Padding Bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "default": 40
+      }
+    ],
+    "blocks": [
+      {
+        "type": "link",
+        "name": "Link",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Information Links"
+      }
+    ]
+  }
+  {% endschema %}
+  

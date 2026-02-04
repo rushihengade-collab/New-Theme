@@ -1,0 +1,327 @@
+<div class="container">
+  <div class="custom-blogs-content">
+    <div class="custom-blogs-content-header">
+      <h2 class="custom-blogs-title">{{ section.settings.title }}</h2>
+      <p class="custom-blogs-subtitle">- {{ section.settings.subtitle }} -</p>
+    </div>
+    
+    {% if section.settings.blog != blank and section.settings.blog.articles_count > 0 %}
+      <div class="custom-blogs-content-body">
+        {% for article in section.settings.blog.articles limit: 3 %}
+          <div class="custom-blogs-content-body-item">
+            <a href="{{ article.url }}" class="custom-blogs-card-link">
+              <div class="custom-blogs-card-header">
+                <h3 class="custom-blogs-card-title">{{ article.title }}</h3>
+                <div class="custom-blogs-card-date">
+                  {{ article.published_at | date: "%Y.%m.%d" }}
+                </div>
+                <div class="custom-blogs-card-header-triangle"></div>
+              </div>
+              <div class="custom-blogs-card-content">
+                {% if article.image %}
+                  <div class="custom-blogs-card-image">
+                    <img 
+                      src="{{ article.image | image_url: width: 600 }}"
+                      alt="{{ article.image.alt | escape }}"
+                      loading="lazy"
+                      width="{{ article.image.width }}"
+                      height="{{ article.image.height }}"
+                    >
+                  </div>
+                {% endif %}
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+      
+      {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+        <div class="custom-blogs-button-container">
+          <a href="{{ section.settings.button_link }}" class="custom-blogs-button">
+            {{ section.settings.button_text }}
+          </a>
+        </div>
+      {% endif %}
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  .custom-blogs-content {
+    padding-top: {{ section.settings.padding-top }}px;
+    padding-bottom: {{ section.settings.padding-bottom }}px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .custom-blogs-content-header {
+    text-align: center;
+    margin-bottom:30px;
+  }
+
+  .custom-blogs-title {
+    margin:0;
+  }
+
+  .custom-blogs-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: #191971;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .custom-blogs-content-body {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+
+  .custom-blogs-content-body-item {
+    flex: 1;
+    min-width: 300px;
+    max-width: 320px;
+  }
+
+  .custom-blogs-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+    padding-bottom:55px;
+    background-color: rgba(25,25,113,1);
+  }
+
+  .custom-blogs-card-link:hover {
+    transform: translateY(-5px);
+  }
+
+  .custom-blogs-card-header {
+    color: #fff;
+    padding: 20px 20px 30px 20px;
+    position: relative;
+    border-radius: 4px 4px 0 0;
+  }
+
+  .custom-blogs-card-header-triangle {
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 18px solid rgba(25,25,113,1);
+    z-index: 1;
+  }
+
+  .custom-blogs-card-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0 0 10px 0;
+    color: #fff;
+  }
+
+  .custom-blogs-card-date {
+    font-size: 0.9rem;
+    text-align: right;
+    color: #fff;
+    opacity: 0.9;
+  }
+
+  .custom-blogs-card-content {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+  }
+
+  .custom-blogs-card-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .custom-blogs-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .custom-blogs-button-container {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .custom-blogs-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+  }
+
+  .custom-blogs-button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (min-width: 749px) {
+    .custom-blogs-card-header {
+      min-height:123px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .custom-blogs-content {
+      padding-top: {{ section.settings.padding-top | times: 0.9 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.9 }}px;
+    }
+
+    .custom-blogs-title {
+      font-size: 28px;
+    }
+
+    .custom-blogs-content-body {
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .custom-blogs-card-image {
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .custom-blogs-content {
+      padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
+    }
+
+    .custom-blogs-title {
+      font-size: 24px;
+    }
+
+    .custom-blogs-subtitle {
+      font-size: 12px;
+    }
+
+    .custom-blogs-content-body {
+      gap: 15px;
+    }
+
+    .custom-blogs-card-header {
+      padding: 15px 15px 25px 15px;
+    }
+
+    .custom-blogs-card-title {
+      font-size: 14px;
+    }
+    .custom-blogs-card-image {
+      height: 180px;
+    }
+
+    .custom-blogs-button {
+      padding: 10px 20px;
+      font-size: 12px;
+    }
+    .custom-blogs-content-body-item {
+        width:50%;
+        max-width:50%;
+        min-width:48%;
+      }
+  }
+  @media (max-width: 425px) {
+    .custom-blogs-content-body-item{
+      min-width: 100%;
+      max-width: 100%;
+      padding:0 25px;
+    }
+    .custom-blogs-content{
+        margin:0;
+    }
+  }
+  @media (max-width: 360px) {
+    .custom-blogs-content-body-item{
+      padding:0 15px;
+    }
+  }
+
+  @media (max-width: 340px) {
+    .custom-blogs-content-body-item{
+      padding:0 5px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Custom Blogs",
+  "settings": [
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "Blog"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "The story of the fourth generation konjac"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "BLOG"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": ">>See all stories about the fourth generation konjac"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Blogs"
+    }
+  ]
+}
+{% endschema %}

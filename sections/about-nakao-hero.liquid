@@ -1,0 +1,256 @@
+<div class="about-nakao-section">
+  <div class="section">
+    <div class="section-content">
+      <div class="section-content-inner">
+        <div class="section-content-left">
+          <img
+            src="{{ section.settings.representative_image | image_url: width: 1000 }}"
+            alt="{{ section.settings.representative_name }}"
+            width="100%"
+            height="100%"
+          >
+        </div>
+        <div class="section-content-right">
+          <h2 class="section-content-right-title">{{ section.settings.title }}</h2>
+          <div class="section-content-right-description">
+            {{ section.settings.description }}
+            <p class="section-content-left-representative-name">{{ section.settings.representative_name }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-content-buttons">
+        {% for block in section.blocks %}
+          <a href="{{ block.settings.button_link }}" class="button section-content-buttons-button">
+            <span class="section-content-buttons-button-text">{{ block.settings.button_text }}</span>
+            <span class="section-content-buttons-button-chevron" aria-hidden="true">⌄</span>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .about-nakao-section {
+    position: relative;
+    margin-top: {{ section.settings.margin-top }}px;
+    margin-bottom: {{ section.settings.margin-bottom }}px;
+    background-image: url('{{ section.settings.section_background_image | image_url: width: 1000 }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top:70px;
+  }
+  .about-nakao-section .section-content {
+    margin: 0 auto;
+  }
+  .about-nakao-section .section-content-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .about-nakao-section .section-content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .about-nakao-section .section-content-left img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+  }
+  .about-nakao-section .section-content-right {
+    flex: 1;
+  }
+  .about-nakao-section .section-content-right-title {
+    margin: 0 0 1rem;
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    line-height: 1.4;
+  }
+  .about-nakao-section .section-content-right-description {
+    line-height: 1.7;
+  }
+  .about-nakao-section .section-content-right-description p:last-child {
+    margin-bottom: 0;
+  }
+  .about-nakao-section .section-content-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .about-nakao-section .section-content-buttons-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .about-nakao-section .section-content-buttons-button-text {
+    display: block;
+  }
+  .about-nakao-section .section-content-buttons-button-chevron {
+    line-height: 1;
+    margin-top:-10px;
+    font-size: 1.1rem;
+  }
+  @media (min-width: 769px) {
+    .about-nakao-section .section-content-inner {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .about-nakao-section .section-content-left {
+      flex-shrink: 0;
+      max-width: 420px;
+      align-items: center;
+    }
+    .about-nakao-section .section-content-left img {
+      max-width: 100%;
+      aspect-ratio: 235 / 283;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .about-nakao-section .section-content-left-representative-name {
+      text-align: right;
+      margin-right:50px;
+
+    }
+    .about-nakao-section .section-content-right {
+      flex: 1;
+      min-width: 0;
+      max-height: 420px;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+    }
+    .about-nakao-section .section-content-right-title {
+      margin: 0 0 0 1.5rem;
+      font-size: clamp(1.1rem, 2vw, 1.5rem);
+      line-height: 1.6;
+    }
+    .about-nakao-section .section-content-right-description {
+      margin: 0;
+      line-height: 1.8;
+      letter-spacing: 0.02em;
+      margin-top:50px;
+    }
+    .about-nakao-section .section-content-right-description p:last-child {
+      margin-bottom: 0;
+    }
+    .about-nakao-section .section-content-buttons {
+      grid-template-columns: repeat(4, 1fr);
+      width: 100%;
+      gap: 1.25rem;
+    }
+    .about-nakao-section .section-content-buttons-button {
+      min-height: 4.5rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .section-content-left-representative-name{
+      text-align: right;
+      margin-top:2.2rem;
+    }
+    .about-nakao-section {
+      margin-top: {{ section.settings.margin-top | times:0.9 }}px;
+      margin-bottom: {{ section.settings.margin-bottom | times:0.9 }}px;
+      padding-top:50px;
+    }
+    .about-nakao-section .section-content-inner {
+      flex-direction: column;
+    }
+    .about-nakao-section .section-content-right {
+      order: -1;
+    }
+  }
+  @media (max-width: 425px) {
+    .about-nakao-section {
+      margin-top: {{ section.settings.margin-top | times:0.85 }}px;
+      margin-bottom: {{ section.settings.margin-bottom | times:0.85 }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "About Nakao",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "section_background_image",
+      "label": "Section Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "representative_image",
+      "label": "Representative Image"
+    },
+    {
+      "type": "text",
+      "id": "representative_name",
+      "label": "Representative Name"
+    },
+
+    {
+      "type": "range",
+      "id": "margin-top",
+      "label": "Margin Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "margin-bottom",
+      "label": "Margin Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "about_nakao_hero_item",
+      "name": "About Nakao Hero Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Nakao"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,118 @@
+<div class="section kikumatsu-thoughts-section">
+  <div class="kikumatsu-thoughts-section-container">
+    <h2 class="kikumatsu-thoughts-section-title">{{ section.settings.title }}</h2>
+    <div class="kikumatsu-thoughts-section-content">
+      {% if section.settings.description != blank %}
+        <div class="kikumatsu-thoughts-section-content-description">
+          {{ section.settings.description | newline_to_br }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .kikumatsu-thoughts-section {
+      padding-top: {{ section.settings.padding-top }}px;
+      padding-bottom: {{ section.settings.padding-bottom }}px;
+      background-image: url('{{ section.settings.section_bg_image | image_url: width: 1920 }}') !important;
+      background-size: cover !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+  }
+
+  .kikumatsu-thoughts-section-container {
+    max-width: {{ section.settings.description_max_width }}px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .kikumatsu-thoughts-section-title {
+    text-align: center;
+  }
+
+  .kikumatsu-thoughts-section-content-description {
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .kikumatsu-thoughts-section {
+      padding-top: {{ section.settings.padding-top | times: 0.9 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.9 }}px;
+    }
+    .kikumatsu-thoughts-section-container {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .kikumatsu-thoughts-section {
+      padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
+    }
+    .kikumatsu-thoughts-section-container {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Kikumatsu Thoughts",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "range",
+      "id": "description_max_width",
+      "label": "Description Max Width",
+      "min": 500,
+      "max": 1000,
+      "step": 5,
+      "unit": "px",
+      "default": 860
+    },
+    {
+      "type": "image_picker",
+      "id": "section_bg_image",
+      "label": "Section Background Image"
+    },
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kikumatsu Thoughts"
+    }
+  ]
+}
+{% endschema %}
