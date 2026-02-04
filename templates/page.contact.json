@@ -114,12 +114,53 @@
         "padding-top": 40,
         "padding-bottom": 13
       }
+    },
+    "why_work_with_nakao_V6XiVy": {
+      "type": "why-work-with-nakao",
+      "blocks": {
+        "content_item_VBLNxq": {
+          "type": "content_item",
+          "settings": {
+            "content_item_title": "",
+            "content_item_description": "<p>The following best-selling products are available for wholesale purchase.</p><ul><li>Kakuri Miniplane Eco Oak Body</li><li>Kakuri Wood Chisel 3-Piece Set</li><li>Kakuri Kiridashi Knife 18 mm</li><li>Kakuri Spare Blade Type Ryoba Saw Cork Handle 240 mm</li><li>Kakuri Honing Guide (for Smoothing Plane and Chisel) KBS-50</li></ul>"
+          }
+        },
+        "content_item_XbHaDn": {
+          "type": "content_item",
+          "settings": {
+            "content_item_title": "How to Order Samples",
+            "content_item_description": "<p>We provide samples at cost. Follow the steps below to submit your request.<br/>Contact us via the inquiry form below with a request for sample products.<br/>We will send you our product catalog (PDF).<br/>Fill in the necessary information and the quantity you want on the attached order sheet and return it to us.</p>"
+          }
+        },
+        "content_item_j9Y3kT": {
+          "type": "content_item",
+          "settings": {
+            "content_item_title": "Transportation Cost & Delivery",
+            "content_item_description": "<p>Shipping Methods: In the case of surface mail (FOB), the customer will arrange the route beyond the Japanese port. For air shipping, we will deliver it by EMS (UPS or DHL may be substituted upon our discretion).<br/>Shipping Cost Estimates: We will provide a price list, including the approximate figures by destination and package size. Please note that rates are subject to change depending on the courier.<br/>Customs Duties: Customers are responsible for 100% of customs duties.<br/>Risk & Insurance: As per the FOB conditions.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_item_VBLNxq",
+        "content_item_XbHaDn",
+        "content_item_j9Y3kT"
+      ],
+      "name": "Why Work with Nakao",
+      "settings": {
+        "title": "PRODUCT LINEUP",
+        "image": "shopify://shop_images/b27bdbc22c3e61dc82ec03d38e2eb0a8.jpg",
+        "intro_text": "",
+        "section_max_width": 700,
+        "padding-top": 40,
+        "padding-bottom": 13
+      }
     }
   },
   "order": [
     "main",
     "contact-form",
     "why_work_with_nakao_bR97bX",
-    "why_work_with_nakao_64QPEX"
+    "why_work_with_nakao_64QPEX",
+    "why_work_with_nakao_V6XiVy"
   ]
 }
