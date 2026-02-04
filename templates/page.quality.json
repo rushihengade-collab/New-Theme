@@ -18,6 +18,36 @@
         "page_width": "xs"
       }
     },
+    "rich_text_TkHtJF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AtEYig": {
+          "type": "heading",
+          "settings": {
+            "text": "品質管理",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_d6BnWM": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>~Quality Control~</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AtEYig",
+        "richtext_d6BnWM"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
     "about_nakao_hero_qRDaga": {
       "type": "about-nakao-hero",
       "name": "About Nakao",
@@ -417,6 +447,7 @@
   },
   "order": [
     "main",
+    "rich_text_TkHtJF",
     "about_nakao_hero_qRDaga",
     "company_profile_ye4FzG",
     "access_nakao_page_JVQ69V",
