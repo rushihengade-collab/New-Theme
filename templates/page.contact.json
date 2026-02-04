@@ -12,15 +12,74 @@
     "main": {
       "type": "main-page",
       "disabled": true,
-      "settings": {}
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
     },
     "contact-form": {
       "type": "contact",
-      "settings": {}
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "subheading": "",
+        "title": "Contact",
+        "content": ""
+      }
+    },
+    "why_work_with_nakao_bR97bX": {
+      "type": "why-work-with-nakao",
+      "blocks": {
+        "content_item_TgM6EW": {
+          "type": "content_item",
+          "settings": {
+            "content_item_title": "Value as Food",
+            "content_item_description": "<p>Would your woodworking customers appreciate authentic hand tools from Japan? We are looking for distributors and dealers to join our established global network.<br/></p>"
+          }
+        },
+        "content_item_YLXNPd": {
+          "type": "content_item",
+          "settings": {
+            "content_item_title": "Quality",
+            "content_item_description": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation,</p>"
+          }
+        },
+        "content_item_xGmNVK": {
+          "type": "content_item",
+          "settings": {
+            "content_item_title": "Controlled Factory",
+            "content_item_description": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation,</p>"
+          }
+        },
+        "content_item_EXLi6e": {
+          "type": "content_item",
+          "settings": {
+            "content_item_title": "Proven Sales Track Record",
+            "content_item_description": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation,</p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_item_TgM6EW",
+        "content_item_YLXNPd",
+        "content_item_xGmNVK",
+        "content_item_EXLi6e"
+      ],
+      "name": "Why Work with Nakao",
+      "settings": {
+        "title": "Why Work with Nakao?",
+        "image": "shopify://shop_images/q1.jpg",
+        "intro_text": "Woodworking professionals and hobbyists in Japan have long valued Kakuri products. In recent years, we have begun selling internationally with great success. As our customer base grows, we attribute this success to continuing our mission of providing professional-quality tools at affordable prices.",
+        "section_max_width": 700,
+        "padding-top": 40,
+        "padding-bottom": 13
+      }
     }
   },
   "order": [
     "main",
-    "contact-form"
+    "contact-form",
+    "why_work_with_nakao_bR97bX"
   ]
 }
