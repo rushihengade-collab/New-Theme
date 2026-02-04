@@ -61,6 +61,28 @@
         "remove_vertical_spacing": true
       }
     },
+    "rich_text_7EGVfJ": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_Q4Hmcw": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_Q4Hmcw"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
     "about_nakao_hero_qRDaga": {
       "type": "about-nakao-hero",
       "name": "About Nakao",
@@ -499,6 +521,7 @@
     "main",
     "rich_text_TkHtJF",
     "image_with_text_block_8Khtgt",
+    "rich_text_7EGVfJ",
     "about_nakao_hero_qRDaga",
     "company_profile_ye4FzG",
     "access_nakao_page_JVQ69V",
