@@ -75,11 +75,51 @@
         "padding-top": 40,
         "padding-bottom": 13
       }
+    },
+    "why_work_with_nakao_64QPEX": {
+      "type": "why-work-with-nakao",
+      "blocks": {
+        "content_item_rrP8Yz": {
+          "type": "content_item",
+          "settings": {
+            "content_item_title": "Pricing",
+            "content_item_description": "<p>Wholesale Prices: We guarantee highly competitive wholesale prices to our distribution partners. Contact us with the inquiry form below for the latest pricing information.<br/>Sample Prices: Samples can be shipped at FOB price from 1 piece for all products. We will bear the shipping costs for sample requests of more than ¥100,000.<br/></p>"
+          }
+        },
+        "content_item_xfcN3t": {
+          "type": "content_item",
+          "settings": {
+            "content_item_title": "Fees",
+            "content_item_description": "<p>Handling Fees: There is no fee for transactions in Japanese yen (JPY). For other currencies, we charge $45 per transaction. The customer is responsible for all customs duties.</p><p>Shipping Fees: In the case of air transportation, the customer is responsible for the total amount. In the case of shipping by sea, the customer is responsible for all shipping costs beyond the port in Japan (FOB*).</p><p>*FOB (Free on Board): means the cost of transporting goods to the nearest port and loading them onto the ship is included in the price.</p>"
+          }
+        },
+        "content_item_FfBwUU": {
+          "type": "content_item",
+          "settings": {
+            "content_item_title": "Wholesale Price Example",
+            "content_item_description": "<p>The following is an illustrative example; please contact us for current pricing:</p><p>Product: Kakuri Smooth Plane White Oak Body 60 mm</p><p>Item Cost: 3,500 JPY</p><p>Quantity: 20 pieces (per case)</p><p>Weight: 23.0 kg</p><p>Shipping Cost: 47,200 JPY</p><p>Customs Duty: 3,990 JPY</p><p>Total Price: 121,190 JPY</p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_item_rrP8Yz",
+        "content_item_xfcN3t",
+        "content_item_FfBwUU"
+      ],
+      "name": "Why Work with Nakao",
+      "settings": {
+        "title": "Pricing & Fees",
+        "intro_text": "",
+        "section_max_width": 700,
+        "padding-top": 40,
+        "padding-bottom": 13
+      }
     }
   },
   "order": [
     "main",
     "contact-form",
-    "why_work_with_nakao_bR97bX"
+    "why_work_with_nakao_bR97bX",
+    "why_work_with_nakao_64QPEX"
   ]
 }
