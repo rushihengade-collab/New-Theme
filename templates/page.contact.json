@@ -18,14 +18,27 @@
         "page_width": "xs"
       }
     },
-    "contact-form": {
-      "type": "contact",
+    "why_work_with_nakao_q9xQcV": {
+      "type": "why-work-with-nakao",
+      "blocks": {
+        "content_item_PnViMB": {
+          "type": "content_item",
+          "settings": {
+            "content_item_title": "Recruitment of Sales Agents",
+            "content_item_description": "<p>Would your woodworking customers appreciate authentic hand tools from Japan? We are looking for distributors and dealers to join our established global network.</p><p>Contact us by filling in the form below to learn more about the benefits of distributing Kakuri tools.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_item_PnViMB"
+      ],
+      "name": "Why Work with Nakao",
       "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": true,
-        "subheading": "",
-        "title": "Contact",
-        "content": ""
+        "title": "WHERE TO BUY",
+        "intro_text": "",
+        "section_max_width": 700,
+        "padding-top": 40,
+        "padding-bottom": 13
       }
     },
     "why_work_with_nakao_bR97bX": {
@@ -222,14 +235,25 @@
         "padding-top": 40,
         "padding-bottom": 40
       }
+    },
+    "contact-form": {
+      "type": "contact",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "subheading": "",
+        "title": "Contact",
+        "content": ""
+      }
     }
   },
   "order": [
     "main",
-    "contact-form",
+    "why_work_with_nakao_q9xQcV",
     "why_work_with_nakao_bR97bX",
     "why_work_with_nakao_64QPEX",
     "why_work_with_nakao_V6XiVy",
-    "custom_faq_NpyNPE"
+    "custom_faq_NpyNPE",
+    "contact-form"
   ]
 }
