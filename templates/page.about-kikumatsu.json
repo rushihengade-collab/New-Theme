@@ -166,6 +166,49 @@
         "padding-top": 63,
         "padding-bottom": 78
       }
+    },
+    "kikumatsu_product_lineup_bwxzqh": {
+      "type": "kikumatsu-product-lineup",
+      "blocks": {
+        "product_lineup_YapA3J": {
+          "type": "product-lineup",
+          "settings": {
+            "title_1": "有機生芋100％",
+            "title_2": "菊松〔板〕こんにゃく250g",
+            "image": "shopify://shop_images/about_img02_01.jpg",
+            "link": ""
+          }
+        },
+        "product_lineup_NWRA84": {
+          "type": "product-lineup",
+          "settings": {
+            "title_1": "有機生芋100％",
+            "title_2": "菊松〔糸〕こんにゃく180g",
+            "image": "shopify://shop_images/about_img03_01.jpg",
+            "link": ""
+          }
+        },
+        "product_lineup_y99gBp": {
+          "type": "product-lineup",
+          "settings": {
+            "title_1": "生芋100％",
+            "title_2": "菊松〔突〕こんにゃく200g",
+            "image": "shopify://shop_images/about_img04.webp",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_lineup_YapA3J",
+        "product_lineup_NWRA84",
+        "product_lineup_y99gBp"
+      ],
+      "name": "Kikumatsu Product Lineup",
+      "settings": {
+        "title": "",
+        "padding-top": 40,
+        "padding-bottom": 40
+      }
     }
   },
   "order": [
@@ -173,6 +216,7 @@
     "rich_text_FUpChy",
     "rich_text_QqheP9",
     "image_with_text_bKkzQe",
-    "slide_image_with_text_DUQrw9"
+    "slide_image_with_text_DUQrw9",
+    "kikumatsu_product_lineup_bwxzqh"
   ]
 }
