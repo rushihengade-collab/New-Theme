@@ -110,12 +110,44 @@
         "content_width": "lg",
         "remove_vertical_spacing": false
       }
+    },
+    "slide_image_with_text_DUQrw9": {
+      "type": "slide-image-with-text",
+      "blocks": {
+        "slide_image_with_text_8GfnBA": {
+          "type": "slide-image-with-text",
+          "settings": {
+            "image_1": "shopify://shop_images/IMGP2251_1.webp",
+            "image_2": "shopify://shop_images/IMGP2225.webp",
+            "image_3": "shopify://shop_images/IMGP2204.webp",
+            "title": "Thawing and mashing konjac yam",
+            "description": "Kikumatsu Konjac does not use any milled konjac flour, but only organically grown konjac potatoes from Hiroshima Prefecture.While steam is typically used to efficiently thaw raw potatoes, this is not the case when making Kikumatsu Konjac.Frozen raw potatoes are placed in a tank and slowly thawed overnight using tap water. Thethawed whole potatoes are then slowly mashed and mixed with water to make the konjac paste."
+          }
+        },
+        "slide_image_with_text_yLewiH": {
+          "type": "slide-image-with-text",
+          "settings": {
+            "title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_image_with_text_8GfnBA",
+        "slide_image_with_text_yLewiH"
+      ],
+      "name": "Slide Image with Text",
+      "settings": {
+        "padding-top": 40,
+        "padding-bottom": 40
+      }
     }
   },
   "order": [
     "main",
     "rich_text_FUpChy",
     "rich_text_QqheP9",
-    "image_with_text_bKkzQe"
+    "image_with_text_bKkzQe",
+    "slide_image_with_text_DUQrw9"
   ]
 }
