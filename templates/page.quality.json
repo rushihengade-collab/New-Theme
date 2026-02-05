@@ -49,22 +49,47 @@
         "remove_vertical_spacing": false
       }
     },
-    "custom_image_with_text_6URgmM": {
-      "type": "custom-image-with-text",
-      "name": "Custom Image with Text",
-      "settings": {
-        "background_image": "shopify://shop_images/kodawari_bg.webp",
-        "background_image_size": "cover",
-        "background_image_position": "center",
-        "image": "shopify://shop_images/qj1.webp",
-        "image_position": "left",
-        "header1": "<h3>品質保証は“あたりまえ”の責務</h3>",
-        "text": "<p>食品工場においての品質管理の目的は、食品事故を防ぐことです。<br/>例えば、物理的危害、化学的危害、生物的危害、日付表示ミス、アレルギー表示ミスなど。<br/>大きい意味では、当社を信用して購入してくださっているお客様を裏切らないようにする、ということです。 </p><p>世に売りに出している商品ですから、安全であることはあたりまえであり、それを保証するのは食品製造会社の責務だと考えております。<br/>当社ではそのことを全従業員が理解し、品質管理意識・倫理観を持ち業務に従事するよう、<br/>日々教育を行っています。</p>",
-        "color_scheme": "",
-        "section_width": "page-width",
-        "margin-top": 40,
-        "margin-bottom": 40
-      }
+    "177027309567aec5d6": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_3ac2188_mgahzQ": {
+          "type": "ai_gen_block_3ac2188",
+          "settings": {
+            "background_image": "shopify://shop_images/msg_bg_0478d09e-120a-47dc-a04b-27ad57bb4723.webp",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "content_image": "shopify://shop_images/qj1.webp",
+            "image_width": 40,
+            "image_border_radius": 8,
+            "heading": "<h3>品質保証は“あたりまえ”の責務</h3>",
+            "paragraph": "<p>食品工場においての品質管理の目的は、食品事故を防ぐことです。<br/>例えば、物理的危害、化学的危害、生物的危害、日付表示ミス、アレルギー表示ミスなど。<br/>大きい意味では、当社を信用して購入してくださっているお客様を裏切らないようにする、ということです。 </p><p>世に売りに出している商品ですから、安全であることはあたりまえであり、それを保証するのは食品製造会社の責務だと考えております。<br/>当社ではそのことを全従業員が理解し、品質管理意識・倫理観を持ち業務に従事するよう、<br/>日々教育を行っています。</p>",
+            "text_alignment": "left",
+            "heading_font": "biz_udpmincho_n7",
+            "heading_size": 40,
+            "mobile_heading_size": 28,
+            "paragraph_size": 18,
+            "mobile_paragraph_size": 16,
+            "heading_color": "#ffffff",
+            "paragraph_color": "#1c1c1c",
+            "desktop_width_percent": 100,
+            "min_height": 500,
+            "section_padding": 60,
+            "mobile_section_padding": 30,
+            "content_gap": 60,
+            "mobile_content_gap": 30,
+            "heading_spacing": 20,
+            "vertical_spacing_top": 0,
+            "vertical_spacing_bottom": 50,
+            "mobile_vertical_spacing_top": 0,
+            "mobile_vertical_spacing_bottom": 30
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_3ac2188_mgahzQ"
+      ],
+      "settings": {}
     },
     "image_with_text_block_8Khtgt": {
       "type": "image-with-text-block",
@@ -753,7 +778,7 @@
   "order": [
     "main",
     "rich_text_TkHtJF",
-    "custom_image_with_text_6URgmM",
+    "177027309567aec5d6",
     "image_with_text_block_8Khtgt",
     "rich_text_7EGVfJ",
     "image_with_text_rTdfTp",
