@@ -413,6 +413,50 @@
         "margin-top": 40,
         "margin-bottom": 40
       }
+    },
+    "image_with_text_wcig8f": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_rihdJG": {
+          "type": "heading",
+          "settings": {
+            "text": "QUALITY",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_hgHX3A": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Konnyaku potato is harvested only once a year, and because of its tendency to rot as soon as the soil is removed, it is necessary to purchase, wash, and freeze several tons of konnyaku at a time. Although this requires transportation, labor, and freezing and preservation costs, we believe it is essential to produce delicious konjac.</p>"
+          }
+        },
+        "button_xk93zm": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "Button text",
+            "url": "shopify://pages/quality",
+            "background": "#1c1c1c",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rihdJG",
+        "richtext_hgHX3A",
+        "button_xk93zm"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/q1.jpg",
+        "mobile_image": "shopify://shop_images/q1.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "lg",
+        "remove_vertical_spacing": false
+      }
     }
   },
   "order": [
@@ -423,6 +467,7 @@
     "company_profile_WNwcdh",
     "management_philosophy_xtyeim",
     "delivery_record_jn7DUk",
-    "custom_news_section_DkzQ8w"
+    "custom_news_section_DkzQ8w",
+    "image_with_text_wcig8f"
   ]
 }
