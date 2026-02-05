@@ -1,0 +1,540 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "rich_text_TkHtJF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AtEYig": {
+          "type": "heading",
+          "settings": {
+            "text": "品質管理",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_d6BnWM": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>~Quality Control~</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AtEYig",
+        "richtext_d6BnWM"
+      ],
+      "custom_css": [],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "177027309567aec5d6": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_3ac2188_mgahzQ": {
+          "type": "ai_gen_block_3ac2188",
+          "settings": {
+            "background_image": "shopify://shop_images/msg_bg_0478d09e-120a-47dc-a04b-27ad57bb4723.webp",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "content_image": "shopify://shop_images/qj1.webp",
+            "image_width": 40,
+            "image_border_radius": 8,
+            "heading": "<h3>品質保証は“あたりまえ”の責務</h3>",
+            "paragraph": "<p>食品工場においての品質管理の目的は、食品事故を防ぐことです。<br/>例えば、物理的危害、化学的危害、生物的危害、日付表示ミス、アレルギー表示ミスなど。<br/>大きい意味では、当社を信用して購入してくださっているお客様を裏切らないようにする、ということです。 </p><p>世に売りに出している商品ですから、安全であることはあたりまえであり、それを保証するのは食品製造会社の責務だと考えております。<br/>当社ではそのことを全従業員が理解し、品質管理意識・倫理観を持ち業務に従事するよう、<br/>日々教育を行っています。</p>",
+            "text_alignment": "left",
+            "heading_font": "biz_udpmincho_n7",
+            "heading_size": 40,
+            "mobile_heading_size": 28,
+            "paragraph_size": 18,
+            "mobile_paragraph_size": 16,
+            "heading_color": "#ffffff",
+            "paragraph_color": "#1c1c1c",
+            "desktop_width_percent": 100,
+            "min_height": 500,
+            "section_padding": 60,
+            "mobile_section_padding": 30,
+            "content_gap": 60,
+            "mobile_content_gap": 30,
+            "heading_spacing": 20,
+            "vertical_spacing_top": 0,
+            "vertical_spacing_bottom": 50,
+            "mobile_vertical_spacing_top": 0,
+            "mobile_vertical_spacing_bottom": 30
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_3ac2188_mgahzQ"
+      ],
+      "settings": {}
+    },
+    "image_with_text_rTdfTp": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_LUkEVi": {
+          "type": "heading",
+          "settings": {
+            "text": "品質保証室",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_EkEMLw": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>品質管理業務も含み、より広く、流通まで全てにおいて確認・保証する部署として活動しています。<br/>記録書類の確認・管理、外部機関との連携、商品仕様書の作成、出荷判定検査、保存検査等、食品表示確認、認証管理等、品質に関する様々な業務を担っています。<br/>また従業員に対する以下のような指導も行っています。<br/>管理項目一例：健康管理、手洗い、汚染区と非汚染区の区分、正しい作業着の着用、製造現場に入る前のローラーがけ、持ち込み物禁止物 etc…</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LUkEVi",
+        "richtext_EkEMLw"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/qj2.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_Vef7ey": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_MeL9Vq": {
+          "type": "heading",
+          "settings": {
+            "text": "HACCPチーム",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_AKVEbn": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>社員で構成された小規模チームの名称で、HACCP(ﾊｻｯﾌﾟ)とは、食品を製造する際に安全を確保するための管理手法のことで、世界各国で取り入れられている手法です。<br/>年2回の従業員教育を行い、全従業員の意識を統一し、かつ、毎月1回内部監査を行うことで、気付きと改善を繰り返しています。<br/>内部監査では、メンバーの中選出した2名が工場内を回り、前月分の改善確認と今月分の監査を行います。ルール違反や、危険箇所、各種記録の記入漏れなど、指摘があれば改善依頼をし、従業員はそれに従い改善を行います。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MeL9Vq",
+        "richtext_AKVEbn"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/qj3.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_jYwTKt": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_V6gPBE": {
+          "type": "heading",
+          "settings": {
+            "text": "トレーサビリティ",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_9cjKBr": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>生産、加工および流通の特定の一つまたは複数の段階を通じて、食品の移動を把握することを言います。<br/>当社では、製造の 時間・人・原材料（数量・LOT）・出来上り商品（数量・LOT）等の情報を全て製造日報に記入し、その情報を基幹システムに入力しているため、商品に印字された賞味期限等の数字から全情報を追跡できます。<br/>また、出荷する時は商品のLOT情報を登録しているので、どの得意先にどれだけ納品しているかも管理しています。<br/>これにより原材料～出荷までのトレースが可能です。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_V6gPBE",
+        "richtext_9cjKBr"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/qj4.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_8nCjMC": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_CXbV9T": {
+          "type": "heading",
+          "settings": {
+            "text": "検査業務",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_4Lg4RD": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>日々の主な検査業務として、以下を行っています。<br/>・製造中、商品抜き取りpH・量目検査<br/>・翌日の出荷判定検査（pH・官能・量目）<br/>・賞味期限切れ後検査（pH・官能・量目）<br/>・その他必要に応じ臨時検査<br/>・微生物検査、放射能検査など外部委託検査<br/>量りや温度計は定期的に検査・校正しています。<br/>また外部委託による防虫防鼠モニタリングで、捕虫されている虫の傾向と対策を打ち、異物混入にならない体制を整えています。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CXbV9T",
+        "richtext_4Lg4RD"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/qj5.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_VAtrwa": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_437WtK": {
+          "type": "heading",
+          "settings": {
+            "text": "有機JAS認証",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_qnTRTb": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>有機食品のJAS規格（原料、工程等）に適合した生産が行われていることを登録認定機関が検査、認定された事業者のみが有機JASマークを表示することができます。<br/>認定を受けた後も、年に1回の調査があります。<br/>当社では以下8種類の商品について認定を受けており、対象商品はより厳しく管理しています。<br/>・有機生芋100％ 菊松[板]こんにゃく250g<br/>・有機生芋100％ 菊松[糸]こんにゃく180g<br/>・有機生芋100％手結びしらたき4個入<br/>・有機 国産生芋板こんにゃく250g、ミニ板120g<br/>・有機 国産生芋糸こんにゃく500ｇ、200g、ミニ糸120g</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_437WtK",
+        "richtext_qnTRTb"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/qj6.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_block_8Khtgt": {
+      "type": "image-with-text-block",
+      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "md",
+        "image": "shopify://shop_images/q1.jpg",
+        "content_width": "sm",
+        "enable_parallax": false,
+        "remove_vertical_spacing": true
+      }
+    },
+    "rich_text_7EGVfJ": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_Q4Hmcw": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_Q4Hmcw"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_qX8KBk": {
+      "type": "image-with-text",
+      "blocks": {
+        "richtext_rHbmaB": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_rHbmaB"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/q2.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_xETmHL": {
+      "type": "image-with-text",
+      "blocks": {
+        "richtext_Eqm6HD": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_Eqm6HD"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/q3.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_4pDdWT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NWCwhq": {
+          "type": "heading",
+          "settings": {
+            "text": "PURSUIT OF TASTE",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NWCwhq"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "image_with_text_YddKtJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "richtext_FGxDNw": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_FGxDNw"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/q4.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_FhHqAV": {
+      "type": "image-with-text",
+      "blocks": {
+        "richtext_NRMVmB": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_NRMVmB"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/q5.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_BBe3rA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QyBjzY": {
+          "type": "heading",
+          "settings": {
+            "text": "CONTROLLED FACTORY",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QyBjzY"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "image_with_text_DhFCnc": {
+      "type": "image-with-text",
+      "blocks": {
+        "richtext_GQbqJd": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_GQbqJd"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/q6.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_KcxQei": {
+      "type": "image-with-text",
+      "blocks": {
+        "richtext_r7nzTk": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_r7nzTk"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/q7.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_nKbkAK": {
+      "type": "rich-text",
+      "blocks": {
+        "button_qFC9kr": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "Contact Us",
+            "url": "shopify://pages/contact",
+            "background": "#1c1c1c",
+            "text_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "button_qFC9kr"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "custom_news_section_DkzQ8w": {
+      "type": "custom-news-section",
+      "name": "Custom News Section",
+      "settings": {
+        "title": "ニュース一覧",
+        "subtitle": "- NEWS -",
+        "btn_text": ">>過去のニュースはこちら",
+        "btn_link": "https://nakaoshokuhin.co.jp/news/",
+        "section_bg_color": "",
+        "margin-top": 40,
+        "margin-bottom": 40
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_TkHtJF",
+    "177027309567aec5d6",
+    "image_with_text_rTdfTp",
+    "image_with_text_Vef7ey",
+    "image_with_text_jYwTKt",
+    "image_with_text_8nCjMC",
+    "image_with_text_VAtrwa",
+    "image_with_text_block_8Khtgt",
+    "rich_text_7EGVfJ",
+    "image_with_text_qX8KBk",
+    "image_with_text_xETmHL",
+    "rich_text_4pDdWT",
+    "image_with_text_YddKtJ",
+    "image_with_text_FhHqAV",
+    "rich_text_BBe3rA",
+    "image_with_text_DhFCnc",
+    "image_with_text_KcxQei",
+    "rich_text_nKbkAK",
+    "custom_news_section_DkzQ8w"
+  ]
+}
