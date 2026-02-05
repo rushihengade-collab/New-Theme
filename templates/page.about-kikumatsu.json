@@ -81,28 +81,21 @@
     "image_with_text_bKkzQe": {
       "type": "image-with-text",
       "blocks": {
-        "subheading_9WPMKm": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
         "heading_c4Vtt3": {
           "type": "heading",
           "settings": {
-            "text": "Image with text",
-            "heading_tag": "h1"
+            "text": "How and why is it different?",
+            "heading_tag": "h2"
           }
         },
         "richtext_Ym9n7G": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<p>\"Kikumatsu's konjac can be eaten raw,\" they advertise.<br/>This means that it has very little of the \"bad smell\" or \"bitterness\" that is common in konjac, and can be eaten as is after just rinsing it with water.</p><p>There are various reasons why Kikumatsu's konjac is of such high quality, including the raw materials and coagulants.<br/>All of this requires time, effort, and manufacturing techniques, but<br/>after much trial and error, we have established a system that allows us to provide a stable supply.<br/>We will explain some of these with photos.</p>"
           }
         }
       },
       "block_order": [
-        "subheading_9WPMKm",
         "heading_c4Vtt3",
         "richtext_Ym9n7G"
       ],
@@ -114,7 +107,7 @@
         "mobile_image": "shopify://shop_images/images20180511180726.webp",
         "reveal_on_scroll": true,
         "image_position": "start",
-        "content_width": "sm",
+        "content_width": "lg",
         "remove_vertical_spacing": false
       }
     }
