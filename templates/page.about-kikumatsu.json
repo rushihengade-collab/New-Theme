@@ -127,6 +127,26 @@
         "slide_image_with_text_yLewiH": {
           "type": "slide-image-with-text",
           "settings": {
+            "image_1": "shopify://shop_images/images20180511182745.jpg",
+            "image_2": "shopify://shop_images/images20180511182755.jpg",
+            "image_3": "shopify://shop_images/images20180511182757_1.jpg",
+            "title": "Don't put in anything unnecessary",
+            "description": "Most regular konjac contains seaweed powder to give it a brown or black color or to create the grainy texture of potato skin. Without it, the konjac would be pure white and would not look like konjac. Mostproducts labeled \"raw potato\" also contain a blend of powder and seaweed powder.Kikumatsu Konjac is made by grinding the konjac potato with the skin on, so the skin is included and the color is natural konjac."
+          }
+        },
+        "slide_image_with_text_6nXphH": {
+          "type": "slide-image-with-text",
+          "settings": {
+            "image_1": "shopify://shop_images/images20180511182749_1.jpg",
+            "image_2": "shopify://shop_images/images20180511182751.jpg",
+            "image_3": "shopify://shop_images/images20180511182747.jpg",
+            "title": "Ash production and scum production",
+            "description": "We don't use any slaked lime or other ingredients, and instead use a mixture of scum water extracted from the supernatant of water with dissolved wood ash, and supplementary scum water with dissolved calcium from burned scallop shells. The wood ash is made in-house from pesticide-free thinned wood, which is burned to ash, sieved, and refined. Wood ashis a coagulant that determines the shelf life of konjac, but unlike slaked lime, which is artificially refined and has stable quality, wood ash is natural and therefore subject to variation. Despite this, we went through repeated trial and error until we were able to produce thousands of pieces of product with consistent quality."
+          }
+        },
+        "slide_image_with_text_E6Xjjc": {
+          "type": "slide-image-with-text",
+          "settings": {
             "title": "",
             "description": ""
           }
@@ -134,7 +154,9 @@
       },
       "block_order": [
         "slide_image_with_text_8GfnBA",
-        "slide_image_with_text_yLewiH"
+        "slide_image_with_text_yLewiH",
+        "slide_image_with_text_6nXphH",
+        "slide_image_with_text_E6Xjjc"
       ],
       "name": "Slide Image with Text",
       "settings": {
