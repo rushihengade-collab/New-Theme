@@ -77,11 +77,52 @@
         "text_position": "center",
         "remove_vertical_spacing": false
       }
+    },
+    "image_with_text_bKkzQe": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_9WPMKm": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_c4Vtt3": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_Ym9n7G": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_9WPMKm",
+        "heading_c4Vtt3",
+        "richtext_Ym9n7G"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/images20180511180726.webp",
+        "mobile_image": "shopify://shop_images/images20180511180726.webp",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
     }
   },
   "order": [
     "main",
     "rich_text_FUpChy",
-    "rich_text_QqheP9"
+    "rich_text_QqheP9",
+    "image_with_text_bKkzQe"
   ]
 }
