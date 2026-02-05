@@ -172,6 +172,38 @@
       ],
       "settings": {}
     },
+    "image_with_text_rTdfTp": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_LUkEVi": {
+          "type": "heading",
+          "settings": {
+            "text": "品質保証室",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_EkEMLw": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>品質管理業務も含み、より広く、流通まで全てにおいて確認・保証する部署として活動しています。<br/>記録書類の確認・管理、外部機関との連携、商品仕様書の作成、出荷判定検査、保存検査等、食品表示確認、認証管理等、品質に関する様々な業務を担っています。<br/>また従業員に対する以下のような指導も行っています。<br/>管理項目一例：健康管理、手洗い、汚染区と非汚染区の区分、正しい作業着の着用、製造現場に入る前のローラーがけ、持ち込み物禁止物 etc…</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LUkEVi",
+        "richtext_EkEMLw"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/qj2.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
     "177027309567aec5d6": {
       "type": "_blocks",
       "blocks": {
@@ -213,38 +245,6 @@
         "ai_gen_block_3ac2188_mgahzQ"
       ],
       "settings": {}
-    },
-    "image_with_text_rTdfTp": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_LUkEVi": {
-          "type": "heading",
-          "settings": {
-            "text": "品質保証室",
-            "heading_tag": "h2"
-          }
-        },
-        "richtext_EkEMLw": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>品質管理業務も含み、より広く、流通まで全てにおいて確認・保証する部署として活動しています。<br/>記録書類の確認・管理、外部機関との連携、商品仕様書の作成、出荷判定検査、保存検査等、食品表示確認、認証管理等、品質に関する様々な業務を担っています。<br/>また従業員に対する以下のような指導も行っています。<br/>管理項目一例：健康管理、手洗い、汚染区と非汚染区の区分、正しい作業着の着用、製造現場に入る前のローラーがけ、持ち込み物禁止物 etc…</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_LUkEVi",
-        "richtext_EkEMLw"
-      ],
-      "name": "t:sections.image_with_text.presets.image_with_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "image": "shopify://shop_images/qj2.jpg",
-        "reveal_on_scroll": true,
-        "image_position": "start",
-        "content_width": "sm",
-        "remove_vertical_spacing": false
-      }
     },
     "image_with_text_Vef7ey": {
       "type": "image-with-text",
