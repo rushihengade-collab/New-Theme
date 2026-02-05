@@ -205,9 +205,9 @@
       ],
       "name": "Kikumatsu Product Lineup",
       "settings": {
-        "title": "",
-        "padding-top": 40,
-        "padding-bottom": 40
+        "title": "菊松商品ラインナップ",
+        "padding-top": 15,
+        "padding-bottom": 91
       }
     }
   },
