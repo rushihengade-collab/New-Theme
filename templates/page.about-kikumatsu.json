@@ -147,8 +147,10 @@
         "slide_image_with_text_E6Xjjc": {
           "type": "slide-image-with-text",
           "settings": {
-            "title": "",
-            "description": ""
+            "image_1": "shopify://shop_images/images20180511161014.jpg",
+            "image_2": "shopify://shop_images/images20180511160219.webp",
+            "title": "Special way to eat",
+            "description": "There is no need to remove the bitterness, which is usually required. It is of course delicious in regular dishes such as oden, but here are some ways to enjoy Kikumatsu konnyaku in a delicious way.[Kikumatsu konnyaku sashimi]Dip thinly sliced ​​Kikumatsu konnyaku in wasabi soy sauce or ponzu sauce.★Advanced variation: Place a mixture of shiso leaves and grated daikon radish on top and pour dashi soy sauce over it.[Kikumatsu konnyaku thread salad]Mix your favorite ingredients such as cucumber and ham with Kikumatsu konnyaku thread and ponzu sauce.★Advanced variation: Mix with shredded egg for a Chinese salad-like flavor."
           }
         }
       },
