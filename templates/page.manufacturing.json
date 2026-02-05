@@ -135,6 +135,43 @@
         "remove_vertical_spacing": false
       }
     },
+    "17702782312c6b17cc": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_ea5ecb0_taf8qa": {
+          "type": "ai_gen_block_ea5ecb0",
+          "settings": {
+            "desktop_width_percent": 100,
+            "section_padding": 40,
+            "horizontal_padding": 50,
+            "column_gap": 30,
+            "content_gap": 15,
+            "mobile_gap": 30,
+            "image_1": "shopify://shop_images/man3.webp",
+            "heading_1": "こんにゃく畑の視察",
+            "text_1": "こんにゃく芋の収穫は、年に一度、まとめて行います。社長である中尾は、収穫時期に現地に出向き、視察を行うとともに、収穫を手伝います。年々人手不足が進む農家さんの手助けにもなり、手で触った品を仕入れるので、安心感があります。",
+            "image_2": "shopify://shop_images/man4.webp",
+            "heading_2": "土がついた状態で仕入れ",
+            "text_2": "こんにゃく芋は、とてもデリケートなもので、土を落とすとたちまち傷んでしまいます。また、芋に傷がついてしまっただけでもその鮮度は失われてしまいます。そのため当社では、美味しいこんにゃく芋の鮮度を保つため、土がついた状態で仕入れています。",
+            "image_3": "shopify://shop_images/man5.webp",
+            "heading_3": "鮮度を最高の状態で保管",
+            "text_3": "土がついた状態で仕入れたこんにゃく芋を水でに洗い、ひとつひとつ手で梱包・計量し、すぐに冷凍保管します。年に一度の大仕事は大変ですが、こうすることで、美味しいこんにゃく芋の状態で保管することができます。",
+            "text_alignment": "center",
+            "image_border_radius": 0,
+            "heading_font": "noto_serif_japanese_n4",
+            "heading_size": 20,
+            "heading_color": "#000000",
+            "text_size": 16,
+            "text_color": "#5c5c5c"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_ea5ecb0_taf8qa"
+      ],
+      "settings": {}
+    },
     "177027309567aec5d6": {
       "type": "_blocks",
       "blocks": {
@@ -596,6 +633,7 @@
     "rich_text_7pAkWV",
     "image_with_text_block_8Khtgt",
     "rich_text_XYAYtm",
+    "17702782312c6b17cc",
     "177027309567aec5d6",
     "image_with_text_rTdfTp",
     "image_with_text_Vef7ey",
