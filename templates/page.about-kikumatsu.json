@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "show_title": true,
@@ -20,35 +21,58 @@
     "rich_text_FUpChy": {
       "type": "rich-text",
       "blocks": {
-        "subheading_E7fXFX": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
         "heading_DzhALb": {
           "type": "heading",
           "settings": {
-            "text": "Heading",
-            "heading_tag": "h1"
+            "text": "Feelings for Kikumatsu",
+            "heading_tag": "h2"
           }
         },
         "richtext_6W4MDL": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<p>This konjac was developed by the third-generation owner, Koji, after much trial and error in his quest to create the real thing.<br/>He named it \"Kikumatsu Konjac\" after the founder, Kikumatsu Nakao.</p><p>The first generation founded the company, the second generation expanded it, the third generation refined the manufacturing techniques, and the current fourth generation, who is the representative, is working hard every day to spread the product to the world.We<br/>will continue to make it with care so that it will become a product that will be loved by everyone for a long time to come as our company's signature product.</p>"
           }
         }
       },
       "block_order": [
-        "subheading_E7fXFX",
         "heading_DzhALb",
         "richtext_6W4MDL"
       ],
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
         "color_scheme": "",
-        "separate_section_with_border": true,
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_QqheP9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3tppJf": {
+          "type": "heading",
+          "settings": {
+            "text": "\"I've never eaten such delicious konjac.\"",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_E4DckC": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>This is what most customers who have tried Kikumatsu Konnyaku say.<br/>Some even go so far as to say, \"After eating this, my palate has become refined and I can't eat any other konnyaku.\"<br/>Our employees are sometimes surprised when we receive inquiries from individual customers even in areas where our sales reach is limited.</p><p>The difference between this and regular konjac is the raw materials and manufacturing method, both of which are traditional methods.<br/>In today's world, where there are so many options, it makes you wonder how people in the past were able to use the best ingredients, but<br/>why is it that using wood ash, which has been used since ancient times, makes it so delicious?</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3tppJf",
+        "richtext_E4DckC"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
         "content_width": "sm",
         "text_position": "center",
         "remove_vertical_spacing": false
@@ -57,6 +81,7 @@
   },
   "order": [
     "main",
-    "rich_text_FUpChy"
+    "rich_text_FUpChy",
+    "rich_text_QqheP9"
   ]
 }
