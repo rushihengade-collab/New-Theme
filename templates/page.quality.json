@@ -49,6 +49,18 @@
         "remove_vertical_spacing": false
       }
     },
+    "image_with_text_block_8Khtgt": {
+      "type": "image-with-text-block",
+      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "md",
+        "image": "shopify://shop_images/q1.jpg",
+        "content_width": "sm",
+        "enable_parallax": false,
+        "remove_vertical_spacing": true
+      }
+    },
     "rich_text_7EGVfJ": {
       "type": "rich-text",
       "blocks": {
@@ -69,18 +81,6 @@
         "content_width": "xs",
         "text_position": "center",
         "remove_vertical_spacing": false
-      }
-    },
-    "image_with_text_block_8Khtgt": {
-      "type": "image-with-text-block",
-      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
-      "settings": {
-        "color_scheme": "",
-        "image_size": "md",
-        "image": "shopify://shop_images/q1.jpg",
-        "content_width": "sm",
-        "enable_parallax": false,
-        "remove_vertical_spacing": true
       }
     },
     "image_with_text_rTdfTp": {
@@ -736,8 +736,8 @@
   "order": [
     "main",
     "rich_text_TkHtJF",
-    "rich_text_7EGVfJ",
     "image_with_text_block_8Khtgt",
+    "rich_text_7EGVfJ",
     "image_with_text_rTdfTp",
     "image_with_text_xETmHL",
     "rich_text_4pDdWT",
