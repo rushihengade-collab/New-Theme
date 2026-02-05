@@ -16,8 +16,8 @@
           "type": "ai_gen_block_0514a07",
           "settings": {
             "enable_transparent_header": true,
-            "transition_speed": 1,
-            "overlay_opacity": 0.3,
+            "transition_speed": 0.5,
+            "overlay_opacity": 0,
             "autoplay": true,
             "autoplay_speed": 3,
             "show_dots": false,
