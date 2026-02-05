@@ -1,4 +1,4 @@
-<div class="section management-philosophy-section">
+<div class="container management-philosophy-section">
   <div class="management-philosophy-section-container">
     <h2 class="management-philosophy-section-title">{{ section.settings.title }}</h2>
     <div class="management-philosophy-section-content">
@@ -15,7 +15,6 @@
 <style>
   .management-philosophy-section {
     max-width: 1180px;
-    margin: 0 auto;
   }
 
   .management-philosophy-section-container {
@@ -50,6 +49,12 @@
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media (min-width: 768px) {
+    .management-philosophy-section {
+      margin-inline: auto;
+    }
   }
 
   @media (max-width: 768px) {
