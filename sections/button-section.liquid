@@ -1,0 +1,166 @@
+<div
+  class="custom-button-section container"
+  style="padding-top: {{ section.settings.padding-top }}px; padding-bottom: {{ section.settings.padding-bottom }}px;"
+>
+  <div class="custom-button-section-inner">
+    {% for block in section.blocks %}
+      <a
+        href="{{ block.settings.button_link }}"
+        class="custom-button-section-item-link"
+        style="background-color: {{ block.settings.button_background }}; color: {{ block.settings.button_text_color }};"
+        {{ block.shopify_attributes }}
+      >
+        <span class="custom-button-section-item-link-text">{{ block.settings.button_text }}</span>
+        <span class="custom-button-section-item-chevron" style="color: {{ block.settings.button_text_color }};">
+          <svg
+            width="12"
+            height="8"
+            viewBox="0 0 12 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .custom-button-section-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 12px;
+    row-gap: 12px;
+  }
+
+  .custom-button-section-item-link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 16px 24px;
+    min-height: 56px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.4;
+    border: none;
+    border-radius: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .custom-button-section-item-link:hover {
+    opacity: 0.9;
+  }
+
+  .custom-button-section-item-link-text {
+    white-space: nowrap;
+  }
+
+  .custom-button-section-item-chevron {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+  }
+
+  .custom-button-section-item-chevron svg {
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 768px) {
+    .custom-button-section-inner {
+      gap: 8px;
+      row-gap: 8px;
+    }
+
+    .custom-button-section-item-link {
+      padding: 12px 16px;
+      min-height: 48px;
+      font-size: 0.9rem;
+    }
+
+    .custom-button-section-item-chevron svg {
+      width: 10px;
+      height: 6px;
+    }
+  }
+  @media (max-width: 480px) {
+    .custom-button-section-inner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Custom Button Section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "Button text"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+          "type": "color",
+          "id": "button_background",
+          "label": "Button background",
+          "default": "#2C347A"
+        },
+        {
+          "type": "color",
+          "id": "button_text_color",
+          "label": "Button text color",
+          "default": "#ffffff"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Button Section"
+    }
+  ]
+}
+{% endschema %}
