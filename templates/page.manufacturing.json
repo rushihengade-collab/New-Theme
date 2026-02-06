@@ -429,36 +429,43 @@
       ],
       "settings": {}
     },
-    "rich_text_AyVdda": {
-      "type": "rich-text",
+    "17703776449e62d5c1": {
+      "type": "_blocks",
       "blocks": {
-        "heading_ethmHi": {
-          "type": "heading",
+        "ai_gen_block_8682ec6_AtpT4a": {
+          "type": "ai_gen_block_8682ec6",
           "settings": {
-            "text": "糸蒟蒻",
-            "heading_tag": "h2"
-          }
-        },
-        "richtext_4R4Lf9": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>~ HOW TO MAKE ~</p>"
-          }
+            "heading": "糸蒟蒻",
+            "subheading": "~ HOW TO MAKE ~",
+            "heading_size": 36,
+            "subheading_size": 18,
+            "heading_color": "#000000",
+            "subheading_color": "#5c5c5c",
+            "heading_font": "sans_serif_n4",
+            "heading_subheading_gap": 5,
+            "header_spacing": 40,
+            "title": "糸こんにゃくってどうやってできている？",
+            "description": "<p>糸こんにゃくはどうやってできているか？知らない人が多いと思います。<br/>当社の糸こんにゃくは、シャワーのような感じで出てきます。<br/>ホースの先に穴の空いたプレートが取り付けられていて、そこからシャワーのように押し出したこんにゃくのりをお湯の中で泳がせ、炊き上げて固めるのです。<br/>このプレートを目皿（めざら）と呼び、これの穴の大きさや形を変えることで、多種多様なこんにゃくができます。<br/>また、板こんにゃくでも糸こんにゃくでもない特殊な形のこんにゃくも、この機械で作っています。<br/><br/></p>",
+            "title_size": 28,
+            "description_size": 16,
+            "title_color": "#000000",
+            "description_color": "#5c5c5c",
+            "title_font": "sans_serif_n4",
+            "title_description_gap": 20,
+            "image": "shopify://shop_images/Get.jpg",
+            "image_border_radius": 0,
+            "content_gap": 40,
+            "section_padding": 40,
+            "desktop_width_percent": 100,
+            "background_color": "#ffffff"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "heading_ethmHi",
-        "richtext_4R4Lf9"
+        "ai_gen_block_8682ec6_AtpT4a"
       ],
-      "custom_css": [],
-      "name": "t:sections.rich_text.presets.rich_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "content_width": "sm",
-        "text_position": "center",
-        "remove_vertical_spacing": false
-      }
+      "settings": {}
     },
     "image_with_text_3dqTwR": {
       "type": "image-with-text",
@@ -1311,7 +1318,7 @@
     "rich_text_M63mjC",
     "image_with_text_rTdfTp",
     "177036464339662674",
-    "rich_text_AyVdda",
+    "17703776449e62d5c1",
     "image_with_text_3dqTwR",
     "blocks_hYjHey",
     "rich_text_64fj4V",
