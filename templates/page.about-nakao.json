@@ -28,7 +28,69 @@
         "representative_image": "shopify://shop_images/gaiyo_51b32fec-d0ce-4ed8-b8f4-d826c80a08a0.webp",
         "representative_name": "代表　中尾　友彦",
         "margin-top": 40,
-        "margin-bottom": 40
+        "margin-bottom": 12
+      }
+    },
+    "button_section_GtpnHB": {
+      "type": "button-section",
+      "blocks": {
+        "button_Dix3Uf": {
+          "type": "button",
+          "settings": {
+            "button_text": "蒟蒻芋",
+            "button_link": "#shopify-section-template--26135534895406__blocks_gWNxVC",
+            "button_background": "#2c347a",
+            "button_text_color": "#ffffff"
+          }
+        },
+        "button_rpM8VC": {
+          "type": "button",
+          "settings": {
+            "button_text": "缶蒸製法",
+            "button_link": "#shopify-section-template--26135534895406__rich_text_M63mjC",
+            "button_background": "#2c347a",
+            "button_text_color": "#ffffff"
+          }
+        },
+        "button_6drkNb": {
+          "type": "button",
+          "settings": {
+            "button_text": "糸蒟蒻",
+            "button_link": "#shopify-section-template--26135534895406__17703776449e62d5c1",
+            "button_background": "#2c347a",
+            "button_text_color": "#ffffff"
+          }
+        },
+        "button_JPimBW": {
+          "type": "button",
+          "settings": {
+            "button_text": "ところてん",
+            "button_link": "#shopify-section-template--26135534895406__blocks_AtQmRb",
+            "button_background": "#2c347a",
+            "button_text_color": "#ffffff"
+          }
+        },
+        "button_RXG3UP": {
+          "type": "button",
+          "settings": {
+            "button_text": "製品設備",
+            "button_link": "#shopify-section-template--26135534895406__rich_text_Jh4ExN",
+            "button_background": "#2c347a",
+            "button_text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "button_Dix3Uf",
+        "button_rpM8VC",
+        "button_6drkNb",
+        "button_JPimBW",
+        "button_RXG3UP"
+      ],
+      "name": "Custom Button Section",
+      "settings": {
+        "padding-top": 0,
+        "padding-bottom": 28
       }
     },
     "company_profile_ye4FzG": {
@@ -443,6 +505,7 @@
   "order": [
     "main",
     "about_nakao_hero_qRDaga",
+    "button_section_GtpnHB",
     "company_profile_ye4FzG",
     "access_nakao_page_JVQ69V",
     "company_profile_WNwcdh",
