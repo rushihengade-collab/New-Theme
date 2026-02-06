@@ -685,38 +685,6 @@
       ],
       "settings": {}
     },
-    "image_with_text_8nCjMC": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_CXbV9T": {
-          "type": "heading",
-          "settings": {
-            "text": "検査業務",
-            "heading_tag": "h2"
-          }
-        },
-        "richtext_4Lg4RD": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>日々の主な検査業務として、以下を行っています。<br/>・製造中、商品抜き取りpH・量目検査<br/>・翌日の出荷判定検査（pH・官能・量目）<br/>・賞味期限切れ後検査（pH・官能・量目）<br/>・その他必要に応じ臨時検査<br/>・微生物検査、放射能検査など外部委託検査<br/>量りや温度計は定期的に検査・校正しています。<br/>また外部委託による防虫防鼠モニタリングで、捕虫されている虫の傾向と対策を打ち、異物混入にならない体制を整えています。</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_CXbV9T",
-        "richtext_4Lg4RD"
-      ],
-      "name": "t:sections.image_with_text.presets.image_with_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "image": "shopify://shop_images/qj5.jpg",
-        "reveal_on_scroll": true,
-        "image_position": "start",
-        "content_width": "sm",
-        "remove_vertical_spacing": false
-      }
-    },
     "image_with_text_block_8Khtgt": {
       "type": "image-with-text-block",
       "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
@@ -991,7 +959,6 @@
     "rich_text_AyVdda",
     "image_with_text_3dqTwR",
     "blocks_hYjHey",
-    "image_with_text_8nCjMC",
     "image_with_text_block_8Khtgt",
     "rich_text_7EGVfJ",
     "image_with_text_qX8KBk",
