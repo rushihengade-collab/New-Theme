@@ -71,6 +71,60 @@
     },
     "button_section_rUcabH": {
       "type": "button-section",
+      "blocks": {
+        "button_D7KjBP": {
+          "type": "button",
+          "settings": {
+            "button_text": "蒟蒻芋",
+            "button_link": "",
+            "button_background": "#2c347a",
+            "button_text_color": "#ffffff"
+          }
+        },
+        "button_F97ppf": {
+          "type": "button",
+          "settings": {
+            "button_text": "缶蒸製法",
+            "button_link": "",
+            "button_background": "#2c347a",
+            "button_text_color": "#ffffff"
+          }
+        },
+        "button_zWRYFy": {
+          "type": "button",
+          "settings": {
+            "button_text": "糸蒟蒻",
+            "button_link": "",
+            "button_background": "#2c347a",
+            "button_text_color": "#ffffff"
+          }
+        },
+        "button_RLaPaW": {
+          "type": "button",
+          "settings": {
+            "button_text": "ところてん",
+            "button_link": "",
+            "button_background": "#2c347a",
+            "button_text_color": "#ffffff"
+          }
+        },
+        "button_Rk96QM": {
+          "type": "button",
+          "settings": {
+            "button_text": "製品設備",
+            "button_link": "",
+            "button_background": "#2c347a",
+            "button_text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "button_D7KjBP",
+        "button_F97ppf",
+        "button_zWRYFy",
+        "button_RLaPaW",
+        "button_Rk96QM"
+      ],
       "name": "Custom Button Section",
       "settings": {
         "padding-top": 0,
