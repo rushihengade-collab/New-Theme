@@ -1,6 +1,686 @@
+{% doc %}
+  @prompt
+    Create a section of slide images with text, provide the blocks so that can have multiple
+    
+    Provide the setting to have maximum of 4 slide images in single block, also provide the setting to have them left or right placed, also provide the Tag Box having background color, title and text
+    
+    also provide the padding setting for both mobile and desktop 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-slide-images-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding-top: {{ block.settings.padding_top_mobile }}px;
+    padding-bottom: {{ block.settings.padding_bottom_mobile }}px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-slide-images-{{ ai_gen_id }} {
+      padding-top: {{ block.settings.padding_top_desktop }}px;
+      padding-bottom: {{ block.settings.padding_bottom_desktop }}px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  .ai-slide-images-container-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-slide-images-container-{{ ai_gen_id }} {
+      gap: 30px;
+    }
+  }
+
+  .ai-slide-item-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-slide-item-{{ ai_gen_id }} {
+      flex-direction: row;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .ai-slide-item-{{ ai_gen_id }}.ai-slide-item--right-{{ ai_gen_id }} {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .ai-slide-image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: {{ block.settings.image_border_radius }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-slide-image-wrapper-{{ ai_gen_id }} {
+      width: 50%;
+      flex-shrink: 0;
+    }
+  }
+
+  .ai-slide-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .ai-slide-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-slide-image-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .ai-slide-content-{{ ai_gen_id }} {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-slide-content-{{ ai_gen_id }} {
+      width: 50%;
+      gap: 20px;
+    }
+  }
+
+  .ai-slide-tag-box-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: {{ block.settings.tag_background_color }};
+    border-radius: {{ block.settings.tag_border_radius }}px;
+    align-self: flex-start;
+  }
+
+  .ai-slide-tag-title-{{ ai_gen_id }} {
+    font-family: {{ block.settings.tag_font.family }}, {{ block.settings.tag_font.fallback_families }};
+    font-weight: {{ block.settings.tag_font.weight }};
+    font-size: {{ block.settings.tag_font_size_mobile }}px;
+    color: {{ block.settings.tag_text_color }};
+    margin: 0;
+    text-transform: {{ block.settings.tag_text_transform }};
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-slide-tag-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.tag_font_size_desktop }}px;
+    }
+  }
+
+  .ai-slide-text-content-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-slide-text-content-{{ ai_gen_id }} h2,
+  .ai-slide-text-content-{{ ai_gen_id }} h3,
+  .ai-slide-text-content-{{ ai_gen_id }} h4 {
+    font-family: {{ block.settings.heading_font.family }}, {{ block.settings.heading_font.fallback_families }};
+    font-weight: {{ block.settings.heading_font.weight }};
+    font-size: {{ block.settings.heading_size_mobile }}px;
+    color: {{ block.settings.text_color }};
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-slide-text-content-{{ ai_gen_id }} h2,
+    .ai-slide-text-content-{{ ai_gen_id }} h3,
+    .ai-slide-text-content-{{ ai_gen_id }} h4 {
+      font-size: {{ block.settings.heading_size_desktop }}px;
+    }
+  }
+
+  .ai-slide-text-content-{{ ai_gen_id }} p {
+    font-family: {{ block.settings.body_font.family }}, {{ block.settings.body_font.fallback_families }};
+    font-weight: {{ block.settings.body_font.weight }};
+    font-size: {{ block.settings.body_size_mobile }}px;
+    color: {{ block.settings.text_color }};
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-slide-text-content-{{ ai_gen_id }} p {
+      font-size: {{ block.settings.body_size_desktop }}px;
+    }
+  }
+
+  .ai-slide-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+{% endstyle %}
+
+<ai-slide-images-{{ ai_gen_id }} class="ai-slide-images-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-slide-images-container-{{ ai_gen_id }}">
+    {% for i in (1..4) %}
+      {% liquid
+        assign image_key = 'slide_' | append: i | append: '_image'
+        assign enabled_key = 'slide_' | append: i | append: '_enabled'
+        assign position_key = 'slide_' | append: i | append: '_position'
+        assign tag_title_key = 'slide_' | append: i | append: '_tag_title'
+        assign title_key = 'slide_' | append: i | append: '_title'
+        assign text_key = 'slide_' | append: i | append: '_text'
+
+        assign slide_image = block.settings[image_key]
+        assign slide_enabled = block.settings[enabled_key]
+        assign slide_position = block.settings[position_key]
+        assign slide_tag_title = block.settings[tag_title_key]
+        assign slide_title = block.settings[title_key]
+        assign slide_text = block.settings[text_key]
+      %}
+
+      {% if slide_enabled %}
+        <div class="ai-slide-item-{{ ai_gen_id }} ai-slide-item--{{ slide_position }}-{{ ai_gen_id }}">
+          <div class="ai-slide-image-wrapper-{{ ai_gen_id }}">
+            {% if slide_image %}
+              <img
+                src="{{ slide_image | image_url: width: 1200 }}"
+                alt="{{ slide_image.alt | escape }}"
+                loading="lazy"
+                width="{{ slide_image.width }}"
+                height="{{ slide_image.height }}"
+                class="ai-slide-image-{{ ai_gen_id }}"
+              >
+            {% else %}
+              <div class="ai-slide-image-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+                <div class="ai-slide-empty-state-{{ ai_gen_id }}">
+                  Add an image for slide {{ i }}
+                </div>
+              </div>
+            {% endif %}
+          </div>
+
+          <div class="ai-slide-content-{{ ai_gen_id }}">
+            {% if slide_tag_title != blank %}
+              <div class="ai-slide-tag-box-{{ ai_gen_id }}">
+                <div class="ai-slide-tag-title-{{ ai_gen_id }}">{{ slide_tag_title }}</div>
+              </div>
+            {% endif %}
+
+            <div class="ai-slide-text-content-{{ ai_gen_id }}">
+              {% if slide_title != blank %}
+                {{ slide_title }}
+              {% endif %}
+
+              {% if slide_text != blank %}
+                {{ slide_text }}
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</ai-slide-images-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class AiSlideImages{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.init();
+      }
+
+      init() {
+        const slides = this.querySelectorAll('.ai-slide-item-{{ ai_gen_id }}');
+        slides.forEach((slide, index) => {
+          slide.style.opacity = '0';
+          slide.style.transform = 'translateY(20px)';
+          slide.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+          
+          setTimeout(() => {
+            slide.style.opacity = '1';
+            slide.style.transform = 'translateY(0)';
+          }, index * 150);
+        });
+      }
+    }
+
+    customElements.define('ai-slide-images-{{ ai_gen_id }}', AiSlideImages{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Slide images with text",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Top padding (mobile)",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom padding (mobile)",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "label": "Top padding (desktop)",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom padding (desktop)",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Tag box style"
+    },
+    {
+      "type": "color",
+      "id": "tag_background_color",
+      "label": "Background",
+      "default": "#5c5c5c"
+    },
+    {
+      "type": "color",
+      "id": "tag_text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "tag_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 4
+    },
+    {
+      "type": "font_picker",
+      "id": "tag_font",
+      "label": "Font",
+      "default": "noto_sans_japanese_n4"
+    },
+    {
+      "type": "range",
+      "id": "tag_font_size_mobile",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size (mobile)",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "tag_font_size_desktop",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size (desktop)",
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "tag_text_transform",
+      "label": "Text transform",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "uppercase",
+          "label": "Uppercase"
+        },
+        {
+          "value": "lowercase",
+          "label": "Lowercase"
+        },
+        {
+          "value": "capitalize",
+          "label": "Capitalize"
+        }
+      ],
+      "default": "uppercase"
+    },
+    {
+      "type": "header",
+      "content": "Text style"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font",
+      "label": "Heading font",
+      "default": "biz_udpmincho_n7"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size (mobile)",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "min": 20,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size (desktop)",
+      "default": 36
+    },
+    {
+      "type": "font_picker",
+      "id": "body_font",
+      "label": "Body font",
+      "default": "noto_sans_japanese_n4"
+    },
+    {
+      "type": "range",
+      "id": "body_size_mobile",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Body size (mobile)",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "body_size_desktop",
+      "min": 14,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "label": "Body size (desktop)",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Slide 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_1_enabled",
+      "label": "Enable slide 1",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "slide_1_position",
+      "label": "Image position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "text",
+      "id": "slide_1_tag_title",
+      "label": "Tag title",
+      "default": "Featured"
+    },
+    {
+      "type": "richtext",
+      "id": "slide_1_title",
+      "label": "Title",
+      "default": "<h2>Slide title</h2>"
+    },
+    {
+      "type": "richtext",
+      "id": "slide_1_text",
+      "label": "Text",
+      "default": "<p>Add your description text here. This is a great place to share details about your product or service.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Slide 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_2_enabled",
+      "label": "Enable slide 2",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "slide_2_position",
+      "label": "Image position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "text",
+      "id": "slide_2_tag_title",
+      "label": "Tag title",
+      "default": "New"
+    },
+    {
+      "type": "richtext",
+      "id": "slide_2_title",
+      "label": "Title",
+      "default": "<h2>Slide title</h2>"
+    },
+    {
+      "type": "richtext",
+      "id": "slide_2_text",
+      "label": "Text",
+      "default": "<p>Add your description text here. This is a great place to share details about your product or service.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Slide 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_3_enabled",
+      "label": "Enable slide 3",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "slide_3_position",
+      "label": "Image position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "text",
+      "id": "slide_3_tag_title",
+      "label": "Tag title"
+    },
+    {
+      "type": "richtext",
+      "id": "slide_3_title",
+      "label": "Title",
+      "default": "<h2>Slide title</h2>"
+    },
+    {
+      "type": "richtext",
+      "id": "slide_3_text",
+      "label": "Text",
+      "default": "<p>Add your description text here. This is a great place to share details about your product or service.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Slide 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_4_enabled",
+      "label": "Enable slide 4",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_4_image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "slide_4_position",
+      "label": "Image position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "text",
+      "id": "slide_4_tag_title",
+      "label": "Tag title"
+    },
+    {
+      "type": "richtext",
+      "id": "slide_4_title",
+      "label": "Title",
+      "default": "<h2>Slide title</h2>"
+    },
+    {
+      "type": "richtext",
+      "id": "slide_4_text",
+      "label": "Text",
+      "default": "<p>Add your description text here. This is a great place to share details about your product or service.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slide images with text"
+    }
+  ]
+}
 {% endschema %}
