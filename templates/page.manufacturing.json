@@ -941,6 +941,37 @@
       ],
       "settings": {}
     },
+    "rich_text_Jh4ExN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ccDEJ3": {
+          "type": "heading",
+          "settings": {
+            "text": "製造設備",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_EJ8pBU": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>~ facility ~</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ccDEJ3",
+        "richtext_EJ8pBU"
+      ],
+      "custom_css": [],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
     "image_with_text_block_8Khtgt": {
       "type": "image-with-text-block",
       "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
@@ -1286,6 +1317,7 @@
     "rich_text_64fj4V",
     "image_with_text_Cc4pzY",
     "blocks_L3rcfY",
+    "rich_text_Jh4ExN",
     "image_with_text_block_8Khtgt",
     "rich_text_7EGVfJ",
     "17703746428fb8bc02",
