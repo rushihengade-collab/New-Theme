@@ -43,6 +43,7 @@
         },
         "ai_gen_block_acd6d86_HNqpLG": {
           "type": "ai_gen_block_acd6d86",
+          "disabled": true,
           "settings": {
             "heading": "蒟蒻芋",
             "heading_color": "#000000",
@@ -65,6 +66,65 @@
       "block_order": [
         "ai_gen_block_acd6d86_C7JQGW",
         "ai_gen_block_acd6d86_HNqpLG"
+      ],
+      "settings": {}
+    },
+    "button_section_rUcabH": {
+      "type": "button-section",
+      "name": "Custom Button Section",
+      "settings": {
+        "padding-top": 0,
+        "padding-bottom": 0
+      }
+    },
+    "blocks_gWNxVC": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_acd6d86_gQ9tft": {
+          "type": "ai_gen_block_acd6d86",
+          "disabled": true,
+          "settings": {
+            "heading": "製造について",
+            "heading_color": "#000000",
+            "heading_size": 40,
+            "heading_font": "sans_serif_n4",
+            "subheading": "~­­­ QUALITY MANAGEMENT ~­­­",
+            "subheading_color": "#000000",
+            "subheading_size": 18,
+            "heading_to_subheading_spacing": 8,
+            "subheading_to_image_spacing": 0,
+            "text_background_color": "#ffffff",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "text_padding_horizontal": 20,
+            "image": "shopify://shop_images/m1.webp"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_acd6d86_U4kVdT": {
+          "type": "ai_gen_block_acd6d86",
+          "settings": {
+            "heading": "蒟蒻芋",
+            "heading_color": "#000000",
+            "heading_size": 40,
+            "heading_font": "sans_serif_n4",
+            "subheading": "~ INGREDIENTS ~",
+            "subheading_color": "#000000",
+            "subheading_size": 18,
+            "heading_to_subheading_spacing": 8,
+            "subheading_to_image_spacing": 0,
+            "text_background_color": "#ffffff",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "text_padding_horizontal": 20,
+            "image": "shopify://shop_images/man2.webp"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_acd6d86_gQ9tft",
+        "ai_gen_block_acd6d86_U4kVdT"
       ],
       "settings": {}
     },
@@ -1328,6 +1388,8 @@
   "order": [
     "main",
     "1770378877609279aa",
+    "button_section_rUcabH",
+    "blocks_gWNxVC",
     "rich_text_GbUKXQ",
     "blocks_JTp9jK",
     "rich_text_M63mjC",
