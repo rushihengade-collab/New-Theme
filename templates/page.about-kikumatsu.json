@@ -264,6 +264,22 @@
         "margin-top": 2,
         "margin-bottom": 40
       }
+    },
+    "custom_image_with_text_XNYgNp": {
+      "type": "custom-image-with-text",
+      "name": "Custom Image with Text",
+      "settings": {
+        "background_image_size": "cover",
+        "background_image_position": "center",
+        "image": "shopify://shop_images/gaiyo.webp",
+        "image_position": "right",
+        "header1": "<h3>About Kikumatsu</h3>",
+        "text": "<p>There's a saying, \"I've reached my peak of vitality.\" This passage from the \"Yōjōkun,\" written in the Edo period (1603), based on actual experience, suggests that when you're feeling energized, you should eat foods with the \"kon\" (con) in their name, such as konnyaku, daikon radish, lotus root, and kelp.<br/>Konnyaku has been a familiar food for so long, it's become an inseparable part of our diet.<br/>Our company has continued to produce konnyaku, and before we knew it, we were the only long-established konnyaku shop in Sakai, Osaka, with the baton handed down through four generations. Konnyaku has a long history, but the true nature of konnyaku is changing amid food globalization, increased manufacturing efficiency, and price competition . As a long-established company in the konnyaku manufacturing industry, we repeatedly asked ourselves The answer we came up with was to \"continue to produce authentic konnyaku.\"<br/> </p>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "margin-top": 60,
+        "margin-bottom": 60
+      }
     }
   },
   "order": [
@@ -275,6 +291,7 @@
     "image_with_text_bKkzQe",
     "slide_image_with_text_DUQrw9",
     "kikumatsu_product_lineup_bwxzqh",
-    "custom_news_section_YEajjg"
+    "custom_news_section_YEajjg",
+    "custom_image_with_text_XNYgNp"
   ]
 }
