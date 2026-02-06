@@ -401,19 +401,6 @@
         "padding-bottom": 40
       }
     },
-    "custom_news_section_DkzQ8w": {
-      "type": "custom-news-section",
-      "name": "Custom News Section",
-      "settings": {
-        "title": "ニュース一覧",
-        "subtitle": "- NEWS -",
-        "btn_text": ">>過去のニュースはこちら",
-        "btn_link": "https://nakaoshokuhin.co.jp/news/",
-        "section_bg_color": "",
-        "margin-top": 40,
-        "margin-bottom": 40
-      }
-    },
     "image_with_text_wcig8f": {
       "type": "image-with-text",
       "blocks": {
@@ -438,6 +425,19 @@
         "content_width": "lg",
         "remove_vertical_spacing": false
       }
+    },
+    "custom_news_section_DkzQ8w": {
+      "type": "custom-news-section",
+      "name": "Custom News Section",
+      "settings": {
+        "title": "ニュース一覧",
+        "subtitle": "- NEWS -",
+        "btn_text": ">>過去のニュースはこちら",
+        "btn_link": "https://nakaoshokuhin.co.jp/news/",
+        "section_bg_color": "",
+        "margin-top": 40,
+        "margin-bottom": 40
+      }
     }
   },
   "order": [
@@ -448,7 +448,7 @@
     "company_profile_WNwcdh",
     "management_philosophy_xtyeim",
     "delivery_record_jn7DUk",
-    "custom_news_section_DkzQ8w",
-    "image_with_text_wcig8f"
+    "image_with_text_wcig8f",
+    "custom_news_section_DkzQ8w"
   ]
 }
