@@ -719,53 +719,83 @@
         "remove_vertical_spacing": false
       }
     },
-    "image_with_text_qX8KBk": {
-      "type": "image-with-text",
+    "17703746428fb8bc02": {
+      "type": "_blocks",
       "blocks": {
-        "richtext_rHbmaB": {
-          "type": "richtext",
+        "ai_gen_block_04ecc08_QmkyWL": {
+          "type": "ai_gen_block_04ecc08",
           "settings": {
-            "content": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.<br/><br/></p>"
-          }
+            "image_position": "right",
+            "image": "shopify://shop_images/first.jpg",
+            "image_border_radius": 0,
+            "title": "",
+            "title_color": "#000000",
+            "title_size_mobile": 24,
+            "title_size_desktop": 36,
+            "description": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.<br/><br/></p>",
+            "description_color": "#000000",
+            "description_size_mobile": 14,
+            "description_size_desktop": 18,
+            "button_text": "Learn more",
+            "button_link": "",
+            "button_background_color": "#5c5c5c",
+            "button_text_color": "#ffffff",
+            "button_hover_color": "#000000",
+            "button_border_radius": 0,
+            "content_padding_vertical_mobile": 0,
+            "content_padding_horizontal_mobile": 0,
+            "content_padding_vertical_desktop": 0,
+            "content_padding_horizontal_desktop": 0,
+            "background_color": "#ffffff",
+            "padding_top_mobile": 30,
+            "padding_bottom_mobile": 30,
+            "padding_horizontal_mobile": 20,
+            "padding_top_desktop": 20,
+            "padding_bottom_desktop": 20,
+            "padding_horizontal_desktop": 60
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_04ecc08_miLbzx": {
+          "type": "ai_gen_block_04ecc08",
+          "settings": {
+            "image_position": "left",
+            "image": "shopify://shop_images/second.jpg",
+            "image_border_radius": 0,
+            "title": "",
+            "title_color": "#000000",
+            "title_size_mobile": 24,
+            "title_size_desktop": 36,
+            "description": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.<br/><br/></p>",
+            "description_color": "#000000",
+            "description_size_mobile": 14,
+            "description_size_desktop": 18,
+            "button_text": "Learn more",
+            "button_link": "",
+            "button_background_color": "#5c5c5c",
+            "button_text_color": "#ffffff",
+            "button_hover_color": "#000000",
+            "button_border_radius": 0,
+            "content_padding_vertical_mobile": 0,
+            "content_padding_horizontal_mobile": 0,
+            "content_padding_vertical_desktop": 0,
+            "content_padding_horizontal_desktop": 0,
+            "background_color": "#ffffff",
+            "padding_top_mobile": 30,
+            "padding_bottom_mobile": 30,
+            "padding_horizontal_mobile": 20,
+            "padding_top_desktop": 20,
+            "padding_bottom_desktop": 40,
+            "padding_horizontal_desktop": 60
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "richtext_rHbmaB"
+        "ai_gen_block_04ecc08_QmkyWL",
+        "ai_gen_block_04ecc08_miLbzx"
       ],
-      "name": "t:sections.image_with_text.presets.image_with_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "image": "shopify://shop_images/first.jpg",
-        "reveal_on_scroll": true,
-        "image_position": "end",
-        "content_width": "sm",
-        "remove_vertical_spacing": false
-      }
-    },
-    "image_with_text_xETmHL": {
-      "type": "image-with-text",
-      "blocks": {
-        "richtext_Eqm6HD": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.<br/><br/></p>"
-          }
-        }
-      },
-      "block_order": [
-        "richtext_Eqm6HD"
-      ],
-      "name": "t:sections.image_with_text.presets.image_with_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "image": "shopify://shop_images/second.jpg",
-        "reveal_on_scroll": true,
-        "image_position": "start",
-        "content_width": "sm",
-        "remove_vertical_spacing": false
-      }
+      "settings": {}
     },
     "rich_text_4pDdWT": {
       "type": "rich-text",
@@ -961,8 +991,7 @@
     "blocks_hYjHey",
     "image_with_text_block_8Khtgt",
     "rich_text_7EGVfJ",
-    "image_with_text_qX8KBk",
-    "image_with_text_xETmHL",
+    "17703746428fb8bc02",
     "rich_text_4pDdWT",
     "image_with_text_YddKtJ",
     "image_with_text_FhHqAV",
