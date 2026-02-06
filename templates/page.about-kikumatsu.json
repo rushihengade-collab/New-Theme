@@ -252,21 +252,44 @@
         "padding-bottom": 91
       }
     },
-    "custom_image_with_text_r8zAWn": {
-      "type": "custom-image-with-text",
-      "name": "Custom Image with Text",
-      "settings": {
-        "background_image_size": "cover",
-        "background_image_position": "center",
-        "image": "shopify://shop_images/gaiyo.webp",
-        "image_position": "right",
-        "header1": "<h2>About Kikumatsu</h2>",
-        "text": "<p>There's a saying, \"I've reached my peak of vitality.\" This passage from the \"Yōjōkun,\" written in the Edo period (1603), based on actual experience, suggests that when you're feeling energized, you should eat foods with the \"kon\" (con) in their name, such as konnyaku, daikon radish, lotus root, and kelp.Konnyaku has been a familiar food for so long, it's become an inseparable part of our diet.Our company has continued to produce konnyaku, and before we knew it, we were the only long-established konnyaku shop in Sakai, Osaka, with the baton handed down through four generations. Konnyaku has a long history, but the true nature of konnyaku is changing amid food globalization, increased manufacturing efficiency, and price competition . As a long-established company in the konnyaku manufacturing industry, we repeatedly asked ourselves The answer we came up with was to \"continue to produce authentic konnyaku.\" </p>",
-        "color_scheme": "",
-        "section_width": "page-width",
-        "margin-top": 40,
-        "margin-bottom": 40
-      }
+    "blocks_EExpMJ": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a200ea1_WiFxRp": {
+          "type": "ai_gen_block_a200ea1",
+          "settings": {
+            "layout": "image_right",
+            "desktop_width_percent": 90,
+            "gap": 40,
+            "mobile_gap": 30,
+            "image": "shopify://shop_images/gaiyo.webp",
+            "image_width": 50,
+            "image_border_radius": 0,
+            "content_gap": 10,
+            "heading": "About Kikumatsu",
+            "heading_size": 32,
+            "heading_color": "#000000",
+            "text": "<p>There's a saying, \"I've reached my peak of vitality.\" This passage from the \"Yōjōkun,\" written in the Edo period (1603), based on actual experience, suggests that when you're feeling energized, you should eat foods with the \"kon\" (con) in their name, such as konnyaku, daikon radish, lotus root, and kelp.Konnyaku has been a familiar food for so long, it's become an inseparable part of our diet.Our company has continued to produce konnyaku, and before we knew it, we were the only long-established konnyaku shop in Sakai, Osaka, with the baton handed down through four generations. Konnyaku has a long history, but the true nature of konnyaku is changing amid food globalization, increased manufacturing efficiency, and price competition . As a long-established company in the konnyaku manufacturing industry, we repeatedly asked ourselves The answer we came up with was to \"continue to produce authentic konnyaku.\"</p>",
+            "text_size": 16,
+            "text_color": "#1c1c1c",
+            "button_text": "Learn more",
+            "button_link": "",
+            "button_text_size": 16,
+            "button_padding_vertical": 12,
+            "button_padding_horizontal": 24,
+            "button_background": "#5c5c5c",
+            "button_text_color": "#ffffff",
+            "button_hover_background": "#000000",
+            "button_border_radius": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a200ea1_WiFxRp"
+      ],
+      "name": "Image with text",
+      "settings": {}
     },
     "blocks_kphLcP": {
       "type": "_blocks",
@@ -275,13 +298,13 @@
           "type": "ai_gen_block_a200ea1",
           "settings": {
             "layout": "image_left",
-            "desktop_width_percent": 100,
+            "desktop_width_percent": 90,
             "gap": 40,
             "mobile_gap": 30,
             "image": "shopify://shop_images/kiku2.png",
             "image_width": 50,
             "image_border_radius": 0,
-            "content_gap": 20,
+            "content_gap": 10,
             "heading": "About the material ",
             "heading_size": 32,
             "heading_color": "#000000",
@@ -330,7 +353,7 @@
     "image_with_text_bKkzQe",
     "slide_image_with_text_DUQrw9",
     "kikumatsu_product_lineup_bwxzqh",
-    "custom_image_with_text_r8zAWn",
+    "blocks_EExpMJ",
     "blocks_kphLcP",
     "custom_news_section_YEajjg"
   ]
