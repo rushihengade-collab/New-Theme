@@ -236,110 +236,72 @@
         "remove_vertical_spacing": false
       }
     },
-    "177027309567aec5d6": {
+    "177036464339662674": {
       "type": "_blocks",
       "blocks": {
-        "ai_gen_block_3ac2188_mgahzQ": {
-          "type": "ai_gen_block_3ac2188",
+        "ai_gen_block_e1abfc8_wcP38J": {
+          "type": "ai_gen_block_e1abfc8",
           "settings": {
-            "background_image": "shopify://shop_images/msg_bg_0478d09e-120a-47dc-a04b-27ad57bb4723.webp",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "content_image": "shopify://shop_images/qj1.webp",
-            "image_width": 40,
-            "image_border_radius": 8,
-            "heading": "<h3>品質保証は“あたりまえ”の責務</h3>",
-            "paragraph": "<p>食品工場においての品質管理の目的は、食品事故を防ぐことです。<br/>例えば、物理的危害、化学的危害、生物的危害、日付表示ミス、アレルギー表示ミスなど。<br/>大きい意味では、当社を信用して購入してくださっているお客様を裏切らないようにする、ということです。 </p><p>世に売りに出している商品ですから、安全であることはあたりまえであり、それを保証するのは食品製造会社の責務だと考えております。<br/>当社ではそのことを全従業員が理解し、品質管理意識・倫理観を持ち業務に従事するよう、<br/>日々教育を行っています。</p>",
-            "text_alignment": "left",
-            "heading_font": "biz_udpmincho_n7",
-            "heading_size": 40,
-            "mobile_heading_size": 28,
-            "paragraph_size": 18,
-            "mobile_paragraph_size": 16,
-            "heading_color": "#ffffff",
-            "paragraph_color": "#1c1c1c",
-            "desktop_width_percent": 100,
-            "min_height": 500,
-            "section_padding": 60,
-            "mobile_section_padding": 30,
+            "image_position": "left",
+            "max_width": 1200,
+            "image_width": 50,
             "content_gap": 60,
             "mobile_content_gap": 30,
-            "heading_spacing": 20,
-            "vertical_spacing_top": 0,
-            "vertical_spacing_bottom": 50,
-            "mobile_vertical_spacing_top": 0,
-            "mobile_vertical_spacing_bottom": 30
+            "padding_vertical": 60,
+            "padding_horizontal": 20,
+            "background_color": "#ffffff",
+            "image_1": "shopify://shop_images/Slide1-1.jpg",
+            "image_2": "shopify://shop_images/Slide1-2.jpg",
+            "image_3": "shopify://shop_images/Slide1-3.jpg",
+            "image_border_radius": 0,
+            "autoplay": true,
+            "tag": "工程1",
+            "tag_background_color": "#191971",
+            "tag_text_color": "#ffffff",
+            "tag_font_size": 12,
+            "tag_padding_vertical": 6,
+            "tag_padding_horizontal": 15,
+            "tag_border_radius": 4,
+            "tag_text_transform": "uppercase",
+            "title": "こんにゃくのり",
+            "title_font": "sans_serif_n4",
+            "title_font_size": 40,
+            "title_color": "#000000",
+            "title_text_transform": "none",
+            "description": "水と原料を混ぜ溶き、ホッパーに溜めます。\n季節によって水温は変化しますが、同じ温度になるように、溶く時の水温を調節しています。\nこの時、空気が入ると品質の均一性に問題が出るため、ホッパーの壁に沿わせて泡が立たないように流し込みます。",
+            "description_font_size": 16,
+            "description_color": "#5c5c5c",
+            "text_spacing": 20
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_3ac2188_mgahzQ"
+        "ai_gen_block_e1abfc8_wcP38J"
       ],
       "settings": {}
     },
-    "image_with_text_Vef7ey": {
-      "type": "image-with-text",
+    "slide_image_with_text_hAEhwN": {
+      "type": "slide-image-with-text",
       "blocks": {
-        "heading_MeL9Vq": {
-          "type": "heading",
+        "slide_image_with_text_NGcMyD": {
+          "type": "slide-image-with-text",
           "settings": {
-            "text": "HACCPチーム",
-            "heading_tag": "h2"
-          }
-        },
-        "richtext_AKVEbn": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>社員で構成された小規模チームの名称で、HACCP(ﾊｻｯﾌﾟ)とは、食品を製造する際に安全を確保するための管理手法のことで、世界各国で取り入れられている手法です。<br/>年2回の従業員教育を行い、全従業員の意識を統一し、かつ、毎月1回内部監査を行うことで、気付きと改善を繰り返しています。<br/>内部監査では、メンバーの中選出した2名が工場内を回り、前月分の改善確認と今月分の監査を行います。ルール違反や、危険箇所、各種記録の記入漏れなど、指摘があれば改善依頼をし、従業員はそれに従い改善を行います。</p>"
+            "image_1": "shopify://shop_images/Slide1-1.jpg",
+            "image_2": "shopify://shop_images/Slide1-2.jpg",
+            "image_3": "shopify://shop_images/Slide1-3.jpg",
+            "title": "こんにゃくのり",
+            "description": "水と原料を混ぜ溶き、ホッパーに溜めます。季節によって水温は変化しますが、同じ温度になるように、溶く時の水温を調節しています。この時、空気が入ると品質の均一性に問題が出るため、ホッパーの壁に沿わせて泡が立たないように流し込みます。"
           }
         }
       },
       "block_order": [
-        "heading_MeL9Vq",
-        "richtext_AKVEbn"
+        "slide_image_with_text_NGcMyD"
       ],
-      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "name": "Slide Image with Text",
       "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "image": "shopify://shop_images/qj3.jpg",
-        "reveal_on_scroll": true,
-        "image_position": "start",
-        "content_width": "sm",
-        "remove_vertical_spacing": false
-      }
-    },
-    "image_with_text_jYwTKt": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_V6gPBE": {
-          "type": "heading",
-          "settings": {
-            "text": "トレーサビリティ",
-            "heading_tag": "h2"
-          }
-        },
-        "richtext_9cjKBr": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>生産、加工および流通の特定の一つまたは複数の段階を通じて、食品の移動を把握することを言います。<br/>当社では、製造の 時間・人・原材料（数量・LOT）・出来上り商品（数量・LOT）等の情報を全て製造日報に記入し、その情報を基幹システムに入力しているため、商品に印字された賞味期限等の数字から全情報を追跡できます。<br/>また、出荷する時は商品のLOT情報を登録しているので、どの得意先にどれだけ納品しているかも管理しています。<br/>これにより原材料～出荷までのトレースが可能です。</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_V6gPBE",
-        "richtext_9cjKBr"
-      ],
-      "name": "t:sections.image_with_text.presets.image_with_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "image": "shopify://shop_images/qj4.jpg",
-        "reveal_on_scroll": true,
-        "image_position": "start",
-        "content_width": "sm",
-        "remove_vertical_spacing": false
+        "padding-top": 40,
+        "padding-bottom": 40
       }
     },
     "image_with_text_8nCjMC": {
@@ -368,38 +330,6 @@
         "color_scheme": "",
         "separate_section_with_border": false,
         "image": "shopify://shop_images/qj5.jpg",
-        "reveal_on_scroll": true,
-        "image_position": "start",
-        "content_width": "sm",
-        "remove_vertical_spacing": false
-      }
-    },
-    "image_with_text_VAtrwa": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_437WtK": {
-          "type": "heading",
-          "settings": {
-            "text": "有機JAS認証",
-            "heading_tag": "h2"
-          }
-        },
-        "richtext_qnTRTb": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>有機食品のJAS規格（原料、工程等）に適合した生産が行われていることを登録認定機関が検査、認定された事業者のみが有機JASマークを表示することができます。<br/>認定を受けた後も、年に1回の調査があります。<br/>当社では以下8種類の商品について認定を受けており、対象商品はより厳しく管理しています。<br/>・有機生芋100％ 菊松[板]こんにゃく250g<br/>・有機生芋100％ 菊松[糸]こんにゃく180g<br/>・有機生芋100％手結びしらたき4個入<br/>・有機 国産生芋板こんにゃく250g、ミニ板120g<br/>・有機 国産生芋糸こんにゃく500ｇ、200g、ミニ糸120g</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_437WtK",
-        "richtext_qnTRTb"
-      ],
-      "name": "t:sections.image_with_text.presets.image_with_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "image": "shopify://shop_images/qj6.jpg",
         "reveal_on_scroll": true,
         "image_position": "start",
         "content_width": "sm",
@@ -676,11 +606,9 @@
     "blocks_JTp9jK",
     "rich_text_M63mjC",
     "image_with_text_rTdfTp",
-    "177027309567aec5d6",
-    "image_with_text_Vef7ey",
-    "image_with_text_jYwTKt",
+    "177036464339662674",
+    "slide_image_with_text_hAEhwN",
     "image_with_text_8nCjMC",
-    "image_with_text_VAtrwa",
     "image_with_text_block_8Khtgt",
     "rich_text_7EGVfJ",
     "image_with_text_qX8KBk",
