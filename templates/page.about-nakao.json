@@ -38,7 +38,7 @@
           "type": "button",
           "settings": {
             "button_text": "蒟蒻芋",
-            "button_link": "#shopify-section-template--26135534895406__blocks_gWNxVC",
+            "button_link": "#shopify-section-template--26136455217454__company_profile_ye4FzG",
             "button_background": "#2c347a",
             "button_text_color": "#ffffff"
           }
@@ -46,8 +46,8 @@
         "button_rpM8VC": {
           "type": "button",
           "settings": {
-            "button_text": "缶蒸製法",
-            "button_link": "#shopify-section-template--26135534895406__rich_text_M63mjC",
+            "button_text": "沿革",
+            "button_link": "#shopify-section-template--26136455217454__company_profile_WNwcdh",
             "button_background": "#2c347a",
             "button_text_color": "#ffffff"
           }
@@ -55,8 +55,8 @@
         "button_6drkNb": {
           "type": "button",
           "settings": {
-            "button_text": "糸蒟蒻",
-            "button_link": "#shopify-section-template--26135534895406__17703776449e62d5c1",
+            "button_text": "経営理念",
+            "button_link": "#shopify-section-template--26136455217454__management_philosophy_xtyeim",
             "button_background": "#2c347a",
             "button_text_color": "#ffffff"
           }
@@ -64,17 +64,8 @@
         "button_JPimBW": {
           "type": "button",
           "settings": {
-            "button_text": "ところてん",
-            "button_link": "#shopify-section-template--26135534895406__blocks_AtQmRb",
-            "button_background": "#2c347a",
-            "button_text_color": "#ffffff"
-          }
-        },
-        "button_RXG3UP": {
-          "type": "button",
-          "settings": {
-            "button_text": "製品設備",
-            "button_link": "#shopify-section-template--26135534895406__rich_text_Jh4ExN",
+            "button_text": "納入実績",
+            "button_link": "#shopify-section-template--26136455217454__management_philosophy_xtyeim",
             "button_background": "#2c347a",
             "button_text_color": "#ffffff"
           }
@@ -84,8 +75,7 @@
         "button_Dix3Uf",
         "button_rpM8VC",
         "button_6drkNb",
-        "button_JPimBW",
-        "button_RXG3UP"
+        "button_JPimBW"
       ],
       "name": "Custom Button Section",
       "settings": {
