@@ -265,21 +265,83 @@
         "margin-bottom": 40
       }
     },
-    "custom_image_with_text_XNYgNp": {
-      "type": "custom-image-with-text",
-      "name": "Custom Image with Text",
-      "settings": {
-        "background_image_size": "cover",
-        "background_image_position": "center",
-        "image": "shopify://shop_images/gaiyo.webp",
-        "image_position": "right",
-        "header1": "<h3>About Kikumatsu</h3>",
-        "text": "<p>There's a saying, \"I've reached my peak of vitality.\" This passage from the \"Yōjōkun,\" written in the Edo period (1603), based on actual experience, suggests that when you're feeling energized, you should eat foods with the \"kon\" (con) in their name, such as konnyaku, daikon radish, lotus root, and kelp.<br/>Konnyaku has been a familiar food for so long, it's become an inseparable part of our diet.<br/>Our company has continued to produce konnyaku, and before we knew it, we were the only long-established konnyaku shop in Sakai, Osaka, with the baton handed down through four generations. Konnyaku has a long history, but the true nature of konnyaku is changing amid food globalization, increased manufacturing efficiency, and price competition . As a long-established company in the konnyaku manufacturing industry, we repeatedly asked ourselves The answer we came up with was to \"continue to produce authentic konnyaku.\"<br/> </p>",
-        "color_scheme": "",
-        "section_width": "page-width",
-        "margin-top": 60,
-        "margin-bottom": 60
-      }
+    "blocks_YRHV6b": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a200ea1_BnBAc3": {
+          "type": "ai_gen_block_a200ea1",
+          "settings": {
+            "layout": "image_right",
+            "desktop_width_percent": 100,
+            "gap": 40,
+            "mobile_gap": 30,
+            "image": "shopify://shop_images/gaiyo.webp",
+            "image_width": 50,
+            "image_border_radius": 0,
+            "content_gap": 20,
+            "heading": "About Kikumatsu",
+            "heading_size": 32,
+            "heading_color": "#000000",
+            "text": "<p>There's a saying, \"I've reached my peak of vitality.\" This passage from the \"Yōjōkun,\" written in the Edo period (1603), based on actual experience, suggests that when you're feeling energized, you should eat foods with the \"kon\" (con) in their name, such as konnyaku, daikon radish, lotus root, and kelp.<br/>Konnyaku has been a familiar food for so long, it's become an inseparable part of our diet.<br/>Our company has continued to produce konnyaku, and before we knew it, we were the only long-established konnyaku shop in Sakai, Osaka, with the baton handed down through four generations. Konnyaku has a long history, but the true nature of konnyaku is changing amid food globalization, increased manufacturing efficiency, and price competition . As a long-established company in the konnyaku manufacturing industry, we repeatedly asked ourselves The answer we came up with was to \"continue to produce authentic konnyaku.\"<br/> </p>",
+            "text_size": 16,
+            "text_color": "#1c1c1c",
+            "button_text": "Learn more",
+            "button_link": "",
+            "button_text_size": 16,
+            "button_padding_vertical": 12,
+            "button_padding_horizontal": 24,
+            "button_background": "#5c5c5c",
+            "button_text_color": "#ffffff",
+            "button_hover_background": "#000000",
+            "button_border_radius": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a200ea1_BnBAc3"
+      ],
+      "name": "Image with text",
+      "settings": {}
+    },
+    "blocks_kphLcP": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a200ea1_gt6mYT": {
+          "type": "ai_gen_block_a200ea1",
+          "settings": {
+            "layout": "image_left",
+            "desktop_width_percent": 100,
+            "gap": 40,
+            "mobile_gap": 30,
+            "image": "shopify://shop_images/kiku2.png",
+            "image_width": 50,
+            "image_border_radius": 0,
+            "content_gap": 20,
+            "heading": "About the material ",
+            "heading_size": 32,
+            "heading_color": "#000000",
+            "text": "<p>For example, our ingredients are organically grown fresh konnyaku yams, which are grown over two to three years in the fertile soil of the mountains of Fuchu City, Hiroshima Prefecture, surrounded by nature . We don't use any artificial coagulants, but instead solidify the yams with wood ash and seashells. We spare no effort or time in allowing the yams to mature slowly.<br/>While these are the polar opposite of efficiency and low cost, Kikumatsu believes they are essential conditions for konnyaku to retain its inherent flavor and be a safe food. This sentiment extends not only to konnyaku itself, but also to amagusa, the main ingredient in tokoroten. We preserve the original texture, mouthfeel, and flavor of konnyaku, and, based on that foundation, we are constantly striving to create new interpretations and experiments, striving to further \"deliciousness\" so that everyone can enjoy delicious konnyaku dishes with peace of mind. To achieve this, there are many hurdles to overcome, such as further learning, further efforts, and improvement of skills, but with pride and ambition as a konnyaku shop, and with the \"delicious smiles\" of our customers as our guide, we will continue to work hard as a fourth-generation konnyaku shop, as we have done until now and will continue to do so in the future.</p>",
+            "text_size": 16,
+            "text_color": "#1c1c1c",
+            "button_text": "Learn more",
+            "button_link": "",
+            "button_text_size": 16,
+            "button_padding_vertical": 12,
+            "button_padding_horizontal": 24,
+            "button_background": "#5c5c5c",
+            "button_text_color": "#ffffff",
+            "button_hover_background": "#000000",
+            "button_border_radius": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a200ea1_gt6mYT"
+      ],
+      "name": "Image with text",
+      "settings": {}
     }
   },
   "order": [
@@ -291,7 +353,8 @@
     "image_with_text_bKkzQe",
     "slide_image_with_text_DUQrw9",
     "kikumatsu_product_lineup_bwxzqh",
-    "custom_news_section_YEajjg",
-    "custom_image_with_text_XNYgNp"
+    "blocks_YRHV6b",
+    "blocks_kphLcP",
+    "custom_news_section_YEajjg"
   ]
 }
