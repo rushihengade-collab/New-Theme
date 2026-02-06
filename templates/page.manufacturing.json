@@ -127,8 +127,8 @@
       ],
       "name": "Custom Button Section",
       "settings": {
-        "padding-top": 0,
-        "padding-bottom": 0
+        "padding-top": 80,
+        "padding-bottom": 28
       }
     },
     "blocks_gWNxVC": {
