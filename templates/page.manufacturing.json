@@ -429,6 +429,262 @@
       ],
       "settings": {}
     },
+    "rich_text_AyVdda": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ethmHi": {
+          "type": "heading",
+          "settings": {
+            "text": "糸蒟蒻",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_4R4Lf9": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>~ HOW TO MAKE ~</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ethmHi",
+        "richtext_4R4Lf9"
+      ],
+      "custom_css": [],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_3dqTwR": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GidCXf": {
+          "type": "heading",
+          "settings": {
+            "text": "糸こんにゃくってどうやってできている？",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_d3QBtt": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>糸こんにゃくはどうやってできているか？知らない人が多いと思います。<br/>当社の糸こんにゃくは、シャワーのような感じで出てきます。<br/>ホースの先に穴の空いたプレートが取り付けられていて、そこからシャワーのように押し出したこんにゃくのりをお湯の中で泳がせ、炊き上げて固めるのです。<br/>このプレートを目皿（めざら）と呼び、これの穴の大きさや形を変えることで、多種多様なこんにゃくができます。<br/>また、板こんにゃくでも糸こんにゃくでもない特殊な形のこんにゃくも、この機械で作っています。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GidCXf",
+        "richtext_d3QBtt"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/Get.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "blocks_hYjHey": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e1abfc8_cWCAFQ": {
+          "type": "ai_gen_block_e1abfc8",
+          "settings": {
+            "image_position": "left",
+            "max_width": 1200,
+            "image_width": 50,
+            "content_gap": 60,
+            "mobile_content_gap": 35,
+            "padding_vertical": 30,
+            "padding_horizontal": 30,
+            "background_color": "#ffffff",
+            "image_1": "shopify://shop_images/Slide6-1.jpg",
+            "image_2": "shopify://shop_images/Slide6-6.jpg",
+            "image_3": "shopify://shop_images/Slide6-3.jpg",
+            "image_border_radius": 0,
+            "autoplay": true,
+            "tag": "工程1",
+            "tag_background_color": "#191971",
+            "tag_text_color": "#ffffff",
+            "tag_font_size": 12,
+            "tag_padding_vertical": 6,
+            "tag_padding_horizontal": 15,
+            "tag_border_radius": 4,
+            "tag_text_transform": "uppercase",
+            "title": "こんにゃくのり",
+            "title_font": "sans_serif_n4",
+            "title_font_size": 40,
+            "title_color": "#000000",
+            "title_text_transform": "none",
+            "description": "水と原料を混ぜ溶き、ホッパーに溜めます。\n季節によって水温は変化しますが、同じ温度になるように、溶く時の水温を調節しています。\nここまでの工程は、缶蒸製造と同じです。",
+            "description_font_size": 16,
+            "description_color": "#5c5c5c",
+            "text_spacing": 20
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_e1abfc8_AYpmMA": {
+          "type": "ai_gen_block_e1abfc8",
+          "settings": {
+            "image_position": "right",
+            "max_width": 1200,
+            "image_width": 50,
+            "content_gap": 60,
+            "mobile_content_gap": 35,
+            "padding_vertical": 30,
+            "padding_horizontal": 30,
+            "background_color": "#ffffff",
+            "image_1": "shopify://shop_images/Slide2-1.jpg",
+            "image_2": "shopify://shop_images/Slide2-2.jpg",
+            "image_3": "shopify://shop_images/Slide2-3.jpg",
+            "image_border_radius": 0,
+            "autoplay": true,
+            "tag": "工程2",
+            "tag_background_color": "#191971",
+            "tag_text_color": "#ffffff",
+            "tag_font_size": 12,
+            "tag_padding_vertical": 6,
+            "tag_padding_horizontal": 15,
+            "tag_border_radius": 4,
+            "tag_text_transform": "uppercase",
+            "title": "目皿（めざら）",
+            "title_font": "sans_serif_n4",
+            "title_font_size": 40,
+            "title_color": "#000000",
+            "title_text_transform": "none",
+            "description": "凝固剤を混ぜて練り、ホースを通り目皿からこんにゃくのりを出し、内部で炊き上げます。\n目皿とその周辺機器の違いで、普通の糸こんにゃくや、玉こんにゃく、米粒状のこんにゃく、ねじりこんにゃく、わらび餅風のこんにゃくなどが出来ます。",
+            "description_font_size": 16,
+            "description_color": "#5c5c5c",
+            "text_spacing": 20
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_e1abfc8_cjpabJ": {
+          "type": "ai_gen_block_e1abfc8",
+          "settings": {
+            "image_position": "left",
+            "max_width": 1200,
+            "image_width": 50,
+            "content_gap": 60,
+            "mobile_content_gap": 35,
+            "padding_vertical": 30,
+            "padding_horizontal": 30,
+            "background_color": "#ffffff",
+            "image_1": "shopify://shop_images/Slide3-1.jpg",
+            "image_2": "shopify://shop_images/Slide3-2.jpg",
+            "image_3": "shopify://shop_images/Slide3-3.jpg",
+            "image_border_radius": 0,
+            "autoplay": true,
+            "tag": "工程3",
+            "tag_background_color": "#191971",
+            "tag_text_color": "#ffffff",
+            "tag_font_size": 12,
+            "tag_padding_vertical": 6,
+            "tag_padding_horizontal": 15,
+            "tag_border_radius": 4,
+            "tag_text_transform": "uppercase",
+            "title": "コンベア",
+            "title_font": "sans_serif_n4",
+            "title_font_size": 40,
+            "title_color": "#000000",
+            "title_text_transform": "none",
+            "description": "炊き上げられたこんにゃくが出てきて、包装機に向かってコンベアを通ります。\n商品によってはここでしっかり様子を見て調整しないと、出来上がりに影響を及ぼします。",
+            "description_font_size": 16,
+            "description_color": "#5c5c5c",
+            "text_spacing": 20
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_e1abfc8_UJEA6g": {
+          "type": "ai_gen_block_e1abfc8",
+          "settings": {
+            "image_position": "right",
+            "max_width": 1200,
+            "image_width": 50,
+            "content_gap": 60,
+            "mobile_content_gap": 35,
+            "padding_vertical": 30,
+            "padding_horizontal": 30,
+            "background_color": "#ffffff",
+            "image_1": "shopify://shop_images/Slide4-1.jpg",
+            "image_2": "shopify://shop_images/Slide4-2.jpg",
+            "image_3": "shopify://shop_images/Slide4-3.jpg",
+            "image_border_radius": 0,
+            "autoplay": true,
+            "tag": "工程4",
+            "tag_background_color": "#191971",
+            "tag_text_color": "#ffffff",
+            "tag_font_size": 12,
+            "tag_padding_vertical": 6,
+            "tag_padding_horizontal": 15,
+            "tag_border_radius": 4,
+            "tag_text_transform": "uppercase",
+            "title": "包装",
+            "title_font": "sans_serif_n4",
+            "title_font_size": 40,
+            "title_color": "#000000",
+            "title_text_transform": "none",
+            "description": "コンベアを通って、包装機へ。お湯と共に定量ずつ包装されていきます。\nここで、外観・量目・印字などの検品を行います。\n同じこんにゃくのりから別商品に切り替わる時の、最速かつ的確なフィルム交換は職人技です。",
+            "description_font_size": 16,
+            "description_color": "#5c5c5c",
+            "text_spacing": 20
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_e1abfc8_UTRE3F": {
+          "type": "ai_gen_block_e1abfc8",
+          "settings": {
+            "image_position": "left",
+            "max_width": 1200,
+            "image_width": 50,
+            "content_gap": 60,
+            "mobile_content_gap": 35,
+            "padding_vertical": 30,
+            "padding_horizontal": 30,
+            "background_color": "#ffffff",
+            "image_1": "shopify://shop_images/Slide5-2.jpg",
+            "image_2": "shopify://shop_images/Slide5-4.jpg",
+            "image_3": "shopify://shop_images/Slide5-3.jpg",
+            "image_border_radius": 0,
+            "autoplay": true,
+            "tag": "工程5",
+            "tag_background_color": "#191971",
+            "tag_text_color": "#ffffff",
+            "tag_font_size": 12,
+            "tag_padding_vertical": 6,
+            "tag_padding_horizontal": 15,
+            "tag_border_radius": 4,
+            "tag_text_transform": "uppercase",
+            "title": "【別工程】手結び",
+            "title_font": "sans_serif_n4",
+            "title_font_size": 40,
+            "title_color": "#000000",
+            "title_text_transform": "none",
+            "description": "包装機で包装せずタンクに溜めた糸こんにゃくを、手でひっぱり出し、ひとつひとつ結びます。\nひっぱり出す量や、結ぶ加減、切る長さなどを感覚で調整し、誤差±10g程度に収めるのですが、この技の習得までには時間を要します。",
+            "description_font_size": 16,
+            "description_color": "#5c5c5c",
+            "text_spacing": 20
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e1abfc8_cWCAFQ",
+        "ai_gen_block_e1abfc8_AYpmMA",
+        "ai_gen_block_e1abfc8_cjpabJ",
+        "ai_gen_block_e1abfc8_UJEA6g",
+        "ai_gen_block_e1abfc8_UTRE3F"
+      ],
+      "settings": {}
+    },
     "image_with_text_8nCjMC": {
       "type": "image-with-text",
       "blocks": {
@@ -732,6 +988,9 @@
     "rich_text_M63mjC",
     "image_with_text_rTdfTp",
     "177036464339662674",
+    "rich_text_AyVdda",
+    "image_with_text_3dqTwR",
+    "blocks_hYjHey",
     "image_with_text_8nCjMC",
     "image_with_text_block_8Khtgt",
     "rich_text_7EGVfJ",
