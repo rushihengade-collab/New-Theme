@@ -18,91 +18,55 @@
         "page_width": "xs"
       }
     },
-    "rich_text_TkHtJF": {
-      "type": "rich-text",
+    "1770378877609279aa": {
+      "type": "_blocks",
       "blocks": {
-        "heading_AtEYig": {
-          "type": "heading",
+        "ai_gen_block_acd6d86_C7JQGW": {
+          "type": "ai_gen_block_acd6d86",
           "settings": {
-            "text": "製造について",
-            "heading_tag": "h1"
-          }
+            "heading": "製造について",
+            "heading_color": "#000000",
+            "heading_size": 40,
+            "heading_font": "sans_serif_n4",
+            "subheading": "~­­­ QUALITY MANAGEMENT ~­­­",
+            "subheading_color": "#000000",
+            "subheading_size": 18,
+            "heading_to_subheading_spacing": 8,
+            "subheading_to_image_spacing": 0,
+            "text_background_color": "#ffffff",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "text_padding_horizontal": 20,
+            "image": "shopify://shop_images/m1.webp"
+          },
+          "blocks": {}
         },
-        "richtext_d6BnWM": {
-          "type": "richtext",
+        "ai_gen_block_acd6d86_HNqpLG": {
+          "type": "ai_gen_block_acd6d86",
           "settings": {
-            "content": "<p>~­­­ QUALITY MANAGEMENT ~­­­</p>"
-          }
+            "heading": "蒟蒻芋",
+            "heading_color": "#000000",
+            "heading_size": 40,
+            "heading_font": "sans_serif_n4",
+            "subheading": "~ INGREDIENTS ~",
+            "subheading_color": "#000000",
+            "subheading_size": 18,
+            "heading_to_subheading_spacing": 8,
+            "subheading_to_image_spacing": 0,
+            "text_background_color": "#ffffff",
+            "text_padding_top": 40,
+            "text_padding_bottom": 40,
+            "text_padding_horizontal": 20,
+            "image": "shopify://shop_images/man2.webp"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "heading_AtEYig",
-        "richtext_d6BnWM"
+        "ai_gen_block_acd6d86_C7JQGW",
+        "ai_gen_block_acd6d86_HNqpLG"
       ],
-      "custom_css": [],
-      "name": "t:sections.rich_text.presets.rich_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "content_width": "sm",
-        "text_position": "center",
-        "remove_vertical_spacing": false
-      }
-    },
-    "image_with_text_block_kzjqGG": {
-      "type": "image-with-text-block",
-      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
-      "settings": {
-        "color_scheme": "",
-        "image_size": "md",
-        "image": "shopify://shop_images/m1.webp",
-        "content_width": "sm",
-        "enable_parallax": false,
-        "remove_vertical_spacing": true
-      }
-    },
-    "rich_text_gYqjKe": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_mwBNDe": {
-          "type": "heading",
-          "settings": {
-            "text": "蒟蒻芋",
-            "heading_tag": "h2"
-          }
-        },
-        "richtext_Jnw9kF": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>~ INGREDIENTS ~</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_mwBNDe",
-        "richtext_Jnw9kF"
-      ],
-      "custom_css": [],
-      "name": "t:sections.rich_text.presets.rich_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "content_width": "sm",
-        "text_position": "center",
-        "remove_vertical_spacing": false
-      }
-    },
-    "image_with_text_block_d9a9CA": {
-      "type": "image-with-text-block",
-      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
-      "settings": {
-        "color_scheme": "",
-        "image_size": "md",
-        "image": "shopify://shop_images/man2.webp",
-        "content_width": "sm",
-        "enable_parallax": false,
-        "remove_vertical_spacing": true
-      }
+      "settings": {}
     },
     "rich_text_GbUKXQ": {
       "type": "rich-text",
@@ -1252,10 +1216,7 @@
   },
   "order": [
     "main",
-    "rich_text_TkHtJF",
-    "image_with_text_block_kzjqGG",
-    "rich_text_gYqjKe",
-    "image_with_text_block_d9a9CA",
+    "1770378877609279aa",
     "rich_text_GbUKXQ",
     "blocks_JTp9jK",
     "rich_text_M63mjC",
