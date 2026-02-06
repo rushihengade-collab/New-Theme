@@ -1,6 +1,198 @@
+{% doc %}
+  @prompt
+    Create a section having blocks, i want a table of 4 columns, rows will be decided as per addition of blocks, also provide the background color to add to the row and also provide the setting to make the text bold, the added blocks will continue the table without having space, also provide the horizontal padding, separate the rows and columns with the border line, entire table should be bordered, make the setting to have the text of the row center aligned, have the entire table ordered, have the row bordered from all the sides, also provide the top and bottom padding setting
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-table-row-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: {{ block.settings.row_background_color }};
+    border: 1px solid {{ block.settings.border_color }};
+    border-bottom: none;
+  }
+
+  .ai-table-row-{{ ai_gen_id }}:last-child {
+    border-bottom: 1px solid {{ block.settings.border_color }};
+  }
+
+  .ai-table-cell-{{ ai_gen_id }} {
+    padding: {{ block.settings.top_padding }}px {{ block.settings.horizontal_padding }}px {{ block.settings.bottom_padding }}px {{ block.settings.horizontal_padding }}px;
+    border-right: 1px solid {{ block.settings.border_color }};
+    {% if block.settings.make_text_bold %}
+      font-weight: 700;
+    {% else %}
+      font-weight: 400;
+    {% endif %}
+    color: {{ block.settings.text_color }};
+    display: flex;
+    align-items: center;
+    {% if block.settings.text_alignment == 'left' %}
+      justify-content: flex-start;
+    {% elsif block.settings.text_alignment == 'center' %}
+      justify-content: center;
+    {% else %}
+      justify-content: flex-end;
+    {% endif %}
+    text-align: {{ block.settings.text_alignment }};
+    word-wrap: break-word;
+  }
+
+  .ai-table-cell-{{ ai_gen_id }}:last-child {
+    border-right: none;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-table-row-{{ ai_gen_id }} {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ai-table-cell-{{ ai_gen_id }}:nth-child(2) {
+      border-right: none;
+    }
+
+    .ai-table-cell-{{ ai_gen_id }}:nth-child(3),
+    .ai-table-cell-{{ ai_gen_id }}:nth-child(4) {
+      border-top: 1px solid {{ block.settings.border_color }};
+    }
+  }
+{% endstyle %}
+
+<div class="ai-table-row-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-table-cell-{{ ai_gen_id }}">
+    {{ block.settings.column_1 }}
+  </div>
+  <div class="ai-table-cell-{{ ai_gen_id }}">
+    {{ block.settings.column_2 }}
+  </div>
+  <div class="ai-table-cell-{{ ai_gen_id }}">
+    {{ block.settings.column_3 }}
+  </div>
+  <div class="ai-table-cell-{{ ai_gen_id }}">
+    {{ block.settings.column_4 }}
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Table row",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Column content"
+    },
+    {
+      "type": "text",
+      "id": "column_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "column_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "column_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "text",
+      "id": "column_4",
+      "label": "Column 4"
+    },
+    {
+      "type": "header",
+      "content": "Row style"
+    },
+    {
+      "type": "color",
+      "id": "row_background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "checkbox",
+      "id": "make_text_bold",
+      "label": "Make text bold",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "horizontal_padding",
+      "min": 5,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Horizontal padding",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "top_padding",
+      "min": 5,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "bottom_padding",
+      "min": 5,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 15
+    },
+    {
+      "type": "header",
+      "content": "Border"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#000000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Table row"
+    }
+  ]
+}
 {% endschema %}
