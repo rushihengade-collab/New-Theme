@@ -440,7 +440,7 @@
             "heading_size": 36,
             "subheading_size": 18,
             "heading_color": "#000000",
-            "subheading_color": "#5c5c5c",
+            "subheading_color": "#1c1c1c",
             "heading_font": "sans_serif_n4",
             "heading_subheading_gap": 5,
             "header_spacing": 40,
@@ -449,7 +449,7 @@
             "title_size": 28,
             "description_size": 16,
             "title_color": "#000000",
-            "description_color": "#5c5c5c",
+            "description_color": "#1c1c1c",
             "title_font": "sans_serif_n4",
             "title_description_gap": 20,
             "image": "shopify://shop_images/Get.jpg",
@@ -466,38 +466,6 @@
         "ai_gen_block_8682ec6_AtpT4a"
       ],
       "settings": {}
-    },
-    "image_with_text_3dqTwR": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_GidCXf": {
-          "type": "heading",
-          "settings": {
-            "text": "糸こんにゃくってどうやってできている？",
-            "heading_tag": "h2"
-          }
-        },
-        "richtext_d3QBtt": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>糸こんにゃくはどうやってできているか？知らない人が多いと思います。<br/>当社の糸こんにゃくは、シャワーのような感じで出てきます。<br/>ホースの先に穴の空いたプレートが取り付けられていて、そこからシャワーのように押し出したこんにゃくのりをお湯の中で泳がせ、炊き上げて固めるのです。<br/>このプレートを目皿（めざら）と呼び、これの穴の大きさや形を変えることで、多種多様なこんにゃくができます。<br/>また、板こんにゃくでも糸こんにゃくでもない特殊な形のこんにゃくも、この機械で作っています。</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_GidCXf",
-        "richtext_d3QBtt"
-      ],
-      "name": "t:sections.image_with_text.presets.image_with_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "image": "shopify://shop_images/Get.jpg",
-        "reveal_on_scroll": true,
-        "image_position": "end",
-        "content_width": "sm",
-        "remove_vertical_spacing": false
-      }
     },
     "blocks_hYjHey": {
       "type": "_blocks",
@@ -692,68 +660,43 @@
       ],
       "settings": {}
     },
-    "rich_text_64fj4V": {
-      "type": "rich-text",
+    "blocks_AtQmRb": {
+      "type": "_blocks",
       "blocks": {
-        "heading_ydjDXY": {
-          "type": "heading",
+        "ai_gen_block_8682ec6_MWpTJV": {
+          "type": "ai_gen_block_8682ec6",
           "settings": {
-            "text": "ところてん",
-            "heading_tag": "h2"
-          }
-        },
-        "richtext_rnmw9g": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>~ HOW TO MAKE ~</p>"
-          }
+            "heading": "ところてん",
+            "subheading": "~ HOW TO MAKE ~",
+            "heading_size": 36,
+            "subheading_size": 18,
+            "heading_color": "#000000",
+            "subheading_color": "#1c1c1c",
+            "heading_font": "sans_serif_n4",
+            "heading_subheading_gap": 5,
+            "header_spacing": 40,
+            "title": "透き通っていて、きれい。",
+            "description": "<p>当社のところてんは、三代目康司のこだわりが詰まっています。<br/>一つ、原料である天草（てんぐさ）の洗い。水と手間を惜しまず、たっぷり4回洗います。こうすることで、嫌なにおいや、不純物をしっかり取り除きます。<br/>一つ、圧力釜での煮出し。酸（酢）で煮出す方法が一般的ですが、そうすると余計な酸味が入るため、当社では使用しません。また生蒸気ではなく乾熱蒸気を使うことで、余計な水分が増えることを防ぎます。<br/>一つ、のべ5回のろ過工程。ステンレス製のメッシュから目の細かい布まで、何度もこすことで、なめらかになる上、天草のカスなどが入ることも防ぎます。<br/>その上、常に妥協はせず、食べてみてはより美味しくなるようなマイナーチェンジを繰り返しています。<br/>こうして造られたところてんは、ところてんが嫌いだった方も好きになる美味しさです。<br/>弊社のイチオシ「生ところてん」は、原料は完全に天草と水のみ。そしてところてん原液を直接容器に充填し冷やし固めるため、黄色がかった透明の美しい見た目通り、味も香りもにごりがありません。<br/>麺状に突き出したものも同様で、保存水との境目がわからないほどです。保存水として酢水を充填していますが、「ツン」としたり「ムワッ」とした香りが少ない米酢を使用して、たれを邪魔しません。</p>",
+            "title_size": 28,
+            "description_size": 16,
+            "title_color": "#000000",
+            "description_color": "#1c1c1c",
+            "title_font": "sans_serif_n4",
+            "title_description_gap": 20,
+            "image": "shopify://shop_images/get2.jpg",
+            "image_border_radius": 0,
+            "content_gap": 40,
+            "section_padding": 40,
+            "desktop_width_percent": 100,
+            "background_color": "#ffffff"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "heading_ydjDXY",
-        "richtext_rnmw9g"
+        "ai_gen_block_8682ec6_MWpTJV"
       ],
-      "custom_css": [],
-      "name": "t:sections.rich_text.presets.rich_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "content_width": "sm",
-        "text_position": "center",
-        "remove_vertical_spacing": false
-      }
-    },
-    "image_with_text_Cc4pzY": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_adkh4L": {
-          "type": "heading",
-          "settings": {
-            "text": "透き通っていて、きれい。",
-            "heading_tag": "h2"
-          }
-        },
-        "richtext_afzN3G": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>当社のところてんは、三代目康司のこだわりが詰まっています。<br/>一つ、原料である天草（てんぐさ）の洗い。水と手間を惜しまず、たっぷり4回洗います。こうすることで、嫌なにおいや、不純物をしっかり取り除きます。<br/>一つ、圧力釜での煮出し。酸（酢）で煮出す方法が一般的ですが、そうすると余計な酸味が入るため、当社では使用しません。また生蒸気ではなく乾熱蒸気を使うことで、余計な水分が増えることを防ぎます。<br/>一つ、のべ5回のろ過工程。ステンレス製のメッシュから目の細かい布まで、何度もこすことで、なめらかになる上、天草のカスなどが入ることも防ぎます。<br/>その上、常に妥協はせず、食べてみてはより美味しくなるようなマイナーチェンジを繰り返しています。<br/>こうして造られたところてんは、ところてんが嫌いだった方も好きになる美味しさです。<br/>弊社のイチオシ「生ところてん」は、原料は完全に天草と水のみ。そしてところてん原液を直接容器に充填し冷やし固めるため、黄色がかった透明の美しい見た目通り、味も香りもにごりがありません。<br/>麺状に突き出したものも同様で、保存水との境目がわからないほどです。保存水として酢水を充填していますが、「ツン」としたり「ムワッ」とした香りが少ない米酢を使用して、たれを邪魔しません。</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_adkh4L",
-        "richtext_afzN3G"
-      ],
-      "name": "t:sections.image_with_text.presets.image_with_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "image": "shopify://shop_images/get2.jpg",
-        "reveal_on_scroll": true,
-        "image_position": "end",
-        "content_width": "lg",
-        "remove_vertical_spacing": false
-      }
+      "settings": {}
     },
     "blocks_L3rcfY": {
       "type": "_blocks",
@@ -1319,10 +1262,8 @@
     "image_with_text_rTdfTp",
     "177036464339662674",
     "17703776449e62d5c1",
-    "image_with_text_3dqTwR",
     "blocks_hYjHey",
-    "rich_text_64fj4V",
-    "image_with_text_Cc4pzY",
+    "blocks_AtQmRb",
     "blocks_L3rcfY",
     "rich_text_Jh4ExN",
     "image_with_text_block_8Khtgt",
