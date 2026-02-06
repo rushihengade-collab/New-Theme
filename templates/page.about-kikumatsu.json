@@ -66,14 +66,14 @@
         "heading_DzhALb": {
           "type": "heading",
           "settings": {
-            "text": "Feelings for Kikumatsu",
+            "text": "菊松への想い",
             "heading_tag": "h2"
           }
         },
         "richtext_6W4MDL": {
           "type": "richtext",
           "settings": {
-            "content": "<p>This konjac was developed by the third-generation owner, Koji, after much trial and error in his quest to create the real thing.<br/>He named it \"Kikumatsu Konjac\" after the founder, Kikumatsu Nakao.</p><p>The first generation founded the company, the second generation expanded it, the third generation refined the manufacturing techniques, and the current fourth generation, who is the representative, is working hard every day to spread the product to the world.We<br/>will continue to make it with care so that it will become a product that will be loved by everyone for a long time to come as our company's signature product.</p>"
+            "content": "<p>このこんにゃくは、三代目康司が本物を造りたいと試行錯誤した結果、開発に成功しました。<br/>そして、創業者である中尾菊松から名前をもらい、「菊松こんにゃく」と名付けました。</p><p>初代が創業し、二代目が会社を大きくし、三代目が製造技術を磨き、現在の代表である四代目が世に大きく広めようと日々邁進しております。<br/>当社を代表する商品としてこれからも末長く皆様に愛される商品となるよう、大切に造ってまいります。</p>"
           }
         }
       },
@@ -96,14 +96,14 @@
         "heading_3tppJf": {
           "type": "heading",
           "settings": {
-            "text": "\"I've never eaten such delicious konjac.\"",
+            "text": "「こんなにおいしいこんにゃくは食べたことがない」",
             "heading_tag": "h2"
           }
         },
         "richtext_E4DckC": {
           "type": "richtext",
           "settings": {
-            "content": "<p>This is what most customers who have tried Kikumatsu Konnyaku say.<br/>Some even go so far as to say, \"After eating this, my palate has become refined and I can't eat any other konnyaku.\"<br/>Our employees are sometimes surprised when we receive inquiries from individual customers even in areas where our sales reach is limited.</p><p>The difference between this and regular konjac is the raw materials and manufacturing method, both of which are traditional methods.<br/>In today's world, where there are so many options, it makes you wonder how people in the past were able to use the best ingredients, but<br/>why is it that using wood ash, which has been used since ancient times, makes it so delicious?</p>"
+            "content": "<p>菊松こんにゃくを食べたお客様のほとんどが、そうおっしゃられます。<br/>時には、「これを食べると、舌が肥えてしまい他のこんにゃくが食べられなくなる」とまで言ってくださる方もいます。<br/>当社が営業に手が届いていない地域からも、個人のお客様からお問い合わせのお電話をいただくこともあり、従業員も驚くことがあります。</p><p>一般的なこんにゃくとの違いは、原材料と製法ですが、どちらも昔ながらのやり方です。<br/>昔の人はどうして最適な原料を用いることができたのかと考えるほど、色々な選択肢がある今の世の中で、<br/>どうして、ずっと昔から使われてきた「木の灰」を使うとこんなに美味しいのでしょうか。</p>"
           }
         }
       },
@@ -126,14 +126,14 @@
         "heading_c4Vtt3": {
           "type": "heading",
           "settings": {
-            "text": "How and why is it different?",
+            "text": "どんな風に、何故違うのか",
             "heading_tag": "h2"
           }
         },
         "richtext_Ym9n7G": {
           "type": "richtext",
           "settings": {
-            "content": "<p>\"Kikumatsu's konjac can be eaten raw,\" they advertise.<br/>This means that it has very little of the \"bad smell\" or \"bitterness\" that is common in konjac, and can be eaten as is after just rinsing it with water.</p><p>There are various reasons why Kikumatsu's konjac is of such high quality, including the raw materials and coagulants.<br/>All of this requires time, effort, and manufacturing techniques, but<br/>after much trial and error, we have established a system that allows us to provide a stable supply.<br/>We will explain some of these with photos.</p>"
+            "content": "<p>「菊松のこんにゃくは、生で食べられますよ」　そう謳っています。<br/>一般的なこんにゃくに感じる\"臭み\"や\"エグみ\"が非常に少なく、水洗いのみでそのままお召し上がりいただけますという意味です。</p><p>菊松のこんにゃくがこのような品質であるのは、原料や凝固剤を始め、様々な理由があります。<br/>すべて手間や時間と製造技術が必要ですが、<br/>試行錯誤の結果、安定供給できるような体制を確立しました。<br/>その一部を写真付きで解説致します。</p>"
           }
         }
       },
@@ -148,7 +148,7 @@
         "image": "shopify://shop_images/images20180511180726.webp",
         "mobile_image": "shopify://shop_images/images20180511180726.webp",
         "reveal_on_scroll": true,
-        "image_position": "start",
+        "image_position": "end",
         "content_width": "lg",
         "remove_vertical_spacing": false
       }
@@ -162,8 +162,8 @@
             "image_1": "shopify://shop_images/IMGP2251_1.webp",
             "image_2": "shopify://shop_images/IMGP2225.webp",
             "image_3": "shopify://shop_images/IMGP2204.webp",
-            "title": "Thawing and mashing konjac yam",
-            "description": "Kikumatsu Konjac does not use any milled konjac flour, but only organically grown konjac potatoes from Hiroshima Prefecture.While steam is typically used to efficiently thaw raw potatoes, this is not the case when making Kikumatsu Konjac.Frozen raw potatoes are placed in a tank and slowly thawed overnight using tap water. Thethawed whole potatoes are then slowly mashed and mixed with water to make the konjac paste."
+            "title": "こんにゃく芋の解凍、すりつぶし",
+            "description": "菊松こんにゃくは、製粉されたこんにゃく粉は一切使わず、有機栽培した広島県産のこんにゃく芋だけを使用しています。また、通常、生芋の解凍には蒸気を用い効率的に解凍しますが、菊松こんにゃくを造る時は違います。タンクに冷凍生芋を入れ、水道水を用い一晩かけてゆっくりと解凍するのです。その後、仕込んだ解凍生芋まるごとを時間をかけてすりつぶし、水と混ぜてこんにゃくのりを作っていきます。"
           }
         },
         "slide_image_with_text_yLewiH": {
@@ -172,8 +172,8 @@
             "image_1": "shopify://shop_images/images20180511182745.jpg",
             "image_2": "shopify://shop_images/images20180511182755.jpg",
             "image_3": "shopify://shop_images/images20180511182757_1.jpg",
-            "title": "Don't put in anything unnecessary",
-            "description": "Most regular konjac contains seaweed powder to give it a brown or black color or to create the grainy texture of potato skin. Without it, the konjac would be pure white and would not look like konjac. Mostproducts labeled \"raw potato\" also contain a blend of powder and seaweed powder.Kikumatsu Konjac is made by grinding the konjac potato with the skin on, so the skin is included and the color is natural konjac."
+            "title": "不要なものは入れない",
+            "description": "一般的なこんにゃくのほとんどが、海藻の粉末を入れて色を茶色や黒にしたり、芋の皮のようなつぶつぶを表現しています。入れないと真っ白になるため、こんにゃくらしさがないからです。\"生芋\"と表記されているものも、ほとんど粉をブレンドしていて海藻粉末も入っています。菊松こんにゃくは、こんにゃく芋を皮ごとすりつぶしているので、皮が入っていて、色はこんにゃく本来のものです。"
           }
         },
         "slide_image_with_text_6nXphH": {
@@ -182,8 +182,8 @@
             "image_1": "shopify://shop_images/images20180511182749_1.jpg",
             "image_2": "shopify://shop_images/images20180511182751.jpg",
             "image_3": "shopify://shop_images/images20180511182747.jpg",
-            "title": "Ash production and scum production",
-            "description": "We don't use any slaked lime or other ingredients, and instead use a mixture of scum water extracted from the supernatant of water with dissolved wood ash, and supplementary scum water with dissolved calcium from burned scallop shells. The wood ash is made in-house from pesticide-free thinned wood, which is burned to ash, sieved, and refined. Wood ashis a coagulant that determines the shelf life of konjac, but unlike slaked lime, which is artificially refined and has stable quality, wood ash is natural and therefore subject to variation. Despite this, we went through repeated trial and error until we were able to produce thousands of pieces of product with consistent quality."
+            "title": "製灰、アク水作り",
+            "description": "消石灰などは一切使用せず、木灰を溶いた水の上澄みだけを抽出したアク水と、補助的にホタテの貝殻を焼いて作ったカルシウムを溶いたアク水を混ぜて使っています。木灰は、農薬のない間伐材を 自社で燃やして灰にし、ふるいにかけ、精製しています。こんにゃくの保存性を左右する凝固剤ですが、消石灰のように人工的に精製されていて品質の安定しているものと違い、木の灰は自然のものですから、バラつきがあります。そんな中、一定の品質を保つ商品を数千丁単位で造れるようになるまで、試行錯誤を繰り返しました。"
           }
         },
         "slide_image_with_text_E6Xjjc": {
@@ -192,8 +192,8 @@
             "image_1": "shopify://shop_images/images20180511161014.jpg",
             "image_2": "shopify://shop_images/images20180511160219.webp",
             "image_3": "shopify://shop_images/images20180511161348.webp",
-            "title": "Special way to eat",
-            "description": "There is no need to remove the bitterness, which is usually required. It is of course delicious in regular dishes such as oden, but here are some ways to enjoy Kikumatsu konnyaku in a delicious way.[Kikumatsu konnyaku sashimi]Dip thinly sliced ​​Kikumatsu konnyaku in wasabi soy sauce or ponzu sauce.★Advanced variation: Place a mixture of shiso leaves and grated daikon radish on top and pour dashi soy sauce over it.[Kikumatsu konnyaku thread salad]Mix your favorite ingredients such as cucumber and ham with Kikumatsu konnyaku thread and ponzu sauce.★Advanced variation: Mix with shredded egg for a Chinese salad-like flavor."
+            "title": "特別なお召し上がり方",
+            "description": "通常必要なことが多いアク抜きは不要です。おでんなど通常の料理にしても もちろんおいしいですが、菊松こんにゃくだから美味しく味わえる方法をご紹介します。【菊松板こんのお刺身】うす切りにした菊松板こんにゃくを、わさび醤油でやポン酢につける★上級アレンジ：大葉・大根おろしを混ぜたものを上にのせ、だし醤油をかけてもgood【菊松糸サラダ】きゅうり・ハムなどお好きな具材と菊松糸こんにゃくをポン酢で合える★上級アレンジ：錦糸卵を和えて中華サラダ風の味付けもgood"
           }
         }
       },
@@ -251,6 +251,19 @@
         "padding-top": 15,
         "padding-bottom": 91
       }
+    },
+    "custom_news_section_YEajjg": {
+      "type": "custom-news-section",
+      "name": "Custom News Section",
+      "settings": {
+        "title": "ニュース一覧",
+        "subtitle": "- NEWS -",
+        "btn_text": ">>過去のニュースはこちら",
+        "btn_link": "https://nakaoshokuhin.co.jp/news/",
+        "section_bg_color": "",
+        "margin-top": 2,
+        "margin-bottom": 40
+      }
     }
   },
   "order": [
@@ -261,6 +274,7 @@
     "rich_text_QqheP9",
     "image_with_text_bKkzQe",
     "slide_image_with_text_DUQrw9",
-    "kikumatsu_product_lineup_bwxzqh"
+    "kikumatsu_product_lineup_bwxzqh",
+    "custom_news_section_YEajjg"
   ]
 }
