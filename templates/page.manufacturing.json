@@ -492,38 +492,6 @@
         "remove_vertical_spacing": false
       }
     },
-    "image_with_text_Cc4pzY": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_adkh4L": {
-          "type": "heading",
-          "settings": {
-            "text": "糸こんにゃくってどうやってできている？",
-            "heading_tag": "h2"
-          }
-        },
-        "richtext_afzN3G": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>糸こんにゃくはどうやってできているか？知らない人が多いと思います。<br/>当社の糸こんにゃくは、シャワーのような感じで出てきます。<br/>ホースの先に穴の空いたプレートが取り付けられていて、そこからシャワーのように押し出したこんにゃくのりをお湯の中で泳がせ、炊き上げて固めるのです。<br/>このプレートを目皿（めざら）と呼び、これの穴の大きさや形を変えることで、多種多様なこんにゃくができます。<br/>また、板こんにゃくでも糸こんにゃくでもない特殊な形のこんにゃくも、この機械で作っています。</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_adkh4L",
-        "richtext_afzN3G"
-      ],
-      "name": "t:sections.image_with_text.presets.image_with_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "image": "shopify://shop_images/Get.jpg",
-        "reveal_on_scroll": true,
-        "image_position": "end",
-        "content_width": "sm",
-        "remove_vertical_spacing": false
-      }
-    },
     "blocks_hYjHey": {
       "type": "_blocks",
       "blocks": {
@@ -745,6 +713,38 @@
         "separate_section_with_border": false,
         "content_width": "sm",
         "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_Cc4pzY": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_adkh4L": {
+          "type": "heading",
+          "settings": {
+            "text": "透き通っていて、きれい。",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_afzN3G": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>当社のところてんは、三代目康司のこだわりが詰まっています。<br/>一つ、原料である天草（てんぐさ）の洗い。水と手間を惜しまず、たっぷり4回洗います。こうすることで、嫌なにおいや、不純物をしっかり取り除きます。<br/>一つ、圧力釜での煮出し。酸（酢）で煮出す方法が一般的ですが、そうすると余計な酸味が入るため、当社では使用しません。また生蒸気ではなく乾熱蒸気を使うことで、余計な水分が増えることを防ぎます。<br/>一つ、のべ5回のろ過工程。ステンレス製のメッシュから目の細かい布まで、何度もこすことで、なめらかになる上、天草のカスなどが入ることも防ぎます。<br/>その上、常に妥協はせず、食べてみてはより美味しくなるようなマイナーチェンジを繰り返しています。<br/>こうして造られたところてんは、ところてんが嫌いだった方も好きになる美味しさです。<br/>弊社のイチオシ「生ところてん」は、原料は完全に天草と水のみ。そしてところてん原液を直接容器に充填し冷やし固めるため、黄色がかった透明の美しい見た目通り、味も香りもにごりがありません。<br/>麺状に突き出したものも同様で、保存水との境目がわからないほどです。保存水として酢水を充填していますが、「ツン」としたり「ムワッ」とした香りが少ない米酢を使用して、たれを邪魔しません。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_adkh4L",
+        "richtext_afzN3G"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/get2.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "lg",
         "remove_vertical_spacing": false
       }
     },
@@ -1089,9 +1089,9 @@
     "177036464339662674",
     "rich_text_AyVdda",
     "image_with_text_3dqTwR",
-    "image_with_text_Cc4pzY",
     "blocks_hYjHey",
     "rich_text_64fj4V",
+    "image_with_text_Cc4pzY",
     "image_with_text_block_8Khtgt",
     "rich_text_7EGVfJ",
     "17703746428fb8bc02",
