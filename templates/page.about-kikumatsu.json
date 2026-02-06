@@ -18,6 +18,36 @@
         "page_width": "xs"
       }
     },
+    "rich_text_3FmxC4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_txfhxN": {
+          "type": "heading",
+          "settings": {
+            "text": "菊松について",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_ydyGRX": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>~­­­ KIKUMATSU ~­­­</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_txfhxN",
+        "richtext_ydyGRX"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
     "image_with_text_block_nkkFfj": {
       "type": "image-with-text-block",
       "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
@@ -225,6 +255,7 @@
   },
   "order": [
     "main",
+    "rich_text_3FmxC4",
     "image_with_text_block_nkkFfj",
     "rich_text_FUpChy",
     "rich_text_QqheP9",
