@@ -1,6 +1,510 @@
+{% doc %}
+  @prompt
+    Create a section of slide images with text, provide the blocks so that can have multiple
+    
+    Provide the setting to have maximum of 4 slide images in single block, also provide the setting to have them left or right placed, also provide the Tag Box having background color, title and text
+    
+    also provide the padding setting for both mobile and desktop , inside single slide give option to add maximum of 4 images and for other slides2 slide3 give option to add block
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-multi-slide-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .ai-multi-slide-container-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-multi-slide-container-{{ ai_gen_id }} {
+      flex-direction: row;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .ai-multi-slide-container-{{ ai_gen_id }}.ai-position--right-{{ ai_gen_id }} {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .ai-multi-slide-images-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-multi-slide-images-{{ ai_gen_id }} {
+      width: 50%;
+      flex-shrink: 0;
+      gap: 15px;
+    }
+  }
+
+  .ai-multi-slide-images-{{ ai_gen_id }}.ai-images-count-1-{{ ai_gen_id }} {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-multi-slide-images-{{ ai_gen_id }}.ai-images-count-3-{{ ai_gen_id }} .ai-image-item-{{ ai_gen_id }}:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .ai-image-item-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .ai-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  .ai-multi-slide-content-{{ ai_gen_id }} {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-multi-slide-content-{{ ai_gen_id }} {
+      width: 50%;
+      gap: 20px;
+    }
+  }
+
+  .ai-tag-box-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: {{ block.settings.tag_background_color }};
+    border-radius: {{ block.settings.tag_border_radius }}px;
+    align-self: flex-start;
+  }
+
+  .ai-tag-title-{{ ai_gen_id }} {
+    font-family: {{ block.settings.tag_font.family }}, {{ block.settings.tag_font.fallback_families }};
+    font-weight: {{ block.settings.tag_font.weight }};
+    font-size: {{ block.settings.tag_font_size_mobile }}px;
+    color: {{ block.settings.tag_text_color }};
+    margin: 0;
+    text-transform: {{ block.settings.tag_text_transform }};
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-tag-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.tag_font_size_desktop }}px;
+    }
+  }
+
+  .ai-text-content-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-text-content-{{ ai_gen_id }} h2,
+  .ai-text-content-{{ ai_gen_id }} h3,
+  .ai-text-content-{{ ai_gen_id }} h4 {
+    font-family: {{ block.settings.heading_font.family }}, {{ block.settings.heading_font.fallback_families }};
+    font-weight: {{ block.settings.heading_font.weight }};
+    font-size: {{ block.settings.heading_size_mobile }}px;
+    color: {{ block.settings.text_color }};
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-text-content-{{ ai_gen_id }} h2,
+    .ai-text-content-{{ ai_gen_id }} h3,
+    .ai-text-content-{{ ai_gen_id }} h4 {
+      font-size: {{ block.settings.heading_size_desktop }}px;
+    }
+  }
+
+  .ai-text-content-{{ ai_gen_id }} p {
+    font-family: {{ block.settings.body_font.family }}, {{ block.settings.body_font.fallback_families }};
+    font-weight: {{ block.settings.body_font.weight }};
+    font-size: {{ block.settings.body_size_mobile }}px;
+    color: {{ block.settings.text_color }};
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-text-content-{{ ai_gen_id }} p {
+      font-size: {{ block.settings.body_size_desktop }}px;
+    }
+  }
+
+  .ai-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 12px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+{% endstyle %}
+
+<ai-multi-slide-{{ ai_gen_id }} class="ai-multi-slide-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-multi-slide-container-{{ ai_gen_id }} ai-position--{{ block.settings.image_position }}-{{ ai_gen_id }}">
+    {% liquid
+      assign image_count = 0
+      if block.settings.image_1 != blank
+        assign image_count = image_count | plus: 1
+      endif
+      if block.settings.image_2 != blank
+        assign image_count = image_count | plus: 1
+      endif
+      if block.settings.image_3 != blank
+        assign image_count = image_count | plus: 1
+      endif
+      if block.settings.image_4 != blank
+        assign image_count = image_count | plus: 1
+      endif
+    %}
+
+    <div class="ai-multi-slide-images-{{ ai_gen_id }} ai-images-count-{{ image_count }}-{{ ai_gen_id }}">
+      {% for i in (1..4) %}
+        {% liquid
+          assign image_key = 'image_' | append: i
+          assign current_image = block.settings[image_key]
+        %}
+
+        {% if current_image != blank %}
+          <div class="ai-image-item-{{ ai_gen_id }}">
+            <img
+              src="{{ current_image | image_url: width: 800 }}"
+              alt="{{ current_image.alt | escape }}"
+              loading="lazy"
+              width="{{ current_image.width }}"
+              height="{{ current_image.height }}"
+              class="ai-image-{{ ai_gen_id }}"
+            >
+          </div>
+        {% elsif i <= 4 %}
+          <div class="ai-image-item-{{ ai_gen_id }}">
+            <div class="ai-image-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+              <div class="ai-empty-state-{{ ai_gen_id }}">
+                Image {{ i }}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="ai-multi-slide-content-{{ ai_gen_id }}">
+      {% if block.settings.tag_title != blank %}
+        <div class="ai-tag-box-{{ ai_gen_id }}">
+          <div class="ai-tag-title-{{ ai_gen_id }}">{{ block.settings.tag_title }}</div>
+        </div>
+      {% endif %}
+
+      <div class="ai-text-content-{{ ai_gen_id }}">
+        {% if block.settings.title != blank %}
+          {{ block.settings.title }}
+        {% endif %}
+
+        {% if block.settings.text != blank %}
+          {{ block.settings.text }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</ai-multi-slide-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class AiMultiSlide{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.init();
+      }
+
+      init() {
+        const images = this.querySelectorAll('.ai-image-item-{{ ai_gen_id }}');
+        images.forEach((img, index) => {
+          img.style.opacity = '0';
+          img.style.transform = 'scale(0.95)';
+          img.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+          
+          setTimeout(() => {
+            img.style.opacity = '1';
+            img.style.transform = 'scale(1)';
+          }, index * 100);
+        });
+      }
+    }
+
+    customElements.define('ai-multi-slide-{{ ai_gen_id }}', AiMultiSlide{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Multi image slide",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Images position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "Image 4"
+    },
+    {
+      "type": "header",
+      "content": "Tag box"
+    },
+    {
+      "type": "text",
+      "id": "tag_title",
+      "label": "Tag title",
+      "default": "Featured"
+    },
+    {
+      "type": "color",
+      "id": "tag_background_color",
+      "label": "Background",
+      "default": "#5c5c5c"
+    },
+    {
+      "type": "color",
+      "id": "tag_text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "tag_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 4
+    },
+    {
+      "type": "font_picker",
+      "id": "tag_font",
+      "label": "Font",
+      "default": "noto_sans_japanese_n4"
+    },
+    {
+      "type": "range",
+      "id": "tag_font_size_mobile",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size (mobile)",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "tag_font_size_desktop",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size (desktop)",
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "tag_text_transform",
+      "label": "Text transform",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "uppercase",
+          "label": "Uppercase"
+        },
+        {
+          "value": "lowercase",
+          "label": "Lowercase"
+        },
+        {
+          "value": "capitalize",
+          "label": "Capitalize"
+        }
+      ],
+      "default": "uppercase"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "<h2>Slide title</h2>"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Add your description text here. This is a great place to share details about your product or service.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Text style"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font",
+      "label": "Heading font",
+      "default": "biz_udpmincho_n7"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size (mobile)",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "min": 20,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size (desktop)",
+      "default": 36
+    },
+    {
+      "type": "font_picker",
+      "id": "body_font",
+      "label": "Body font",
+      "default": "noto_sans_japanese_n4"
+    },
+    {
+      "type": "range",
+      "id": "body_size_mobile",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Body size (mobile)",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "body_size_desktop",
+      "min": 14,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "label": "Body size (desktop)",
+      "default": 16
+    }
+  ],
+  "presets": [
+    {
+      "name": "Multi image slide"
+    }
+  ]
+}
 {% endschema %}
