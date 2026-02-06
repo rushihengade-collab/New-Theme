@@ -748,7 +748,7 @@
             "content_padding_horizontal_desktop": 0,
             "background_color": "#ffffff",
             "padding_top_mobile": 30,
-            "padding_bottom_mobile": 30,
+            "padding_bottom_mobile": 0,
             "padding_horizontal_mobile": 20,
             "padding_top_desktop": 20,
             "padding_bottom_desktop": 20,
