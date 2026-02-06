@@ -356,6 +356,36 @@
       ],
       "settings": {}
     },
+    "rich_text_Hj8j6C": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cXaRr6": {
+          "type": "heading",
+          "settings": {
+            "text": "Kikumatsu's Thoughts",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_anwX7X": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Kikumatsu regularly visits the konnyaku fields in Hiroshima Prefecture.<br/>We drive up the mountain so much that the sky feels closer, and before we know it, we arrive at a village surrounded by greenery on all sides.<br/>We will check to see that the organically grown konnyaku potatoes are growing vigorously in the terraced fields in the mountains.</p><p>In order to make delicious and safe konnyaku that everyone can enjoy, it is essential that the ingredients are healthy.<br/>This is Kikumatsu's philosophy of \"reliable manufacturing,\" which is common not only to konnyaku potatoes but also to wood ash, water, and other materials.</p><p>The smile of the konnyaku farmer who said, \"The konnyaku is growing well again this year!\" was the same as Kikumatsu's smile after he received the baton.<br/>It is with this dream that we face konnyaku every day, hoping to bring even more smiles to our customers' dinner tables.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cXaRr6",
+        "richtext_anwX7X"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
     "custom_news_section_YEajjg": {
       "type": "custom-news-section",
       "name": "Custom News Section",
@@ -382,6 +412,7 @@
     "blocks_EExpMJ",
     "blocks_kphLcP",
     "177035974270ce3c8b",
+    "rich_text_Hj8j6C",
     "custom_news_section_YEajjg"
   ]
 }
