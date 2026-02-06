@@ -246,7 +246,7 @@
             "max_width": 1200,
             "image_width": 50,
             "content_gap": 60,
-            "mobile_content_gap": 30,
+            "mobile_content_gap": 35,
             "padding_vertical": 60,
             "padding_horizontal": 20,
             "background_color": "#ffffff",
@@ -274,35 +274,49 @@
             "text_spacing": 20
           },
           "blocks": {}
+        },
+        "ai_gen_block_e1abfc8_yncFAQ": {
+          "type": "ai_gen_block_e1abfc8",
+          "settings": {
+            "image_position": "right",
+            "max_width": 1200,
+            "image_width": 50,
+            "content_gap": 60,
+            "mobile_content_gap": 35,
+            "padding_vertical": 60,
+            "padding_horizontal": 20,
+            "background_color": "#ffffff",
+            "image_1": "shopify://shop_images/Slide2-1.jpg",
+            "image_2": "shopify://shop_images/Slide2-2.jpg",
+            "image_3": "shopify://shop_images/Slide2-3.jpg",
+            "image_border_radius": 0,
+            "autoplay": true,
+            "tag": "工程2",
+            "tag_background_color": "#191971",
+            "tag_text_color": "#ffffff",
+            "tag_font_size": 12,
+            "tag_padding_vertical": 6,
+            "tag_padding_horizontal": 15,
+            "tag_border_radius": 4,
+            "tag_text_transform": "uppercase",
+            "title": "缶へ",
+            "title_font": "sans_serif_n4",
+            "title_font_size": 40,
+            "title_color": "#000000",
+            "title_text_transform": "none",
+            "description": "凝固剤を混ぜて練り、缶へ流し込みます。\n流し込む時にはしっかり押さえておかないと空気が入り、不良品ができてしまいます。\n缶の一番上の溢れたのりの処理の\"ならし\"は熟練技で、当社でもできる者が限られています。",
+            "description_font_size": 16,
+            "description_color": "#5c5c5c",
+            "text_spacing": 20
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_e1abfc8_wcP38J"
+        "ai_gen_block_e1abfc8_wcP38J",
+        "ai_gen_block_e1abfc8_yncFAQ"
       ],
       "settings": {}
-    },
-    "slide_image_with_text_hAEhwN": {
-      "type": "slide-image-with-text",
-      "blocks": {
-        "slide_image_with_text_NGcMyD": {
-          "type": "slide-image-with-text",
-          "settings": {
-            "image_1": "shopify://shop_images/Slide1-1.jpg",
-            "image_2": "shopify://shop_images/Slide1-2.jpg",
-            "image_3": "shopify://shop_images/Slide1-3.jpg",
-            "title": "こんにゃくのり",
-            "description": "水と原料を混ぜ溶き、ホッパーに溜めます。季節によって水温は変化しますが、同じ温度になるように、溶く時の水温を調節しています。この時、空気が入ると品質の均一性に問題が出るため、ホッパーの壁に沿わせて泡が立たないように流し込みます。"
-          }
-        }
-      },
-      "block_order": [
-        "slide_image_with_text_NGcMyD"
-      ],
-      "name": "Slide Image with Text",
-      "settings": {
-        "padding-top": 40,
-        "padding-bottom": 40
-      }
     },
     "image_with_text_8nCjMC": {
       "type": "image-with-text",
@@ -607,7 +621,6 @@
     "rich_text_M63mjC",
     "image_with_text_rTdfTp",
     "177036464339662674",
-    "slide_image_with_text_hAEhwN",
     "image_with_text_8nCjMC",
     "image_with_text_block_8Khtgt",
     "rich_text_7EGVfJ",
