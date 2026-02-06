@@ -24,14 +24,14 @@
         "heading_AtEYig": {
           "type": "heading",
           "settings": {
-            "text": "品質管理",
+            "text": "製造について",
             "heading_tag": "h1"
           }
         },
         "richtext_d6BnWM": {
           "type": "richtext",
           "settings": {
-            "content": "<p>~Quality Control~</p>"
+            "content": "<p>~­­­ QUALITY MANAGEMENT ~­­­</p>"
           }
         }
       },
@@ -48,6 +48,130 @@
         "text_position": "center",
         "remove_vertical_spacing": false
       }
+    },
+    "image_with_text_block_kzjqGG": {
+      "type": "image-with-text-block",
+      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "md",
+        "image": "shopify://shop_images/m1.webp",
+        "content_width": "sm",
+        "enable_parallax": false,
+        "remove_vertical_spacing": true
+      }
+    },
+    "rich_text_gYqjKe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mwBNDe": {
+          "type": "heading",
+          "settings": {
+            "text": "蒟蒻芋",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_Jnw9kF": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>~ INGREDIENTS ~</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mwBNDe",
+        "richtext_Jnw9kF"
+      ],
+      "custom_css": [],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_block_d9a9CA": {
+      "type": "image-with-text-block",
+      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "md",
+        "image": "shopify://shop_images/man2.webp",
+        "content_width": "sm",
+        "enable_parallax": false,
+        "remove_vertical_spacing": true
+      }
+    },
+    "rich_text_GbUKXQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6f4GyP": {
+          "type": "heading",
+          "settings": {
+            "text": "こんにゃく本来の美味しさのために",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_iKRgUR": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>こんにゃく粉のみで製造した安価なこんにゃくが多い世の中。当社でもこんにゃく粉は使用していますが、こんにゃく芋をとても大事に考えています。</p><p>そもそもこんにゃく芋は東南アジアが原産地である、多年生のサトイモ科の球茎のことです。<br/>西暦600年ごろ、遣隋使により整腸作用がある薬品として日本に伝わりました。</p><p>こんにゃく芋は保存性が悪く腐りやすいため、時の都である奈良の近くで栽培され食されていました。<br/>当時は高貴な方だけしか食べれない高級食品であったそうです。</p><p>そしてこんにゃくは江戸時代中期〜後期（1776年）の頃、水戸藩の中島藤右衛門翁の功績により日本全国に普及しました。</p><p>それはこんにゃく芋を乾燥させ、粉末にすること（生芋の1/10の重量）で、すぐに腐りやすく長距離移動や貯蔵が困難であった問題を解消しました。</p><p>そうして便利にはなりましたが、芋を粉に精製する段階で芋本来のおいしさは大きく失われてしまいます。</p><p>こんにゃく芋は年に一回の収穫かつ、土を落としたらすぐに腐ってしまう性質上、一度に何ｔもの量を仕入れ、洗い、冷凍保存する必要があります。<br/>それにより運送費や人件費、冷凍保存費等、費用はかかりますが、おいしいこんにゃくを造るために必要不可欠であると当社は考えます。</p><p>これからも農家さんと手をつなぎ、こんにゃく芋を大事に使い続けていきます。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6f4GyP",
+        "richtext_iKRgUR"
+      ],
+      "custom_css": [],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "blocks_JTp9jK": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_ea5ecb0_pTHGeL": {
+          "type": "ai_gen_block_ea5ecb0",
+          "settings": {
+            "desktop_width_percent": 100,
+            "section_padding": 40,
+            "horizontal_padding": 30,
+            "column_gap": 30,
+            "content_gap": 15,
+            "mobile_gap": 30,
+            "image_1": "shopify://shop_images/man3.webp",
+            "heading_1": "こんにゃく畑の視察",
+            "text_1": "こんにゃく芋の収穫は、年に一度、まとめて行います。社長である中尾は、収穫時期に現地に出向き、視察を行うとともに、収穫を手伝います。年々人手不足が進む農家さんの手助けにもなり、手で触った品を仕入れるので、安心感があります。",
+            "image_2": "shopify://shop_images/man4.webp",
+            "heading_2": "土がついた状態で仕入れ",
+            "text_2": "こんにゃく芋は、とてもデリケートなもので、土を落とすとたちまち傷んでしまいます。また、芋に傷がついてしまっただけでもその鮮度は失われてしまいます。そのため当社では、美味しいこんにゃく芋の鮮度を保つため、土がついた状態で仕入れています。",
+            "image_3": "shopify://shop_images/man5.webp",
+            "heading_3": "鮮度を最高の状態で保管",
+            "text_3": "土がついた状態で仕入れたこんにゃく芋を水でに洗い、ひとつひとつ手で梱包・計量し、すぐに冷凍保管します。年に一度の大仕事は大変ですが、こうすることで、美味しいこんにゃく芋の状態で保管することができます。",
+            "text_alignment": "center",
+            "image_border_radius": 0,
+            "heading_font": "noto_sans_japanese_n4",
+            "heading_size": 24,
+            "heading_color": "#000000",
+            "text_size": 16,
+            "text_color": "#5c5c5c"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_ea5ecb0_pTHGeL"
+      ],
+      "name": "Three column images",
+      "settings": {}
     },
     "177027309567aec5d6": {
       "type": "_blocks",
@@ -302,7 +426,7 @@
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
-        "image": "shopify://shop_images/q2.jpg",
+        "image": "shopify://shop_images/first.jpg",
         "reveal_on_scroll": true,
         "image_position": "end",
         "content_width": "sm",
@@ -326,7 +450,7 @@
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
-        "image": "shopify://shop_images/q3.jpg",
+        "image": "shopify://shop_images/second.jpg",
         "reveal_on_scroll": true,
         "image_position": "start",
         "content_width": "sm",
@@ -339,8 +463,8 @@
         "heading_NWCwhq": {
           "type": "heading",
           "settings": {
-            "text": "PURSUIT OF TASTE",
-            "heading_tag": "h1"
+            "text": "VALUE AS FOOD",
+            "heading_tag": "h2"
           }
         }
       },
@@ -373,7 +497,7 @@
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
-        "image": "shopify://shop_images/q4.jpg",
+        "image": "shopify://shop_images/f1.jpg",
         "reveal_on_scroll": true,
         "image_position": "end",
         "content_width": "sm",
@@ -388,16 +512,27 @@
           "settings": {
             "content": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.<br/><br/></p>"
           }
+        },
+        "button_AUVEC6": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "Recipe",
+            "url": "shopify://pages/recipe",
+            "background": "#1c1c1c",
+            "text_color": ""
+          }
         }
       },
       "block_order": [
-        "richtext_NRMVmB"
+        "richtext_NRMVmB",
+        "button_AUVEC6"
       ],
       "name": "t:sections.image_with_text.presets.image_with_text.name",
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
-        "image": "shopify://shop_images/q5.jpg",
+        "image": "shopify://shop_images/f2.jpg",
         "reveal_on_scroll": true,
         "image_position": "start",
         "content_width": "sm",
@@ -410,8 +545,8 @@
         "heading_QyBjzY": {
           "type": "heading",
           "settings": {
-            "text": "CONTROLLED FACTORY",
-            "heading_tag": "h1"
+            "text": "DIFFICULTY OF RASING",
+            "heading_tag": "h2"
           }
         }
       },
@@ -444,7 +579,7 @@
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
-        "image": "shopify://shop_images/q6.jpg",
+        "image": "shopify://shop_images/r1.jpg",
         "reveal_on_scroll": true,
         "image_position": "end",
         "content_width": "sm",
@@ -459,46 +594,31 @@
           "settings": {
             "content": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.<br/><br/></p>"
           }
+        },
+        "button_XMDGYh": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "Quality",
+            "url": "shopify://pages/quality",
+            "background": "#1c1c1c",
+            "text_color": ""
+          }
         }
       },
       "block_order": [
-        "richtext_r7nzTk"
+        "richtext_r7nzTk",
+        "button_XMDGYh"
       ],
       "name": "t:sections.image_with_text.presets.image_with_text.name",
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
-        "image": "shopify://shop_images/q7.jpg",
+        "image": "shopify://shop_images/r2.jpg",
         "reveal_on_scroll": true,
         "image_position": "start",
         "content_width": "sm",
         "remove_vertical_spacing": false
-      }
-    },
-    "rich_text_nKbkAK": {
-      "type": "rich-text",
-      "blocks": {
-        "button_qFC9kr": {
-          "type": "button",
-          "settings": {
-            "style": "solid",
-            "text": "Contact Us",
-            "url": "shopify://pages/contact",
-            "background": "#1c1c1c",
-            "text_color": "rgba(0,0,0,0)"
-          }
-        }
-      },
-      "block_order": [
-        "button_qFC9kr"
-      ],
-      "name": "t:sections.rich_text.presets.rich_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "content_width": "sm",
-        "text_position": "center",
-        "remove_vertical_spacing": true
       }
     },
     "custom_news_section_DkzQ8w": {
@@ -518,6 +638,11 @@
   "order": [
     "main",
     "rich_text_TkHtJF",
+    "image_with_text_block_kzjqGG",
+    "rich_text_gYqjKe",
+    "image_with_text_block_d9a9CA",
+    "rich_text_GbUKXQ",
+    "blocks_JTp9jK",
     "177027309567aec5d6",
     "image_with_text_rTdfTp",
     "image_with_text_Vef7ey",
@@ -534,7 +659,6 @@
     "rich_text_BBe3rA",
     "image_with_text_DhFCnc",
     "image_with_text_KcxQei",
-    "rich_text_nKbkAK",
     "custom_news_section_DkzQ8w"
   ]
 }
