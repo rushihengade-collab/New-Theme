@@ -18,6 +18,18 @@
         "page_width": "xs"
       }
     },
+    "image_with_text_block_nkkFfj": {
+      "type": "image-with-text-block",
+      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "image_size": "auto",
+        "image": "shopify://shop_images/kiku1.webp",
+        "content_width": "sm",
+        "enable_parallax": false,
+        "remove_vertical_spacing": true
+      }
+    },
     "rich_text_FUpChy": {
       "type": "rich-text",
       "blocks": {
@@ -213,6 +225,7 @@
   },
   "order": [
     "main",
+    "image_with_text_block_nkkFfj",
     "rich_text_FUpChy",
     "rich_text_QqheP9",
     "image_with_text_bKkzQe",
