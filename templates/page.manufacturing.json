@@ -492,6 +492,38 @@
         "remove_vertical_spacing": false
       }
     },
+    "image_with_text_Cc4pzY": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_adkh4L": {
+          "type": "heading",
+          "settings": {
+            "text": "糸こんにゃくってどうやってできている？",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_afzN3G": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>糸こんにゃくはどうやってできているか？知らない人が多いと思います。<br/>当社の糸こんにゃくは、シャワーのような感じで出てきます。<br/>ホースの先に穴の空いたプレートが取り付けられていて、そこからシャワーのように押し出したこんにゃくのりをお湯の中で泳がせ、炊き上げて固めるのです。<br/>このプレートを目皿（めざら）と呼び、これの穴の大きさや形を変えることで、多種多様なこんにゃくができます。<br/>また、板こんにゃくでも糸こんにゃくでもない特殊な形のこんにゃくも、この機械で作っています。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_adkh4L",
+        "richtext_afzN3G"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/Get.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
     "blocks_hYjHey": {
       "type": "_blocks",
       "blocks": {
@@ -684,6 +716,37 @@
         "ai_gen_block_e1abfc8_UTRE3F"
       ],
       "settings": {}
+    },
+    "rich_text_64fj4V": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ydjDXY": {
+          "type": "heading",
+          "settings": {
+            "text": "ところてん",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_rnmw9g": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>~ HOW TO MAKE ~</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ydjDXY",
+        "richtext_rnmw9g"
+      ],
+      "custom_css": [],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
     },
     "image_with_text_block_8Khtgt": {
       "type": "image-with-text-block",
@@ -1026,7 +1089,9 @@
     "177036464339662674",
     "rich_text_AyVdda",
     "image_with_text_3dqTwR",
+    "image_with_text_Cc4pzY",
     "blocks_hYjHey",
+    "rich_text_64fj4V",
     "image_with_text_block_8Khtgt",
     "rich_text_7EGVfJ",
     "17703746428fb8bc02",
