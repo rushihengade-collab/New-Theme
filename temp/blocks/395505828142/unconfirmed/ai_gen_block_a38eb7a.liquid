@@ -1,6 +1,855 @@
+{% doc %}
+  @prompt
+    create a section having table of 18 rows and 4 columns all having border line, the text inside it will be rich text, also all the text should be center aligned, have the background color setting for the selected row, provide the horizontal padding setting for the section and not the data table, also provide the setting to have the text center aligned, column 1 and column 2, should always be top center aligned
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-table-section-{{ ai_gen_id }} {
+    width: 100%;
+    padding-left: {{ block.settings.horizontal_padding }}px;
+    padding-right: {{ block.settings.horizontal_padding }}px;
+    display: block;
+  }
+
+  .ai-table-container-{{ ai_gen_id }} {
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 0 auto;
+  }
+
+  .ai-table-{{ ai_gen_id }} {
+    width: 100%;
+    border-collapse: collapse;
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+  }
+
+  .ai-table-{{ ai_gen_id }} td {
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+    padding: {{ block.settings.cell_padding }}px;
+    {% if block.settings.text_align == 'center' %}
+      text-align: center;
+    {% elsif block.settings.text_align == 'left' %}
+      text-align: left;
+    {% elsif block.settings.text_align == 'right' %}
+      text-align: right;
+    {% endif %}
+    vertical-align: middle;
+  }
+
+  .ai-table-{{ ai_gen_id }} td:nth-child(1),
+  .ai-table-{{ ai_gen_id }} td:nth-child(2) {
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .ai-table-{{ ai_gen_id }} tr:nth-child(1) td {
+    background-color: {{ block.settings.row_1_bg }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tr:nth-child(2) td {
+    background-color: {{ block.settings.row_2_bg }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tr:nth-child(3) td {
+    background-color: {{ block.settings.row_3_bg }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tr:nth-child(4) td {
+    background-color: {{ block.settings.row_4_bg }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tr:nth-child(5) td {
+    background-color: {{ block.settings.row_5_bg }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tr:nth-child(6) td {
+    background-color: {{ block.settings.row_6_bg }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tr:nth-child(7) td {
+    background-color: {{ block.settings.row_7_bg }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tr:nth-child(8) td {
+    background-color: {{ block.settings.row_8_bg }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tr:nth-child(9) td {
+    background-color: {{ block.settings.row_9_bg }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tr:nth-child(10) td {
+    background-color: {{ block.settings.row_10_bg }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tr:nth-child(11) td {
+    background-color: {{ block.settings.row_11_bg }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tr:nth-child(12) td {
+    background-color: {{ block.settings.row_12_bg }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tr:nth-child(13) td {
+    background-color: {{ block.settings.row_13_bg }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tr:nth-child(14) td {
+    background-color: {{ block.settings.row_14_bg }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tr:nth-child(15) td {
+    background-color: {{ block.settings.row_15_bg }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tr:nth-child(16) td {
+    background-color: {{ block.settings.row_16_bg }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tr:nth-child(17) td {
+    background-color: {{ block.settings.row_17_bg }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tr:nth-child(18) td {
+    background-color: {{ block.settings.row_18_bg }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-table-section-{{ ai_gen_id }} {
+      padding-left: {{ block.settings.horizontal_padding | times: 0.5 }}px;
+      padding-right: {{ block.settings.horizontal_padding | times: 0.5 }}px;
+    }
+
+    .ai-table-{{ ai_gen_id }} td {
+      font-size: 14px;
+      padding: {{ block.settings.cell_padding | times: 0.7 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-table-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-table-container-{{ ai_gen_id }}">
+    <table class="ai-table-{{ ai_gen_id }}">
+      <tr>
+        <td>{{ block.settings.row_1_col_1 }}</td>
+        <td>{{ block.settings.row_1_col_2 }}</td>
+        <td>{{ block.settings.row_1_col_3 }}</td>
+        <td>{{ block.settings.row_1_col_4 }}</td>
+      </tr>
+      <tr>
+        <td>{{ block.settings.row_2_col_1 }}</td>
+        <td>{{ block.settings.row_2_col_2 }}</td>
+        <td>{{ block.settings.row_2_col_3 }}</td>
+        <td>{{ block.settings.row_2_col_4 }}</td>
+      </tr>
+      <tr>
+        <td>{{ block.settings.row_3_col_1 }}</td>
+        <td>{{ block.settings.row_3_col_2 }}</td>
+        <td>{{ block.settings.row_3_col_3 }}</td>
+        <td>{{ block.settings.row_3_col_4 }}</td>
+      </tr>
+      <tr>
+        <td>{{ block.settings.row_4_col_1 }}</td>
+        <td>{{ block.settings.row_4_col_2 }}</td>
+        <td>{{ block.settings.row_4_col_3 }}</td>
+        <td>{{ block.settings.row_4_col_4 }}</td>
+      </tr>
+      <tr>
+        <td>{{ block.settings.row_5_col_1 }}</td>
+        <td>{{ block.settings.row_5_col_2 }}</td>
+        <td>{{ block.settings.row_5_col_3 }}</td>
+        <td>{{ block.settings.row_5_col_4 }}</td>
+      </tr>
+      <tr>
+        <td>{{ block.settings.row_6_col_1 }}</td>
+        <td>{{ block.settings.row_6_col_2 }}</td>
+        <td>{{ block.settings.row_6_col_3 }}</td>
+        <td>{{ block.settings.row_6_col_4 }}</td>
+      </tr>
+      <tr>
+        <td>{{ block.settings.row_7_col_1 }}</td>
+        <td>{{ block.settings.row_7_col_2 }}</td>
+        <td>{{ block.settings.row_7_col_3 }}</td>
+        <td>{{ block.settings.row_7_col_4 }}</td>
+      </tr>
+      <tr>
+        <td>{{ block.settings.row_8_col_1 }}</td>
+        <td>{{ block.settings.row_8_col_2 }}</td>
+        <td>{{ block.settings.row_8_col_3 }}</td>
+        <td>{{ block.settings.row_8_col_4 }}</td>
+      </tr>
+      <tr>
+        <td>{{ block.settings.row_9_col_1 }}</td>
+        <td>{{ block.settings.row_9_col_2 }}</td>
+        <td>{{ block.settings.row_9_col_3 }}</td>
+        <td>{{ block.settings.row_9_col_4 }}</td>
+      </tr>
+      <tr>
+        <td>{{ block.settings.row_10_col_1 }}</td>
+        <td>{{ block.settings.row_10_col_2 }}</td>
+        <td>{{ block.settings.row_10_col_3 }}</td>
+        <td>{{ block.settings.row_10_col_4 }}</td>
+      </tr>
+      <tr>
+        <td>{{ block.settings.row_11_col_1 }}</td>
+        <td>{{ block.settings.row_11_col_2 }}</td>
+        <td>{{ block.settings.row_11_col_3 }}</td>
+        <td>{{ block.settings.row_11_col_4 }}</td>
+      </tr>
+      <tr>
+        <td>{{ block.settings.row_12_col_1 }}</td>
+        <td>{{ block.settings.row_12_col_2 }}</td>
+        <td>{{ block.settings.row_12_col_3 }}</td>
+        <td>{{ block.settings.row_12_col_4 }}</td>
+      </tr>
+      <tr>
+        <td>{{ block.settings.row_13_col_1 }}</td>
+        <td>{{ block.settings.row_13_col_2 }}</td>
+        <td>{{ block.settings.row_13_col_3 }}</td>
+        <td>{{ block.settings.row_13_col_4 }}</td>
+      </tr>
+      <tr>
+        <td>{{ block.settings.row_14_col_1 }}</td>
+        <td>{{ block.settings.row_14_col_2 }}</td>
+        <td>{{ block.settings.row_14_col_3 }}</td>
+        <td>{{ block.settings.row_14_col_4 }}</td>
+      </tr>
+      <tr>
+        <td>{{ block.settings.row_15_col_1 }}</td>
+        <td>{{ block.settings.row_15_col_2 }}</td>
+        <td>{{ block.settings.row_15_col_3 }}</td>
+        <td>{{ block.settings.row_15_col_4 }}</td>
+      </tr>
+      <tr>
+        <td>{{ block.settings.row_16_col_1 }}</td>
+        <td>{{ block.settings.row_16_col_2 }}</td>
+        <td>{{ block.settings.row_16_col_3 }}</td>
+        <td>{{ block.settings.row_16_col_4 }}</td>
+      </tr>
+      <tr>
+        <td>{{ block.settings.row_17_col_1 }}</td>
+        <td>{{ block.settings.row_17_col_2 }}</td>
+        <td>{{ block.settings.row_17_col_3 }}</td>
+        <td>{{ block.settings.row_17_col_4 }}</td>
+      </tr>
+      <tr>
+        <td>{{ block.settings.row_18_col_1 }}</td>
+        <td>{{ block.settings.row_18_col_2 }}</td>
+        <td>{{ block.settings.row_18_col_3 }}</td>
+        <td>{{ block.settings.row_18_col_4 }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Data table",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section layout"
+    },
+    {
+      "type": "range",
+      "id": "horizontal_padding",
+      "label": "Horizontal padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Table style"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "label": "Border width",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "cell_padding",
+      "label": "Cell padding",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "header",
+      "content": "Row 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_1_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_1_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_1_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_1_col_4",
+      "label": "Column 4"
+    },
+    {
+      "type": "color",
+      "id": "row_1_bg",
+      "label": "Background"
+    },
+    {
+      "type": "header",
+      "content": "Row 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_2_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_2_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_2_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_2_col_4",
+      "label": "Column 4"
+    },
+    {
+      "type": "color",
+      "id": "row_2_bg",
+      "label": "Background"
+    },
+    {
+      "type": "header",
+      "content": "Row 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_3_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_3_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_3_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_3_col_4",
+      "label": "Column 4"
+    },
+    {
+      "type": "color",
+      "id": "row_3_bg",
+      "label": "Background"
+    },
+    {
+      "type": "header",
+      "content": "Row 4"
+    },
+    {
+      "type": "richtext",
+      "id": "row_4_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_4_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_4_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_4_col_4",
+      "label": "Column 4"
+    },
+    {
+      "type": "color",
+      "id": "row_4_bg",
+      "label": "Background"
+    },
+    {
+      "type": "header",
+      "content": "Row 5"
+    },
+    {
+      "type": "richtext",
+      "id": "row_5_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_5_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_5_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_5_col_4",
+      "label": "Column 4"
+    },
+    {
+      "type": "color",
+      "id": "row_5_bg",
+      "label": "Background"
+    },
+    {
+      "type": "header",
+      "content": "Row 6"
+    },
+    {
+      "type": "richtext",
+      "id": "row_6_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_6_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_6_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_6_col_4",
+      "label": "Column 4"
+    },
+    {
+      "type": "color",
+      "id": "row_6_bg",
+      "label": "Background"
+    },
+    {
+      "type": "header",
+      "content": "Row 7"
+    },
+    {
+      "type": "richtext",
+      "id": "row_7_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_7_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_7_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_7_col_4",
+      "label": "Column 4"
+    },
+    {
+      "type": "color",
+      "id": "row_7_bg",
+      "label": "Background"
+    },
+    {
+      "type": "header",
+      "content": "Row 8"
+    },
+    {
+      "type": "richtext",
+      "id": "row_8_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_8_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_8_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_8_col_4",
+      "label": "Column 4"
+    },
+    {
+      "type": "color",
+      "id": "row_8_bg",
+      "label": "Background"
+    },
+    {
+      "type": "header",
+      "content": "Row 9"
+    },
+    {
+      "type": "richtext",
+      "id": "row_9_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_9_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_9_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_9_col_4",
+      "label": "Column 4"
+    },
+    {
+      "type": "color",
+      "id": "row_9_bg",
+      "label": "Background"
+    },
+    {
+      "type": "header",
+      "content": "Row 10"
+    },
+    {
+      "type": "richtext",
+      "id": "row_10_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_10_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_10_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_10_col_4",
+      "label": "Column 4"
+    },
+    {
+      "type": "color",
+      "id": "row_10_bg",
+      "label": "Background"
+    },
+    {
+      "type": "header",
+      "content": "Row 11"
+    },
+    {
+      "type": "richtext",
+      "id": "row_11_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_11_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_11_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_11_col_4",
+      "label": "Column 4"
+    },
+    {
+      "type": "color",
+      "id": "row_11_bg",
+      "label": "Background"
+    },
+    {
+      "type": "header",
+      "content": "Row 12"
+    },
+    {
+      "type": "richtext",
+      "id": "row_12_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_12_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_12_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_12_col_4",
+      "label": "Column 4"
+    },
+    {
+      "type": "color",
+      "id": "row_12_bg",
+      "label": "Background"
+    },
+    {
+      "type": "header",
+      "content": "Row 13"
+    },
+    {
+      "type": "richtext",
+      "id": "row_13_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_13_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_13_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_13_col_4",
+      "label": "Column 4"
+    },
+    {
+      "type": "color",
+      "id": "row_13_bg",
+      "label": "Background"
+    },
+    {
+      "type": "header",
+      "content": "Row 14"
+    },
+    {
+      "type": "richtext",
+      "id": "row_14_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_14_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_14_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_14_col_4",
+      "label": "Column 4"
+    },
+    {
+      "type": "color",
+      "id": "row_14_bg",
+      "label": "Background"
+    },
+    {
+      "type": "header",
+      "content": "Row 15"
+    },
+    {
+      "type": "richtext",
+      "id": "row_15_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_15_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_15_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_15_col_4",
+      "label": "Column 4"
+    },
+    {
+      "type": "color",
+      "id": "row_15_bg",
+      "label": "Background"
+    },
+    {
+      "type": "header",
+      "content": "Row 16"
+    },
+    {
+      "type": "richtext",
+      "id": "row_16_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_16_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_16_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_16_col_4",
+      "label": "Column 4"
+    },
+    {
+      "type": "color",
+      "id": "row_16_bg",
+      "label": "Background"
+    },
+    {
+      "type": "header",
+      "content": "Row 17"
+    },
+    {
+      "type": "richtext",
+      "id": "row_17_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_17_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_17_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_17_col_4",
+      "label": "Column 4"
+    },
+    {
+      "type": "color",
+      "id": "row_17_bg",
+      "label": "Background"
+    },
+    {
+      "type": "header",
+      "content": "Row 18"
+    },
+    {
+      "type": "richtext",
+      "id": "row_18_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_18_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_18_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_18_col_4",
+      "label": "Column 4"
+    },
+    {
+      "type": "color",
+      "id": "row_18_bg",
+      "label": "Background"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Data table"
+    }
+  ],
+  "tag": null
+}
 {% endschema %}
