@@ -330,6 +330,32 @@
       "name": "Image with text",
       "settings": {}
     },
+    "177035974270ce3c8b": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c784b86_hfyfym": {
+          "type": "ai_gen_block_c784b86",
+          "settings": {
+            "image_1": "shopify://shop_images/kiku3.png",
+            "image_2": "shopify://shop_images/kiku4.png",
+            "image_3": "shopify://shop_images/kiku5.png",
+            "image_height": 400,
+            "padding_top": 40,
+            "padding_bottom": 40,
+            "padding_horizontal": 0,
+            "image_height_mobile": 200,
+            "padding_top_mobile": 20,
+            "padding_bottom_mobile": 20,
+            "padding_horizontal_mobile": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c784b86_hfyfym"
+      ],
+      "settings": {}
+    },
     "custom_news_section_YEajjg": {
       "type": "custom-news-section",
       "name": "Custom News Section",
@@ -355,6 +381,7 @@
     "kikumatsu_product_lineup_bwxzqh",
     "blocks_EExpMJ",
     "blocks_kphLcP",
+    "177035974270ce3c8b",
     "custom_news_section_YEajjg"
   ]
 }
