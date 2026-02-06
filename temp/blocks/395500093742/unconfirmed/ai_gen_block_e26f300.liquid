@@ -1,6 +1,107 @@
+{% doc %}
+  @prompt
+    Create a section having blocks, i want a table of 4 columns, rows will be decided as per addition of blocks, also provide the background color to add to the row and also provide the setting to make the text bold, the added blocks will continue the table without having space, also provide the horizontal padding, separate the rows and columns with the border line, entire table should be bordered, provide the text to be center aligned, have 4 columns and don't write the columns in single row
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-table-row-{{ ai_gen_id }} {
+    display: contents;
+  }
+
+  .ai-table-cell-{{ ai_gen_id }} {
+    padding: {{ block.settings.horizontal_padding }}px;
+    background-color: {{ block.settings.row_background_color }};
+    border: 1px solid {{ block.settings.border_color }};
+    text-align: center;
+    {% if block.settings.make_text_bold %}
+      font-weight: bold;
+    {% endif %}
+  }
+{% endstyle %}
+
+<div class="ai-table-row-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-table-cell-{{ ai_gen_id }}">{{ block.settings.column_1_text }}</div>
+</div>
+<div class="ai-table-row-{{ ai_gen_id }}">
+  <div class="ai-table-cell-{{ ai_gen_id }}">{{ block.settings.column_2_text }}</div>
+</div>
+<div class="ai-table-row-{{ ai_gen_id }}">
+  <div class="ai-table-cell-{{ ai_gen_id }}">{{ block.settings.column_3_text }}</div>
+</div>
+<div class="ai-table-row-{{ ai_gen_id }}">
+  <div class="ai-table-cell-{{ ai_gen_id }}">{{ block.settings.column_4_text }}</div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Table row",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Column content"
+    },
+    {
+      "type": "text",
+      "id": "column_1_text",
+      "label": "Column 1 text",
+      "default": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "column_2_text",
+      "label": "Column 2 text",
+      "default": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "column_3_text",
+      "label": "Column 3 text",
+      "default": "Column 3"
+    },
+    {
+      "type": "text",
+      "id": "column_4_text",
+      "label": "Column 4 text",
+      "default": "Column 4"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "row_background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "horizontal_padding",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Horizontal padding",
+      "default": 15
+    },
+    {
+      "type": "checkbox",
+      "id": "make_text_bold",
+      "label": "Make text bold",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Table row"
+    }
+  ]
+}
 {% endschema %}
