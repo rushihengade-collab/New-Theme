@@ -386,7 +386,7 @@
         "ai_gen_block_e1abfc8_cER9BY": {
           "type": "ai_gen_block_e1abfc8",
           "settings": {
-            "image_position": "right",
+            "image_position": "left",
             "max_width": 1200,
             "image_width": 50,
             "content_gap": 60,
