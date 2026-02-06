@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "section_vertical_spacing": "md",
+    "section_vertical_spacing": "xs",
     "product_rating_color": "#191971",
     "product_on_sale_accent": "#e32c2b",
     "product_sold_out_badge_background": "#efefef",
