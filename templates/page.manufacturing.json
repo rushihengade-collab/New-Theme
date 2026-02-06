@@ -921,64 +921,83 @@
         "remove_vertical_spacing": true
       }
     },
-    "image_with_text_DhFCnc": {
-      "type": "image-with-text",
+    "blocks_FTF3ER": {
+      "type": "_blocks",
       "blocks": {
-        "richtext_GQbqJd": {
-          "type": "richtext",
+        "ai_gen_block_04ecc08_gwTQgk": {
+          "type": "ai_gen_block_04ecc08",
           "settings": {
-            "content": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.<br/><br/></p>"
-          }
-        }
-      },
-      "block_order": [
-        "richtext_GQbqJd"
-      ],
-      "name": "t:sections.image_with_text.presets.image_with_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "image": "shopify://shop_images/r1.jpg",
-        "reveal_on_scroll": true,
-        "image_position": "end",
-        "content_width": "sm",
-        "remove_vertical_spacing": false
-      }
-    },
-    "image_with_text_KcxQei": {
-      "type": "image-with-text",
-      "blocks": {
-        "richtext_r7nzTk": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.<br/><br/></p>"
-          }
+            "image_position": "right",
+            "image": "shopify://shop_images/r1.jpg",
+            "image_border_radius": 0,
+            "title": "",
+            "title_color": "#000000",
+            "title_size_mobile": 24,
+            "title_size_desktop": 36,
+            "description": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.<br/><br/></p>",
+            "description_color": "#000000",
+            "description_size_mobile": 14,
+            "description_size_desktop": 18,
+            "button_text": "Learn more",
+            "button_link": "",
+            "button_background_color": "#5c5c5c",
+            "button_text_color": "#ffffff",
+            "button_hover_color": "#000000",
+            "button_border_radius": 0,
+            "content_padding_vertical_mobile": 0,
+            "content_padding_horizontal_mobile": 0,
+            "content_padding_vertical_desktop": 0,
+            "content_padding_horizontal_desktop": 0,
+            "background_color": "#ffffff",
+            "padding_top_mobile": 30,
+            "padding_bottom_mobile": 0,
+            "padding_horizontal_mobile": 20,
+            "padding_top_desktop": 20,
+            "padding_bottom_desktop": 20,
+            "padding_horizontal_desktop": 60
+          },
+          "blocks": {}
         },
-        "button_XMDGYh": {
-          "type": "button",
+        "ai_gen_block_04ecc08_WnjaAB": {
+          "type": "ai_gen_block_04ecc08",
           "settings": {
-            "style": "solid",
-            "text": "Quality",
-            "url": "shopify://pages/quality",
-            "background": "#1c1c1c",
-            "text_color": ""
-          }
+            "image_position": "left",
+            "image": "shopify://shop_images/r2.jpg",
+            "image_border_radius": 0,
+            "title": "",
+            "title_color": "#000000",
+            "title_size_mobile": 24,
+            "title_size_desktop": 36,
+            "description": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.<br/><br/></p>",
+            "description_color": "#000000",
+            "description_size_mobile": 14,
+            "description_size_desktop": 18,
+            "button_text": "Quality",
+            "button_link": "shopify://pages/quality",
+            "button_background_color": "#000000",
+            "button_text_color": "#ffffff",
+            "button_hover_color": "#ed8a00",
+            "button_border_radius": 0,
+            "content_padding_vertical_mobile": 0,
+            "content_padding_horizontal_mobile": 0,
+            "content_padding_vertical_desktop": 0,
+            "content_padding_horizontal_desktop": 0,
+            "background_color": "#ffffff",
+            "padding_top_mobile": 30,
+            "padding_bottom_mobile": 30,
+            "padding_horizontal_mobile": 20,
+            "padding_top_desktop": 20,
+            "padding_bottom_desktop": 40,
+            "padding_horizontal_desktop": 60
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "richtext_r7nzTk",
-        "button_XMDGYh"
+        "ai_gen_block_04ecc08_gwTQgk",
+        "ai_gen_block_04ecc08_WnjaAB"
       ],
-      "name": "t:sections.image_with_text.presets.image_with_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "image": "shopify://shop_images/r2.jpg",
-        "reveal_on_scroll": true,
-        "image_position": "start",
-        "content_width": "sm",
-        "remove_vertical_spacing": false
-      }
+      "settings": {}
     },
     "custom_news_section_DkzQ8w": {
       "type": "custom-news-section",
@@ -1014,8 +1033,7 @@
     "rich_text_4pDdWT",
     "blocks_naYWNN",
     "rich_text_BBe3rA",
-    "image_with_text_DhFCnc",
-    "image_with_text_KcxQei",
+    "blocks_FTF3ER",
     "custom_news_section_DkzQ8w"
   ]
 }
