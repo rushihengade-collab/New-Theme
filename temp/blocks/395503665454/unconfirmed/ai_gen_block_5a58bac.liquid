@@ -1,6 +1,136 @@
+{% doc %}
+  @prompt
+    Create a section having blocks, i want a table of 4 columns, rows will be decided as per addition of blocks, also provide the background color to add to the row and also provide the setting to make the text bold, the added blocks will continue the table without having space, make the the side of the row bordered, make all the side of the row bordered, separate the rows and columns with border line, make the entire table bordered
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-table-row-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: {{ block.settings.row_background_color }};
+    border-left: 1px solid {{ block.settings.border_color }};
+    border-right: 1px solid {{ block.settings.border_color }};
+    border-bottom: 1px solid {{ block.settings.border_color }};
+  }
+
+  .ai-table-row-{{ ai_gen_id }}:first-child {
+    border-top: 1px solid {{ block.settings.border_color }};
+  }
+
+  .ai-table-cell-{{ ai_gen_id }} {
+    padding: 16px;
+    color: {{ block.settings.text_color }};
+    {% if block.settings.make_text_bold %}
+      font-weight: 700;
+    {% else %}
+      font-weight: 400;
+    {% endif %}
+    border-right: 1px solid {{ block.settings.border_color }};
+    display: flex;
+    align-items: center;
+  }
+
+  .ai-table-cell-{{ ai_gen_id }}:last-child {
+    border-right: none;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-table-row-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+    }
+
+    .ai-table-cell-{{ ai_gen_id }} {
+      border-right: none;
+      border-bottom: 1px solid {{ block.settings.border_color }};
+    }
+
+    .ai-table-cell-{{ ai_gen_id }}:last-child {
+      border-bottom: none;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-table-row-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-table-cell-{{ ai_gen_id }}">
+    {{ block.settings.column_1_text }}
+  </div>
+  <div class="ai-table-cell-{{ ai_gen_id }}">
+    {{ block.settings.column_2_text }}
+  </div>
+  <div class="ai-table-cell-{{ ai_gen_id }}">
+    {{ block.settings.column_3_text }}
+  </div>
+  <div class="ai-table-cell-{{ ai_gen_id }}">
+    {{ block.settings.column_4_text }}
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Table row",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Column content"
+    },
+    {
+      "type": "text",
+      "id": "column_1_text",
+      "label": "Column 1",
+      "default": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "column_2_text",
+      "label": "Column 2",
+      "default": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "column_3_text",
+      "label": "Column 3",
+      "default": "Column 3"
+    },
+    {
+      "type": "text",
+      "id": "column_4_text",
+      "label": "Column 4",
+      "default": "Column 4"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "row_background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "checkbox",
+      "id": "make_text_bold",
+      "label": "Make text bold",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Table row"
+    }
+  ]
+}
 {% endschema %}
