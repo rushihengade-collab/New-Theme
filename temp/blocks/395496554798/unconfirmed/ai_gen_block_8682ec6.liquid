@@ -1,6 +1,373 @@
+{% doc %}
+  @prompt
+    Create a section have Heading and Subheading at the top both center aligned one below the other vertically
+    
+    then below above have to the left side of the section a title and description both are vertically placed one below the other and to the right side of the section have image
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-content-section-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: {{ block.settings.section_padding }}px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-content-section__header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: {{ block.settings.header_spacing }}px;
+  }
+
+  .ai-content-section__heading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.heading_size }}px;
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 {{ block.settings.heading_subheading_gap }}px 0;
+    font-family: {{ block.settings.heading_font.family }}, {{ block.settings.heading_font.fallback_families }};
+    font-weight: {{ block.settings.heading_font.weight }};
+  }
+
+  .ai-content-section__subheading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subheading_size }}px;
+    color: {{ block.settings.subheading_color }};
+    margin: 0;
+  }
+
+  .ai-content-section__main-{{ ai_gen_id }} {
+    display: flex;
+    gap: {{ block.settings.content_gap }}px;
+    align-items: center;
+  }
+
+  .ai-content-section__content-{{ ai_gen_id }} {
+    flex: 1;
+  }
+
+  .ai-content-section__title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 {{ block.settings.title_description_gap }}px 0;
+    font-family: {{ block.settings.title_font.family }}, {{ block.settings.title_font.fallback_families }};
+    font-weight: {{ block.settings.title_font.weight }};
+  }
+
+  .ai-content-section__description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.description_size }}px;
+    color: {{ block.settings.description_color }};
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .ai-content-section__image-wrapper-{{ ai_gen_id }} {
+    flex: 1;
+    position: relative;
+  }
+
+  .ai-content-section__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    display: block;
+  }
+
+  .ai-content-section__image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background-color: #f4f4f4;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-content-section__image-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-content-section__empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-content-section__main-{{ ai_gen_id }} {
+      flex-direction: column;
+    }
+
+    .ai-content-section__heading-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.heading_size }}px * 0.8);
+    }
+
+    .ai-content-section__subheading-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.subheading_size }}px * 0.9);
+    }
+
+    .ai-content-section__title-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.title_size }}px * 0.85);
+    }
+  }
+{% endstyle %}
+
+<div class="ai-content-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-content-section__header-{{ ai_gen_id }}">
+    {% if block.settings.heading != blank %}
+      <h2 class="ai-content-section__heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+    {% endif %}
+    {% if block.settings.subheading != blank %}
+      <div class="ai-content-section__subheading-{{ ai_gen_id }}">{{ block.settings.subheading }}</div>
+    {% endif %}
+  </div>
+
+  <div class="ai-content-section__main-{{ ai_gen_id }}">
+    <div class="ai-content-section__content-{{ ai_gen_id }}">
+      {% if block.settings.title != blank %}
+        <h3 class="ai-content-section__title-{{ ai_gen_id }}">{{ block.settings.title }}</h3>
+      {% endif %}
+      {% if block.settings.description != blank %}
+        <div class="ai-content-section__description-{{ ai_gen_id }}">{{ block.settings.description }}</div>
+      {% endif %}
+    </div>
+
+    <div class="ai-content-section__image-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.image %}
+        <img
+          src="{{ block.settings.image | image_url: width: 1200 }}"
+          alt="{{ block.settings.image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.image.width }}"
+          height="{{ block.settings.image.height }}"
+          class="ai-content-section__image-{{ ai_gen_id }}"
+        >
+      {% else %}
+        <div class="ai-content-section__image-placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+          <div class="ai-content-section__empty-state-{{ ai_gen_id }}">
+            Next, add an image
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Content with image",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Top section"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Main Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "This is the subheading text"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "subheading_size",
+      "min": 14,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Subheading size",
+      "default": 18
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "subheading_color",
+      "label": "Subheading color",
+      "default": "#5c5c5c"
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font",
+      "label": "Heading font",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "heading_subheading_gap",
+      "min": 5,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "Gap between heading and subheading",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "header_spacing",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Space below header",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Left content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "Content Title"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>This is the description text that provides more details about your content. You can customize this to match your needs.</p>"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 18,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Description size",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description color",
+      "default": "#5c5c5c"
+    },
+    {
+      "type": "font_picker",
+      "id": "title_font",
+      "label": "Title font",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "title_description_gap",
+      "min": 10,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "Gap between title and description",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Right image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "content_gap",
+      "min": 20,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Gap between content and image",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Content with image"
+    }
+  ]
+}
 {% endschema %}
