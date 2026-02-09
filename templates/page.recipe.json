@@ -24,9 +24,9 @@
         "ai_gen_block_37c4e60_VEcNx7": {
           "type": "ai_gen_block_37c4e60",
           "settings": {
-            "heading": "RECIPE",
+            "heading": "<strong>RECIPE</strong>",
             "heading_font": "sans_serif_n4",
-            "heading_size": 48,
+            "heading_size": 50,
             "heading_color": "#000000",
             "image": "shopify://shop_images/Rec1.jpg",
             "image_width": 70,
@@ -119,11 +119,37 @@
             "horizontal_padding": 20
           },
           "blocks": {}
+        },
+        "ai_gen_block_e387de0_QnWRTj": {
+          "type": "ai_gen_block_e387de0",
+          "settings": {
+            "image_position": "left",
+            "image": "shopify://shop_images/Rec4.jpg",
+            "image_size": "landscape",
+            "heading": "FLESH",
+            "heading_font": "sans_serif_n4",
+            "heading_font_size": 50,
+            "heading_color": "#000000",
+            "description": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.</p>",
+            "description_font_size": 16,
+            "description_color": "#000000",
+            "button_text": "View Recipe",
+            "button_link": "shopify://pages/recipe",
+            "button_width": 50,
+            "button_background_color": "#1c1c1c",
+            "button_hover_color": "#ed8a00",
+            "button_text_color": "#ffffff",
+            "top_spacing": 40,
+            "bottom_spacing": 40,
+            "horizontal_padding": 20
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "ai_gen_block_e387de0_wQeVDD",
-        "ai_gen_block_e387de0_rmFKB6"
+        "ai_gen_block_e387de0_rmFKB6",
+        "ai_gen_block_e387de0_QnWRTj"
       ],
       "settings": {}
     },
