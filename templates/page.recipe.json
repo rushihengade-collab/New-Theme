@@ -153,59 +153,34 @@
       ],
       "settings": {}
     },
-    "1770622921aa52e4d3": {
-      "type": "_blocks",
-      "settings": {}
-    },
-    "1770378877609279aa": {
-      "type": "_blocks",
+    "rich_text_yLefJH": {
+      "type": "rich-text",
       "blocks": {
-        "ai_gen_block_acd6d86_C7JQGW": {
-          "type": "ai_gen_block_acd6d86",
+        "button_GwQwcX": {
+          "type": "button",
           "settings": {
-            "heading": "製造について",
-            "heading_color": "#000000",
-            "heading_size": 40,
-            "heading_font": "sans_serif_n4",
-            "subheading": "~­­­ QUALITY MANAGEMENT ~­­­",
-            "subheading_color": "#000000",
-            "subheading_size": 18,
-            "heading_to_subheading_spacing": 8,
-            "subheading_to_image_spacing": 0,
-            "text_background_color": "#ffffff",
-            "text_padding_top": 40,
-            "text_padding_bottom": 40,
-            "text_padding_horizontal": 20,
-            "image": "shopify://shop_images/m1.webp"
-          },
-          "blocks": {}
-        },
-        "ai_gen_block_acd6d86_HNqpLG": {
-          "type": "ai_gen_block_acd6d86",
-          "disabled": true,
-          "settings": {
-            "heading": "蒟蒻芋",
-            "heading_color": "#000000",
-            "heading_size": 40,
-            "heading_font": "sans_serif_n4",
-            "subheading": "~ INGREDIENTS ~",
-            "subheading_color": "#000000",
-            "subheading_size": 18,
-            "heading_to_subheading_spacing": 8,
-            "subheading_to_image_spacing": 0,
-            "text_background_color": "#ffffff",
-            "text_padding_top": 40,
-            "text_padding_bottom": 40,
-            "text_padding_horizontal": 20,
-            "image": "shopify://shop_images/man2.webp"
-          },
-          "blocks": {}
+            "style": "solid",
+            "text": "Contact Us",
+            "url": "shopify://pages/contact",
+            "background": "#000000",
+            "text_color": ""
+          }
         }
       },
       "block_order": [
-        "ai_gen_block_acd6d86_C7JQGW",
-        "ai_gen_block_acd6d86_HNqpLG"
+        "button_GwQwcX"
       ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "1770622921aa52e4d3": {
+      "type": "_blocks",
       "settings": {}
     },
     "blocks_gWNxVC": {
@@ -1483,8 +1458,8 @@
     "1770620758a54fa084",
     "rich_text_FyCyU6",
     "17706230131fcf52bf",
+    "rich_text_yLefJH",
     "1770622921aa52e4d3",
-    "1770378877609279aa",
     "blocks_gWNxVC",
     "rich_text_GbUKXQ",
     "rich_text_M63mjC",
