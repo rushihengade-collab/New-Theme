@@ -18,54 +18,33 @@
         "page_width": "xs"
       }
     },
-    "1770378877609279aa": {
+    "1770624686d610073b": {
       "type": "_blocks",
       "blocks": {
-        "ai_gen_block_acd6d86_C7JQGW": {
-          "type": "ai_gen_block_acd6d86",
+        "ai_gen_block_d49103c_c43q7F": {
+          "type": "ai_gen_block_d49103c",
           "settings": {
-            "heading": "製造について",
+            "heading": "PRODUCT",
+            "heading_size": 32,
             "heading_color": "#000000",
-            "heading_size": 40,
-            "heading_font": "sans_serif_n4",
-            "subheading": "~­­­ QUALITY MANAGEMENT ~­­­",
-            "subheading_color": "#000000",
-            "subheading_size": 18,
-            "heading_to_subheading_spacing": 8,
-            "subheading_to_image_spacing": 0,
-            "text_background_color": "#ffffff",
-            "text_padding_top": 40,
-            "text_padding_bottom": 40,
-            "text_padding_horizontal": 20,
-            "image": "shopify://shop_images/m1.webp"
-          },
-          "blocks": {}
-        },
-        "ai_gen_block_acd6d86_HNqpLG": {
-          "type": "ai_gen_block_acd6d86",
-          "disabled": true,
-          "settings": {
-            "heading": "蒟蒻芋",
-            "heading_color": "#000000",
-            "heading_size": 40,
-            "heading_font": "sans_serif_n4",
-            "subheading": "~ INGREDIENTS ~",
-            "subheading_color": "#000000",
-            "subheading_size": 18,
-            "heading_to_subheading_spacing": 8,
-            "subheading_to_image_spacing": 0,
-            "text_background_color": "#ffffff",
-            "text_padding_top": 40,
-            "text_padding_bottom": 40,
-            "text_padding_horizontal": 20,
-            "image": "shopify://shop_images/man2.webp"
+            "image": "shopify://shop_images/p1.jpg",
+            "image_size": "original",
+            "image_padding_desktop": 20,
+            "image_padding_mobile": 15,
+            "description": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.</p>",
+            "description_size": 16,
+            "description_color": "#000000",
+            "description_padding_desktop": 300,
+            "description_padding_mobile": 50,
+            "spacing_top": 20,
+            "spacing_bottom": 20,
+            "desktop_width_percent": 100
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_acd6d86_C7JQGW",
-        "ai_gen_block_acd6d86_HNqpLG"
+        "ai_gen_block_d49103c_c43q7F"
       ],
       "settings": {}
     },
@@ -1111,18 +1090,6 @@
       ],
       "settings": {}
     },
-    "image_with_text_block_8Khtgt": {
-      "type": "image-with-text-block",
-      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
-      "settings": {
-        "color_scheme": "",
-        "image_size": "md",
-        "image": "shopify://shop_images/howToStart.jpg",
-        "content_width": "sm",
-        "enable_parallax": false,
-        "remove_vertical_spacing": false
-      }
-    },
     "rich_text_7EGVfJ": {
       "type": "rich-text",
       "blocks": {
@@ -1441,7 +1408,7 @@
   },
   "order": [
     "main",
-    "1770378877609279aa",
+    "1770624686d610073b",
     "button_section_rUcabH",
     "blocks_gWNxVC",
     "rich_text_GbUKXQ",
@@ -1455,7 +1422,6 @@
     "blocks_L3rcfY",
     "rich_text_Jh4ExN",
     "17703843957f343f9c",
-    "image_with_text_block_8Khtgt",
     "rich_text_7EGVfJ",
     "17703746428fb8bc02",
     "rich_text_4pDdWT",
