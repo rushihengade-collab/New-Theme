@@ -18,6 +18,32 @@
         "page_width": "xs"
       }
     },
+    "1770620758a54fa084": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_37c4e60_VEcNx7": {
+          "type": "ai_gen_block_37c4e60",
+          "settings": {
+            "heading": "RECIPE",
+            "heading_font": "sans_serif_n4",
+            "heading_size": 48,
+            "heading_color": "#000000",
+            "image": "shopify://shop_images/Rec1.jpg",
+            "image_width": 70,
+            "image_border_radius": 0,
+            "horizontal_padding": 40,
+            "top_spacing": 60,
+            "bottom_spacing": 60,
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_37c4e60_VEcNx7"
+      ],
+      "settings": {}
+    },
     "1770378877609279aa": {
       "type": "_blocks",
       "blocks": {
@@ -68,68 +94,6 @@
         "ai_gen_block_acd6d86_HNqpLG"
       ],
       "settings": {}
-    },
-    "button_section_rUcabH": {
-      "type": "button-section",
-      "blocks": {
-        "button_D7KjBP": {
-          "type": "button",
-          "settings": {
-            "button_text": "蒟蒻芋",
-            "button_link": "#shopify-section-template--26135534895406__blocks_gWNxVC",
-            "button_background": "#2c347a",
-            "button_text_color": "#ffffff"
-          }
-        },
-        "button_F97ppf": {
-          "type": "button",
-          "settings": {
-            "button_text": "缶蒸製法",
-            "button_link": "#shopify-section-template--26135534895406__rich_text_M63mjC",
-            "button_background": "#2c347a",
-            "button_text_color": "#ffffff"
-          }
-        },
-        "button_zWRYFy": {
-          "type": "button",
-          "settings": {
-            "button_text": "糸蒟蒻",
-            "button_link": "#shopify-section-template--26135534895406__17703776449e62d5c1",
-            "button_background": "#2c347a",
-            "button_text_color": "#ffffff"
-          }
-        },
-        "button_RLaPaW": {
-          "type": "button",
-          "settings": {
-            "button_text": "ところてん",
-            "button_link": "#shopify-section-template--26135534895406__blocks_AtQmRb",
-            "button_background": "#2c347a",
-            "button_text_color": "#ffffff"
-          }
-        },
-        "button_Rk96QM": {
-          "type": "button",
-          "settings": {
-            "button_text": "製品設備",
-            "button_link": "#shopify-section-template--26135534895406__rich_text_Jh4ExN",
-            "button_background": "#2c347a",
-            "button_text_color": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "button_D7KjBP",
-        "button_F97ppf",
-        "button_zWRYFy",
-        "button_RLaPaW",
-        "button_Rk96QM"
-      ],
-      "name": "Custom Button Section",
-      "settings": {
-        "padding-top": 80,
-        "padding-bottom": 28
-      }
     },
     "blocks_gWNxVC": {
       "type": "_blocks",
@@ -212,44 +176,6 @@
         "text_position": "center",
         "remove_vertical_spacing": false
       }
-    },
-    "blocks_JTp9jK": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_ea5ecb0_pTHGeL": {
-          "type": "ai_gen_block_ea5ecb0",
-          "settings": {
-            "desktop_width_percent": 100,
-            "section_padding": 40,
-            "horizontal_padding": 30,
-            "column_gap": 30,
-            "content_gap": 15,
-            "mobile_gap": 30,
-            "image_1": "shopify://shop_images/man3.webp",
-            "heading_1": "こんにゃく畑の視察",
-            "text_1": "こんにゃく芋の収穫は、年に一度、まとめて行います。社長である中尾は、収穫時期に現地に出向き、視察を行うとともに、収穫を手伝います。年々人手不足が進む農家さんの手助けにもなり、手で触った品を仕入れるので、安心感があります。",
-            "image_2": "shopify://shop_images/man4.webp",
-            "heading_2": "土がついた状態で仕入れ",
-            "text_2": "こんにゃく芋は、とてもデリケートなもので、土を落とすとたちまち傷んでしまいます。また、芋に傷がついてしまっただけでもその鮮度は失われてしまいます。そのため当社では、美味しいこんにゃく芋の鮮度を保つため、土がついた状態で仕入れています。",
-            "image_3": "shopify://shop_images/man5.webp",
-            "heading_3": "鮮度を最高の状態で保管",
-            "text_3": "土がついた状態で仕入れたこんにゃく芋を水でに洗い、ひとつひとつ手で梱包・計量し、すぐに冷凍保管します。年に一度の大仕事は大変ですが、こうすることで、美味しいこんにゃく芋の状態で保管することができます。",
-            "text_alignment": "center",
-            "image_border_radius": 0,
-            "heading_font": "noto_sans_japanese_n4",
-            "heading_size": 24,
-            "heading_color": "#000000",
-            "text_size": 16,
-            "text_color": "#5c5c5c"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_ea5ecb0_pTHGeL"
-      ],
-      "name": "Three column images",
-      "settings": {}
     },
     "rich_text_M63mjC": {
       "type": "rich-text",
@@ -1441,11 +1367,10 @@
   },
   "order": [
     "main",
+    "1770620758a54fa084",
     "1770378877609279aa",
-    "button_section_rUcabH",
     "blocks_gWNxVC",
     "rich_text_GbUKXQ",
-    "blocks_JTp9jK",
     "rich_text_M63mjC",
     "image_with_text_rTdfTp",
     "177036464339662674",
