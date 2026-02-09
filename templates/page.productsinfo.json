@@ -1196,7 +1196,7 @@
         "heading_NWCwhq": {
           "type": "heading",
           "settings": {
-            "text": "VALUE AS FOOD",
+            "text": "KIKUMITSU",
             "heading_tag": "h2"
           }
         }
@@ -1220,7 +1220,7 @@
           "type": "ai_gen_block_04ecc08",
           "settings": {
             "image_position": "right",
-            "image": "shopify://shop_images/f1.jpg",
+            "image": "shopify://shop_images/p2.jpg",
             "image_border_radius": 0,
             "title": "",
             "title_color": "#000000",
@@ -1254,7 +1254,7 @@
           "type": "ai_gen_block_04ecc08",
           "settings": {
             "image_position": "left",
-            "image": "shopify://shop_images/f2.jpg",
+            "image": "shopify://shop_images/p3.jpg",
             "image_border_radius": 0,
             "title": "",
             "title_color": "#000000",
@@ -1264,8 +1264,8 @@
             "description_color": "#000000",
             "description_size_mobile": 14,
             "description_size_desktop": 18,
-            "button_text": "Recipe",
-            "button_link": "shopify://pages/recipe",
+            "button_text": "",
+            "button_link": "",
             "button_background_color": "#000000",
             "button_text_color": "#ffffff",
             "button_hover_color": "#ed8a00",
@@ -1297,7 +1297,7 @@
         "heading_QyBjzY": {
           "type": "heading",
           "settings": {
-            "text": "DIFFICULTY OF RASING",
+            "text": "OUR PRODUCT",
             "heading_tag": "h2"
           }
         }
@@ -1321,7 +1321,7 @@
           "type": "ai_gen_block_04ecc08",
           "settings": {
             "image_position": "right",
-            "image": "shopify://shop_images/r1.jpg",
+            "image": "shopify://shop_images/p4.jpg",
             "image_border_radius": 0,
             "title": "",
             "title_color": "#000000",
@@ -1355,7 +1355,7 @@
           "type": "ai_gen_block_04ecc08",
           "settings": {
             "image_position": "left",
-            "image": "shopify://shop_images/r2.jpg",
+            "image": "shopify://shop_images/p5.jpg",
             "image_border_radius": 0,
             "title": "",
             "title_color": "#000000",
@@ -1365,8 +1365,8 @@
             "description_color": "#000000",
             "description_size_mobile": 14,
             "description_size_desktop": 18,
-            "button_text": "Quality",
-            "button_link": "shopify://pages/quality",
+            "button_text": "",
+            "button_link": "",
             "button_background_color": "#000000",
             "button_text_color": "#ffffff",
             "button_hover_color": "#ed8a00",
