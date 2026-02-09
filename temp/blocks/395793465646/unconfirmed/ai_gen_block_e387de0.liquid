@@ -1,6 +1,420 @@
+{% doc %}
+  @prompt
+    Create a section having blocks, 
+    provide the setting to manage the position of the image as left or right, on other side have heading, description and button, specifically for the button make it center aligned and also give the setting to increase the width of it along with the background color, also provide top spacing, bottom spacing and horizontal padding setting, provide the button hover color setting, provide the setting to adjust the image size, as portrait or landscape or original or full, also provide setting for heading font size, description font size
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-image-content-block-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding-top: {{ block.settings.top_spacing }}px;
+    padding-bottom: {{ block.settings.bottom_spacing }}px;
+    padding-left: {{ block.settings.horizontal_padding }}px;
+    padding-right: {{ block.settings.horizontal_padding }}px;
+  }
+
+  .ai-image-content-container-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    {% if block.settings.image_position == 'right' %}
+      flex-direction: row-reverse;
+    {% else %}
+      flex-direction: row;
+    {% endif %}
+  }
+
+  .ai-image-content-image-wrapper-{{ ai_gen_id }} {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .ai-image-content-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    {% if block.settings.image_size == 'portrait' %}
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+    {% elsif block.settings.image_size == 'landscape' %}
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    {% elsif block.settings.image_size == 'full' %}
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    {% endif %}
+  }
+
+  .ai-image-content-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    {% if block.settings.image_size == 'portrait' %}
+      aspect-ratio: 3 / 4;
+    {% elsif block.settings.image_size == 'landscape' %}
+      aspect-ratio: 4 / 3;
+    {% elsif block.settings.image_size == 'full' %}
+      aspect-ratio: 1 / 1;
+    {% else %}
+      aspect-ratio: 4 / 3;
+    {% endif %}
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-image-content-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .ai-image-content-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .ai-image-content-text-wrapper-{{ ai_gen_id }} {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ai-image-content-heading-{{ ai_gen_id }} {
+    margin: 0;
+    font-size: {{ block.settings.heading_font_size }}px;
+    line-height: 1.2;
+    color: {{ block.settings.heading_color }};
+    font-family: {{ block.settings.heading_font.family }}, {{ block.settings.heading_font.fallback_families }};
+    font-weight: {{ block.settings.heading_font.weight }};
+    font-style: {{ block.settings.heading_font.style }};
+  }
+
+  .ai-image-content-description-{{ ai_gen_id }} {
+    margin: 0;
+    font-size: {{ block.settings.description_font_size }}px;
+    line-height: 1.6;
+    color: {{ block.settings.description_color }};
+  }
+
+  .ai-image-content-button-wrapper-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .ai-image-content-button-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: {{ block.settings.button_background_color }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: {{ block.settings.button_width }}%;
+    max-width: 100%;
+  }
+
+  .ai-image-content-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_color }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-image-content-container-{{ ai_gen_id }} {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .ai-image-content-heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_font_size | times: 0.75 }}px;
+    }
+
+    .ai-image-content-description-{{ ai_gen_id }} {
+      font-size: {{ block.settings.description_font_size | times: 0.875 }}px;
+    }
+
+    .ai-image-content-button-{{ ai_gen_id }} {
+      width: 100%;
+    }
+  }
+{% endstyle %}
+
+<image-content-block-{{ ai_gen_id }}
+  class="ai-image-content-block-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-image-content-container-{{ ai_gen_id }}">
+    <div class="ai-image-content-image-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.image %}
+        <img
+          src="{{ block.settings.image | image_url: width: 1200 }}"
+          alt="{{ block.settings.image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.image.width }}"
+          height="{{ block.settings.image.height }}"
+          class="ai-image-content-image-{{ ai_gen_id }}"
+        >
+      {% else %}
+        <div class="ai-image-content-placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+          <div class="ai-image-content-empty-state-{{ ai_gen_id }}">
+            Next, add an image
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-image-content-text-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.heading != blank %}
+        <h2 class="ai-image-content-heading-{{ ai_gen_id }}">
+          {{ block.settings.heading }}
+        </h2>
+      {% endif %}
+
+      {% if block.settings.description != blank %}
+        <div class="ai-image-content-description-{{ ai_gen_id }}">
+          {{ block.settings.description }}
+        </div>
+      {% endif %}
+
+      {% if block.settings.button_text != blank %}
+        <div class="ai-image-content-button-wrapper-{{ ai_gen_id }}">
+          <a
+            href="{{ block.settings.button_link }}"
+            class="ai-image-content-button-{{ ai_gen_id }}"
+          >
+            {{ block.settings.button_text }}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</image-content-block-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ImageContentBlock{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+    }
+
+    customElements.define('image-content-block-{{ ai_gen_id }}', ImageContentBlock{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Image with content",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "image_size",
+      "label": "Image size",
+      "options": [
+        {
+          "value": "original",
+          "label": "Original"
+        },
+        {
+          "value": "portrait",
+          "label": "Portrait"
+        },
+        {
+          "value": "landscape",
+          "label": "Landscape"
+        },
+        {
+          "value": "full",
+          "label": "Square"
+        }
+      ],
+      "default": "original"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Image with content"
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font",
+      "label": "Heading font",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size",
+      "label": "Heading font size",
+      "min": 16,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Add a compelling description to highlight your product or service features.</p>"
+    },
+    {
+      "type": "range",
+      "id": "description_font_size",
+      "label": "Description font size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description color",
+      "default": "#5c5c5c"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "range",
+      "id": "button_width",
+      "label": "Button width",
+      "min": 30,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "color",
+      "id": "button_background_color",
+      "label": "Background color",
+      "default": "#5c5c5c"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Hover background color",
+      "default": "#3a3a3a"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "top_spacing",
+      "label": "Top spacing",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing",
+      "label": "Bottom spacing",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "horizontal_padding",
+      "label": "Horizontal padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image with content"
+    }
+  ]
+}
 {% endschema %}
