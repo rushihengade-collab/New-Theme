@@ -44,6 +44,67 @@
       ],
       "settings": {}
     },
+    "17706230131fcf52bf": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e387de0_wQeVDD": {
+          "type": "ai_gen_block_e387de0",
+          "settings": {
+            "image_position": "left",
+            "image": "shopify://shop_images/Rec2.jpg",
+            "image_size": "landscape",
+            "heading": "NOODLE",
+            "heading_font": "sans_serif_n4",
+            "heading_font_size": 32,
+            "heading_color": "#000000",
+            "description": "<p>We have been pursuing konnyaku in Japan since 1927. We have passed down the original texture, feel, and taste of konnyaku to the next generation, and with this as our foundation, we are constantly seeking new ways to interpret and experiment with the taste of konnyaku, so that everyone can enjoy delicious konnyaku dishes with peace of mind.</p>",
+            "description_font_size": 16,
+            "description_color": "#1c1c1c",
+            "button_text": "View Recipe",
+            "button_link": "shopify://pages/recipe",
+            "button_width": 50,
+            "button_background_color": "#1c1c1c",
+            "button_hover_color": "#ed8a00",
+            "button_text_color": "#ffffff",
+            "top_spacing": 40,
+            "bottom_spacing": 40,
+            "horizontal_padding": 30
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e387de0_wQeVDD"
+      ],
+      "settings": {}
+    },
+    "rich_text_FyCyU6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_pCjXXa": {
+          "type": "heading",
+          "settings": {
+            "text": "HOW TO COOK",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pCjXXa"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "1770622921aa52e4d3": {
+      "type": "_blocks",
+      "settings": {}
+    },
     "1770378877609279aa": {
       "type": "_blocks",
       "blocks": {
@@ -1368,6 +1429,9 @@
   "order": [
     "main",
     "1770620758a54fa084",
+    "17706230131fcf52bf",
+    "rich_text_FyCyU6",
+    "1770622921aa52e4d3",
     "1770378877609279aa",
     "blocks_gWNxVC",
     "rich_text_GbUKXQ",
