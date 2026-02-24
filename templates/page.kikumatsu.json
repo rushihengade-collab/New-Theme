@@ -182,10 +182,15 @@
           "settings": {
             "image": "shopify://shop_images/img20151118150455863370.png"
           }
+        },
+        "gallery_kdF8dF": {
+          "type": "gallery",
+          "settings": {}
         }
       },
       "block_order": [
-        "gallery_k7wUqa"
+        "gallery_k7wUqa",
+        "gallery_kdF8dF"
       ],
       "name": "Kikumatsu Gallery",
       "settings": {
