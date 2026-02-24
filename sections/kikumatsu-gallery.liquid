@@ -1,0 +1,129 @@
+<div class="kikumatsu-gallery-section">
+  <div class="kikumatsu-gallery-section-header">
+    <h2>{{ section.settings.title }}</h2>
+  </div>
+  <div class="kikumatsu-gallery-images">
+    {% for block in section.blocks %}
+      <div class="kikumatsu-gallery-image">
+        <img
+          src="{{ block.settings.image | image_url: width: 1200 }}"
+          alt="{{ block.settings.image.alt }}"
+          width="1200"
+          height="1200"
+        >
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+    .kikumatsu-gallery-section{
+        padding-top: {{ section.settings.padding-top }}px;
+        padding-bottom: {{ section.settings.padding-bottom }}px;
+    }
+  .kikumatsu-gallery-section-header {
+    background-image: url('{{ section.settings.header_bg_image | image_url: width: 1200 }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 24px 20px;
+    text-align: center;
+  }
+  .kikumatsu-gallery-section-header h2 {
+    margin: 0;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    color: #2563eb;
+    font-weight: 600;
+  }
+
+  .kikumatsu-gallery-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 auto;
+  }
+  .kikumatsu-gallery-image {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .kikumatsu-gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .kikumatsu-gallery-section {
+      padding-top: {{ section.settings.padding-top | times: 0.9 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.9 }}px;
+    }
+    .kikumatsu-gallery-images {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .kikumatsu-gallery-section {
+      padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Kikumatsu Gallery",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "header_bg_image",
+      "label": "Header Background Image"
+    },
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "gallery",
+      "name": "Gallery",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kikumatsu Gallery"
+    }
+  ]
+}
+{% endschema %}

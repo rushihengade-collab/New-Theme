@@ -1,0 +1,204 @@
+<div class="kikumatsu-image-text1-section">
+  <div class="kikumatsu-image-text1-section-left">
+    <img
+      src="{{ section.settings.left_side_image | image_url: width: 1000 }}"
+      alt="{{ section.settings.left_side_image.alt }}"
+      width="1000"
+      height="1000"
+    >
+  </div>
+  <div class="kikumatsu-image-text1-section-right">
+    <div class="kikumatsu-image-text1-section-right-inner">
+      <img
+        src="{{ section.settings.right_side_icon_image | image_url: width: 1000 }}"
+        alt="{{ section.settings.right_side_icon_image.alt }}"
+        width="1000"
+        height="1000"
+      >
+      <p class="kikumatsu-image-text1-section-right-inner-description">
+        {{ section.settings.description }}
+      </p>
+    </div>
+    <a href="{{ section.settings.right_side_button_link }}" class="kikumatsu-image-text1-section-right-inner-button">
+        <img
+          src="{{ section.settings.right_side_button_image | image_url: width: 1000 }}"
+          alt="{{ section.settings.right_side_button_image.alt }}"
+          width="1000"
+          height="1000"
+        >
+      </a>
+  </div>
+</div>
+
+<style>
+  .kikumatsu-image-text1-section {
+    display: flex;
+    align-items: stretch;
+    padding-top: {{ section.settings.padding-top }}px;
+    padding-bottom: {{ section.settings.padding-bottom }}px;
+    gap: 0;
+    min-height: 0;
+  }
+
+  .kikumatsu-image-text1-section-left {
+    flex: 0 0 39%;
+    min-width: 0;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .kikumatsu-image-text1-section-left img {
+    flex: 1 1 0;
+    min-height: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .kikumatsu-image-text1-section-right {
+    flex: 1 1 58%;
+    min-height: 320px;
+    background-image: url('{{ section.settings.right_side_bg_image | image_url: width: 1200 }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    padding: clamp(24px, 4vw, 48px);
+    justify-content: space-between;
+  }
+
+  .kikumatsu-image-text1-section-right-inner {
+    width: 70%;
+    position: relative;
+  }
+
+  .kikumatsu-image-text1-section-right-inner > img:first-of-type {
+    width:fit-content;
+    object-fit: contain;
+    display: block;
+  }
+
+  .kikumatsu-image-text1-section-right-inner-button img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    position:relative;
+    top:-20px;
+    transition: opacity 0.2s ease;
+  }
+  .kikumatsu-image-text1-section-right-inner-button img:hover {
+    opacity: 0.8;
+  }
+
+  @media (max-width: 768px) {
+    .kikumatsu-image-text1-section {
+      flex-direction: column;
+      padding-top: {{ section.settings.padding-top | times: 0.9 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.9 }}px;
+    }
+    .kikumatsu-image-text1-section-right-inner {
+        width: 100%;
+      }
+      .kikumatsu-image-text1-section-right{
+        padding-top:40px;
+    }
+
+    .kikumatsu-image-text1-section-left {
+      flex: none;
+      width: 100%;
+      min-height: 240px;
+    }
+
+    .kikumatsu-image-text1-section-left img {
+      min-height: 240px;
+    }
+
+    .kikumatsu-image-text1-section-right {
+      flex: none;
+      width: 100%;
+      min-height: 280px;
+      flex-direction: column-reverse;
+    }
+
+    .kikumatsu-image-text1-section-right-inner {
+      padding-right: 0;
+      padding-bottom: 56px;
+    }
+
+    .kikumatsu-image-text1-section-right-inner-button {
+      position: static;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .kikumatsu-image-text1-section {
+      padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Kikumatsu Image Text 1",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "left_side_image",
+      "label": "Left Side Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_side_bg_image",
+      "label": "Right Side Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_side_icon_image",
+      "label": "Right Side Icon Image"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_side_button_image",
+      "label": "Right Side Button Image"
+    },
+    {
+      "type": "url",
+      "id": "right_side_button_link",
+      "label": "Right Side Button Link"
+    },
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kikumatsu Image Text 1"
+    }
+  ]
+}
+{% endschema %}
