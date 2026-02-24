@@ -141,6 +141,21 @@
         "background": "#000000",
         "controls_color": "#ffffff"
       }
+    },
+    "kikumatsu_image_text2_wmBBB7": {
+      "type": "kikumatsu-image-text2",
+      "name": "Kikumatsu Image Text 2",
+      "settings": {
+        "section_bg_image": "shopify://shop_images/Frame_29.png",
+        "title": "",
+        "sub_title": "",
+        "description": "",
+        "button_image": "shopify://shop_images/shift_7.png",
+        "button_link": "",
+        "image_right_or_left": "right",
+        "padding-top": 0,
+        "padding-bottom": 0
+      }
     }
   },
   "order": [
@@ -148,6 +163,7 @@
     "kikumatsu_hero_NzJXiH",
     "kikumatsu_image_banner_9XfkYf",
     "kikumatsu_image_text1_fHeEQn",
-    "slideshow_KytdHz"
+    "slideshow_KytdHz",
+    "kikumatsu_image_text2_wmBBB7"
   ]
 }
