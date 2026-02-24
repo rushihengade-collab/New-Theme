@@ -16,7 +16,7 @@
         height="1000"
       >
       <p class="kikumatsu-image-text1-section-right-inner-description">
-        {{ section.settings.description }}
+        {{- section.settings.description -}}
       </p>
     </div>
     <a href="{{ section.settings.right_side_button_link }}" class="kikumatsu-image-text1-section-right-inner-button">
@@ -66,6 +66,9 @@
     display: flex;
     padding: clamp(24px, 4vw, 48px);
     justify-content: space-between;
+  }
+  .kikumatsu-image-text1-section-right-inner{
+    color:#1a1008;
   }
 
   .kikumatsu-image-text1-section-right-inner {
@@ -160,7 +163,7 @@
       "label": "Right Side Icon Image"
     },
     {
-      "type": "textarea",
+      "type": "richtext",
       "id": "description",
       "label": "Text"
     },
