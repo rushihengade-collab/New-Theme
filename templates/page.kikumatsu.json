@@ -20,6 +20,52 @@
     },
     "kikumatsu_hero_NzJXiH": {
       "type": "kikumatsu-hero",
+      "blocks": {
+        "right_side_image_dfCfYJ": {
+          "type": "right_side_image",
+          "settings": {
+            "image": "shopify://shop_images/shift_1.png"
+          }
+        },
+        "right_side_image_VmRiRT": {
+          "type": "right_side_image",
+          "settings": {
+            "image": "shopify://shop_images/shift_2.png"
+          }
+        },
+        "right_side_image_rc4mNw": {
+          "type": "right_side_image",
+          "settings": {
+            "image": "shopify://shop_images/shift_3.png"
+          }
+        },
+        "right_side_image_HJg6na": {
+          "type": "right_side_image",
+          "settings": {
+            "image": "shopify://shop_images/shift_4.png"
+          }
+        },
+        "right_side_image_qt7bUV": {
+          "type": "right_side_image",
+          "settings": {
+            "image": "shopify://shop_images/shift_6.png"
+          }
+        },
+        "right_side_image_NXjTV9": {
+          "type": "right_side_image",
+          "settings": {
+            "image": "shopify://shop_images/shift_7.png"
+          }
+        }
+      },
+      "block_order": [
+        "right_side_image_dfCfYJ",
+        "right_side_image_VmRiRT",
+        "right_side_image_rc4mNw",
+        "right_side_image_HJg6na",
+        "right_side_image_qt7bUV",
+        "right_side_image_NXjTV9"
+      ],
       "name": "Kikumatsu Hero",
       "settings": {
         "left_side_image": "shopify://shop_images/img20151111183744927169.png",
