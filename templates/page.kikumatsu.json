@@ -142,18 +142,34 @@
         "controls_color": "#ffffff"
       }
     },
+    "kikumatsu_image_text2_X8HtWJ": {
+      "type": "kikumatsu-image-text2",
+      "name": "Kikumatsu Image Text 2",
+      "settings": {
+        "section_bg_image": "shopify://shop_images/Frame_29.png",
+        "title": "素材について",
+        "sub_title": "厳選生蒟蒻芋にこだわる",
+        "description": "美味しい蒟蒻を作る為には、良い素材が大前提となります。\n菊松が広島県府中市産の山間で育った生蒟蒻芋を使用するのも\n皆様に美味しいと言って頂ける蒟蒻にたどり着くためです。",
+        "button_image": "shopify://shop_images/img20151118184315255949.png",
+        "button_link": "shopify://pages/about-kikumatsu",
+        "image": "shopify://shop_images/img20151116190619201785.png",
+        "image_right_or_left": "right",
+        "padding-top": 0,
+        "padding-bottom": 0
+      }
+    },
     "kikumatsu_image_text2_wmBBB7": {
       "type": "kikumatsu-image-text2",
       "name": "Kikumatsu Image Text 2",
       "settings": {
         "section_bg_image": "shopify://shop_images/Frame_29.png",
-        "title": "",
-        "sub_title": "",
-        "description": "",
+        "title": "素材について",
+        "sub_title": "厳選生蒟蒻芋にこだわる",
+        "description": "美味しい蒟蒻を作る為には、良い素材が大前提となります。\n菊松が広島県府中市産の山間で育った生蒟蒻芋を使用するのも\n皆様に美味しいと言って頂ける蒟蒻にたどり着くためです。",
         "button_image": "shopify://shop_images/img20151118184315255949.png",
         "button_link": "shopify://pages/about-kikumatsu",
         "image": "shopify://shop_images/shift_7.png",
-        "image_right_or_left": "right",
+        "image_right_or_left": "left",
         "padding-top": 0,
         "padding-bottom": 0
       }
@@ -165,6 +181,7 @@
     "kikumatsu_image_banner_9XfkYf",
     "kikumatsu_image_text1_fHeEQn",
     "slideshow_KytdHz",
+    "kikumatsu_image_text2_X8HtWJ",
     "kikumatsu_image_text2_wmBBB7"
   ]
 }
