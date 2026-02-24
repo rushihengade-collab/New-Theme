@@ -69,7 +69,7 @@
       "name": "Kikumatsu Hero",
       "settings": {
         "left_side_image": "shopify://shop_images/img20151111183744927169.png",
-        "padding-bottom": 43,
+        "padding-bottom": 0,
         "padding-top": 0
       }
     },
@@ -78,7 +78,7 @@
       "name": "Kikumatsu Image Banner",
       "settings": {
         "image": "shopify://shop_images/img20151120145411498412_1.png",
-        "padding-top": 40,
+        "padding-top": 0,
         "padding-bottom": 40
       }
     }
