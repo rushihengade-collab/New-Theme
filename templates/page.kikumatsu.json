@@ -150,8 +150,9 @@
         "title": "",
         "sub_title": "",
         "description": "",
-        "button_image": "shopify://shop_images/shift_7.png",
-        "button_link": "",
+        "button_image": "shopify://shop_images/img20151118184315255949.png",
+        "button_link": "shopify://pages/about-kikumatsu",
+        "image": "shopify://shop_images/shift_7.png",
         "image_right_or_left": "right",
         "padding-top": 0,
         "padding-bottom": 0
