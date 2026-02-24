@@ -1,10 +1,12 @@
-<div class="kikumatsu-gallery-section">
+<div class="kikumatsu-gallery-section" id="kikumatsu-gallery-{{ section.id }}">
   <div class="kikumatsu-gallery-section-header">
     <h2>{{ section.settings.title }}</h2>
   </div>
   <div class="kikumatsu-gallery-images">
     {% for block in section.blocks %}
-      <div class="kikumatsu-gallery-image">
+      <div class="kikumatsu-gallery-image" role="button" tabindex="0" data-index="{{ forloop.index0 }}"
+        data-src="{{ block.settings.image | image_url: width: 1600 }}"
+        data-alt="{{ block.settings.image.alt | escape }}">
         <img
           src="{{ block.settings.image | image_url: width: 1200 }}"
           alt="{{ block.settings.image.alt }}"
@@ -13,6 +15,18 @@
         >
       </div>
     {% endfor %}
+  </div>
+
+  <div class="kikumatsu-gallery-popup" id="kikumatsu-popup-{{ section.id }}" aria-hidden="true">
+    <div class="kikumatsu-gallery-popup-backdrop"></div>
+    <div class="kikumatsu-gallery-popup-inner">
+      <div class="kikumatsu-gallery-popup-image-wrap">
+        <img class="kikumatsu-gallery-popup-image" src="" alt="" width="1200" height="1200">
+        <button type="button" class="kikumatsu-gallery-popup-close" aria-label="Close">&times;</button>
+        <button type="button" class="kikumatsu-gallery-popup-arrow kikumatsu-gallery-popup-prev" aria-label="Previous image">&lsaquo;</button>
+        <button type="button" class="kikumatsu-gallery-popup-arrow kikumatsu-gallery-popup-next" aria-label="Next image">&rsaquo;</button>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -45,13 +59,118 @@
     position: relative;
     aspect-ratio: 1;
     overflow: hidden;
-    border-radius: 4px;
+    cursor: pointer;
   }
   .kikumatsu-gallery-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+  }
+
+  /* Popup */
+  .kikumatsu-gallery-popup {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+  }
+  .kikumatsu-gallery-popup.is-open {
+    opacity: 1;
+    visibility: visible;
+  }
+  .kikumatsu-gallery-popup-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  .kikumatsu-gallery-popup-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .kikumatsu-gallery-popup-image-wrap {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    max-width: calc(100vw - 120px);
+    max-height: calc(100vh - 80px);
+  }
+  .kikumatsu-gallery-popup-image-wrap .kikumatsu-gallery-popup-image {
+    display: block;
+    max-width: 100%;
+    max-height: calc(100vh - 80px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    vertical-align: middle;
+    border-radius: 1px;
+    padding:7px;
+    background:white;
+  }
+  .kikumatsu-gallery-popup-close {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    z-index: 10;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: rgba(255,255,255,.5);
+    color: black;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: background 0.2s ease;
+    padding-bottom:3px;
+  }
+  .kikumatsu-gallery-popup-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: background 0.2s ease;
+    font-size: 50px;
+    font-weight: 600;
+    color:black;
+  }
+  .kikumatsu-gallery-popup-prev {
+    left: -12px;
+  }
+  .kikumatsu-gallery-popup-next {
+    right: -12px;
+  }
+  .kikumatsu-gallery-popup-arrow:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
   }
 
   @media (max-width: 768px) {
@@ -62,6 +181,10 @@
     .kikumatsu-gallery-images {
       grid-template-columns: repeat(2, 1fr);
     }
+    .kikumatsu-gallery-popup-image-wrap{
+        max-width: calc(100vw - 40px);
+        max-height: calc(100vh - 40px);
+    }
   }
 
   @media (max-width: 480px) {
@@ -71,6 +194,88 @@
     }
   }
 </style>
+
+<script>
+(function() {
+  var sectionId = '{{ section.id }}';
+  var container = document.getElementById('kikumatsu-gallery-' + sectionId);
+  var popup = document.getElementById('kikumatsu-popup-' + sectionId);
+  if (!container || !popup) return;
+
+  var images = container.querySelectorAll('.kikumatsu-gallery-image');
+  var popupImg = popup.querySelector('.kikumatsu-gallery-popup-image');
+  var backdrop = popup.querySelector('.kikumatsu-gallery-popup-backdrop');
+  var closeBtn = popup.querySelector('.kikumatsu-gallery-popup-close');
+  var prevBtn = popup.querySelector('.kikumatsu-gallery-popup-prev');
+  var nextBtn = popup.querySelector('.kikumatsu-gallery-popup-next');
+
+  var currentIndex = 0;
+  var total = images.length;
+
+  function openPopup(index) {
+    currentIndex = index;
+    updatePopupImage();
+    updateArrows();
+    popup.classList.add('is-open');
+    popup.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closePopup() {
+    popup.classList.remove('is-open');
+    popup.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  function updatePopupImage() {
+    var el = images[currentIndex];
+    if (!el) return;
+    popupImg.src = el.getAttribute('data-src') || '';
+    popupImg.alt = el.getAttribute('data-alt') || '';
+  }
+
+  function updateArrows() {
+    prevBtn.disabled = total <= 1 || currentIndex === 0;
+    nextBtn.disabled = total <= 1 || currentIndex === total - 1;
+  }
+
+  images.forEach(function(imgEl, index) {
+    imgEl.addEventListener('click', function() { openPopup(index); });
+    imgEl.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPopup(index); }
+    });
+  });
+
+  if (closeBtn) closeBtn.addEventListener('click', closePopup);
+  if (backdrop) backdrop.addEventListener('click', closePopup);
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', function() {
+      if (currentIndex > 0) { currentIndex--; updatePopupImage(); updateArrows(); }
+    });
+  }
+  if (nextBtn) {
+    nextBtn.addEventListener('click', function() {
+      if (currentIndex < total - 1) { currentIndex++; updatePopupImage(); updateArrows(); }
+    });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (!popup.classList.contains('is-open')) return;
+    if (e.key === 'Escape') closePopup();
+    if (e.key === 'ArrowLeft' && currentIndex > 0) {
+      currentIndex--;
+      updatePopupImage();
+      updateArrows();
+    }
+    if (e.key === 'ArrowRight' && currentIndex < total - 1) {
+      currentIndex++;
+      updatePopupImage();
+      updateArrows();
+    }
+  });
+})();
+</script>
 
 {% schema %}
 {
