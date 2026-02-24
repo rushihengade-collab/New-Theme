@@ -72,10 +72,20 @@
         "padding-bottom": 43,
         "padding-top": 0
       }
+    },
+    "kikumatsu_image_banner_9XfkYf": {
+      "type": "kikumatsu-image-banner",
+      "name": "Kikumatsu Image Banner",
+      "settings": {
+        "image": "shopify://shop_images/img20151120145411498412_1.png",
+        "padding-top": 40,
+        "padding-bottom": 40
+      }
     }
   },
   "order": [
     "main",
-    "kikumatsu_hero_NzJXiH"
+    "kikumatsu_hero_NzJXiH",
+    "kikumatsu_image_banner_9XfkYf"
   ]
 }
