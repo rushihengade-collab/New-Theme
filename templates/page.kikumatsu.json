@@ -185,7 +185,9 @@
         },
         "gallery_kdF8dF": {
           "type": "gallery",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/img20151118150456261524.png"
+          }
         }
       },
       "block_order": [
