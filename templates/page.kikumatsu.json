@@ -173,6 +173,25 @@
         "padding-top": 0,
         "padding-bottom": 0
       }
+    },
+    "kikumatsu_gallery_UCUfgD": {
+      "type": "kikumatsu-gallery",
+      "blocks": {
+        "gallery_k7wUqa": {
+          "type": "gallery",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "gallery_k7wUqa"
+      ],
+      "name": "Kikumatsu Gallery",
+      "settings": {
+        "title": "ギャラリー",
+        "header_bg_image": "shopify://shop_images/img20151112154109483253.jpg",
+        "padding-top": 0,
+        "padding-bottom": 0
+      }
     }
   },
   "order": [
@@ -182,6 +201,7 @@
     "kikumatsu_image_text1_fHeEQn",
     "slideshow_KytdHz",
     "kikumatsu_image_text2_X8HtWJ",
-    "kikumatsu_image_text2_wmBBB7"
+    "kikumatsu_image_text2_wmBBB7",
+    "kikumatsu_gallery_UCUfgD"
   ]
 }
