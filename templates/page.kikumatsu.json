@@ -179,7 +179,9 @@
       "blocks": {
         "gallery_k7wUqa": {
           "type": "gallery",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/img20151118150455863370.png"
+          }
         }
       },
       "block_order": [
