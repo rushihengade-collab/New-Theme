@@ -188,11 +188,67 @@
           "settings": {
             "image": "shopify://shop_images/img20151118150456261524.png"
           }
+        },
+        "gallery_ARX4z8": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/img20151118150456428277.png"
+          }
+        },
+        "gallery_xpciEw": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/img20151118150455588290.png"
+          }
+        },
+        "gallery_EVK9ff": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/img20151118151429686507.png"
+          }
+        },
+        "gallery_cidx4f": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/img20151118150456086924.png"
+          }
+        },
+        "gallery_EGneF4": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/img20151118150456432643.png"
+          }
+        },
+        "gallery_zCKpbi": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/img20151118151429688513.png"
+          }
+        },
+        "gallery_86eXEU": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/img20151118150456259320.png"
+          }
+        },
+        "gallery_TKd4aP": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/img20151118150455590354.png"
+          }
         }
       },
       "block_order": [
         "gallery_k7wUqa",
-        "gallery_kdF8dF"
+        "gallery_kdF8dF",
+        "gallery_ARX4z8",
+        "gallery_xpciEw",
+        "gallery_EVK9ff",
+        "gallery_cidx4f",
+        "gallery_EGneF4",
+        "gallery_zCKpbi",
+        "gallery_86eXEU",
+        "gallery_TKd4aP"
       ],
       "name": "Kikumatsu Gallery",
       "settings": {
