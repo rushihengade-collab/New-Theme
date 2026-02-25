@@ -132,6 +132,18 @@
         "padding-top": 39,
         "padding-bottom": 45
       }
+    },
+    "tsubukon_image_dBBzhG": {
+      "type": "tsubukon-image",
+      "name": "Tsubukon Image Section",
+      "settings": {
+        "title_1": "Title 1",
+        "title_2": "",
+        "add_border_bottom_to_title": "yes",
+        "image": "shopify://shop_images/main5_1.png",
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
     }
   },
   "order": [
@@ -139,6 +151,7 @@
     "slideshow_EKPXTb",
     "tsubukon_image_neza6m",
     "slideshow_xcAYUP",
-    "tsubukon_bg_image_section_tXeXYC"
+    "tsubukon_bg_image_section_tXeXYC",
+    "tsubukon_image_dBBzhG"
   ]
 }
