@@ -1,0 +1,101 @@
+<div class="container tsubukon-bg-image-section">
+  <div class="tsubukon-bg-image-section-content">
+    {% render 'header-block', header: section.settings.header %}
+    {% if section.settings.description != blank %}
+      <div class="tsubukon-bg-image-section-description">
+        {{ section.settings.description }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+    .tsubukon-bg-image-section{
+        padding-top: {{ section.settings.padding-top }}px;
+        padding-bottom: {{ section.settings.padding-bottom }}px;
+        background-image: url('{{ section.settings.background_image | image_url: width: 1920 }}');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+  .tsubukon-bg-image-section-description {
+    max-width: 960px;
+    margin: 24px auto 0;
+    line-height: 1.8;
+  }
+
+  @media (max-width: 768px) {
+    .tsubukon-bg-image-section{
+      padding-top: {{ section.settings.padding-top | times: 0.9 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.9 }}px;
+    }
+    .tsubukon-bg-image-section-description{
+        padding-inline:20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .tsubukon-bg-image-section{
+      padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
+    }
+    .tsubukon-bg-image-section-description{
+        padding-inline:15px;
+    }
+  }
+
+  @media (min-width: 410px) {
+    .tsubukon-bg-image-section-description{
+        padding-inline:10px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Tsubukon BG Image Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding Bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tsubukon BG Image Section"
+    }
+  ]
+}
+{% endschema %}

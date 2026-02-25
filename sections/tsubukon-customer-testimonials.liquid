@@ -1,0 +1,148 @@
+<div class="container">
+  <div class="tsubukon-customer-testimonials-section-inner">
+    <h2>{{ section.settings.title }}</h2>
+    <div>
+      {% for block in section.blocks %}
+        {% if block.type == 'testimonial' %}
+          <div>
+            <img
+              src="{{ block.settings.image | image_url: width: 100 }}"
+              alt="{{ block.settings.image.alt }}"
+              width="100"
+              height="100"
+            >
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <button></button>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Customer Testimonials",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_img",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "header_btn_text",
+      "label": "Header Button Text"
+    },
+    {
+      "type": "url",
+      "id": "header_btn_link",
+      "label": "Header Button Link"
+    },
+    {
+      "type": "text",
+      "id": "header_title",
+      "label": "Header Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "header_icon",
+      "label": "Header Icon"
+    },
+    {
+      "type": "text",
+      "id": "footer_btn_text",
+      "label": "Footer Button Text"
+    },
+    {
+      "type": "url",
+      "id": "footer_btn_link",
+      "label": "Footer Button Link"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial_1",
+      "name": "Testimonial 1",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    },
+    {
+      "type": "testimonial_2",
+      "name": "Testimonial 2",
+      "settings": [
+        {
+          "type": "text",
+          "id": "header",
+          "label": "Header"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author"
+        }
+      ]
+    },
+    {
+      "type": "testimonial_3",
+      "name": "Testimonial 3",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Customer Testimonials"
+    }
+  ]
+}
+{% endschema %}

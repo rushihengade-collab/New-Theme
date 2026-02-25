@@ -1,0 +1,188 @@
+<div class="container tsubukon-image-text-section">
+  {% if section.settings.title != blank %}
+    <div class="tsubukon-image-text-section-header">
+      {% render 'header-block', header: section.settings.title %}
+    </div>
+  {% endif %}
+  <div class="tsubukon-image-text-section-content">
+    <div class="tsubukon-image-text-section-text">
+      {% if section.settings.text != blank %}
+        <div class="tsubukon-image-text-section-text-text">
+          {{ section.settings.text }}
+        </div>
+      {% endif %}
+    </div>
+    <div class="tsubukon-image-text-section-image">
+      {% if section.settings.image != blank %}
+        <img
+          src="{{ section.settings.image | image_url: width: 1000 }}"
+          alt="{{ section.settings.image.alt | default: section.settings.title }}"
+          width="1000"
+          height="1000"
+          loading="lazy"
+        >
+      {% endif %}
+    </div>
+  </div>
+  {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+    <div class="tsubukon-image-text-section-cta">
+      <a href="{{ section.settings.button_link }}" class="tsubukon-image-text-section-button">
+        {{ section.settings.button_text }}
+      </a>
+    </div>
+  {% endif %}
+</div>
+
+<style>
+  .tsubukon-image-text-section {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .tsubukon-image-text-section-header {
+    margin-bottom: 24px;
+  }
+
+  .tsubukon-image-text-section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+    margin-bottom: 32px;
+  }
+
+  .tsubukon-image-text-section-text-text {
+    text-align: left;
+    line-height: 1.8;
+    color: #333;
+  }
+
+  .tsubukon-image-text-section-text-text p {
+    margin-bottom: 1em;
+  }
+
+  .tsubukon-image-text-section-text-text p:last-child {
+    margin-bottom: 0;
+  }
+
+  .tsubukon-image-text-section-image {
+    width: 100%;
+  }
+
+  .tsubukon-image-text-section-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .tsubukon-image-text-section-cta {
+    text-align: center;
+  }
+  .tsubukon-image-text-section-button {
+    display: inline-block;
+    padding: 7px 40px 10px;
+    background-color: orange;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    width:50%;
+  }
+
+  .tsubukon-image-text-section-button:hover {
+    opacity: 0.9;
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .tsubukon-image-text-section {
+      padding-top: {{ section.settings.padding_top | times: 0.9 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.9 }}px;
+    }
+    .tsubukon-image-text-section-content {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    .tsubukon-image-text-section-image {
+      order: 2;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .tsubukon-image-text-section {
+      padding-top: {{ section.settings.padding_top | times: 0.85 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.85 }}px;
+    }
+    .tsubukon-image-text-section-button {
+      padding: 12px 24px;
+      font-size: 0.95rem;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Tsubukon Image Text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tsubukon Image with Text"
+    }
+  ]
+}
+{% endschema %}

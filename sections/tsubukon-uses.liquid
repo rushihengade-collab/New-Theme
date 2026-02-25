@@ -1,0 +1,286 @@
+<div class="tsubukon-uses-section container" style="--pt: {{ section.settings.padding_top }}px; --pb: {{ section.settings.padding_bottom }}px;">
+  <div class="tsubukon-uses-section-inner">
+    <h2 class="tsubukon-uses-title">{{ section.settings.title }}</h2>
+    <div class="tsubukon-uses-wrapper">
+      {% if section.settings.left_side_image != blank %}
+        <div class="tsubukon-uses-circle tsubukon-uses-circle--left">
+          <img
+            src="{{ section.settings.left_side_image | image_url: width: 400 }}"
+            alt=""
+            width="200"
+            height="200"
+            loading="lazy"
+          >
+        </div>
+      {% endif %}
+      {% if section.settings.right_side_image != blank %}
+        <div class="tsubukon-uses-circle tsubukon-uses-circle--right">
+          <img
+            src="{{ section.settings.right_side_image | image_url: width: 400 }}"
+            alt=""
+            width="200"
+            height="200"
+            loading="lazy"
+          >
+        </div>
+      {% endif %}
+      <div class="tsubukon-uses-section-list">
+        {% for block in section.blocks %}
+          <div class="tsubukon-uses-card" {{ block.shopify_attributes }}>
+            <span class="tsubukon-uses-card-num">{{ forloop.index }}</span>
+            <h4 class="tsubukon-uses-card-title">{{ block.settings.title }}</h4>
+            <div class="tsubukon-uses-card-description rte">
+              {{ block.settings.description }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .tsubukon-uses-section {
+    padding-top: var(--pt);
+    padding-bottom: var(--pb);
+    background: #fff;
+  }
+
+  .tsubukon-uses-section-inner {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .tsubukon-uses-title {
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    color: #2c2c2c;
+    margin: 0 0 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+
+  .tsubukon-uses-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 120%;
+    max-width: 280px;
+    height: 3px;
+    background: orange;
+    border-radius: 2px;
+  }
+
+  .tsubukon-uses-wrapper {
+    position: relative;
+    margin-top: 2.5rem;
+  }
+
+  .tsubukon-uses-section-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 2rem;
+    position: relative;
+    z-index: 1;
+    max-width:960px;
+    margin:0 auto;
+  }
+
+  .tsubukon-uses-card {
+    position: relative;
+    background: #fff;
+    border: 1.5px solid orange;
+    border-radius: 12px;
+    padding: 25px 18px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    min-height: 140px;
+  }
+
+  .tsubukon-uses-card-num {
+    position: absolute;
+    top: -13px;
+    left: -10px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: orange;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    line-height: 1;
+    padding-bottom:2px;
+  }
+
+  .tsubukon-uses-card-title {
+    font-size: 1.25rem;
+    line-height: 1.35;
+    padding-bottom:2px;
+    border-bottom:2px solid orange;
+    margin-bottom:4px;
+  }
+
+  .tsubukon-uses-card-description {
+    font-size: 0.875rem;
+    color: #444;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .tsubukon-uses-card-description ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    list-style: disc;
+  }
+
+  .tsubukon-uses-card-description li {
+    margin-bottom: 0.25rem;
+  }
+
+  .tsubukon-uses-card-description p {
+    margin: 0 0 0.35rem;
+  }
+
+  .tsubukon-uses-card-description p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Circular images - desktop */
+  .tsubukon-uses-circle {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .tsubukon-uses-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .tsubukon-uses-circle--left {
+    bottom: 10%;
+    transform: translateY(-50%);
+  }
+
+  .tsubukon-uses-circle--right {
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+  }
+
+  @media (max-width: 990px) {
+    .tsubukon-uses-circle--left,
+    .tsubukon-uses-circle--right {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .tsubukon-uses-section {
+      padding-top: calc(var(--pt) * 0.9);
+      padding-bottom: calc(var(--pb) * 0.9);
+    }
+    .tsubukon-uses-section-list {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+    .tsubukon-uses-card {
+      padding: 1rem 1rem 1rem 1.75rem;
+      min-height: auto;
+    }
+    .tsubukon-uses-card-num {
+      width: 32px;
+      height: 32px;
+      font-size: 1rem;
+      top: -8px;
+      left: -8px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .tsubukon-uses-section {
+      padding-top: calc(var(--pt) * 0.85);
+      padding-bottom: calc(var(--pb) * 0.85);
+    }
+    .tsubukon-uses-title {
+      font-size: 1.35rem;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Tsubukon Uses",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "left_side_image",
+      "label": "Desktop left side image"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_side_image",
+      "label": "Desktop right side image"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "uses",
+      "name": "Uses",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tsubukon Uses"
+    }
+  ]
+}
+{% endschema %}

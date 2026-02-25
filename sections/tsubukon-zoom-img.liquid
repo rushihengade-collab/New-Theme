@@ -1,0 +1,545 @@
+{% assign count = 0 %}
+
+<div class="container tsubukon-zoom-img-section" id="tsubukon-zoom-img-{{ section.id }}">
+  <div class="tsubukon-zoom-img-section-inner">
+    {% render 'header-block', header: section.settings.title %}
+    <div class="tsubukon-zoom-img-card">
+      {% for block in section.blocks %}
+        {% if block.type == 'image_with_text' %}
+          <div
+            class="tsubukon-zoom-img-row tsubukon-zoom-img-row--image-text {{ block.type }}"
+            {{ block.shopify_attributes }}
+          >
+            <div class="tsubukon-zoom-img-col tsubukon-zoom-img-col--img">
+              <img
+                src="{{ block.settings.image | image_url: width: 800 }}"
+                alt="{{ block.settings.image.alt | default: block.settings.title }}"
+                width="800"
+                height="800"
+                loading="lazy"
+                class="tsubukon-zoom-img-dish"
+              >
+            </div>
+            <div class="tsubukon-zoom-img-col tsubukon-zoom-img-col--text">
+              <h3 class="tsubukon-zoom-img-subtitle">{{ block.settings.title }}</h3>
+              <div class="tsubukon-zoom-img-body">
+                {{ block.settings.text }}
+              </div>
+            </div>
+          </div>
+        {% elsif block.type == 'zoom_img' %}
+          <div
+            class="tsubukon-zoom-img-row tsubukon-zoom-img-row--zoom {{ block.type }}"
+            {{ block.shopify_attributes }}
+          >
+            <div class="tsubukon-zoom-img-zoom-wrap">
+              <div class="tsubukon-zoom-img-zoomed-circle">
+                <img
+                  src="{{ block.settings.zoomed_image | image_url: width: 400 }}"
+                  alt="{{ block.settings.zoomed_image.alt | default: 'Zoom' }}"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                >
+              </div>
+              <div class="tsubukon-zoom-img-connector" aria-hidden="true"></div>
+              <div class="tsubukon-zoom-img-main-wrap">
+                <img
+                  src="{{ block.settings.image | image_url: width: 800 }}"
+                  alt="{{ block.settings.image.alt | default: 'Main' }}"
+                  width="800"
+                  height="800"
+                  loading="lazy"
+                  class="tsubukon-zoom-img-main"
+                >
+              </div>
+            </div>
+          </div>
+        {% elsif block.type == 'hide_imgs' %}
+          {% if count == 0 %}
+            <div class="tsubukon-zoom-img-row tsubukon-zoom-img-row--btn">
+              <button class="tsubukon-zoom-img-toggle-btn" data-toggle-content aria-expanded="false">
+                <span class="tsubukon-zoom-img-toggle-icon" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                  </svg>
+                </span>
+                <span class="tsubukon-zoom-img-toggle-text">
+                  {{- block.settings.button_label | default: block.settings.title | default: 'Q成分を比較してみる' -}}
+                </span>
+              </button>
+            </div>
+            {% assign count = count | plus: 1 %}
+          {% endif %}
+          <div
+            class="tsubukon-zoom-img-hide-wrap tsubukon-zoom-img-toggle-content"
+            hidden
+            aria-hidden="true"
+            {{ block.shopify_attributes }}
+          >
+            <div class="tsubukon-zoom-img-toggle-content-inner">
+              {% if block.settings.title != blank %}
+                <h3 class="tsubukon-zoom-img-toggle-content-title">{{ block.settings.title }}</h3>
+              {% endif %}
+              {% if block.settings.hidden_images != blank %}
+                <div class="tsubukon-zoom-img-toggle-content-body">
+                  <img
+                    src="{{ block.settings.hidden_images | image_url: width: 800 }}"
+                    alt="{{ block.settings.hidden_images.alt | default: 'Hidden Images' }}"
+                    width="800"
+                    height="800"
+                    loading="lazy"
+                  >
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .tsubukon-zoom-img-section {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
+  .tsubukon-zoom-img-zoomed-circle::after {
+    content: '';
+    display: block;
+    background: #e8f5e9;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .tsubukon-zoom-img-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 24px 28px 28px;
+  }
+
+  .tsubukon-zoom-img-row {
+    margin-bottom: 20px;
+  }
+  .tsubukon-zoom-img-row:last-of-type { margin-bottom: 0; }
+
+  /* Image + Text row */
+  .tsubukon-zoom-img-row--image-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+  .tsubukon-zoom-img-col--img {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .tsubukon-zoom-img-dish {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  .tsubukon-zoom-img-subtitle {
+    margin: 0 0 10px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #333;
+    border-bottom: 3px solid #e85d04;
+    padding-bottom: 6px;
+    display: inline-block;
+  }
+  .tsubukon-zoom-img-body {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+  }
+  .tsubukon-zoom-img-body p { margin: 0 0 0.5em; }
+  .tsubukon-zoom-img-body p:last-child { margin-bottom: 0; }
+
+  /* Zoom row – row on desktop, column on mobile */
+  .tsubukon-zoom-img-row--zoom {
+    margin-top: 8px;
+  }
+  .tsubukon-zoom-img-row--zoom .tsubukon-zoom-img-zoom-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .tsubukon-zoom-img-zoom-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .tsubukon-zoom-img-zoomed-circle {
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #e85d04;
+    flex-shrink: 0;
+  }
+  .tsubukon-zoom-img-zoomed-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  /* Dotted line connector – horizontal on desktop */
+  .tsubukon-zoom-img-connector {
+    flex: 1 1 auto;
+    min-width: 24px;
+    height: 0;
+    border-top: 2px dotted #e85d04;
+    align-self: center;
+  }
+  .tsubukon-zoom-img-zoom-label {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #e85d04;
+    white-space: nowrap;
+  }
+  .tsubukon-zoom-img-main-wrap {
+    position: relative;
+    flex: 0 1 auto;
+    min-width: 0;
+    max-width: 380px;
+  }
+  .tsubukon-zoom-img-main-bg {
+    position: absolute;
+    left: -8px;
+    top: -10px;
+    right: -12px;
+    bottom: -10px;
+    background: #e8f5e9;
+    border-radius: 10px;
+    z-index: 0;
+  }
+  .tsubukon-zoom-img-main-wrap .tsubukon-zoom-img-main {
+    position: relative;
+    z-index: 1;
+  }
+  .tsubukon-zoom-img-main-wrap .tsubukon-zoom-img-highlight-ring {
+    z-index: 2;
+  }
+  .tsubukon-zoom-img-main {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  .tsubukon-zoom-img-highlight-ring {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 28%;
+    height: 28%;
+    border: 3px solid #e85d04;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  /* Toggle button row */
+  .tsubukon-zoom-img-row--btn {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 12px;
+  }
+  .tsubukon-zoom-img-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 2px solid #e85d04;
+    background: #fff;
+    color: #333;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+  .tsubukon-zoom-img-toggle-btn:hover {
+    background: #e85d04;
+    color: #fff;
+    border-color: #e85d04;
+  }
+  .tsubukon-zoom-img-toggle-icon {
+    flex-shrink: 0;
+    color: #e85d04;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease;
+  }
+  .tsubukon-zoom-img-toggle-btn:hover .tsubukon-zoom-img-toggle-icon {
+    color: #fff;
+  }
+  .tsubukon-zoom-img-toggle-icon svg {
+    display: block;
+  }
+
+  /* Toggle content (below button) – smooth show/hide */
+  .tsubukon-zoom-img-toggle-content {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.4s ease-out, opacity 0.3s ease-out, visibility 0s linear 0.4s;
+  }
+  .tsubukon-zoom-img-toggle-content.is-open {
+    max-height: 3000px;
+    opacity: 1;
+    visibility: visible;
+    transition: max-height 0.45s ease-in-out, opacity 0.35s ease-in-out, visibility 0s linear 0s;
+  }
+  .tsubukon-zoom-img-toggle-content[hidden] {
+    display: block !important;
+  }
+  .tsubukon-zoom-img-toggle-content[hidden]:not(.is-open) {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .tsubukon-zoom-img-toggle-content-inner {
+    padding: 16px 0 8px;
+    margin-top: 8px;
+    border-top: 1px solid #eee;
+  }
+  .tsubukon-zoom-img-toggle-content-title {
+    margin: 0 0 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  .tsubukon-zoom-img-toggle-content-body {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #333;
+  }
+  .tsubukon-zoom-img-toggle-content-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+  }
+  .tsubukon-zoom-img-toggle-content-body th,
+  .tsubukon-zoom-img-toggle-content-body td {
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+    text-align: left;
+  }
+  .tsubukon-zoom-img-toggle-content-body th {
+    background: #e8f5e9;
+    font-weight: 600;
+  }
+  .tsubukon-zoom-img-toggle-content-body tr:nth-child(even) { background: #f9f9f9; }
+  .tsubukon-zoom-img-toggle-content-body tr.highlight { background: #ffebee; }
+
+  @media (max-width: 768px) {
+    .tsubukon-zoom-img-section {
+      padding-top: {{ section.settings.padding_top | times: 0.9 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.9 }}px;
+    }
+    .tsubukon-zoom-img-card { padding: 16px; }
+    .tsubukon-zoom-img-row--image-text {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .tsubukon-zoom-img-zoom-wrap {
+      flex-direction: column;
+      align-items: center;
+    }
+    /* Dotted line connector – vertical on mobile (column layout) */
+    .tsubukon-zoom-img-connector {
+      width: 0;
+      height: 40px;
+      min-width: 0;
+      flex: none;
+      border-top: none;
+      border-left: 2px dotted #e85d04;
+      align-self: center;
+    }
+    .tsubukon-zoom-img-main-wrap { max-width: 100%; }
+    .tsubukon-zoom-img-main-bg { left: -6px; top: -8px; right: -8px; bottom: -8px; }
+  }
+
+  @media (max-width: 480px) {
+    .tsubukon-zoom-img-section {
+      padding-top: {{ section.settings.padding_top | times: 0.85 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.85 }}px;
+    }
+    .tsubukon-zoom-img-zoomed-circle { width: 100px; height: 100px; min-width: 100px; }
+  }
+</style>
+
+<script>
+  (function () {
+    const section = document.getElementById('tsubukon-zoom-img-{{ section.id }}');
+    if (!section) return;
+
+    const toggleButtons = section.querySelectorAll('[data-toggle-content]');
+
+    toggleButtons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const contents = [];
+        let el = btn.parentElement && btn.parentElement.nextElementSibling;
+        while (el && el.classList && el.classList.contains('tsubukon-zoom-img-hide-wrap')) {
+          contents.push(el);
+          el = el.nextElementSibling;
+        }
+        if (contents.length === 0) return;
+        const isOpen = contents[0].classList.contains('is-open');
+        contents.forEach(function (content) {
+          if (isOpen) {
+            content.classList.remove('is-open');
+            content.setAttribute('aria-hidden', 'true');
+            content.setAttribute('hidden', '');
+          } else {
+            content.classList.add('is-open');
+            content.setAttribute('aria-hidden', 'false');
+            content.removeAttribute('hidden');
+          }
+        });
+        btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Tsubukon Zoom Image",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image_with_text",
+      "name": "Image with Text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "zoom_img",
+      "name": "Zoom Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "zoomed_image",
+          "label": "Zoomed Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "hide_imgs",
+      "name": "Hide Images (Compare)",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label",
+          "default": "Q成分を比較してみる"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Content title"
+        },
+        {
+          "type": "richtext",
+          "id": "modal_content",
+          "label": "Content (shown below button)"
+        },
+        {
+          "type": "image_picker",
+          "id": "hidden_images",
+          "label": "Hidden image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tsubukon Zoom Image"
+    }
+  ]
+}
+{% endschema %}
