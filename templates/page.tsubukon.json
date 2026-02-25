@@ -144,6 +144,19 @@
         "padding_top": 70,
         "padding_bottom": 70
       }
+    },
+    "tsubukon_image_text_LBzbjF": {
+      "type": "tsubukon-image-text",
+      "name": "Tsubukon Image with Text",
+      "settings": {
+        "title": "title",
+        "text": "<p>Description</p>",
+        "image": "shopify://shop_images/access2.webp",
+        "button_text": "Button is here",
+        "button_link": "shopify://pages/product",
+        "padding_top": 30,
+        "padding_bottom": 38
+      }
     }
   },
   "order": [
@@ -152,6 +165,7 @@
     "tsubukon_image_neza6m",
     "slideshow_xcAYUP",
     "tsubukon_bg_image_section_tXeXYC",
-    "tsubukon_image_dBBzhG"
+    "tsubukon_image_dBBzhG",
+    "tsubukon_image_text_LBzbjF"
   ]
 }
