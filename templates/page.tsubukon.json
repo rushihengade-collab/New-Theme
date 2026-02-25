@@ -121,12 +121,24 @@
         "background": "#000000",
         "controls_color": "#ffffff"
       }
+    },
+    "tsubukon_bg_image_section_tXeXYC": {
+      "type": "tsubukon-bg-image-section",
+      "name": "Tsubukon BG Image Section",
+      "settings": {
+        "header": "粒こんとは?",
+        "description": "<p>食物繊維やカルシウムが豊富で、カロリーが非常に少ないことも注目されている「こんにゃく」。<br/>この『こんにゃく』を粒状にしたものを『粒こんにゃく」といいます。<br/>ということは、「粒こんにゃく』を略した愛称なのか? そう聞かれますと少し違います。<br/>こんにゃくを冷凍・解凍をした際に失われる食感や形状を維持し、またスイーツを含む様々な調理加工に対応するためこんにゃく特有の臭みも抑え、サイズの幅も豊富にご用意した『粒こんにゃく』<br/>それが『粒こん』です。<br/>気軽に食べれる冷凍食品は、日々忙しい現代人において欠かせない食品となっています。<br/>その反面、脂質や炭水化物などが多く、現代人に足りないと言われている食物繊維やカルシウムは不足し高カロリーになるなどの点で、健康を気にされる方には敬遠されがちです。<br/>そんな時、カロリーや糖質をオフにでき、現代人に足りないと言われている栄養素を補うことができます。こんにゃく本来の腹持ちの良さというメリットもありますので、ダイエット食品や食事制限のあるメニューにも対応可能です。</p>",
+        "background_image": "shopify://shop_images/main4_backgorund.jpg",
+        "padding-top": 39,
+        "padding-bottom": 45
+      }
     }
   },
   "order": [
     "main",
     "slideshow_EKPXTb",
     "tsubukon_image_neza6m",
-    "slideshow_xcAYUP"
+    "slideshow_xcAYUP",
+    "tsubukon_bg_image_section_tXeXYC"
   ]
 }
