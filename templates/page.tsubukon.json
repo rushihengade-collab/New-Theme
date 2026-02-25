@@ -63,10 +63,23 @@
         "background": "#000000",
         "controls_color": "#ffffff"
       }
+    },
+    "tsubukon_image_neza6m": {
+      "type": "tsubukon-image",
+      "name": "Tsubukon Image Section",
+      "settings": {
+        "title_1": "Title 1",
+        "title_2": "Title 2",
+        "add_border_bottom_to_title": "no",
+        "image": "shopify://shop_images/cook.jpg",
+        "padding_top": 70,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
-    "slideshow_EKPXTb"
+    "slideshow_EKPXTb",
+    "tsubukon_image_neza6m"
   ]
 }
