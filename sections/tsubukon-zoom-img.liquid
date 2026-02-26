@@ -32,13 +32,21 @@
             class="tsubukon-zoom-img-row tsubukon-zoom-img-row--zoom {{ block.type }}"
             {{ block.shopify_attributes }}
           >
-            <img
-              src="{{ block.settings.zoomed_image | image_url: width: 1000 }}"
-              alt="{{ block.settings.zoomed_image.alt | default: 'Zoom' }}"
-              width="400"
-              height="400"
-              loading="lazy"
-            >
+            <picture>
+              {% if block.settings.zoomed_image_mobile != blank %}
+                <source
+                  media="(max-width: 767px)"
+                  srcset="{{ block.settings.zoomed_image_mobile | image_url: width: 800 }}"
+                >
+              {% endif %}
+              <img
+                src="{{ block.settings.zoomed_image | image_url: width: 1000 }}"
+                alt="{{ block.settings.zoomed_image.alt | default: 'Zoom' }}"
+                width="400"
+                height="400"
+                loading="lazy"
+              >
+            </picture>
           </div>
         {% elsif block.type == 'hide_imgs' %}
           {% if count == 0 %}
@@ -492,6 +500,11 @@
           "type": "image_picker",
           "id": "zoomed_image",
           "label": "Zoomed Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "zoomed_image_mobile",
+          "label": "Zoomed Image Mobile"
         }
       ]
     },
