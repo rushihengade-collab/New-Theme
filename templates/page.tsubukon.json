@@ -179,15 +179,15 @@
         "uses_PLxbrK": {
           "type": "uses",
           "settings": {
-            "title": "title is here",
-            "description": "<p>Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description </p>"
+            "title": "着色可能",
+            "description": "<p> 天然由来の成分で粒こんに着色可能(色は 作れるものと作れないものがあります)</p>"
           }
         },
         "uses_PNe3eX": {
           "type": "uses",
           "settings": {
-            "title": "title is here",
-            "description": "<p>Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description </p>"
+            "title": "品質保証体制",
+            "description": "<p>金属探知機、X線検査装置、理化学試験、微<br/>生物検査、官能試験実施<br/>有機JASの格付け可能<br/>HACCP認証取得工場</p>"
           }
         },
         "uses_gRCwMA": {
