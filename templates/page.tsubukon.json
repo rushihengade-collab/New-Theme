@@ -310,7 +310,8 @@
         "zoom_img_9cjCTi": {
           "type": "zoom_img",
           "settings": {
-            "zoomed_image": "shopify://shop_images/rushi.png"
+            "zoomed_image": "shopify://shop_images/rushi.png",
+            "zoomed_image_mobile": "shopify://shop_images/Frame_3.png"
           }
         },
         "hide_imgs_gz8DBX": {
