@@ -1,23 +1,401 @@
-<div class="container">
-  <div class="tsubukon-customer-testimonials-section-inner">
-    <h2>{{ section.settings.title }}</h2>
-    <div>
+<div class="tsubukon-customer-testimonials-section">
+  <div class="tsubukon-customer-testimonials-section-content">
+    <h2 class="tsubukon-customer-testimonials-section-title">{{ section.settings.title }}</h2>
+    <div class="tsubukon-customer-testimonials-section-content-blocks">
       {% for block in section.blocks %}
-        {% if block.type == 'testimonial' %}
-          <div>
-            <img
-              src="{{ block.settings.image | image_url: width: 100 }}"
-              alt="{{ block.settings.image.alt }}"
-              width="100"
-              height="100"
-            >
-          </div>
-        {% endif %}
+        {% case block.type %}
+          {% when 'header_block' %}
+            <div class="tsubukon-customer-testimonials-section-content-blocks-header" {{ block.shopify_attributes }}>
+              <div class="tsubukon-header-left">
+                <a
+                  href="{{ block.settings.btn_link }}"
+                  class="tsubukon-customer-testimonials-section-content-blocks-header-button"
+                >
+                  {{ block.settings.btn_text }}
+                </a>
+                <h3 class="tsubukon-header-title">{{ block.settings.header_title }}</h3>
+              </div>
+              <div class="tsubukon-header-logo">
+                <img
+                  src="{{ block.settings.header_icon | image_url: width: 200 }}"
+                  alt="{{ block.settings.header_icon.alt | default: 'Logo' }}"
+                  width="120"
+                  height="120"
+                  loading="lazy"
+                >
+              </div>
+            </div>
+          {% when 'image_text_block' %}
+            <div class="tsubukon-image-text-block" {{ block.shopify_attributes }}>
+              <div class="tsubukon-image-text-inner">
+                <div class="tsubukon-image-text-img-wrap">
+                  <img
+                    src="{{ block.settings.image | image_url: width: 600 }}"
+                    alt="{{ block.settings.image.alt | default: '' }}"
+                    width="300"
+                    height="200"
+                    loading="lazy"
+                  >
+                </div>
+                <div class="tsubukon-image-text-body">
+                  {{ block.settings.description }}
+                </div>
+              </div>
+            </div>
+          {% when 'interview_block' %}
+            <div class="tsubukon-interview-block" {{ block.shopify_attributes }}>
+              <h3 class="tsubukon-interview-heading">{{ block.settings.title }}</h3>
+              <div class="tsubukon-interview-inner">
+                <div class="tsubukon-interview-desc">
+                  {{ block.settings.description }}
+                </div>
+                <div class="tsubukon-interview-profile">
+                  <img
+                    src="{{ block.settings.interviewer_image | image_url: width: 300 }}"
+                    alt="{{ block.settings.interviewer_image.alt | default: block.settings.interviewer_name }}"
+                    width="150"
+                    height="150"
+                    loading="lazy"
+                  >
+                  <div class="tsubukon-interview-meta">
+                    <p class="tsubukon-interview-name">{{ block.settings.interviewer_name }}</p>
+                    <p class="tsubukon-interview-position">{{ block.settings.interviewer_position }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          {% when 'testimonial_text' %}
+            <div class="tsubukon-testimonial-text" {{ block.shopify_attributes }}>
+              {{ block.settings.testimonial_text }}
+            </div>
+        {% endcase %}
       {% endfor %}
     </div>
-    <button></button>
+    <div class="tsubukon-customer-testimonials-section-content-footer">
+      <a href="{{ section.settings.footer_btn_link }}" class="tsubukon-customer-testimonials-section-content-footer-btn">
+        {{ section.settings.footer_btn_text }}
+      </a>
+    </div>
   </div>
 </div>
+
+<style>
+  .tsubukon-customer-testimonials-section {
+    background-color: #4a7c4a;
+    background-image: url('{{ section.settings.bg_img | image_url: width: 1920 }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    min-height: 100px;
+  }
+
+  .tsubukon-customer-testimonials-section-content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  .tsubukon-customer-testimonials-section-title {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    color: #2c2c2c;
+    text-align: center;
+    margin: 0 0 24px;
+    line-height: 1.3;
+  }
+
+  .tsubukon-customer-testimonials-section-content-blocks {
+    padding: 32px 24px 24px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Header block: orange tag + title left, logo right */
+  .tsubukon-customer-testimonials-section-content-blocks-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .tsubukon-header-left {
+    flex: 1 1 0%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .tsubukon-customer-testimonials-section-content-blocks-header-button {
+    display: inline-block;
+    background: #f5a623;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-bottom: 8px;
+    white-space: nowrap;
+  }
+
+  .tsubukon-customer-testimonials-section-content-blocks-header-button:hover {
+    background: #e0951a;
+    color: #fff;
+  }
+
+  .tsubukon-header-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin: 0;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .tsubukon-header-logo {
+    flex-shrink: 0;
+  }
+
+  .tsubukon-header-logo img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Image + text block: image left, description right */
+  .tsubukon-image-text-block {
+    margin-bottom: 28px;
+  }
+
+  .tsubukon-image-text-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .tsubukon-image-text-img-wrap {
+    flex: 0 0 280px;
+  }
+
+  .tsubukon-image-text-img-wrap img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+  }
+
+  .tsubukon-image-text-body {
+    flex: 1 1 280px;
+    min-width: 0;
+    max-width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: #333;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .tsubukon-image-text-body p {
+    margin: 0 0 0.75em;
+  }
+
+  .tsubukon-image-text-body p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Separator + Interview block */
+  .tsubukon-interview-block {
+    padding-top: 24px;
+    margin-top: 24px;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .tsubukon-interview-heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2c2c2c;
+    text-align: center;
+    margin: 0 0 20px;
+  }
+
+  .tsubukon-interview-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .tsubukon-interview-desc {
+    flex: 1 1 280px;
+    min-width: 0;
+    max-width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: #333;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .tsubukon-interview-desc p {
+    margin: 0 0 0.75em;
+  }
+
+  .tsubukon-interview-profile {
+    flex: 0 0 180px;
+    text-align: center;
+  }
+
+  .tsubukon-interview-profile img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tsubukon-interview-meta {
+    font-size: 0.9rem;
+  }
+
+  .tsubukon-interview-name {
+    font-weight: 600;
+    color: #2c2c2c;
+    margin: 0 0 2px;
+  }
+
+  .tsubukon-interview-position {
+    color: #555;
+    margin: 0;
+    font-size: 0.85rem;
+  }
+
+  /* Q&A testimonial text */
+  .tsubukon-testimonial-text {
+    margin-top: 24px;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #333;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: normal;
+    max-width: 100%;
+  }
+
+  .tsubukon-testimonial-text p {
+    margin: 0 0 1em;
+  }
+
+  .tsubukon-testimonial-text p:last-child {
+    margin-bottom: 0;
+  }
+
+  .tsubukon-testimonial-text strong {
+    color: #e67e22;
+  }
+
+  /* Footer button: inside white box, centered, orange */
+  .tsubukon-customer-testimonials-section-content-footer {
+    padding: 28px 24px 0;
+    text-align: center;
+  }
+
+  .tsubukon-customer-testimonials-section-content-footer-btn {
+    display: inline-block;
+    background: #f5a623;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    min-width: 260px;
+    text-align: center;
+    transition: background 0.2s ease;
+  }
+
+  .tsubukon-customer-testimonials-section-content-footer-btn:hover {
+    background: #e0951a;
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .tsubukon-customer-testimonials-section {
+      padding-top: {{ section.settings.padding_top | times: 0.9 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.9 }}px;
+    }
+
+    .tsubukon-customer-testimonials-section-content-blocks {
+      padding: 24px 16px 20px;
+    }
+
+    .tsubukon-customer-testimonials-section-content-blocks-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .tsubukon-header-left {
+      min-width: 0;
+      width: 100%;
+    }
+
+    .tsubukon-header-logo img {
+      width: 80px;
+    }
+
+    .tsubukon-image-text-img-wrap {
+      flex: 0 0 100%;
+    }
+
+    .tsubukon-image-text-body {
+      flex: 1 1 100%;
+    }
+
+    .tsubukon-interview-desc {
+      flex: 1 1 100%;
+    }
+
+    .tsubukon-interview-profile {
+      flex: 0 0 100%;
+    }
+
+    .tsubukon-customer-testimonials-section-content-footer-btn {
+      min-width: 200px;
+      padding: 12px 24px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .tsubukon-customer-testimonials-section {
+      padding-top: {{ section.settings.padding_top | times: 0.85 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.85 }}px;
+    }
+
+    .tsubukon-customer-testimonials-section-content {
+      padding: 0 12px;
+    }
+
+    .tsubukon-customer-testimonials-section-content-blocks {
+      padding: 20px 14px 16px;
+    }
+
+    .tsubukon-header-title {
+      font-size: 1.15rem;
+    }
+  }
+</style>
 
 {% schema %}
 {
@@ -32,26 +410,6 @@
       "type": "text",
       "id": "title",
       "label": "Title"
-    },
-    {
-      "type": "text",
-      "id": "header_btn_text",
-      "label": "Header Button Text"
-    },
-    {
-      "type": "url",
-      "id": "header_btn_link",
-      "label": "Header Button Link"
-    },
-    {
-      "type": "text",
-      "id": "header_title",
-      "label": "Header Title"
-    },
-    {
-      "type": "image_picker",
-      "id": "header_icon",
-      "label": "Header Icon"
     },
     {
       "type": "text",
@@ -86,9 +444,40 @@
   ],
   "blocks": [
     {
-      "type": "testimonial_1",
-      "name": "Testimonial 1",
+      "type": "header_block",
+      "name": "Header Block",
       "settings": [
+        {
+          "type": "text",
+          "id": "btn_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "btn_link",
+          "label": "Button Link"
+        },
+        {
+          "type": "text",
+          "id": "header_title",
+          "label": "Header Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "header_icon",
+          "label": "Header Icon"
+        }
+      ]
+    },
+    {
+      "type": "image_text_block",
+      "name": "Image Text Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
         {
           "type": "image_picker",
           "id": "image",
@@ -102,13 +491,13 @@
       ]
     },
     {
-      "type": "testimonial_2",
-      "name": "Testimonial 2",
+      "type": "interview_block",
+      "name": "Interview Block",
       "settings": [
         {
           "type": "text",
-          "id": "header",
-          "label": "Header"
+          "id": "title",
+          "label": "Title"
         },
         {
           "type": "richtext",
@@ -117,23 +506,28 @@
         },
         {
           "type": "image_picker",
-          "id": "image",
+          "id": "interviewer_image",
           "label": "Image"
         },
         {
           "type": "text",
-          "id": "author",
-          "label": "Author"
+          "id": "interviewer_name",
+          "label": "Interviewer Name"
+        },
+        {
+          "type": "text",
+          "id": "interviewer_position",
+          "label": "Interviewer Position"
         }
       ]
     },
     {
-      "type": "testimonial_3",
-      "name": "Testimonial 3",
+      "type": "testimonial_text",
+      "name": "Testimonial Text",
       "settings": [
         {
           "type": "richtext",
-          "id": "description",
+          "id": "testimonial_text",
           "label": "Description"
         }
       ]
