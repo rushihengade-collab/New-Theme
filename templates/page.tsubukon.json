@@ -253,6 +253,36 @@
           "settings": {
             "testimonial_red_text": "<p>食感が良くご好評いただいてます。</p>"
           }
+        },
+        "testimonial_text_fzbhRE": {
+          "type": "testimonial_text",
+          "settings": {
+            "testimonial_text": "<p>また、使用しているこんにゃくは、包み込むのも難しいくらいに大きく、存在感のあるこんにゃくですが、その分、他のたこ焼きよりも一回り大きくなるため</p>"
+          }
+        },
+        "testimonial_red_text_aiUKif": {
+          "type": "testimonial_red_text",
+          "settings": {
+            "testimonial_red_text": "<p>ボリュームがあり、お得感があります。</p>"
+          }
+        },
+        "testimonial_text_4YfUTW": {
+          "type": "testimonial_text",
+          "settings": {
+            "testimonial_text": "<p>海洋 資源が高騰していくなかで、</p>"
+          }
+        },
+        "testimonial_red_text_FJQfdt": {
+          "type": "testimonial_red_text",
+          "settings": {
+            "testimonial_red_text": "<p>こんにゃくは安定した価格であることも使用するメリットだと思います。</p>"
+          }
+        },
+        "testimonial_text_JPXgym": {
+          "type": "testimonial_text",
+          "settings": {
+            "testimonial_text": "<p></p><p>1: インタビューご協力ありがとうございました。</p>"
+          }
         }
       },
       "block_order": [
@@ -269,7 +299,12 @@
         "testimonial_text_nJM9gH",
         "testimonial_red_text_DMy4cj",
         "testimonial_text_4dA3Kk",
-        "testimonial_red_text_8pfXdU"
+        "testimonial_red_text_8pfXdU",
+        "testimonial_text_fzbhRE",
+        "testimonial_red_text_aiUKif",
+        "testimonial_text_4YfUTW",
+        "testimonial_red_text_FJQfdt",
+        "testimonial_text_JPXgym"
       ],
       "name": "Customer Testimonials",
       "settings": {
