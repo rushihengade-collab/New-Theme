@@ -273,6 +273,105 @@
         "padding_bottom": 0
       }
     },
+    "tsubukon_zoom_img_UxzKCW": {
+      "type": "tsubukon-zoom-img",
+      "blocks": {
+        "image_with_text_wH4TRH": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/img20151118150456259320.png",
+            "title": "TItle",
+            "text": "<p>description is here. description is here. description is here. description is here. description is here. </p><p>description is here. description is here. description is here. description is here. description is here. description is here. </p><p></p><p>description is here. description is here. description is here. description is here. description is here. description is here. </p><p></p><p>description is here.</p><p>description is here. </p>"
+          }
+        },
+        "zoom_img_9cjCTi": {
+          "type": "zoom_img",
+          "settings": {
+            "zoomed_image": "shopify://shop_images/rushi.png"
+          }
+        },
+        "hide_imgs_gz8DBX": {
+          "type": "hide_imgs",
+          "settings": {
+            "button_label": "Q成分を比較してみる",
+            "title": "",
+            "modal_content": "",
+            "hidden_images": "shopify://shop_images/main01.jpg"
+          }
+        },
+        "hide_imgs_NFyAQz": {
+          "type": "hide_imgs",
+          "settings": {
+            "button_label": "Q成分を比較してみる",
+            "title": "",
+            "modal_content": "",
+            "hidden_images": "shopify://shop_images/main01.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_wH4TRH",
+        "zoom_img_9cjCTi",
+        "hide_imgs_gz8DBX",
+        "hide_imgs_NFyAQz"
+      ],
+      "name": "Tsubukon Zoom Image",
+      "settings": {
+        "title": "Title is here",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "tsubukon_zoom_img_tRYCHn": {
+      "type": "tsubukon-zoom-img",
+      "blocks": {
+        "image_with_text_cQEVTn": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/img20151118150456259320.png",
+            "title": "TItle",
+            "text": "<p>description is here. description is here. description is here. description is here. description is here. </p><p>description is here. description is here. description is here. description is here. description is here. description is here. </p><p></p><p>description is here. description is here. description is here. description is here. description is here. description is here. </p><p></p><p>description is here.</p><p>description is here. </p>"
+          }
+        },
+        "zoom_img_LgpeTL": {
+          "type": "zoom_img",
+          "disabled": true,
+          "settings": {
+            "zoomed_image": "shopify://shop_images/rushi.png"
+          }
+        },
+        "hide_imgs_pTdDXx": {
+          "type": "hide_imgs",
+          "settings": {
+            "button_label": "Q成分を比較してみる",
+            "title": "",
+            "modal_content": "",
+            "hidden_images": "shopify://shop_images/main01.jpg"
+          }
+        },
+        "hide_imgs_qhbNJg": {
+          "type": "hide_imgs",
+          "settings": {
+            "button_label": "Q成分を比較してみる",
+            "title": "",
+            "modal_content": "",
+            "hidden_images": "shopify://shop_images/main01.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_cQEVTn",
+        "zoom_img_LgpeTL",
+        "hide_imgs_pTdDXx",
+        "hide_imgs_qhbNJg"
+      ],
+      "name": "Tsubukon Zoom Image",
+      "settings": {
+        "title": "Title is here",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "tsubukon_image_text_LBzbjF": {
       "type": "tsubukon-image-text",
       "name": "Tsubukon Image with Text",
@@ -454,6 +553,8 @@
     "tsubukon_image_dBBzhG",
     "tsubukon_uses_U8nFpp",
     "tsubukon_zoom_img_mfncDz",
+    "tsubukon_zoom_img_UxzKCW",
+    "tsubukon_zoom_img_tRYCHn",
     "tsubukon_image_text_LBzbjF",
     "tsubukon_customer_testimonials_PbKRFF"
   ]
