@@ -145,6 +145,28 @@
         "padding_bottom": 70
       }
     },
+    "tsubukon_zoom_img_mfncDz": {
+      "type": "tsubukon-zoom-img",
+      "blocks": {
+        "image_with_text_mQTHj8": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/img20151118150456259320.png",
+            "title": "TItle",
+            "text": "<p>description is here. description is here. description is here. description is here. description is here. </p><p>description is here. description is here. description is here. description is here. description is here. description is here. </p><p></p><p>description is here. description is here. description is here. description is here. description is here. description is here. </p><p></p><p>description is here.</p><p>description is here. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_mQTHj8"
+      ],
+      "name": "Tsubukon Zoom Image",
+      "settings": {
+        "title": "Title is here",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "tsubukon_image_text_LBzbjF": {
       "type": "tsubukon-image-text",
       "name": "Tsubukon Image with Text",
@@ -324,6 +346,7 @@
     "slideshow_xcAYUP",
     "tsubukon_bg_image_section_tXeXYC",
     "tsubukon_image_dBBzhG",
+    "tsubukon_zoom_img_mfncDz",
     "tsubukon_image_text_LBzbjF",
     "tsubukon_customer_testimonials_PbKRFF"
   ]
