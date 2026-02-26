@@ -315,6 +315,7 @@
         },
         "hide_imgs_gz8DBX": {
           "type": "hide_imgs",
+          "disabled": true,
           "settings": {
             "button_label": "Q成分を比較してみる",
             "title": "ハ ン バ ー グ",
@@ -324,6 +325,7 @@
         },
         "hide_imgs_kti6c6": {
           "type": "hide_imgs",
+          "disabled": true,
           "settings": {
             "button_label": "Q成分を比較してみる",
             "title": "⼀ 般 的 な ハ ン バ ー グ",
@@ -376,7 +378,7 @@
           "type": "hide_imgs",
           "settings": {
             "button_label": "Q成分を比較してみる",
-            "title": "",
+            "title": "粒 こ ん ⼊ り ハ ン バ ー グ",
             "modal_content": "",
             "hidden_images": "shopify://shop_images/main01.jpg"
           }
@@ -385,7 +387,7 @@
           "type": "hide_imgs",
           "settings": {
             "button_label": "Q成分を比較してみる",
-            "title": "",
+            "title": "⼀ 般 的 な ハ ン バ ー グ",
             "modal_content": "",
             "hidden_images": "shopify://shop_images/main01.jpg"
           }
