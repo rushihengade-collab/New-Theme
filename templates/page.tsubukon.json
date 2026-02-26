@@ -169,10 +169,30 @@
             "header_title": "たこ焼割烹たこ昌様",
             "header_icon": "shopify://shop_images/main8_2.jpg"
           }
+        },
+        "image_text_block_F9XMxR": {
+          "type": "image_text_block",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/shift.png",
+            "description": "<p>たこ焼のテイクアウトと言えば、「大阪出るとき連れてって〜 ♪」のテレビCMでお馴染みの「たこ焼割烹たこ品」様のたこ焼でご利用いただいています。<br/>どこでもおいしいたこ焼を食べていただきたい。その思いから長年にわたる研究の結果、独自の冷凍技術を開発されたそうです</p>"
+          }
+        },
+        "interview_block_UTwfGh": {
+          "type": "interview_block",
+          "settings": {
+            "title": "インタビュー",
+            "description": "<p>今回、新商品を開発するにあたり、なぜ「粒こん」を使用した「こんにゃくたこ焼き」を生み出したのか、 たこ焼割烹たこ吕品質管理部長の小林さんにインタビューさせていただきました。<br/>たこ</p>",
+            "interviewer_image": "shopify://shop_images/main8_3.jpg",
+            "interviewer_name": "たこ焼たこ",
+            "interviewer_position": "品質管理部長 小林さん"
+          }
         }
       },
       "block_order": [
-        "header_block_eMBGR8"
+        "header_block_eMBGR8",
+        "image_text_block_F9XMxR",
+        "interview_block_UTwfGh"
       ],
       "name": "Customer Testimonials",
       "settings": {
