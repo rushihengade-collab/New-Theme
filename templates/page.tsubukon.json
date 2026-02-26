@@ -317,6 +317,15 @@
           "type": "hide_imgs",
           "settings": {
             "button_label": "Q成分を比較してみる",
+            "title": "粒 こ ん ⼊ り ハ ン バ ー グ",
+            "modal_content": "",
+            "hidden_images": "shopify://shop_images/main01.jpg"
+          }
+        },
+        "hide_imgs_kti6c6": {
+          "type": "hide_imgs",
+          "settings": {
+            "button_label": "Q成分を比較してみる",
             "title": "",
             "modal_content": "",
             "hidden_images": "shopify://shop_images/main01.jpg"
@@ -336,6 +345,7 @@
         "image_with_text_wH4TRH",
         "zoom_img_9cjCTi",
         "hide_imgs_gz8DBX",
+        "hide_imgs_kti6c6",
         "hide_imgs_NFyAQz"
       ],
       "name": "Tsubukon Zoom Image",
