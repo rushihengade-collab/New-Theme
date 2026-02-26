@@ -211,6 +211,42 @@
           "settings": {
             "testimonial_text": "<p></p><p>小林さん(以下K):</p>"
           }
+        },
+        "testimonial_red_text_Ndebew": {
+          "type": "testimonial_red_text",
+          "settings": {
+            "testimonial_red_text": "<p>希望する形状で冷凍しても固くならないこんにゃく</p>"
+          }
+        },
+        "testimonial_text_9yn8Jz": {
+          "type": "testimonial_text",
+          "settings": {
+            "testimonial_text": "<p>を探していました。そんな中、ご縁がありましたのでご依頼させていただいました。</p>"
+          }
+        },
+        "testimonial_red_text_4m7KEd": {
+          "type": "testimonial_red_text",
+          "settings": {
+            "testimonial_red_text": "<p>試行錯誤していただいた結果、</p>"
+          }
+        },
+        "testimonial_text_nJM9gH": {
+          "type": "testimonial_text",
+          "settings": {
+            "testimonial_text": "<p>商品化採用に至りました。</p><p><br/>1: 「こんにゃくたこ焼き」の製造工程は、どのような工程で他の商品とは違う工程がありますか?</p><p>K:製造日の前日に下味をつけるためにこんにゃくを水洗いし、その後出汁に入れて沸騰から30~40 分ぐらい煮込んでいます。</p>"
+          }
+        },
+        "testimonial_red_text_DMy4cj": {
+          "type": "testimonial_red_text",
+          "settings": {
+            "testimonial_red_text": "<p>こんにゃくから下味が出て美味しさが増しています。</p>"
+          }
+        },
+        "testimonial_text_4dA3Kk": {
+          "type": "testimonial_text",
+          "settings": {
+            "testimonial_text": "<p>また、「こんにゃくたこ焼き」には、たことこんにゃくどちらも入っているため。</p>"
+          }
         }
       },
       "block_order": [
@@ -220,7 +256,13 @@
         "testimonial_text_ecRfjE",
         "testimonial_orange_text_6MEMN7",
         "testimonial_text_xz6h9e",
-        "testimonial_text_qNEY88"
+        "testimonial_text_qNEY88",
+        "testimonial_red_text_Ndebew",
+        "testimonial_text_9yn8Jz",
+        "testimonial_red_text_4m7KEd",
+        "testimonial_text_nJM9gH",
+        "testimonial_red_text_DMy4cj",
+        "testimonial_text_4dA3Kk"
       ],
       "name": "Customer Testimonials",
       "settings": {
