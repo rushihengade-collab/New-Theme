@@ -428,8 +428,8 @@
           "type": "image_with_text",
           "settings": {
             "image": "shopify://shop_images/img20151118150456259320.png",
-            "title": "TItle",
-            "text": "<p>豚 ・ ⽜ ひ き ⾁ を そ れ ぞ れ 減 ら し 、 粒 こ ん に<br/>や く を ⼊ れ ま し た 。<br/>カ ロ リ ー 2 0 % 以 上 減 ら す こ と が で き ま す<br/>美 味 し さ そ の ま ま で 、 コ ス ト ダ ウ ン が は か<br/>れ ま す</p>"
+            "title": "チ ャ ー ハ ン",
+            "text": "<p>⽶ を 減 ら し て 粒 こ ん に ゃ く を ⼊ れ ま し た<br/>パ ラ パ ラ 感 そ の ま ま で 美 味 し く 、 カ ロ リ ー<br/>も 糖 質 も オ フ で き ま す</p>"
           }
         },
         "zoom_img_jWCR6E": {
@@ -466,7 +466,7 @@
       ],
       "name": "Tsubukon Zoom Image",
       "settings": {
-        "title": "Title is here",
+        "title": "",
         "padding_top": 0,
         "padding_bottom": 0
       }
