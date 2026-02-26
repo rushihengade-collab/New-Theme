@@ -160,6 +160,20 @@
     },
     "tsubukon_customer_testimonials_PbKRFF": {
       "type": "tsubukon-customer-testimonials",
+      "blocks": {
+        "header_block_eMBGR8": {
+          "type": "header_block",
+          "settings": {
+            "btn_text": "ご利用の企業様",
+            "btn_link": "shopify://pages/contact",
+            "header_title": "たこ焼割烹たこ昌様",
+            "header_icon": "shopify://shop_images/main8_2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "header_block_eMBGR8"
+      ],
       "name": "Customer Testimonials",
       "settings": {
         "bg_img": "shopify://shop_images/okyakusamanokoe_haikei3.jpg",
