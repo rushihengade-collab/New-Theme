@@ -447,7 +447,7 @@
           "type": "hide_imgs",
           "settings": {
             "button_label": "Q成分を比較してみる",
-            "title": "",
+            "title": "⼀ 般 的 な 焼 き お に ぎ り",
             "modal_content": "",
             "hidden_images": "shopify://shop_images/main01.jpg"
           }
@@ -456,7 +456,7 @@
           "type": "hide_imgs",
           "settings": {
             "button_label": "Q成分を比較してみる",
-            "title": "",
+            "title": "N社 冷凍食品 焼きおにぎり",
             "modal_content": "",
             "hidden_images": "shopify://shop_images/main01.jpg"
           }
