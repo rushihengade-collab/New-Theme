@@ -317,22 +317,20 @@
         },
         "hide_imgs_gz8DBX": {
           "type": "hide_imgs",
-          "disabled": true,
           "settings": {
             "button_label": "Q成分を比較してみる",
             "title": "ハ ン バ ー グ",
             "modal_content": "<p>豚 ・ ⽜ ひ き ⾁ を そ れ ぞ れ 減 ら し 、 粒 こ ん に ゃ く を ⼊ れ ま し た 。<br/>カ ロ リ ー 2 0 % 以 上 減 ら す こ と が で き ま す<br/>美 味 し さ そ の ま ま で 、 コ ス ト ダ ウ ン が は か れ ま</p>",
-            "hidden_images": "shopify://shop_images/main01.jpg"
+            "hidden_images": "shopify://shop_images/gyoza1_e4111916-77b0-4ac3-bf0d-5b25133c0454.jpg"
           }
         },
         "hide_imgs_kti6c6": {
           "type": "hide_imgs",
-          "disabled": true,
           "settings": {
             "button_label": "Q成分を比較してみる",
             "title": "⼀ 般 的 な ハ ン バ ー グ",
             "modal_content": "",
-            "hidden_images": "shopify://shop_images/main01.jpg"
+            "hidden_images": "shopify://shop_images/gyoza2_596c7a5d-75ac-4139-9808-9de5174e2c70.jpg"
           }
         },
         "hide_imgs_NFyAQz": {
@@ -341,7 +339,7 @@
             "button_label": "Q成分を比較してみる",
             "title": "A社 冷凍食品 ハンバーグ",
             "modal_content": "",
-            "hidden_images": "shopify://shop_images/main01.jpg"
+            "hidden_images": "shopify://shop_images/gyoza3b_a88029d6-7510-4f98-bfb2-8b3823d3fc48.jpg"
           }
         }
       },
