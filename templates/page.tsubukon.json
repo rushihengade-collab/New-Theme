@@ -536,58 +536,6 @@
         "padding_bottom": 0
       }
     },
-    "tsubukon_zoom_img_kQTqV6": {
-      "type": "tsubukon-zoom-img",
-      "blocks": {
-        "image_with_text_td6BbW": {
-          "type": "image_with_text",
-          "settings": {
-            "image": "shopify://shop_images/img20151118150456259320.png",
-            "title": "チ ャ ー ハ ン",
-            "text": "<p>⽶ を 減 ら し て 粒 こ ん に ゃ く を ⼊ れ ま し た<br/>パ ラ パ ラ 感 そ の ま ま で 美 味 し く 、 カ ロ リ ー<br/>も 糖 質 も オ フ で き ま す</p>"
-          }
-        },
-        "zoom_img_jWCR6E": {
-          "type": "zoom_img",
-          "disabled": true,
-          "settings": {
-            "zoomed_image": "shopify://shop_images/rushi.png"
-          }
-        },
-        "hide_imgs_AwcNfc": {
-          "type": "hide_imgs",
-          "disabled": true,
-          "settings": {
-            "button_label": "Q成分を比較してみる",
-            "title": "",
-            "modal_content": "",
-            "hidden_images": "shopify://shop_images/main01.jpg"
-          }
-        },
-        "hide_imgs_PTmycp": {
-          "type": "hide_imgs",
-          "disabled": true,
-          "settings": {
-            "button_label": "Q成分を比較してみる",
-            "title": "",
-            "modal_content": "",
-            "hidden_images": "shopify://shop_images/main01.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_td6BbW",
-        "zoom_img_jWCR6E",
-        "hide_imgs_AwcNfc",
-        "hide_imgs_PTmycp"
-      ],
-      "name": "Tsubukon Zoom Image",
-      "settings": {
-        "title": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "tsubukon_customer_testimonials_PbKRFF": {
       "type": "tsubukon-customer-testimonials",
       "blocks": {
@@ -761,7 +709,6 @@
     "tsubukon_zoom_img_fwLB7R",
     "tsubukon_zoom_img_tRYCHn",
     "tsubukon_zoom_img_wDiMBL",
-    "tsubukon_zoom_img_kQTqV6",
     "tsubukon_customer_testimonials_PbKRFF"
   ]
 }
