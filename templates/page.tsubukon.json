@@ -326,7 +326,7 @@
           "type": "hide_imgs",
           "settings": {
             "button_label": "Q成分を比較してみる",
-            "title": "",
+            "title": "⼀ 般 的 な ハ ン バ ー グ",
             "modal_content": "",
             "hidden_images": "shopify://shop_images/main01.jpg"
           }
@@ -335,7 +335,7 @@
           "type": "hide_imgs",
           "settings": {
             "button_label": "Q成分を比較してみる",
-            "title": "",
+            "title": "A社 冷凍食品 ハンバーグ",
             "modal_content": "",
             "hidden_images": "shopify://shop_images/main01.jpg"
           }
