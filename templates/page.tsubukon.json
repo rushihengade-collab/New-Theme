@@ -145,6 +145,85 @@
         "padding_bottom": 70
       }
     },
+    "tsubukon_uses_U8nFpp": {
+      "type": "tsubukon-uses",
+      "blocks": {
+        "uses_Uxxpi3": {
+          "type": "uses",
+          "settings": {
+            "title": "title is here",
+            "description": "<p>Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description </p>"
+          }
+        },
+        "uses_XJKx4G": {
+          "type": "uses",
+          "settings": {
+            "title": "title is here",
+            "description": "<p>Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description </p>"
+          }
+        },
+        "uses_7Xpaw7": {
+          "type": "uses",
+          "settings": {
+            "title": "title is here",
+            "description": "<p>Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description </p>"
+          }
+        },
+        "uses_bbt7Uf": {
+          "type": "uses",
+          "settings": {
+            "title": "title is here",
+            "description": "<p>Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description </p>"
+          }
+        },
+        "uses_PLxbrK": {
+          "type": "uses",
+          "settings": {
+            "title": "title is here",
+            "description": "<p>Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description </p>"
+          }
+        },
+        "uses_PNe3eX": {
+          "type": "uses",
+          "settings": {
+            "title": "title is here",
+            "description": "<p>Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description </p>"
+          }
+        },
+        "uses_gRCwMA": {
+          "type": "uses",
+          "settings": {
+            "title": "title is here",
+            "description": "<p>Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description </p>"
+          }
+        },
+        "uses_HPcBzP": {
+          "type": "uses",
+          "settings": {
+            "title": "title is here",
+            "description": "<p>Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description </p>"
+          }
+        }
+      },
+      "block_order": [
+        "uses_Uxxpi3",
+        "uses_XJKx4G",
+        "uses_7Xpaw7",
+        "uses_bbt7Uf",
+        "uses_PLxbrK",
+        "uses_PNe3eX",
+        "uses_gRCwMA",
+        "uses_HPcBzP"
+      ],
+      "name": "Tsubukon Uses",
+      "settings": {
+        "title": "title is here",
+        "left_side_image": "shopify://shop_images/shift.png",
+        "right_side_image": "shopify://shop_images/shift_6.png",
+        "padding_top": 47,
+        "padding_bottom": 60
+      }
+    },
     "tsubukon_zoom_img_mfncDz": {
       "type": "tsubukon-zoom-img",
       "blocks": {
@@ -373,6 +452,7 @@
     "slideshow_xcAYUP",
     "tsubukon_bg_image_section_tXeXYC",
     "tsubukon_image_dBBzhG",
+    "tsubukon_uses_U8nFpp",
     "tsubukon_zoom_img_mfncDz",
     "tsubukon_image_text_LBzbjF",
     "tsubukon_customer_testimonials_PbKRFF"
