@@ -371,7 +371,8 @@
         "zoom_img_fAC7DM": {
           "type": "zoom_img",
           "settings": {
-            "zoomed_image": "shopify://shop_images/Group_1.png"
+            "zoomed_image": "shopify://shop_images/Frame_2.png",
+            "zoomed_image_mobile": "shopify://shop_images/Frame_6.png"
           }
         },
         "hide_imgs_UADRcm": {
