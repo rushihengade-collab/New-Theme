@@ -438,12 +438,21 @@
           "type": "hide_imgs",
           "settings": {
             "button_label": "Q成分を比較してみる",
-            "title": "",
+            "title": "粒 こ ん ⼊ り 焼 き お に ぎ り",
             "modal_content": "",
             "hidden_images": "shopify://shop_images/main01.jpg"
           }
         },
         "hide_imgs_qhbNJg": {
+          "type": "hide_imgs",
+          "settings": {
+            "button_label": "Q成分を比較してみる",
+            "title": "",
+            "modal_content": "",
+            "hidden_images": "shopify://shop_images/main01.jpg"
+          }
+        },
+        "hide_imgs_UeNAey": {
           "type": "hide_imgs",
           "settings": {
             "button_label": "Q成分を比較してみる",
@@ -457,7 +466,8 @@
         "image_with_text_cQEVTn",
         "zoom_img_LgpeTL",
         "hide_imgs_pTdDXx",
-        "hide_imgs_qhbNJg"
+        "hide_imgs_qhbNJg",
+        "hide_imgs_UeNAey"
       ],
       "name": "Tsubukon Zoom Image",
       "settings": {
