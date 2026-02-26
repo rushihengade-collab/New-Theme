@@ -155,10 +155,37 @@
             "title": "TItle",
             "text": "<p>description is here. description is here. description is here. description is here. description is here. </p><p>description is here. description is here. description is here. description is here. description is here. description is here. </p><p></p><p>description is here. description is here. description is here. description is here. description is here. description is here. </p><p></p><p>description is here.</p><p>description is here. </p>"
           }
+        },
+        "zoom_img_RHHErJ": {
+          "type": "zoom_img",
+          "settings": {
+            "zoomed_image": "shopify://shop_images/rushi.png"
+          }
+        },
+        "hide_imgs_dmT3tt": {
+          "type": "hide_imgs",
+          "settings": {
+            "button_label": "Q成分を比較してみる",
+            "title": "",
+            "modal_content": "",
+            "hidden_images": "shopify://shop_images/main01.jpg"
+          }
+        },
+        "hide_imgs_za4PXM": {
+          "type": "hide_imgs",
+          "settings": {
+            "button_label": "Q成分を比較してみる",
+            "title": "",
+            "modal_content": "",
+            "hidden_images": "shopify://shop_images/main01.jpg"
+          }
         }
       },
       "block_order": [
-        "image_with_text_mQTHj8"
+        "image_with_text_mQTHj8",
+        "zoom_img_RHHErJ",
+        "hide_imgs_dmT3tt",
+        "hide_imgs_za4PXM"
       ],
       "name": "Tsubukon Zoom Image",
       "settings": {
