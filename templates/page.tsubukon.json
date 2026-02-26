@@ -68,8 +68,8 @@
       "type": "tsubukon-image",
       "name": "Tsubukon Image Section",
       "settings": {
-        "title_1": "Title 1",
-        "title_2": "Title 2",
+        "title_1": "オリジナル商品の開発で",
+        "title_2": "こんなお悩みはありませんか?",
         "add_border_bottom_to_title": "no",
         "image": "shopify://shop_images/cook.jpg",
         "padding_top": 70,
