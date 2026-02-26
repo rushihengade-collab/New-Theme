@@ -191,7 +191,25 @@
         "testimonial_text_ecRfjE": {
           "type": "testimonial_text",
           "settings": {
-            "testimonial_text": "<p>インタビュアー(以下):どのような点が良いなど、そのあたりの選んでもらった理由をお聞かせ願えたらと思います。<br/>小林さん(以下K):希望する形状で冷凍しても固くならないこんにゃくを探していました。そんな中、ご縁がありましたのでご依頼させていただいました。試行錯誤していただいた結果、商品化採用に至りました。<br/>1: 「こんにゃくたこ焼き」の製造工程は、どのような工程で他の商品とは違う工程がありますか?<br/>K:製造日の前日に下味をつけるためにこんにゃくを水洗いし、その後出汁に入れて沸騰から30~40 分ぐらい煮込んでいます。こんにゃくから下味が出て美味しさが増しています。また、「こんにゃくたこ焼き」には、たことこんにゃくどちらも入っているため。食感が良くご好評いただいてます。また、使用しているこんにゃくは、包み込むのも難しいくらいに大きく、存在感のあるこんにゃくですが、その分、他のたこ焼きよりも一回り大きくなるためボリュームがあり、お得感があります。海洋<br/>資源が高騰していくなかで、こんにゃくは安定した価格であることも使用するメリットだと思います。<br/>1: インタビューご協力ありがとうございました。</p>"
+            "testimonial_text": "<p>インタビュアー(以下):どのような点が良いなど、そのあたりの</p>"
+          }
+        },
+        "testimonial_orange_text_6MEMN7": {
+          "type": "testimonial_orange_text",
+          "settings": {
+            "testimonial_orange_text": "<p>選んでもらった理由 </p>"
+          }
+        },
+        "testimonial_text_xz6h9e": {
+          "type": "testimonial_text",
+          "settings": {
+            "testimonial_text": "<p> をお聞かせ願えたらと思います。</p>"
+          }
+        },
+        "testimonial_text_qNEY88": {
+          "type": "testimonial_text",
+          "settings": {
+            "testimonial_text": "<p></p><p>小林さん(以下K):</p>"
           }
         }
       },
@@ -199,7 +217,10 @@
         "header_block_eMBGR8",
         "image_text_block_F9XMxR",
         "interview_block_UTwfGh",
-        "testimonial_text_ecRfjE"
+        "testimonial_text_ecRfjE",
+        "testimonial_orange_text_6MEMN7",
+        "testimonial_text_xz6h9e",
+        "testimonial_text_qNEY88"
       ],
       "name": "Customer Testimonials",
       "settings": {
