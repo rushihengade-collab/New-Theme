@@ -380,7 +380,7 @@
             "button_label": "Q成分を比較してみる",
             "title": "粒 こ ん ⼊ り ハ ン バ ー グ",
             "modal_content": "",
-            "hidden_images": "shopify://shop_images/main01.jpg"
+            "hidden_images": "shopify://shop_images/gyoza1.jpg"
           }
         },
         "hide_imgs_GDRgYU": {
@@ -389,7 +389,7 @@
             "button_label": "Q成分を比較してみる",
             "title": "⼀ 般 的 な ハ ン バ ー グ",
             "modal_content": "",
-            "hidden_images": "shopify://shop_images/main01.jpg"
+            "hidden_images": "shopify://shop_images/gyoza2.jpg"
           }
         },
         "hide_imgs_KfmxyP": {
@@ -398,7 +398,7 @@
             "button_label": "Q成分を比較してみる",
             "title": "A社 冷凍食品 ハンバーグ",
             "modal_content": "",
-            "hidden_images": "shopify://shop_images/main01.jpg"
+            "hidden_images": "shopify://shop_images/gyoza3b.jpg"
           }
         }
       },
