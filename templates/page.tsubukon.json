@@ -258,7 +258,16 @@
           "type": "hide_imgs",
           "settings": {
             "button_label": "Q成分を比較してみる",
-            "title": "",
+            "title": "粒 こ ん ⼊ り お 好 み 焼 き",
+            "modal_content": "",
+            "hidden_images": "shopify://shop_images/main01.jpg"
+          }
+        },
+        "hide_imgs_KePkNH": {
+          "type": "hide_imgs",
+          "settings": {
+            "button_label": "Q成分を比較してみる",
+            "title": "⼀ 般 的 な お 好 み 焼 き",
             "modal_content": "",
             "hidden_images": "shopify://shop_images/main01.jpg"
           }
@@ -267,7 +276,7 @@
           "type": "hide_imgs",
           "settings": {
             "button_label": "Q成分を比較してみる",
-            "title": "",
+            "title": "T社 冷凍食品 お好み焼き",
             "modal_content": "",
             "hidden_images": "shopify://shop_images/main01.jpg"
           }
@@ -277,6 +286,7 @@
         "image_with_text_mQTHj8",
         "zoom_img_RHHErJ",
         "hide_imgs_dmT3tt",
+        "hide_imgs_KePkNH",
         "hide_imgs_za4PXM"
       ],
       "name": "Tsubukon Zoom Image",
