@@ -115,7 +115,7 @@
   }
 
   .tsubukon-zoom-img-card {
-    max-width: 900px;
+    max-width: 960px;
     margin: 0 auto;
     background: #fff;
     border-radius: 12px;
@@ -173,6 +173,9 @@
     gap: 16px;
     flex-wrap: nowrap;
     width: 100%;
+  }
+  .tsubukon-zoom-img-row--zoom img{
+    width:100%;
   }
   .tsubukon-zoom-img-zoom-wrap {
     display: flex;
@@ -269,19 +272,19 @@
     justify-content: center;
     gap: 8px;
     padding: 10px 20px;
-    border: 2px solid #e85d04;
-    background: #fff;
-    color: #333;
+    border: 2px solid orange;
+    color: orange;
     border-radius: 999px;
     font-size: 0.95rem;
     font-weight: 600;
     cursor: pointer;
     transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    width:50%;
+
   }
   .tsubukon-zoom-img-toggle-btn:hover {
-    background: #e85d04;
+    background: orange;
     color: #fff;
-    border-color: #e85d04;
   }
   .tsubukon-zoom-img-toggle-icon {
     flex-shrink: 0;
@@ -354,6 +357,9 @@
   .tsubukon-zoom-img-toggle-content-body tr:nth-child(even) { background: #f9f9f9; }
   .tsubukon-zoom-img-toggle-content-body tr.highlight { background: #ffebee; }
 
+  .tsubukon-zoom-img-toggle-content-body img{
+    width:100%;
+  }
   @media (max-width: 768px) {
     .tsubukon-zoom-img-section {
       padding-top: {{ section.settings.padding_top | times: 0.9 }}px;
