@@ -496,6 +496,7 @@
         },
         "hide_imgs_AwcNfc": {
           "type": "hide_imgs",
+          "disabled": true,
           "settings": {
             "button_label": "Q成分を比較してみる",
             "title": "",
@@ -505,6 +506,7 @@
         },
         "hide_imgs_PTmycp": {
           "type": "hide_imgs",
+          "disabled": true,
           "settings": {
             "button_label": "Q成分を比較してみる",
             "title": "",
