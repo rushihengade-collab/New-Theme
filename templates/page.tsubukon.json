@@ -476,6 +476,66 @@
         "padding_bottom": 0
       }
     },
+    "tsubukon_zoom_img_wDiMBL": {
+      "type": "tsubukon-zoom-img",
+      "blocks": {
+        "image_with_text_gPL8TV": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/img20151118150456259320.png",
+            "title": "チ ャ ー ハ ン",
+            "text": "<p>⽶ を 減 ら し て 粒 こ ん に ゃ く を ⼊ れ ま し た<br/>カ ロ リ ー に 加 え 、 糖 質 も オ フ<br/>お ⽶ と 粒 こ ん に ゃ く 1 : 1 で 問 題 な し ！</p>"
+          }
+        },
+        "zoom_img_iTjcfA": {
+          "type": "zoom_img",
+          "disabled": true,
+          "settings": {
+            "zoomed_image": "shopify://shop_images/rushi.png"
+          }
+        },
+        "hide_imgs_PypPte": {
+          "type": "hide_imgs",
+          "settings": {
+            "button_label": "Q成分を比較してみる",
+            "title": "粒 こ ん ⼊ り 焼 き お に ぎ り",
+            "modal_content": "",
+            "hidden_images": "shopify://shop_images/main01.jpg"
+          }
+        },
+        "hide_imgs_tgrx68": {
+          "type": "hide_imgs",
+          "settings": {
+            "button_label": "Q成分を比較してみる",
+            "title": "⼀ 般 的 な 焼 き お に ぎ り",
+            "modal_content": "",
+            "hidden_images": "shopify://shop_images/main01.jpg"
+          }
+        },
+        "hide_imgs_gwY3qF": {
+          "type": "hide_imgs",
+          "settings": {
+            "button_label": "Q成分を比較してみる",
+            "title": "N社 冷凍食品 焼きおにぎり",
+            "modal_content": "",
+            "hidden_images": "shopify://shop_images/main01.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_gPL8TV",
+        "zoom_img_iTjcfA",
+        "hide_imgs_PypPte",
+        "hide_imgs_tgrx68",
+        "hide_imgs_gwY3qF"
+      ],
+      "name": "Tsubukon Zoom Image",
+      "settings": {
+        "title": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "tsubukon_zoom_img_kQTqV6": {
       "type": "tsubukon-zoom-img",
       "blocks": {
@@ -700,6 +760,7 @@
     "tsubukon_zoom_img_UxzKCW",
     "tsubukon_zoom_img_fwLB7R",
     "tsubukon_zoom_img_tRYCHn",
+    "tsubukon_zoom_img_wDiMBL",
     "tsubukon_zoom_img_kQTqV6",
     "tsubukon_customer_testimonials_PbKRFF"
   ]
