@@ -247,6 +247,12 @@
           "settings": {
             "testimonial_text": "<p>また、「こんにゃくたこ焼き」には、たことこんにゃくどちらも入っているため。</p>"
           }
+        },
+        "testimonial_red_text_8pfXdU": {
+          "type": "testimonial_red_text",
+          "settings": {
+            "testimonial_red_text": "<p>食感が良くご好評いただいてます。</p>"
+          }
         }
       },
       "block_order": [
@@ -262,7 +268,8 @@
         "testimonial_red_text_4m7KEd",
         "testimonial_text_nJM9gH",
         "testimonial_red_text_DMy4cj",
-        "testimonial_text_4dA3Kk"
+        "testimonial_text_4dA3Kk",
+        "testimonial_red_text_8pfXdU"
       ],
       "name": "Customer Testimonials",
       "settings": {
