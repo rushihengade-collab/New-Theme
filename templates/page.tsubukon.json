@@ -193,15 +193,15 @@
         "uses_gRCwMA": {
           "type": "uses",
           "settings": {
-            "title": "title is here",
-            "description": "<p>Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description </p>"
+            "title": "粒以外の形状も可能",
+            "description": "<p>20種類以上の形状に裁断可能<br/>板、糸はもちろんサイコロ状やねじり、三 角も可能</p>"
           }
         },
         "uses_HPcBzP": {
           "type": "uses",
           "settings": {
-            "title": "title is here",
-            "description": "<p>Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description Add description </p>"
+            "title": "健康に買献",
+            "description": "<p>100gあたり20kcalと低カロリー<br/>食物繊維も豊富で健康に貢献<br/>臭みがなくどんな料理にも使える</p>"
           }
         }
       },
