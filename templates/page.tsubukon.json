@@ -157,6 +157,18 @@
         "padding_top": 30,
         "padding_bottom": 38
       }
+    },
+    "tsubukon_customer_testimonials_PbKRFF": {
+      "type": "tsubukon-customer-testimonials",
+      "name": "Customer Testimonials",
+      "settings": {
+        "bg_img": "shopify://shop_images/okyakusamanokoe_haikei3.jpg",
+        "title": "お客様の声",
+        "footer_btn_text": "資料請求・お問い合わせ",
+        "footer_btn_link": "shopify://pages/contact",
+        "padding_top": 55,
+        "padding_bottom": 50
+      }
     }
   },
   "order": [
@@ -166,6 +178,7 @@
     "slideshow_xcAYUP",
     "tsubukon_bg_image_section_tXeXYC",
     "tsubukon_image_dBBzhG",
-    "tsubukon_image_text_LBzbjF"
+    "tsubukon_image_text_LBzbjF",
+    "tsubukon_customer_testimonials_PbKRFF"
   ]
 }
