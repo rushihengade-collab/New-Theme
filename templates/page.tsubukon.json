@@ -149,10 +149,10 @@
       "type": "tsubukon-image-text",
       "name": "Tsubukon Image with Text",
       "settings": {
-        "title": "title",
+        "title": "こんにゃく一筋、創業90年以上の信頼実績",
         "text": "<p>Description</p>",
         "image": "shopify://shop_images/access2.webp",
-        "button_text": "Button is here",
+        "button_text": "資料選求・お問い合わせ",
         "button_link": "shopify://pages/product",
         "padding_top": 30,
         "padding_bottom": 38
