@@ -32,28 +32,13 @@
             class="tsubukon-zoom-img-row tsubukon-zoom-img-row--zoom {{ block.type }}"
             {{ block.shopify_attributes }}
           >
-            <div class="tsubukon-zoom-img-zoom-wrap">
-              <div class="tsubukon-zoom-img-zoomed-circle">
-                <img
-                  src="{{ block.settings.zoomed_image | image_url: width: 400 }}"
-                  alt="{{ block.settings.zoomed_image.alt | default: 'Zoom' }}"
-                  width="400"
-                  height="400"
-                  loading="lazy"
-                >
-              </div>
-              <div class="tsubukon-zoom-img-connector" aria-hidden="true"></div>
-              <div class="tsubukon-zoom-img-main-wrap">
-                <img
-                  src="{{ block.settings.image | image_url: width: 800 }}"
-                  alt="{{ block.settings.image.alt | default: 'Main' }}"
-                  width="800"
-                  height="800"
-                  loading="lazy"
-                  class="tsubukon-zoom-img-main"
-                >
-              </div>
-            </div>
+            <img
+              src="{{ block.settings.zoomed_image | image_url: width: 1000 }}"
+              alt="{{ block.settings.zoomed_image.alt | default: 'Zoom' }}"
+              width="400"
+              height="400"
+              loading="lazy"
+            >
           </div>
         {% elsif block.type == 'hide_imgs' %}
           {% if count == 0 %}
@@ -500,11 +485,6 @@
           "type": "image_picker",
           "id": "zoomed_image",
           "label": "Zoomed Image"
-        },
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
         }
       ]
     },
