@@ -82,7 +82,7 @@
         "ai_gen_block_f4ffab1_de3wfb": {
           "type": "ai_gen_block_f4ffab1",
           "settings": {
-            "image": "shopify://shop_images/main01.jpg",
+            "image": "shopify://shop_images/main3.jpg",
             "border_radius": 0,
             "enable_link": false,
             "image_link": "",
@@ -130,6 +130,7 @@
       "block_order": [
         "image_kDbct7"
       ],
+      "disabled": true,
       "name": "t:sections.slideshow.presets.slideshow.name",
       "settings": {
         "allow_transparent_header": false,
