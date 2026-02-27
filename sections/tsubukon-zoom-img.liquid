@@ -430,6 +430,27 @@
             content.removeAttribute('hidden');
           }
         });
+
+        // Toggle button text between original and "閉じる"
+        const textSpan = btn.querySelector('.tsubukon-zoom-img-toggle-text');
+        if (textSpan) {
+          if (!textSpan.dataset.originalText) {
+            textSpan.dataset.originalText = (textSpan.textContent || '').trim();
+          }
+          textSpan.textContent = isOpen ? textSpan.dataset.originalText : '閉じる';
+        }
+
+        // Toggle icon between search and close
+        const iconSpan = btn.querySelector('.tsubukon-zoom-img-toggle-icon');
+        if (iconSpan) {
+          if (!iconSpan.dataset.searchSvg) {
+            iconSpan.dataset.searchSvg = iconSpan.innerHTML.trim();
+            iconSpan.dataset.closeSvg =
+              '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
+          }
+          iconSpan.innerHTML = isOpen ? iconSpan.dataset.searchSvg : iconSpan.dataset.closeSvg;
+        }
+
         btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
       });
     });
