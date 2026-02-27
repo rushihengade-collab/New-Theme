@@ -38,8 +38,9 @@
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
     max-width: 960px;
-    margin: 0 auto;
   }
+
+
 
   .tsubukon-image-text-section-header {
     margin-bottom: 24px;
@@ -99,6 +100,12 @@
   .tsubukon-image-text-section-button:hover {
     opacity: 0.9;
     color: #fff;
+  }
+
+  @media (min-width: 960px) {
+    .tsubukon-image-text-section {
+        margin: 0 auto;
+    }
   }
 
   @media (max-width: 768px) {

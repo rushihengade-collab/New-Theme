@@ -1,5 +1,5 @@
 <div class="tsubukon-customer-testimonials-section">
-  <div class="tsubukon-customer-testimonials-section-content">
+  <div class="tsubukon-customer-testimonials-section-content container">
     <h2 class="tsubukon-customer-testimonials-section-title">{{ section.settings.title }}</h2>
     <div class="tsubukon-customer-testimonials-section-content-blocks">
       {% capture all_testimonials %}
@@ -112,8 +112,12 @@
 
     .tsubukon-customer-testimonials-section-content {
       max-width: 960px;
-      margin: 0 auto;
     }
+    @media (min-width: 960px) {
+        .tsubukon-customer-testimonials-section-content{
+            margin: 0 auto;
+        }
+      }
 
     .tsubukon-customer-testimonials-section-title {
       font-size: clamp(1.5rem, 4vw, 2rem);
@@ -390,10 +394,6 @@
       .tsubukon-customer-testimonials-section {
         padding-top: {{ section.settings.padding_top | times: 0.85 }}px;
         padding-bottom: {{ section.settings.padding_bottom | times: 0.85 }}px;
-      }
-
-      .tsubukon-customer-testimonials-section-content {
-        padding: 0 12px;
       }
 
       .tsubukon-customer-testimonials-section-content-blocks {
