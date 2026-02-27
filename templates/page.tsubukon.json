@@ -87,7 +87,7 @@
             "enable_link": false,
             "image_link": "",
             "spacing_top": 40,
-            "spacing_bottom": 40
+            "spacing_bottom": 0
           },
           "blocks": {}
         }
