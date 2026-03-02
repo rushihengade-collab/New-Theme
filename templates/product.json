@@ -31,6 +31,7 @@
         },
         "payment_terms": {
           "type": "payment_terms",
+          "disabled": true,
           "settings": {}
         },
         "separator": {
@@ -71,6 +72,7 @@
         },
         "complementary_products": {
           "type": "complementary_products",
+          "disabled": true,
           "settings": {
             "title": "Pairs well with",
             "products_count": 2,
@@ -94,13 +96,13 @@
       ],
       "settings": {
         "color_scheme": "",
-        "container_size": "lg",
-        "product_info_size": 35,
+        "container_size": "xl",
+        "product_info_size": 70,
         "show_sticky_add_to_cart": true,
         "center_basic_info": false,
-        "desktop_media_layout": "grid",
-        "desktop_media_grid_gap": 30,
-        "mobile_controls": "dots",
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "desktop_media_grid_gap": 6,
+        "mobile_controls": "thumbnails",
         "enable_media_autoplay": false,
         "enable_video_looping": true,
         "enable_image_zoom": true,
