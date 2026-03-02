@@ -37,31 +37,39 @@
   }
 </style>
 
-{%- assign color_scheme_hash = section.settings.color_scheme.settings.background_gradient | default: section.settings.color_scheme.settings.background | md5 -%}
+{%- assign color_scheme_hash = section.settings.color_scheme.settings.background_gradient
+  | default: section.settings.color_scheme.settings.background
+  | md5
+-%}
 {%- capture product_form_id -%}product-form-main-{{ product.id }}-{{ section.id }}{%- endcapture -%}
 
 <div class="section-spacing section-spacing--tight color-scheme color-scheme--{{ section.settings.color_scheme.id }} color-scheme--bg-{{ color_scheme_hash }}">
   <div class="container {% unless section.settings.container_size == 'full' %}container--{{ section.settings.container_size }}{% endunless %}">
-    <product-rerender id="product-info-{{ product.id }}-{{ section.id }}" observe-form="{{ product_form_id }}" allow-partial-rerender>
+    <product-rerender
+      id="product-info-{{ product.id }}-{{ section.id }}"
+      observe-form="{{ product_form_id }}"
+      allow-partial-rerender
+    >
       <div class="product">
         {%- if product.media.size > 0 -%}
           {%- render 'product-gallery',
-              product: product,
-              product_form_id: product_form_id,
-              desktop_layout: section.settings.desktop_media_layout,
-              mobile_controls: section.settings.mobile_controls,
-              enable_media_autoplay: section.settings.enable_media_autoplay,
-              enable_video_looping: section.settings.enable_video_looping,
-              enable_image_zoom: section.settings.enable_image_zoom,
-              max_image_zoom_level: section.settings.max_image_zoom_level -%}
+            product: product,
+            product_form_id: product_form_id,
+            desktop_layout: section.settings.desktop_media_layout,
+            mobile_controls: section.settings.mobile_controls,
+            enable_media_autoplay: section.settings.enable_media_autoplay,
+            enable_video_looping: section.settings.enable_video_looping,
+            enable_image_zoom: section.settings.enable_image_zoom,
+            max_image_zoom_level: section.settings.max_image_zoom_level
+          -%}
         {%- endif -%}
 
-        {%- render 'product-info', 
-          product: product, 
+        {%- render 'product-info',
+          product: product,
           product_form_id: product_form_id,
-          center_basic_info: section.settings.center_basic_info, 
-          has_content_below_gallery: has_content_below_gallery, 
-          context: 'main_product' 
+          center_basic_info: section.settings.center_basic_info,
+          has_content_below_gallery: has_content_below_gallery,
+          context: 'main_product'
         -%}
 
         {%- comment -%}On Prestige, some content may be on the left part below the product gallery{%- endcomment -%}
@@ -77,13 +85,25 @@
                   {%- if product.description != blank -%}
                     {%- if block.settings.collapse_content -%}
                       {%- assign accordion_title = 'product.general.description' | t -%}
-                      {%- render 'accordion', title: accordion_title, content: product.description, prose_content: true, size: 'lg', block: block -%}
+                      {%- render 'accordion',
+                        title: accordion_title,
+                        content: product.description,
+                        prose_content: true,
+                        size: 'lg',
+                        block: block
+                      -%}
                     {%- else -%}
                       <div class="product-content-below-gallery__description prose">
                         {{- product.description -}}
                       </div>
                     {%- endif -%}
                   {%- endif -%}
+                {%- when 'product_tags' -%}
+                  {{ 'here is commin' }}
+                  {%- render 'product-tags', product: product, block: block -%}
+
+                {%- when 'product_sections_tabs' -%}
+                  {%- render 'product-sections-tabs', product: product, block: block -%}
 
                 {%- when 'accordion' -%}
                   {%- liquid
@@ -112,15 +132,25 @@
       <div class="product-sticky-bar__info sm-max:hidden">
         <div class="h-stack gap-6">
           {%- if product.media.size > 0 -%}
-            {%- assign default_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media -%}
-            {{- default_media | image_url: width: default_media.width | image_tag: loading: 'lazy', sizes: '60px', widths: '60,120,180' -}}
+            {%- assign default_media = product.selected_or_first_available_variant.featured_media
+              | default: product.featured_media
+            -%}
+            {{-
+              default_media
+              | image_url: width: default_media.width
+              | image_tag: loading: 'lazy', sizes: '60px', widths: '60,120,180'
+            -}}
           {%- endif -%}
 
           <div class="v-stack">
             <span class="h6">{{ product.title }}</span>
 
-            {%- if product.selected_or_first_available_variant != nil -%}
-              {%- render 'price-list', variant: product.selected_or_first_available_variant, hide_unit_price: true, context: 'card' -%}
+            {%- if product.selected_or_first_available_variant != null -%}
+              {%- render 'price-list',
+                variant: product.selected_or_first_available_variant,
+                hide_unit_price: true,
+                context: 'card'
+              -%}
             {%- endif -%}
           </div>
         </div>
@@ -131,7 +161,7 @@
           assign button_disabled = false
           assign button_style = 'solid'
 
-          if product.selected_or_first_available_variant == nil
+          if product.selected_or_first_available_variant == null
             assign button_disabled = true
             assign button_style = 'outline'
             assign button_content = 'product.general.unavailable_button' | t
@@ -148,17 +178,23 @@
           endif
         -%}
 
-        {%- render 'button', content: button_content, style: button_style, type: 'submit', form: product_form_id, disabled: button_disabled -%}
+        {%- render 'button',
+          content: button_content,
+          style: button_style,
+          type: 'submit',
+          form: product_form_id,
+          disabled: button_disabled
+        -%}
       </buy-buttons>
     </product-sticky-bar>
   </product-rerender>
 {%- endif -%}
 
 {%- comment -%}
-IMPLEMENTATION NOTE: Shopify does not currently allows to render a given section within the context of a given product. However,
-when rendering the quick buy drawers/popovers, we want to be able to re-use the merchant's choices (such as the selector type). This
-is however only possible by rendering the whole product page, and extracting the relevant part. Here, we therefore render the
-quick buy information in a template, that will be extracted in JS, which ensures it is not visible in the main product page
+  IMPLEMENTATION NOTE: Shopify does not currently allows to render a given section within the context of a given product. However,
+  when rendering the quick buy drawers/popovers, we want to be able to re-use the merchant's choices (such as the selector type). This
+  is however only possible by rendering the whole product page, and extracting the relevant part. Here, we therefore render the
+  quick buy information in a template, that will be extracted in JS, which ensures it is not visible in the main product page
 {%- endcomment -%}
 {%- render 'product-quick-buy', product: product -%}
 
@@ -182,7 +218,7 @@ quick buy information in a template, that will be extracted in JS, which ensures
   "class": "shopify-section--main-product",
   "tag": "section",
   "settings": [
-   {
+    {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:global.colors.scheme",
@@ -214,7 +250,7 @@ quick buy information in a template, that will be extracted in JS, which ensures
       "label": "t:sections.main_product.product_info_size",
       "info": "t:sections.main_product.product_info_size_info",
       "min": 30,
-      "max": 60,
+      "max": 70,
       "step": 1,
       "unit": "%",
       "default": 35
@@ -340,6 +376,79 @@ quick buy information in a template, that will be extracted in JS, which ensures
       "type": "vendor",
       "name": "t:sections.main_product.blocks.vendor.name",
       "limit": 1
+    },
+    {
+      "type": "product_tags",
+      "name": "Product Tags",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "color",
+          "id": "tag_color",
+          "label": "Tag Color",
+          "default": "#191972"
+        }
+      ]
+    },
+    {
+      "type": "product_sections_tabs",
+      "name": "Product Sections Tabs",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "first_tab_text",
+          "label": "First Tab Text",
+          "default": "Basic information"
+        },
+        {
+          "type": "url",
+          "id": "first_tab_url",
+          "label": "First Tab Url Tab Text"
+        },
+        {
+          "type": "text",
+          "id": "second_tab_text",
+          "label": "Second Tab Text"
+        },
+        {
+          "type": "url",
+          "id": "second_tab_url",
+          "label": "Second Tab URL"
+        },
+        {
+          "type": "text",
+          "id": "third_tab_text",
+          "label": "Third Tab Text",
+        },
+        {
+          "type": "url",
+          "id": "third_tab_url",
+          "label": "Third Tab URL"
+        },
+        {
+          "type": "text",
+          "id": "fourth_tab_text",
+          "label": "Fourth Tab Text",
+          "default": "Specifications"
+        },
+        {
+          "type": "url",
+          "id": "fourth_tab_url",
+          "label": "Fourth Tab URL"
+        },
+        {
+          "type": "text",
+          "id": "fifth_tab_text",
+          "label": "Fifth Tab Text",
+          "default": "Specifications"
+        },
+        {
+          "type": "url",
+          "id": "fifth_tab_url",
+          "label": "Fifth Tab URL"
+        }
+      ]
     },
     {
       "type": "title",

@@ -147,6 +147,12 @@ Supported variables
               </variant-sku>
             {%- endif -%}
 
+          {%- when 'product_tags' -%}
+            {%- render 'product-tags', product: product, block: block -%}
+
+          {%- when 'product_sections_tabs' -%}
+            {%- render 'product-sections-tabs', product: product, block: block -%}
+
           {%- when 'badges' -%}
             {%- if product != blank -%}
               {%- render 'product-badges', product: product, variant: product.selected_or_first_available_variant, types: 'custom,discount', context: 'product' -%}

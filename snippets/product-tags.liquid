@@ -1,0 +1,19 @@
+<div class="product-tags-inline">
+  {% for tag in product.tags %}
+    <span class="product-tags-inline__tag">{{ tag }}</span>
+  {% endfor %}
+</div>
+
+<style>
+  .product-tags-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .product-tags-inline__tag {
+    padding: 0.1rem 0.75rem 0.25rem;
+    color: {{ block.settings.tag_color }};
+    border:2px solid {{ block.settings.tag_color }};
+    border-radius:30px;
+  }
+</style>

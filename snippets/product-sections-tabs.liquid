@@ -1,0 +1,65 @@
+<div class="product-sections-tabs-container">
+  {% if block.settings.first_tab_text != blank %}
+    <a href="{{ block.settings.first_tab_url }}">
+        <span class="button-icon">▼</span>
+
+      {{ block.settings.first_tab_text }}
+    </a>
+  {% endif %}
+  {% if block.settings.second_tab_text != blank %}
+    <a href="{{ block.settings.second_tab_url }}">
+        <span class="button-icon">▼</span>
+
+      {{ block.settings.second_tab_text }}
+    </a>
+  {% endif %}
+  {% if block.settings.third_tab_text != blank %}
+    <a href="{{ block.settings.third_tab_url }}">
+        <span class="button-icon">▼</span>
+
+      {{ block.settings.third_tab_text }}
+    </a>
+  {% endif %}
+  {% if block.settings.fourth_tab_text != blank %}
+    <a href="{{ block.settings.fourth_tab_url }}">
+        <span class="button-icon">▼</span>
+
+      {{ block.settings.fourth_tab_text }}
+    </a>
+  {% endif %}
+  {% if block.settings.fifth_tab_text != blank %}
+    <a href="{{ block.settings.fifth_tab_url }}">
+        <span class="button-icon">▼</span>
+      {{ block.settings.fifth_tab_text }}
+    </a>
+  {% endif %}
+</div>
+
+<style>
+  .product-sections-tabs-container {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+
+  }
+  .product-sections-tabs-container a{
+    position: relative;
+    float: left;
+    background-color: rgb(25, 25, 113);
+    border: 1px solid rgb(25, 25, 113);
+    padding: 5px 10px 7px;
+    margin: 0 7.5px 12.5px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #fff;
+    transition: all .3s;
+    display: flex;
+    gap:10px;
+  }
+
+  .product-sections-tabs-container a:hover{
+    background-color: transparent;
+    border:1px solid rgb(25, 25, 113);
+    color:rgb(25, 25, 113);    
+  }
+</style>
