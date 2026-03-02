@@ -204,24 +204,11 @@
     },
     "origin_raw_materials_rzzNet": {
       "type": "origin-raw-materials",
-      "blocks": {
-        "raw_material_row_L7th3z": {
-          "type": "raw_material_row",
-          "settings": {
-            "main_raw_material": "Konjac flour",
-            "origin": "Domestic"
-          }
-        }
-      },
-      "block_order": [
-        "raw_material_row_L7th3z"
-      ],
       "name": "Origin Raw Materials",
       "settings": {
         "title": "原料原産地",
-        "bullet_1": "We have listed our representative products, focusing on those that we receive many inquiries about from customers and those that include the names of ingredients in the product name.",
-        "bullet_2": "The origin of raw materials is listed as the country of origin that may be used based on past performance or future plans at the time of the survey. Due to the time of the survey, the country of origin may not match the country of origin indicated on the product label.",
-        "info_box_text": "Due to product renewals, etc., the contents of the product you have may differ from those on our website. Please be sure to check the product label before consuming.",
+        "description": "<ul><li>お客様からのお問い合わせの多いもの、商品名に原材料名が入っているものを中心に、代表的な商品について掲載しています。</li><li>原料原産地は、調査時点に於いて、過去の実績または今後の計画に基づいて使用する可能性のある原産国を掲載しています。調査時点の関係で、商品ラベルの産地表示と一致しない場合があります。</li></ul>",
+        "note": "<p> 商品のリニューアル等により、お手元の商品と当ホームページでは、記載内容が異なる場合がございます。召しあがる際には必ず商品の表示内容をご確認ください。</p>",
         "padding-top": 27,
         "padding-bottom": 20
       }
