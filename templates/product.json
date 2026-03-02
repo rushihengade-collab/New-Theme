@@ -181,8 +181,8 @@
       "name": "Allergy Information",
       "settings": {
         "title": "Allergy Information",
-        "padding-top": 0,
-        "padding-bottom": 0
+        "padding-top": 4,
+        "padding-bottom": 20
       }
     }
   },
