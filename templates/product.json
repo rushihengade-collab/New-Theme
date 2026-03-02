@@ -76,6 +76,21 @@
             "payment_button_text_color": ""
           }
         },
+        "product_sections_tabs_mFmDFx": {
+          "type": "product_sections_tabs",
+          "settings": {
+            "first_tab_text": "基本情報",
+            "first_tab_url": "",
+            "second_tab_text": "アレルギー情報",
+            "second_tab_url": "",
+            "third_tab_text": "栄養成分",
+            "third_tab_url": "",
+            "fourth_tab_text": "原料原産地",
+            "fourth_tab_url": "",
+            "fifth_tab_text": "この商品を使ったレシピ",
+            "fifth_tab_url": ""
+          }
+        },
         "complementary_products": {
           "type": "complementary_products",
           "disabled": true,
@@ -99,6 +114,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "product_sections_tabs_mFmDFx",
         "complementary_products"
       ],
       "settings": {
