@@ -175,12 +175,22 @@
         "padding-top": 15,
         "padding-bottom": 15
       }
+    },
+    "allergy_information_wh8bdz": {
+      "type": "allergy-Information",
+      "name": "Allergy Information",
+      "settings": {
+        "title": "Allergy Information",
+        "padding-top": 0,
+        "padding-bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "1725775630d5d5c46a",
     "related-products",
-    "product_basic_information_PMiWbE"
+    "product_basic_information_PMiWbE",
+    "allergy_information_wh8bdz"
   ]
 }
