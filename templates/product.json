@@ -165,15 +165,15 @@
       "name": "Product Basic Information",
       "settings": {
         "title": "基本情報",
-        "contents_value": "",
-        "container_value": "",
-        "suggested_retail_price_value": "",
-        "storage_temperature_range_value": "",
-        "best_before_date_value": "",
-        "description_value": "",
-        "raw_material_name_value": "",
-        "padding-top": 0,
-        "padding-bottom": 0
+        "contents_value": "{{ product.metafields.custom.basic_information.value.contents.value }}",
+        "container_value": "{{ product.metafields.custom.basic_information.value.container.value }}",
+        "suggested_retail_price_value": "{{ product.metafields.custom.basic_information.value.suggested_retail_price.value }}",
+        "storage_temperature_range_value": "{{ product.metafields.custom.basic_information.value.storage_temperature_range.value }}",
+        "best_before_date_value": "{{ product.metafields.custom.basic_information.value.best_before_date_before_opening.value }}",
+        "description_value": "{{ product.metafields.custom.basic_information.value.description | metafield_tag }}",
+        "raw_material_name_value": "{{ product.metafields.custom.basic_information.value.raw_material_name.value }}",
+        "padding-top": 15,
+        "padding-bottom": 15
       }
     }
   },
