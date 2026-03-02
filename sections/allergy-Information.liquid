@@ -1,0 +1,193 @@
+<div class="container allergy-information-section">
+  <div class="allergy-information-container">
+    {% render 'product-page-header-snippet', title: section.settings.title | default: 'allergy information' %}
+    <div class="allergy-information-content">
+      <div class="product-basic-info-table-wrap">
+        <table class="product-basic-info-table product-basic-info-table-raw-material-name">
+          <tr>
+            <th>該当するアレルギー特定原材料等</th>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="allergy-tables-wrapper">
+        <h3 class="allergy-main-heading">アレルギー特定原材料等</h3>
+        {% assign allergy_info = product.metafields.custom.allergy_information.value %}
+        {% if allergy_info %}
+          <div class="allergy-table-block">
+            <h4 class="allergy-sub-heading">【義務 - 7種】</h4>
+            <table class="allergy-ingredients-table">
+              <tbody>
+                {% assign duty_items = allergy_info.duty_7_types.value %}
+                {% assign cols = 5 %}
+                {% for item in duty_items %}
+                  {% assign mod = forloop.index0 | modulo: cols %}
+                  {% if mod == 0 %}<tr>{% endif %}
+                  <td>{{ item }}</td>
+                  {% if mod == 4 or forloop.last %}</tr>{% endif %}
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          <div class="allergy-table-block">
+            <h4 class="allergy-sub-heading">【推奨 - 21種】</h4>
+            <table class="allergy-ingredients-table">
+              <tbody>
+                {% assign recommended_items = allergy_info.recommended_21_types.value %}
+                {% assign cols = 5 %}
+                {% for item in recommended_items %}
+                  {% assign mod = forloop.index0 | modulo: cols %}
+                  {% if mod == 0 %}<tr>{% endif %}
+                  <td>{{ item }}</td>
+                  {% if mod == 4 or forloop.last %}</tr>{% endif %}
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          {% if allergy_info.please_check_description != blank %}
+            <div class="allergy-description">
+              {{ allergy_info.please_check_description | metafield_tag }}
+            </div>
+          {% endif %}
+        {% else %}
+          <p>アレルギー情報は登録されていません。</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .allergy-information-section {
+    padding-top: {{ section.settings.padding-top }}px;
+    padding-bottom: {{ section.settings.padding-bottom }}px;
+  }
+
+  .allergy-tables-wrapper {
+    margin-top: 1rem;
+  }
+
+  .allergy-main-heading {
+    margin: 0 0 1rem 0;
+  }
+
+  .allergy-table-block {
+    margin-bottom: 1.5rem;
+  }
+
+  .allergy-sub-heading {
+    margin: 0 0 0.5rem 0;
+  }
+
+  .allergy-ingredients-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .allergy-ingredients-table td {
+    border: 1px solid #d1d5db;
+    padding: 0.5rem 0.75rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.9375rem;
+    color: #000;
+    background-color: #fff;
+  }
+  .allergy-information-section  .product-basic-info-table-raw-material-name th{
+    max-width:60px;
+  }
+  .allergy-information-section .product-basic-info-table th{
+    font-size:inherit;
+  }
+
+  .allergy-description {
+    margin-top: 1.5rem;
+  }
+
+  .allergy-description h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: #000;
+  }
+
+  .allergy-description ul {
+    margin: 0.5rem 0 0 0;
+    padding-left: 1.25rem;
+    list-style-type: disc;
+  }
+
+  .allergy-description li {
+    margin: 0.25em 0;
+    font-size: 0.9375rem;
+    color: #000;
+  }
+
+  .allergy-description p {
+    margin: 0.25em 0;
+    font-size: 0.9375rem;
+    color: #000;
+  }
+
+  @media (max-width: 768px) {
+    .allergy-information-section {
+      padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
+    }
+    .allergy-ingredients-table td {
+      padding: 0.4rem 0.5rem;
+      font-size: 0.875rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .allergy-information-section {
+      padding-top: {{ section.settings.padding-top | times: 0.75 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.75 }}px;
+    }
+    .allergy-ingredients-table td {
+      padding: 0.35rem 0.4rem;
+      font-size: 0.8125rem;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Allergy Information",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Allergy Information"
+    }
+  ]
+}
+{% endschema %}

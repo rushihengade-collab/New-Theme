@@ -1,0 +1,321 @@
+<div class="container nutritional-information-section">
+  <div class="nutritional-information-container">
+    {% render 'product-page-header-snippet', title: section.settings.title | default: '栄養成分' %}
+    <div class="nutritional-information-content">
+      <div class="nutritional-information-table-wrap">
+        {% comment %} Desktop: horizontal table {% endcomment %}
+        <table class="nutritional-information-table nutritional-information-table--desktop" role="table" aria-label="{{ section.settings.title | default: '栄養成分' }}">
+          <thead>
+            <tr>
+              <th scope="col">エネルギー</th>
+              <th scope="col">たんぱく質</th>
+              <th scope="col">脂質</th>
+              <th scope="col">炭水化物</th>
+              <th scope="col">糖質</th>
+              <th scope="col">食物繊維</th>
+              <th scope="col">食塩相当量</th>
+              <th scope="col">セラミド</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="エネルギー">{{ section.settings.energy | default: '5kcal' }}</td>
+              <td data-label="たんぱく質">{{ section.settings.protein | default: '0g' }}</td>
+              <td data-label="脂質">{{ section.settings.fat | default: '0g' }}</td>
+              <td data-label="炭水化物">{{ section.settings.carbohydrates | default: '2.5g' }}</td>
+              <td data-label="糖質">{{ section.settings.sugars | default: '0g' }}</td>
+              <td data-label="食物繊維">{{ section.settings.dietary_fiber | default: '2.5g' }}</td>
+              <td data-label="食塩相当量">{{ section.settings.salt_equivalent | default: '0.02g' }}</td>
+              <td data-label="セラミド">{{ section.settings.ceramide }}</td>
+            </tr>
+          </tbody>
+        </table>
+
+        {% comment %} Mobile / Tablet: vertical list (label + value rows) {% endcomment %}
+        <div class="nutritional-information-list nutritional-information-list--mobile">
+          <div class="nutritional-information-list-row">
+            <div class="nutritional-information-list-label">エネルギー</div>
+            <div class="nutritional-information-list-value">{{ section.settings.energy | default: '5kcal' }}</div>
+          </div>
+          <div class="nutritional-information-list-row">
+            <div class="nutritional-information-list-label">たんぱく質</div>
+            <div class="nutritional-information-list-value">{{ section.settings.protein | default: '0g' }}</div>
+          </div>
+          <div class="nutritional-information-list-row">
+            <div class="nutritional-information-list-label">脂質</div>
+            <div class="nutritional-information-list-value">{{ section.settings.fat | default: '0g' }}</div>
+          </div>
+          <div class="nutritional-information-list-row">
+            <div class="nutritional-information-list-label">炭水化物</div>
+            <div class="nutritional-information-list-value">{{ section.settings.carbohydrates | default: '2.5g' }}</div>
+          </div>
+          <div class="nutritional-information-list-row">
+            <div class="nutritional-information-list-label">糖質</div>
+            <div class="nutritional-information-list-value">{{ section.settings.sugars | default: '0g' }}</div>
+          </div>
+          <div class="nutritional-information-list-row">
+            <div class="nutritional-information-list-label">食物繊維</div>
+            <div class="nutritional-information-list-value">{{ section.settings.dietary_fiber | default: '2.5g' }}</div>
+          </div>
+          <div class="nutritional-information-list-row">
+            <div class="nutritional-information-list-label">食塩相当量</div>
+            <div class="nutritional-information-list-value">{{ section.settings.salt_equivalent | default: '0.02g' }}</div>
+          </div>
+          <div class="nutritional-information-list-row">
+            <div class="nutritional-information-list-label">セラミド</div>
+            <div class="nutritional-information-list-value">{{ section.settings.ceramide }}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nutritional-information-footer">
+        <p class="nutritional-information-per-unit">{{ section.settings.per_100g_label | default: '100g当り(推定値)' }}</p>
+        {% if section.settings.disclaimer != blank %}
+          <ul class="nutritional-information-disclaimer">
+            <li>{{ section.settings.disclaimer }}</li>
+          </ul>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .nutritional-information-section {
+    padding-top: 1.5rem;
+  }
+
+  .nutritional-information-container {
+    width: 100%;
+  }
+
+  .nutritional-information-content {
+    width: 100%;
+  }
+
+  .nutritional-information-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  /* Desktop table: show on larger screens */
+  .nutritional-information-table--desktop {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e0e0e0;
+    background: #fafafa;
+  }
+
+  .nutritional-information-table--desktop thead {
+    background: #f0f0f0;
+  }
+
+  .nutritional-information-table--desktop th,
+  .nutritional-information-table--desktop td {
+    padding: 0.75rem 0.5rem;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+  }
+
+  .nutritional-information-table--desktop th {
+    font-weight: 600;
+  }
+
+  .nutritional-information-table--desktop tbody tr {
+    background: #fff;
+  }
+
+  /* Mobile list: hidden on desktop */
+  .nutritional-information-list--mobile {
+    display: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .nutritional-information-list-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: stretch;
+    min-height: 2.5rem;
+  }
+
+  .nutritional-information-list-label {
+    background: #f0f0f0;
+    padding: 0.6rem 0.75rem;
+    font-weight: 500;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .nutritional-information-list-value {
+    background: #fff;
+    padding: 0.6rem 0.75rem;
+    text-align: right;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .nutritional-information-list-row:last-child .nutritional-information-list-label,
+  .nutritional-information-list-row:last-child .nutritional-information-list-value {
+    border-bottom: none;
+  }
+
+  .nutritional-information-footer {
+    margin-top: 0.75rem;
+  }
+
+  .nutritional-information-per-unit {
+    text-align: right;
+    font-size: 0.8rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .nutritional-information-disclaimer {
+    margin: 0;
+    padding-left: 1.25rem;
+    line-height: 1.5;
+  }
+
+  .nutritional-information-disclaimer li {
+    margin-bottom: 0.25rem;
+  }
+
+  /* Tablet: 768px and below — show list, hide table */
+  @media screen and (max-width: 768px) {
+    .nutritional-information-section {
+      padding-top: 1.25rem;
+    }
+
+    .nutritional-information-table--desktop {
+      display: none;
+    }
+
+    .nutritional-information-list--mobile {
+      display: block;
+    }
+
+    .nutritional-information-list-label,
+    .nutritional-information-list-value {
+      padding: 0.5rem 0.625rem;
+    }
+
+    .nutritional-information-disclaimer {
+      padding-left: 1rem;
+    }
+  }
+
+  /* Mobile: 480px and below */
+  @media screen and (max-width: 480px) {
+    .nutritional-information-section {
+      padding-top: 1rem;
+    }
+
+    .nutritional-information-list-label,
+    .nutritional-information-list-value {
+      padding: 0.5rem 0.5rem;
+    }
+  }
+
+  /* Desktop: larger padding from 1024px */
+  @media screen and (min-width: 1024px) {
+    .nutritional-information-section {
+      padding-top: 2rem;
+    }
+
+    .nutritional-information-table--desktop th,
+    .nutritional-information-table--desktop td {
+      padding: 0.875rem 0.75rem;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Nutritional Information",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "栄養成分"
+    },
+    {
+      "type": "text",
+      "id": "energy",
+      "label": "エネルギー (Energy)",
+      "default": "5kcal"
+    },
+    {
+      "type": "text",
+      "id": "protein",
+      "label": "たんぱく質 (Protein)",
+      "default": "0g"
+    },
+    {
+      "type": "text",
+      "id": "fat",
+      "label": "脂質 (Fat)",
+      "default": "0g"
+    },
+    {
+      "type": "text",
+      "id": "carbohydrates",
+      "label": "炭水化物 (Carbohydrates)",
+      "default": "2.5g"
+    },
+    {
+      "type": "text",
+      "id": "sugars",
+      "label": "糖質 (Sugars)",
+      "default": "0g"
+    },
+    {
+      "type": "text",
+      "id": "dietary_fiber",
+      "label": "食物繊維 (Dietary Fiber)",
+      "default": "2.5g"
+    },
+    {
+      "type": "text",
+      "id": "salt_equivalent",
+      "label": "食塩相当量 (Salt Equivalent)",
+      "default": "0.02g"
+    },
+    {
+      "type": "text",
+      "id": "ceramide",
+      "label": "セラミド (Ceramide)",
+    },
+    {
+      "type": "text",
+      "id": "per_100g_label",
+      "label": "Per unit label (e.g. per 100g)",
+      "default": "100g当り(推定値)"
+    },
+    {
+      "type": "textarea",
+      "id": "disclaimer",
+      "label": "Disclaimer",
+      "default": "お客様からのお問い合わせの多いもの、商品名に原材料名が入っているものを中心に、代表的な商品について掲載しています。"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Nutritional Information",
+      "settings": {
+        "title": "栄養成分",
+        "energy": "5kcal",
+        "protein": "0g",
+        "fat": "0g",
+        "carbohydrates": "2.5g",
+        "sugars": "0g",
+        "dietary_fiber": "2.5g",
+        "salt_equivalent": "0.02g",
+        "ceramide": "",
+        "per_100g_label": "100g当り(推定値)",
+        "disclaimer": "お客様からのお問い合わせの多いもの、商品名に原材料名が入っているものを中心に、代表的な商品について掲載しています。"
+      }
+    }
+  ]
+}
+{% endschema %}
