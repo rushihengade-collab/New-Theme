@@ -10,9 +10,9 @@
       <div class="custom-news-section-content-body">
         {% for article in news_items limit: 4 %}
           <div class="custom-news-section-content-body-item">
-            <div class="news-item-left-box">
+            <a href="{{ article.url }}" class="news-item-left-box">
               <p class="news-item-left-text">{{ article.title }}</p>
-            </div>
+            </a>
             <div class="news-item-right-content">
               <p class="news-date">{{ article.published_at | date: '%Y.%m.%d' }}</p>
               <a href="{{ article.url }}" class="news-title">{{ article.title }}</a>
