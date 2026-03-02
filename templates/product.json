@@ -134,6 +134,7 @@
     },
     "1725775630d5d5c46a": {
       "type": "apps",
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": true,
@@ -143,6 +144,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": true,
@@ -157,11 +159,81 @@
         "title": "関連商品はこちら",
         "content": ""
       }
+    },
+    "product_basic_information_xY6yrD": {
+      "type": "product-basic-information",
+      "name": "Product Basic Information",
+      "settings": {
+        "title": "",
+        "contents_value": "",
+        "container_value": "",
+        "suggested_retail_price_value": "",
+        "storage_temperature_range_value": "",
+        "best_before_date_value": "",
+        "description_value": "",
+        "raw_material_name_value": "",
+        "padding-top": 0,
+        "padding-bottom": 0
+      }
+    },
+    "allergy_information_UW8bRV": {
+      "type": "allergy-Information",
+      "name": "Allergy Information",
+      "settings": {
+        "title": "",
+        "padding-top": 0,
+        "padding-bottom": 0
+      }
+    },
+    "nutritional_information_nRcLGt": {
+      "type": "nutritional-information",
+      "name": "Nutritional Information",
+      "settings": {
+        "title": "栄養成分",
+        "energy": "5kcal",
+        "protein": "0g",
+        "fat": "0g",
+        "carbohydrates": "2.5g",
+        "sugars": "0g",
+        "dietary_fiber": "2.5g",
+        "salt_equivalent": "0.02g",
+        "ceramide": "",
+        "per_100g_label": "100g当り(推定値)",
+        "disclaimer": "お客様からのお問い合わせの多いもの、商品名に原材料名が入っているものを中心に、代表的な商品について掲載しています。"
+      }
+    },
+    "origin_raw_materials_wDNU6w": {
+      "type": "origin-raw-materials",
+      "blocks": {
+        "raw_material_row_YYne7y": {
+          "type": "raw_material_row",
+          "settings": {
+            "main_raw_material": "Konjac flour",
+            "origin": "Domestic"
+          }
+        }
+      },
+      "block_order": [
+        "raw_material_row_YYne7y"
+      ],
+      "name": "Origin Raw Materials",
+      "settings": {
+        "title": "Origin of raw materials",
+        "bullet_1": "We have listed our representative products, focusing on those that we receive many inquiries about from customers and those that include the names of ingredients in the product name.",
+        "bullet_2": "The origin of raw materials is listed as the country of origin that may be used based on past performance or future plans at the time of the survey. Due to the time of the survey, the country of origin may not match the country of origin indicated on the product label.",
+        "info_box_text": "Due to product renewals, etc., the contents of the product you have may differ from those on our website. Please be sure to check the product label before consuming.",
+        "padding-top": 0,
+        "padding-bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "1725775630d5d5c46a",
-    "related-products"
+    "related-products",
+    "product_basic_information_xY6yrD",
+    "allergy_information_UW8bRV",
+    "nutritional_information_nRcLGt",
+    "origin_raw_materials_wDNU6w"
   ]
 }
