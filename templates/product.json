@@ -164,7 +164,7 @@
       "type": "product-basic-information",
       "name": "Product Basic Information",
       "settings": {
-        "title": "",
+        "title": "基本情報",
         "contents_value": "",
         "container_value": "",
         "suggested_retail_price_value": "",
