@@ -44,11 +44,11 @@
     margin: 0.25em 0;
   }
 
-  .product-basic-info-table{
+  .product-basic-info-table-raw-material-name{
 
     width:100%;
   }
-.product-basic-info-table th{
+.product-basic-info-table-raw-material-name th{
     max-width:0px;
     min-width:0px;
   }
@@ -89,7 +89,7 @@
     {% endif %}
 
     <div class="product-basic-info-table-wrap">
-      <table class="product-basic-info-table">
+      <table class="product-basic-info-table product-basic-info-table-raw-material-name">
         <tr>
           <th>原材料名</th>
           <td>{{ section.settings.raw_material_name_value | default: '—' }}</td>
