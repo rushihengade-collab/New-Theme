@@ -212,6 +212,15 @@
         "padding-top": 27,
         "padding-bottom": 20
       }
+    },
+    "recipes_using_this_product_6nNP83": {
+      "type": "recipes-using-this-product",
+      "name": "Recipes Using Product",
+      "settings": {
+        "title": "この商品を使ったレシピ",
+        "padding-top": 20,
+        "padding-bottom": 0
+      }
     }
   },
   "order": [
@@ -221,6 +230,7 @@
     "product_basic_information_PMiWbE",
     "allergy_information_wh8bdz",
     "nutritional_information_6yK4kr",
-    "origin_raw_materials_rzzNet"
+    "origin_raw_materials_rzzNet",
+    "recipes_using_this_product_6nNP83"
   ]
 }
