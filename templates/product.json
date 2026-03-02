@@ -45,6 +45,12 @@
             "show_below_gallery": false
           }
         },
+        "product_tags_LwR74C": {
+          "type": "product_tags",
+          "settings": {
+            "tag_color": "#191972"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -89,6 +95,7 @@
         "payment_terms",
         "separator",
         "description",
+        "product_tags_LwR74C",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
