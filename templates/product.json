@@ -201,6 +201,30 @@
         "per_100g_label": "100g当り(推定値)",
         "disclaimer": "We have listed our representative products, focusing on those that we receive many inquiries about from customers and those that include the names of ingredients in the product name."
       }
+    },
+    "origin_raw_materials_rzzNet": {
+      "type": "origin-raw-materials",
+      "blocks": {
+        "raw_material_row_L7th3z": {
+          "type": "raw_material_row",
+          "settings": {
+            "main_raw_material": "Konjac flour",
+            "origin": "Domestic"
+          }
+        }
+      },
+      "block_order": [
+        "raw_material_row_L7th3z"
+      ],
+      "name": "Origin Raw Materials",
+      "settings": {
+        "title": "Origin of raw materials",
+        "bullet_1": "We have listed our representative products, focusing on those that we receive many inquiries about from customers and those that include the names of ingredients in the product name.",
+        "bullet_2": "The origin of raw materials is listed as the country of origin that may be used based on past performance or future plans at the time of the survey. Due to the time of the survey, the country of origin may not match the country of origin indicated on the product label.",
+        "info_box_text": "Due to product renewals, etc., the contents of the product you have may differ from those on our website. Please be sure to check the product label before consuming.",
+        "padding-top": 27,
+        "padding-bottom": 20
+      }
     }
   },
   "order": [
@@ -209,6 +233,7 @@
     "related-products",
     "product_basic_information_PMiWbE",
     "allergy_information_wh8bdz",
-    "nutritional_information_6yK4kr"
+    "nutritional_information_6yK4kr",
+    "origin_raw_materials_rzzNet"
   ]
 }
