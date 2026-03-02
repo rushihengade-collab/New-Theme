@@ -2657,6 +2657,7 @@ table:not(.table--bordered) :is(th, td):first-child, table:not(.table--bordered)
   padding-inline-start: 0;
 }
 
+
 :is(th, td):last-child {
   padding-inline-end: 0;
 }

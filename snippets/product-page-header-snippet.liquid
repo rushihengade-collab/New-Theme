@@ -1,0 +1,28 @@
+{% comment %}
+  Reusable product page header with pipe prefix and underline.
+  Usage: {% render 'product-page-header-snippet', title: 'basic information' %}
+{% endcomment %}
+{% if title != blank %}
+  <h2 class="product-page-header">
+    <span class="product-page-header-pipe"></span>
+    <span class="product-page-header-title">{{ title }}</span>
+  </h2>
+{% endif %}
+
+<style>
+  .product-page-header {
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(25, 25, 113);
+    display:flex;
+    align-items:center;
+    gap:2px;
+  }
+  .product-page-header-pipe {
+    margin-right: 0.25em;
+    width:5px;
+    background-color:rgb(25, 25, 113);
+    display:inline-block;
+    height:30px;
+  }
+</style>

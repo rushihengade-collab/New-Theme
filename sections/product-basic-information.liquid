@@ -1,0 +1,187 @@
+{%- style -%}
+  .product-basic-information {
+    padding-top: {{ section.settings.padding-top }}px;
+    padding-bottom: {{ section.settings.padding-bottom }}px;
+  }
+  .product-basic-info-table-wrap {
+    margin-bottom: 1rem;
+  }
+  .product-basic-info-table {
+    border-collapse: collapse;
+    width:fit-content;
+  }
+  .product-basic-info-table th,
+  .product-basic-info-table td {
+    padding: 3.5px 1rem 4px !important;
+    text-align: left;
+    vertical-align: middle;
+    min-width:200px;
+  }
+  .product-basic-info-table th {
+    background-color: #eeeeee;
+    border:1px solid #80808099;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size:17px;
+    opacity:0.95;
+  }
+  .product-basic-info-table td {
+    background-color: #fff;
+    border:1px solid #80808099;
+    font-size:16px;
+  }
+  .product-basic-info-notes {
+    margin: 0.75rem 0 1rem 0;
+  }
+  .product-basic-info-notes p {
+    margin: 0.25em 0;
+  }
+  .product-basic-info-notes ul {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+  .product-basic-info-notes li {
+    margin: 0.25em 0;
+  }
+
+  .product-basic-info-table{
+
+    width:100%;
+  }
+.product-basic-info-table th{
+    max-width:0px;
+    min-width:0px;
+  }
+
+{%- endstyle -%}
+
+<div class="container product-basic-information">
+  <div class="product-basic-information-container">
+    {% render 'product-page-header-snippet', title: section.settings.title | default: 'basic information' %}
+
+    <div class="product-basic-info-table-wrap">
+      <table class="product-basic-info-table">
+        <thead>
+          <tr>
+            <th>内容量</th>
+            <th>容器</th>
+            <th>希望小売価格</th>
+            <th>保存温度帯</th>
+            <th>開封前賞味期間</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ section.settings.contents_value | default: '—' }}</td>
+            <td>{{ section.settings.container_value | default: '—' }}</td>
+            <td>{{ section.settings.suggested_retail_price_value | default: '—' }}</td>
+            <td>{{ section.settings.storage_temperature_range_value | default: '—' }}</td>
+            <td>{{ section.settings.best_before_date_value | default: '—' }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    {% if section.settings.description_value != blank %}
+      <div class="product-basic-info-notes">
+        {{ section.settings.description_value }}
+      </div>
+    {% endif %}
+
+    <div class="product-basic-info-table-wrap">
+      <table class="product-basic-info-table">
+        <tr>
+          <th>原材料名</th>
+          <td>{{ section.settings.raw_material_name_value | default: '—' }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product Basic Information",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "header",
+      "content": "Table Info"
+    },
+    {
+      "type": "text",
+      "id": "contents_value",
+      "label": "Contents Value"
+    },
+    {
+      "type": "text",
+      "id": "container_value",
+      "label": "Container Value"
+    },
+    {
+      "type": "text",
+      "id": "suggested_retail_price_value",
+      "label": "Suggested retail price Value"
+    },
+    {
+      "type": "text",
+      "id": "storage_temperature_range_value",
+      "label": "Storage temperature range Value"
+    },
+    {
+      "type": "text",
+      "id": "best_before_date_value",
+      "label": "Best before date Value"
+    },
+
+    {
+      "type": "header",
+      "content": "Description"
+    },
+    {
+      "type": "richtext",
+      "id": "description_value",
+      "label": "Description Value"
+    },
+
+    {
+      "type": "header",
+      "content": "Raw material name"
+    },
+    {
+      "type": "text",
+      "id": "raw_material_name_value",
+      "label": "Raw material name Value"
+    },
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Basic Information"
+    }
+  ]
+}
+{% endschema %}
