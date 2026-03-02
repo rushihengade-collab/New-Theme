@@ -184,6 +184,23 @@
         "padding-top": 4,
         "padding-bottom": 20
       }
+    },
+    "nutritional_information_6yK4kr": {
+      "type": "nutritional-information",
+      "name": "Nutritional Information",
+      "settings": {
+        "title": "栄養成分",
+        "energy": "{{ product.metafields.custom.nutritional_information.value.energy.value }}",
+        "protein": "{{ product.metafields.custom.nutritional_information.value.protein.value }}",
+        "fat": "{{ product.metafields.custom.nutritional_information.value.lipids.value }}",
+        "carbohydrates": "2.5g{{ product.metafields.custom.nutritional_information.value.carbohydrates.value }}",
+        "sugars": "{{ product.metafields.custom.nutritional_information.value.carbohydrate.value }}",
+        "dietary_fiber": "{{ product.metafields.custom.nutritional_information.value.dietary_fiber.value }}",
+        "salt_equivalent": "{{ product.metafields.custom.nutritional_information.value.salt_equivalent.value }}",
+        "ceramide": "{{ product.metafields.custom.nutritional_information.value.ceramide.value }}",
+        "per_100g_label": "100g当り(推定値)",
+        "disclaimer": "We have listed our representative products, focusing on those that we receive many inquiries about from customers and those that include the names of ingredients in the product name."
+      }
     }
   },
   "order": [
@@ -191,6 +208,7 @@
     "1725775630d5d5c46a",
     "related-products",
     "product_basic_information_PMiWbE",
-    "allergy_information_wh8bdz"
+    "allergy_information_wh8bdz",
+    "nutritional_information_6yK4kr"
   ]
 }
