@@ -217,6 +217,7 @@
       "block_order": [
         "raw_material_row_YYne7y"
       ],
+      "disabled": true,
       "name": "Origin Raw Materials",
       "settings": {
         "title": "原料原産地",
