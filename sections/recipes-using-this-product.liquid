@@ -1,0 +1,123 @@
+{% if product.metafields.custom.recipes_using_this_product.value %}
+  <div class="container recipes-using-this-product-section">
+    {% render 'product-page-header-snippet', title: section.settings.title | default: 'Recipes using this product' %}
+    <div class="recipes-using-this-product-content">
+      {% for recipe in product.metafields.custom.recipes_using_this_product.value %}
+        <a class="recipes-using-this-product-item" href="{{ recipe.redirect_link }}">
+          <div class="recipes-using-this-product-item-image">
+            <img src="{{ recipe.image_url }}" alt="{{ recipe.title }}" width="260" height="160" loading="lazy">
+          </div>
+          <p>{{ recipe.item_title }}</p>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+
+  <style>
+    .recipes-using-this-product-section {
+      padding-top: {{ section.settings.padding-top }}px;
+      padding-bottom: {{ section.settings.padding-bottom }}px;
+    }
+    .recipes-using-this-product-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      padding-top: 12px;
+      margin-top: 8px;
+    }
+    .recipes-using-this-product-item {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      text-decoration: none;
+      color: inherit;
+      font-size: 12px;
+    }
+    .recipes-using-this-product-item-image {
+      width: 100%;
+    }
+    .recipes-using-this-product-item-image img{
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: opacity 0.3s ease;
+    }
+    .recipes-using-this-product-item:hover .recipes-using-this-product-item-image img{
+        opacity: 0.8;
+    }
+    .recipes-using-this-product-item:hover p{
+        text-decoration: underline;
+    }
+    .recipes-using-this-product-item p {
+      margin-top: 4px;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+    /* Tablet (≤768px): 3 items per row */
+    @media (max-width: 768px) {
+      .recipes-using-this-product-section {
+        padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
+        padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
+      }
+      .recipes-using-this-product-content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+    }
+    /* Mobile (≤480px): 2 items per row */
+    @media (max-width: 480px) {
+      .recipes-using-this-product-section {
+        padding-top: {{ section.settings.padding-top | times: 0.75 }}px;
+        padding-bottom: {{ section.settings.padding-bottom | times: 0.75 }}px;
+      }
+      .recipes-using-this-product-content {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    /* Very small screens (<380px): 1 item per row */
+    @media (max-width: 379px) {
+      .recipes-using-this-product-content {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Recipes Using Product",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Recipes Using Product"
+    }
+  ]
+}
+{% endschema %}
