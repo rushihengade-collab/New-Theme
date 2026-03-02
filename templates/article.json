@@ -20,13 +20,14 @@
         "show_date": true,
         "show_category": true,
         "show_author": false,
-        "show_share_buttons": true,
+        "show_share_buttons": false,
         "show_sticky_bar": true,
         "toolbar_color_scheme": ""
       }
     },
     "prev-next-blog-posts": {
       "type": "prev-next-blog-posts",
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
