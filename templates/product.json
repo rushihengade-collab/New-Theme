@@ -134,6 +134,7 @@
     },
     "1725775630d5d5c46a": {
       "type": "apps",
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": true,
@@ -143,6 +144,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": true,
@@ -157,11 +159,28 @@
         "title": "関連商品はこちら",
         "content": ""
       }
+    },
+    "product_basic_information_PMiWbE": {
+      "type": "product-basic-information",
+      "name": "Product Basic Information",
+      "settings": {
+        "title": "基本情報",
+        "contents_value": "",
+        "container_value": "",
+        "suggested_retail_price_value": "",
+        "storage_temperature_range_value": "",
+        "best_before_date_value": "",
+        "description_value": "",
+        "raw_material_name_value": "",
+        "padding-top": 0,
+        "padding-bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "1725775630d5d5c46a",
-    "related-products"
+    "related-products",
+    "product_basic_information_PMiWbE"
   ]
 }
