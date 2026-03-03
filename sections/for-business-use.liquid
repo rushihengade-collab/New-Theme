@@ -1,0 +1,149 @@
+<div class="for-business-use-section container" id="for-business-use-{{ section.id }}">
+  <div class="for-business-use-section-inner">
+    <h2 class="for-business-use-title">{{ section.settings.title }}</h2>
+    <div class="for-business-use-card-wrapper">
+      <a href="{{ section.settings.business_use_link }}" class="for-business-use-link">
+        {{- section.settings.business_use_text -}}
+      </a>
+    </div>
+  </div>
+</div>
+<style>
+  .for-business-use-section {
+    padding-top: {{ section.settings.padding-top }}px;
+    padding-bottom: {{ section.settings.padding-bottom }}px;
+  }
+
+  .for-business-use-section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .for-business-use-title {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 16px;
+  }
+
+  .for-business-use-card-wrapper {
+    display: inline-block;
+  }
+
+  .for-business-use-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 190px;
+    padding: 32px 24px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: #111111;
+    font-size: 24px;
+    line-height: 2;
+    letter-spacing: 0.3em;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .for-business-use-link:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    transform: translateY(-1px);
+  }
+
+  @media (max-width: 768px) {
+    .for-business-use-section {
+      padding-top: {{ section.settings.padding-top | times: 0.9 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.9 }}px;
+    }
+
+    .for-business-use-title {
+      margin-bottom: 12px;
+    }
+
+    .for-business-use-link {
+      width: 170px;
+      height: 170px;
+      font-size: 20px;
+      letter-spacing: 0.25em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .for-business-use-section {
+      padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
+    }
+
+    .for-business-use-link {
+      width: 160px;
+      height: 160px;
+      font-size: 18px;
+      letter-spacing: 0.2em;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .for-business-use-section {
+      padding-top: {{ section.settings.padding-top | times: 0.8 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.8 }}px;
+    }
+
+    .for-business-use-link {
+      width: 150px;
+      height: 150px;
+      font-size: 16px;
+      letter-spacing: 0.18em;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "For Business Use",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "business_use_text",
+      "label": "Business Use Text"
+    },
+    {
+      "type": "url",
+      "id": "business_use_link",
+      "label": "Business Use Link"
+    },
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "For Business Use"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,312 @@
+{% assign section_collection = section.settings.collection %}
+
+<div class="tab-collection-section container" id="tab-collection-{{ section.id }}">
+  <div>
+    <h2>
+      {{ section_collection.title }}
+    </h2>
+    <div>
+      <div class="tabs-container">
+        <div class="tabs-list" role="tablist">
+          <div class="tab-item active" data-tab-value="all" role="tab" tabindex="0" aria-selected="true">
+            <p>All</p>
+          </div>
+          {% comment %}
+            Subcategories can be: "first sub • Second sub" (bullet) or ["first sub","Second sub"] (JSON string).
+            Parse both so each subcategory becomes its own tab.
+          {% endcomment %}
+          {% assign subcategories_value = section_collection.metafields.custom.sub_category.value.subcategories %}
+          {% for subcategory in subcategories_value.value %}
+            {% assign sub_val = subcategory | strip %}
+            <div class="tab-item" data-tab-value="{{ sub_val | escape }}" role="tab" tabindex="0" aria-selected="false">
+              <p>{{ sub_val }}</p>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="active-tab-products-container">
+          {% for product in section_collection.products %}
+            {% assign product_subcategory = product.metafields.custom.subcategory.value | default: '' | strip %}
+            <div class="product-item" data-subcategory="{{ product_subcategory | escape }}">
+              <div class="product-item-image">
+                <img
+                  src="{{ product.featured_image | image_url: width: 500 }}"
+                  alt="{{ product.title }}"
+                  width="100"
+                  height="100"
+                >
+              </div>
+              <p>{{ product.title }}</p>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="no-products-message" aria-live="polite" style="display: none;">
+          {{ section.settings.product_not_found_text }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const sectionEl = document.getElementById('tab-collection-{{ section.id }}');
+    if (!sectionEl) return;
+
+    const tabItems = sectionEl.querySelectorAll('.tab-item[data-tab-value]');
+    const productItems = sectionEl.querySelectorAll('.product-item[data-subcategory]');
+    const noProductsMessage = sectionEl.querySelector('.no-products-message');
+
+    function filterProducts(activeValue) {
+      let anyVisible = false;
+
+      productItems.forEach(function (productEl) {
+        const subcategory = (productEl.getAttribute('data-subcategory') || '').trim();
+        const hasValue = subcategory !== '';
+
+        let show = false;
+        if (activeValue === 'all') {
+          // All tab: show only products that have a subcategory value
+          show = hasValue;
+        } else {
+          // Specific tab: show products whose subcategory matches the tab value
+          show = hasValue && subcategory === activeValue;
+        }
+
+        productEl.style.display = show ? '' : 'none';
+
+        if (show) {
+          anyVisible = true;
+        }
+      });
+
+      if (noProductsMessage) {
+        noProductsMessage.style.display = anyVisible ? 'none' : '';
+      }
+    }
+
+    tabItems.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        const value = this.getAttribute('data-tab-value') || 'all';
+        tabItems.forEach(function (t) {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        this.classList.add('active');
+        this.setAttribute('aria-selected', 'true');
+        filterProducts(value);
+      });
+    });
+
+    filterProducts('all');
+  })();
+</script>
+
+<style>
+  .tab-collection-section {
+    padding-top: {{ section.settings.padding-top }}px;
+    padding-bottom: {{ section.settings.padding-bottom }}px;
+  }
+
+  .tab-collection-section > div > h2 {
+    margin: 0 0 1.25rem;
+  }
+
+  .tab-collection-section .tabs-container {
+    margin-bottom: 1.5rem;
+  }
+
+  .tab-collection-section .tabs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+  }
+
+  .tab-collection-section .tab-item {
+    cursor: pointer;
+    padding: 3.5px 1.4rem 5px;
+    border-radius: 8px;
+    line-height: 1.4;
+    white-space: nowrap;
+    background-color: #ddd;
+    transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    font-size:15px;
+  }
+
+  .tab-collection-section .tab-item p {
+    margin: 0;
+  }
+
+  .tab-collection-section .tab-item:hover {
+    background-color: #e1e1eb;
+    color: #333;
+  }
+
+  .tab-collection-section .tab-item.active {
+    background-color: rgb(100, 100, 200);
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  .tab-collection-section .tab-item.active p {
+    color: inherit;
+  }
+
+  .tab-collection-section .active-tab-products-container {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .tab-collection-section .no-products-message {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+  .tab-collection-section .product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .tab-collection-section .product-item-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 9px -3px rgba(0,0,0,.23);
+    overflow: hidden;
+  }
+
+  .tab-collection-section .product-item-image img {
+  width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .tab-collection-section .product-item p {
+    font-size: 0.85rem;
+    margin: 0;
+  }
+
+  .tab-collection-section .product-item[style*="display: none"] {
+    display: none !important;
+  }
+
+  /* Responsive */
+  @media (max-width: 1200px) {
+    .tab-collection-section .active-tab-products-container {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 992px) {
+    .tab-collection-section .active-tab-products-container {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 768px) {
+    .tab-collection-section {
+      padding-top: {{ section.settings.padding-top | times: 0.9 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.9 }}px;
+    }
+
+    .tab-collection-section .tabs-list {
+      overflow-x: visible;
+      -webkit-overflow-scrolling: auto;
+      white-space: normal;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .tab-collection-section .tab-item {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .tab-collection-section .active-tab-products-container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 480px) {
+    .tab-collection-section {
+      padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
+    }
+
+    .tab-collection-section .tab-item {
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .tab-collection-section .active-tab-products-container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .tab-collection-section .active-tab-products-container{
+      gap:1.5rem 0.5rem;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .tab-collection-section {
+      padding-top: {{ section.settings.padding-top | times: 0.8 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.8 }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Tab Collection",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "product_not_found_text",
+      "label": "Product Not Found Text",
+      "default": "There are no products."
+    },
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tab Collection"
+    }
+  ]
+}
+{% endschema %}
