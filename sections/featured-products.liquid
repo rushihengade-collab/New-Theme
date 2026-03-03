@@ -39,6 +39,9 @@
   }
 
   .featured-products-section--{{ section.id }} .featured-products-item {
+    {% if section.settings.add_shadow %}
+    box-shadow: 0 1px 9px -3px rgba(0, 0, 0, .23);
+    {% endif %}
     flex: 1 1 0;
     min-width: 0;
     display: flex;
@@ -74,6 +77,10 @@
     }
     .featured-products-section--{{ section.id }} .featured-products-grid {
         gap: 35px 30px;
+        {% if section.settings.show_1_columns_on_mobile %}
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+        gap: 15px 30px !important;
+        {% endif %}
       }
   }
   @media (max-width: 360px) {
@@ -93,6 +100,18 @@
       "type": "text",
       "id": "title",
       "label": "Title"
+    },
+    {
+      "type": "checkbox",
+      "id": "add_shadow",
+      "label": "Add Shadow",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_1_columns_on_mobile",
+      "label": "1 Columns on Mobile",
+      "default": false
     },
     {
       "type": "range",
