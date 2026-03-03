@@ -11,10 +11,53 @@
   "sections": {
     "main": {
       "type": "main-list-collections",
-      "settings": {}
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "collections": [],
+        "collections_per_row_mobile": "1",
+        "collections_per_row_desktop": 3,
+        "image_size": "auto",
+        "content_position": "place-self-end-start text-start",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "rich_text_k39Y3D": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NtfTKA": {
+          "type": "heading",
+          "settings": {
+            "text": "商品紹介",
+            "heading_tag": "h2"
+          }
+        },
+        "subheading_fKygth": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_NtfTKA",
+        "subheading_fKygth"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_k39Y3D"
   ]
 }
