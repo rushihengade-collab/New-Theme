@@ -66,7 +66,7 @@
             "enable_link": false,
             "image_link": "",
             "spacing_top": 0,
-            "spacing_bottom": 40
+            "spacing_bottom": 20
           },
           "blocks": {}
         }
@@ -123,7 +123,7 @@
       "settings": {
         "title": "",
         "collection": "",
-        "padding-top": 60,
+        "padding-top": 0,
         "padding-bottom": 70
       }
     },
