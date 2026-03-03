@@ -83,19 +83,37 @@
         "product_hArjzU": {
           "type": "product",
           "settings": {
+            "image": "shopify://shop_images/konjac_1.webp",
             "link": ""
           }
         },
-        "product_AVx4Wc": {
+        "product_McY7pc": {
           "type": "product",
           "settings": {
+            "image": "shopify://shop_images/konjac_1.webp",
+            "link": ""
+          }
+        },
+        "product_LWhqyr": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/konjac_1.webp",
+            "link": ""
+          }
+        },
+        "product_mGXTqh": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/konjac_1.webp",
             "link": ""
           }
         }
       },
       "block_order": [
         "product_hArjzU",
-        "product_AVx4Wc"
+        "product_McY7pc",
+        "product_LWhqyr",
+        "product_mGXTqh"
       ],
       "name": "Featured Products",
       "settings": {
