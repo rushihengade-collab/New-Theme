@@ -54,10 +54,84 @@
         "text_position": "center",
         "remove_vertical_spacing": false
       }
+    },
+    "blocks_yb4t7B": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_f4ffab1_VVQtAA": {
+          "type": "ai_gen_block_f4ffab1",
+          "settings": {
+            "image": "shopify://shop_images/top01.webp",
+            "border_radius": 0,
+            "enable_link": false,
+            "image_link": "",
+            "spacing_top": 0,
+            "spacing_bottom": 40
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_f4ffab1_VVQtAA"
+      ],
+      "name": "Image",
+      "settings": {}
+    },
+    "custom_product_info_bYcAPE": {
+      "type": "custom-product-info",
+      "blocks": {
+        "product_info_mCVbTM": {
+          "type": "product-info",
+          "settings": {
+            "title": "こんにゃく",
+            "image": "shopify://shop_images/0b73826e33dd4114470d953318280a8a_69471688-322f-4adc-9242-55c4fa706c9b.jpg",
+            "block_link": "shopify://products/10323186"
+          }
+        },
+        "product_info_eTUnNz": {
+          "type": "product-info",
+          "settings": {
+            "title": "ところてん",
+            "image": "shopify://shop_images/ONECUP_0f7665a2-baac-4101-b8fb-5979c533f69d.jpg",
+            "block_link": "/products_preview?preview_key=2ae096b00a59f44a2a26ce9c71747291"
+          }
+        },
+        "product_info_cXbfTM": {
+          "type": "product-info",
+          "settings": {
+            "title": "Training Noodle",
+            "image": "shopify://shop_images/445dc40b70029ceda8f8bd5510b401c5_5f72e02c-60d4-403f-8250-5ac5c1e09bca.jpg",
+            "block_link": "shopify://products/57970561"
+          }
+        },
+        "product_info_RrND3H": {
+          "type": "product-info",
+          "settings": {
+            "title": "業務用商品",
+            "image": "shopify://shop_images/2025-09-26105506_fc3c3158-091e-4928-b6af-2aac6e81035c.jpg",
+            "block_link": "shopify://products/無地有機かのここんにゃく35-35-251-10個セット-同梱不可"
+          }
+        }
+      },
+      "block_order": [
+        "product_info_mCVbTM",
+        "product_info_eTUnNz",
+        "product_info_cXbfTM",
+        "product_info_RrND3H"
+      ],
+      "name": "Custom Product Info",
+      "settings": {
+        "title": "",
+        "collection": "",
+        "padding-top": 60,
+        "padding-bottom": 70
+      }
     }
   },
   "order": [
     "main",
-    "rich_text_k39Y3D"
+    "rich_text_k39Y3D",
+    "blocks_yb4t7B",
+    "custom_product_info_bYcAPE"
   ]
 }
