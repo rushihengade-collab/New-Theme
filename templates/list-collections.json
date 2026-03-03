@@ -126,12 +126,57 @@
         "padding-top": 60,
         "padding-bottom": 70
       }
+    },
+    "tab_collection_cp8keB": {
+      "type": "tab-collection",
+      "name": "Tab Collection",
+      "settings": {
+        "collection": "frontpage",
+        "product_not_found_text": "There are no products.",
+        "padding-top": 0,
+        "padding-bottom": 48
+      }
+    },
+    "tab_collection_aheTt6": {
+      "type": "tab-collection",
+      "name": "Tab Collection",
+      "settings": {
+        "collection": "frontpage",
+        "product_not_found_text": "There are no products.",
+        "padding-top": 0,
+        "padding-bottom": 0
+      }
+    },
+    "tab_collection_hbqHr7": {
+      "type": "tab-collection",
+      "name": "Tab Collection",
+      "settings": {
+        "collection": "frontpage",
+        "product_not_found_text": "There are no products.",
+        "padding-top": 0,
+        "padding-bottom": 0
+      }
+    },
+    "for_business_use_VR8wte": {
+      "type": "for-business-use",
+      "name": "For Business Use",
+      "settings": {
+        "title": "業務用",
+        "business_use_text": "",
+        "business_use_link": "",
+        "padding-top": 57,
+        "padding-bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "rich_text_k39Y3D",
     "blocks_yb4t7B",
-    "custom_product_info_bYcAPE"
+    "custom_product_info_bYcAPE",
+    "tab_collection_cp8keB",
+    "tab_collection_aheTt6",
+    "tab_collection_hbqHr7",
+    "for_business_use_VR8wte"
   ]
 }
