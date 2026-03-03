@@ -11,10 +11,76 @@
   "sections": {
     "main": {
       "type": "main-list-collections",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "collections": [],
+        "collections_per_row_mobile": "1",
+        "collections_per_row_desktop": 3,
+        "image_size": "auto",
+        "content_position": "place-self-end-start text-start",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "rich_text_FbXe6D": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wHDFbg": {
+          "type": "heading",
+          "settings": {
+            "text": "商品紹介",
+            "heading_tag": "h2"
+          }
+        },
+        "subheading_AErAJF": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_wHDFbg",
+        "subheading_AErAJF"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "blocks_BfTayW": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_f4ffab1_GhUGxk": {
+          "type": "ai_gen_block_f4ffab1",
+          "settings": {
+            "image": "shopify://shop_images/top01.webp",
+            "border_radius": 0,
+            "enable_link": false,
+            "image_link": "",
+            "spacing_top": 0,
+            "spacing_bottom": 40
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_f4ffab1_GhUGxk"
+      ],
+      "name": "Image",
       "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_FbXe6D",
+    "blocks_BfTayW"
   ]
 }
