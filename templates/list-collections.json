@@ -118,8 +118,10 @@
       "name": "Featured Products",
       "settings": {
         "title": "",
-        "padding-top": 0,
-        "padding-bottom": 0
+        "add_shadow": true,
+        "show_1_columns_on_mobile": true,
+        "padding-top": 30,
+        "padding-bottom": 50
       }
     },
     "tab_collection_cp8keB": {
