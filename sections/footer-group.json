@@ -30,6 +30,14 @@
             "menu_title": ""
           }
         },
+        "links_UgQqtx": {
+          "type": "links",
+          "settings": {
+            "menu": "link-list",
+            "show_menu_title": true,
+            "menu_title": ""
+          }
+        },
         "newsletter": {
           "type": "newsletter",
           "disabled": true,
@@ -44,6 +52,7 @@
       "block_order": [
         "text_R4xeqQ",
         "links_qhrGea",
+        "links_UgQqtx",
         "newsletter"
       ],
       "settings": {
