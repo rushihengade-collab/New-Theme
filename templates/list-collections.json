@@ -113,7 +113,7 @@
       "name": "Tab Collection",
       "settings": {
         "collection": "こんにゃく",
-        "product_not_found_text": "There are no products.",
+        "product_not_found_text": "このカテゴリの商品は、現在取り扱いがありません。",
         "padding-top": 0,
         "padding-bottom": 48
       }
@@ -123,7 +123,7 @@
       "name": "Tab Collection",
       "settings": {
         "collection": "ところてん-季節商品",
-        "product_not_found_text": "There are no products.",
+        "product_not_found_text": "このカテゴリの商品は、現在取り扱いがありません。",
         "padding-top": 0,
         "padding-bottom": 0
       }
@@ -133,7 +133,7 @@
       "name": "Tab Collection",
       "settings": {
         "collection": "training-noodle",
-        "product_not_found_text": "There are no products.",
+        "product_not_found_text": "このカテゴリの商品は、現在取り扱いがありません。",
         "padding-top": 30,
         "padding-bottom": 0
       }
