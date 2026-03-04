@@ -192,8 +192,8 @@
         "title": "おすすめ商品",
         "add_shadow": false,
         "show_1_columns_on_mobile": false,
-        "padding-top": 70,
-        "padding-bottom": 70
+        "padding-top": 40,
+        "padding-bottom": 60
       }
     },
     "custom_news_section_WCChgi": {
