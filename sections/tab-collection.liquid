@@ -24,9 +24,9 @@
           {% endfor %}
         </div>
         <div class="active-tab-products-container">
-          {% for product in section_collection.products %}
+          {% for product in section_collection.products limit: 50 %}
             {% assign product_subcategory = product.metafields.custom.subcategory.value | default: '' | strip %}
-            <div class="product-item" data-subcategory="{{ product_subcategory | escape }}">
+            <a href="{{ product.url }}" class="product-item" data-subcategory="{{ product_subcategory | escape }}">
               <div class="product-item-image">
                 <img
                   src="{{ product.featured_image | image_url: width: 500 }}"
@@ -36,7 +36,7 @@
                 >
               </div>
               <p>{{ product.title }}</p>
-            </div>
+            </a>
           {% endfor %}
         </div>
         <div class="no-products-message" aria-live="polite" style="display: none;">
@@ -65,8 +65,7 @@
 
         let show = false;
         if (activeValue === 'all') {
-          // All tab: show only products that have a subcategory value
-          show = hasValue;
+          show = true;
         } else {
           // Specific tab: show products whose subcategory matches the tab value
           show = hasValue && subcategory === activeValue;
