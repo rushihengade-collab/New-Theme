@@ -80,9 +80,9 @@
           "type": "product_sections_tabs",
           "settings": {
             "first_tab_text": "基本情報",
-            "first_tab_url": "",
+            "first_tab_url": "#shopify-section-template--26125046841646__product_basic_information_PMiWbE",
             "second_tab_text": "アレルギー情報",
-            "second_tab_url": "",
+            "second_tab_url": "#shopify-section-template--26125046841646__allergy_information_wh8bdz",
             "third_tab_text": "栄養成分",
             "third_tab_url": "",
             "fourth_tab_text": "原料原産地",
