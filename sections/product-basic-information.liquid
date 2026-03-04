@@ -1,58 +1,81 @@
 {%- style -%}
-  .product-basic-information {
-    padding-top: {{ section.settings.padding-top }}px;
-    padding-bottom: {{ section.settings.padding-bottom }}px;
-  }
-  .product-basic-info-table-wrap {
-    margin-bottom: 1rem;
-  }
-  .product-basic-info-table {
-    border-collapse: collapse;
-    width:fit-content;
-  }
-  .product-basic-info-table th,
-  .product-basic-info-table td {
-    padding: 3.5px 1rem 4px !important;
-    text-align: left;
-    vertical-align: middle;
-    min-width:200px;
-  }
-  .product-basic-info-table th {
-    background-color: #eeeeee;
-    border:1px solid #80808099;
-    font-weight: 600;
-    white-space: nowrap;
-    font-size:17px;
-    opacity:0.95;
-  }
-  .product-basic-info-table td {
-    background-color: #fff;
-    border:1px solid #80808099;
-    font-size:16px;
-  }
-  .product-basic-info-notes {
-    margin: 0.75rem 0 1rem 0;
-  }
-  .product-basic-info-notes p {
-    margin: 0.25em 0;
-  }
-  .product-basic-info-notes ul {
-    margin: 0;
-    padding-left: 1.25rem;
-  }
-  .product-basic-info-notes li {
-    margin: 0.25em 0;
-  }
+    .product-basic-information {
+      padding-top: {{ section.settings.padding-top }}px;
+      padding-bottom: {{ section.settings.padding-bottom }}px;
+    }
+    .product-basic-info-table-wrap {
+      margin-bottom: 1rem;
+    }
+    .product-basic-info-table {
+      border-collapse: collapse;
+      width:fit-content;
+    }
+    .product-basic-info-table th,
+    .product-basic-info-table td {
+      padding: 3.5px 1rem 4px !important;
+      text-align: left;
+      vertical-align: middle;
+      min-width:200px;
+    }
+    .product-basic-info-table th {
+      background-color: #eeeeee;
+      border:1px solid #80808099;
+      font-weight: 600;
+      white-space: nowrap;
+      font-size:17px;
+      opacity:0.95;
+    }
+    .product-basic-info-table td {
+      background-color: #fff;
+      border:1px solid #80808099;
+      font-size:16px;
+    }
+    .product-basic-info-notes {
+      margin: 0.75rem 0 1rem 0;
+    }
+    .product-basic-info-notes p {
+      margin: 0.25em 0;
+    }
+    .product-basic-info-notes ul {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+    .product-basic-info-notes li {
+      margin: 0.25em 0;
+    }
 
-  .product-basic-info-table-raw-material-name{
+    .product-basic-info-table-raw-material-name{
+      width:100%;
+    }
+    .product-basic-info-table-raw-material-name th{
+      max-width:0px;
+      min-width:0px;
+    }
 
-    width:100%;
-  }
-.product-basic-info-table-raw-material-name th{
-    max-width:0px;
-    min-width:0px;
-  }
+    .table-desktop-only {
+      display: table;
+    }
+    .table-mobile-only {
+      display: none;
+    }
 
+    @media screen and (max-width: 749px) {
+      .table-desktop-only {
+        display: none;
+      }
+      .table-mobile-only {
+        display: table;
+        width: 100%;
+      }
+      .product-basic-info-table th,
+      .product-basic-info-table td {
+        min-width: 0;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        max-width: 100%;
+      }
+    }
 {%- endstyle -%}
 
 <div class="container product-basic-information">
@@ -60,7 +83,7 @@
     {% render 'product-page-header-snippet', title: section.settings.title | default: 'basic information' %}
 
     <div class="product-basic-info-table-wrap">
-      <table class="product-basic-info-table">
+      <table class="product-basic-info-table table-desktop-only">
         <thead>
           <tr>
             <th>内容量</th>
@@ -79,6 +102,43 @@
             <td>{{ section.settings.best_before_date_value | default: '—' }}</td>
           </tr>
         </tbody>
+      </table>
+
+      <table class="product-basic-info-table table-mobile-only">
+        <tr>
+          <th>内容量</th>
+        </tr>
+        <tr>
+          <td>{{ section.settings.contents_value | default: '—' }}</td>
+        </tr>
+
+        <tr>
+          <th>容器</th>
+        </tr>
+        <tr>
+          <td>{{ section.settings.container_value | default: '—' }}</td>
+        </tr>
+
+        <tr>
+          <th>希望小売価格</th>
+        </tr>
+        <tr>
+          <td>{{ section.settings.suggested_retail_price_value | default: '—' }}</td>
+        </tr>
+
+        <tr>
+          <th>保存温度帯</th>
+        </tr>
+        <tr>
+          <td>{{ section.settings.storage_temperature_range_value | default: '—' }}</td>
+        </tr>
+
+        <tr>
+          <th>開封前賞味期間</th>
+        </tr>
+        <tr>
+          <td>{{ section.settings.best_before_date_value | default: '—' }}</td>
+        </tr>
       </table>
     </div>
 
