@@ -150,7 +150,7 @@
       "settings": {
         "collection": "training-noodle",
         "product_not_found_text": "There are no products.",
-        "padding-top": 36,
+        "padding-top": 30,
         "padding-bottom": 0
       }
     },
