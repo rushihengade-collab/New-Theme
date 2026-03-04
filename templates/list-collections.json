@@ -25,36 +25,6 @@
         "overlay_opacity": 30
       }
     },
-    "rich_text_k39Y3D": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_NtfTKA": {
-          "type": "heading",
-          "settings": {
-            "text": "商品紹介",
-            "heading_tag": "h2"
-          }
-        },
-        "subheading_fKygth": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_NtfTKA",
-        "subheading_fKygth"
-      ],
-      "name": "t:sections.rich_text.presets.rich_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": true,
-        "content_width": "sm",
-        "text_position": "center",
-        "remove_vertical_spacing": false
-      }
-    },
     "page_title_section_4dBMMM": {
       "type": "page-title-section",
       "name": "Page Title Section",
@@ -65,8 +35,8 @@
         "subtitle": "~­­­ Product introduction ~­­­",
         "subtitle-font-size": 14,
         "subtitle-color": "#191971",
-        "padding-top": 0,
-        "padding-bottom": 0
+        "padding-top": 40,
+        "padding-bottom": 60
       }
     },
     "blocks_yb4t7B": {
@@ -182,7 +152,6 @@
   },
   "order": [
     "main",
-    "rich_text_k39Y3D",
     "page_title_section_4dBMMM",
     "blocks_yb4t7B",
     "featured_products_i6AUgV",
