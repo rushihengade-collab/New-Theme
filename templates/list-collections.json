@@ -144,7 +144,7 @@
       "settings": {
         "title": "業務用",
         "business_use_image": "shopify://shop_images/for_business_link_banner.jpg",
-        "business_use_link": "",
+        "business_use_link": "https://nakaoshokuhin.co.jp/wp-content/themes/nakao/other_files/for_business/%E3%82%AB%E3%83%83%E3%83%88%E4%B8%80%E8%A6%A7%E8%A1%A8.pdf?v=3.0",
         "padding-top": 30,
         "padding-bottom": 33
       }
