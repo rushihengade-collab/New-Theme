@@ -55,6 +55,20 @@
         "remove_vertical_spacing": false
       }
     },
+    "page_title_section_4dBMMM": {
+      "type": "page-title-section",
+      "name": "Page Title Section",
+      "settings": {
+        "title": "商品紹介",
+        "title-font-size": 28,
+        "mobile-title-font-size": 24,
+        "subtitle": "~­­­ Product introduction ~­­­",
+        "subtitle-font-size": 14,
+        "subtitle-color": "#191971",
+        "padding-top": 0,
+        "padding-bottom": 0
+      }
+    },
     "blocks_yb4t7B": {
       "type": "_blocks",
       "blocks": {
@@ -169,6 +183,7 @@
   "order": [
     "main",
     "rich_text_k39Y3D",
+    "page_title_section_4dBMMM",
     "blocks_yb4t7B",
     "featured_products_i6AUgV",
     "tab_collection_cp8keB",
