@@ -148,6 +148,19 @@
         "padding-top": 30,
         "padding-bottom": 33
       }
+    },
+    "custom_news_section_WCChgi": {
+      "type": "custom-news-section",
+      "name": "Custom News Section",
+      "settings": {
+        "title": "ニュース一覧",
+        "subtitle": "- NEWS -",
+        "btn_text": ">>過去のニュースはこちら",
+        "btn_link": "shopify://blogs/第四十八話-こんにゃくと慣用句２",
+        "section_bg_color": "",
+        "margin-top": 40,
+        "margin-bottom": 40
+      }
     }
   },
   "order": [
@@ -158,6 +171,7 @@
     "tab_collection_cp8keB",
     "tab_collection_aheTt6",
     "tab_collection_hbqHr7",
-    "for_business_use_VR8wte"
+    "for_business_use_VR8wte",
+    "custom_news_section_WCChgi"
   ]
 }
