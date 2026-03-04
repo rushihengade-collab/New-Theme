@@ -1,0 +1,130 @@
+{% if section.settings.title != blank %}
+  <div class="page-title-section container">
+    <h1>
+      {{ section.settings.title }}
+    </h1>
+    <p>
+      {{ section.settings.subtitle }}
+    </p>
+  </div>
+
+  <style>
+    .page-title-section{
+        padding-top: {{ section.settings.padding-top }}px;
+        padding-bottom: {{ section.settings.padding-bottom }}px;
+        text-align: center;
+    }
+    .page-title-section p{
+        font-size: {{ section.settings.subtitle-font-size }}px;
+        color: {{ section.settings.subtitle-color }};
+    }
+    .page-title-section h1{
+        font-size: {{ section.settings.title-font-size }}px;
+        margin: 0;
+        line-height: 1;
+    }
+    @media (max-width: 768px) {
+        .page-title-section{
+            padding-top: {{ section.settings.padding-top | times: 0.9 }}px;
+            padding-bottom: {{ section.settings.padding-bottom | times: 0.9 }}px;
+        }
+        .page-title-section h1{
+            font-size: {{ section.settings.title-font-size | times: 0.95 }}px;
+        }
+
+    }
+    @media (max-width: 480px) {
+        .page-title-section{
+            padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
+            padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
+        }
+        .page-title-section h1{
+            font-size: {{ section.settings.mobile-title-font-size }}px;
+        }
+    }
+    @media (max-width: 360px) {
+        .page-title-section{
+            padding-top: {{ section.settings.padding-top | times: 0.8 }}px;
+            padding-bottom: {{ section.settings.padding-bottom | times: 0.8 }}px;
+        }
+    }
+  </style>
+{% endif %}
+{% schema %}
+{
+  "name": "Page Title Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "range",
+      "id": "title-font-size",
+      "label": "Font Size",
+      "min": 20,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "mobile-title-font-size",
+      "label": "Mobile View Title Font Size",
+      "min": 20,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "range",
+      "id": "subtitle-font-size",
+      "label": "Subtitle Font Size",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "subtitle-color",
+      "label": "Subtitle Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Page Title Section"
+    }
+  ]
+}
+{% endschema %}
