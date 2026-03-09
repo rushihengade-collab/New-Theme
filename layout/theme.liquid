@@ -96,7 +96,7 @@
       {%- sections 'header-group' -%}
       {%- sections 'overlay-group' -%}
     {%- endif -%}
-     {%- if request.page_type != '/'  -%}
+      {%- if request.page_type == 'index' -%}
       {%- render 'fixed-tracking-banner' -%}
     {%- endif -%}
 
