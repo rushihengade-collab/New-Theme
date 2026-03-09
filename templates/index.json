@@ -145,14 +145,14 @@
           "type": "product",
           "settings": {
             "image": "shopify://shop_images/Tnoodle_b71f7653-1295-4974-bd2f-93ad1f86ae15.webp",
-            "link": "shopify://products/10323186"
+            "link": "/products#shopify-section-template--26125047300398__tab_collection_hbqHr7"
           }
         },
         "product_qHwMTH": {
           "type": "product",
           "settings": {
-            "image": "shopify://shop_images/88510ec127e86da29b0240997622330a.webp",
-            "link": "shopify://products/10459891"
+            "image": "shopify://shop_images/for-business_e4db94c0-5930-481c-b31d-b119c80f43d6.webp",
+            "link": "/products#shopify-section-template--26125047300398__for_business_use_VR8wte"
           }
         }
       },
