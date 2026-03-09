@@ -23,13 +23,13 @@
       "name": "Page Title Section",
       "settings": {
         "title": "中尾について",
-        "title-font-size": 24,
+        "title-font-size": 34,
         "mobile-title-font-size": 24,
         "subtitle": "~­­­ NAKAO ~­­­",
         "subtitle-font-size": 13,
         "subtitle-color": "#191971",
         "padding-top": 45,
-        "padding-bottom": 30
+        "padding-bottom": 35
       }
     },
     "about_nakao_hero_qRDaga": {
@@ -41,7 +41,7 @@
         "section_background_image": "shopify://shop_images/msg_bg_0478d09e-120a-47dc-a04b-27ad57bb4723.webp",
         "representative_image": "shopify://shop_images/gaiyo_51b32fec-d0ce-4ed8-b8f4-d826c80a08a0.webp",
         "representative_name": "代表　中尾　友彦",
-        "margin-top": 40,
+        "margin-top": 0,
         "margin-bottom": 12
       }
     },
