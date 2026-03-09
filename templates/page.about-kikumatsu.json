@@ -244,10 +244,10 @@
           "settings": {
             "layout": "image_right",
             "desktop_width_percent": 90,
-            "gap": 40,
+            "gap": 55,
             "mobile_gap": 30,
             "image": "shopify://shop_images/gaiyo.webp",
-            "image_width": 50,
+            "image_width": 30,
             "image_border_radius": 0,
             "content_gap": 10,
             "heading": "About Kikumatsu",
