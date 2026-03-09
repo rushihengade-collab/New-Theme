@@ -264,7 +264,7 @@
             "image_3": "shopify://shop_images/man5.webp",
             "heading_3": "鮮度を最高の状態で保管",
             "text_3": "土がついた状態で仕入れたこんにゃく芋を水でに洗い、ひとつひとつ手で梱包・計量し、すぐに冷凍保管します。年に一度の大仕事は大変ですが、こうすることで、美味しいこんにゃく芋の状態で保管することができます。",
-            "text_alignment": "center",
+            "text_alignment": "left",
             "image_border_radius": 0,
             "heading_font": "noto_sans_japanese_n4",
             "heading_size": 24,
