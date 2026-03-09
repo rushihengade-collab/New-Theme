@@ -95,6 +95,8 @@
     {%- if request.page_type != 'password' -%}
       {%- sections 'header-group' -%}
       {%- sections 'overlay-group' -%}
+    {%- endif -%}
+     {%- if request.page_type != '/'  -%}
       {%- render 'fixed-tracking-banner' -%}
     {%- endif -%}
 
