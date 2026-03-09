@@ -84,10 +84,9 @@ button, label, summary, [role="button"], [type="checkbox"], [type="radio"] {
 
 
 
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .container, image-with-text{
-
-    max-width:1440px;
+    max-width:min(93vw, 1440px);
     margin-inline:auto !important;
   }
   .shopify-section{
