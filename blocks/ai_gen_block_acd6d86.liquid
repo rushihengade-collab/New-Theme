@@ -105,7 +105,7 @@
   {{ block.shopify_attributes }}
 >
   <div class="ai-content-section__inner-{{ ai_gen_id }}">
-    <div class="ai-content-section__text-wrapper-{{ ai_gen_id }}">
+    {% comment %} <div class="ai-content-section__text-wrapper-{{ ai_gen_id }}">
       {% if block.settings.heading != blank %}
         <h2 class="ai-content-section__heading-{{ ai_gen_id }}">
           {{ block.settings.heading }}
@@ -117,7 +117,7 @@
           {{ block.settings.subheading }}
         </div>
       {% endif %}
-    </div>
+    </div> {% endcomment %}
 
     <div class="ai-content-section__image-wrapper-{{ ai_gen_id }}">
       {% if block.settings.image %}
