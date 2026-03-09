@@ -95,8 +95,8 @@
         "description_color": "",
         "btn_img": "shopify://shop_images/img20151124134930296552.png",
         "btn_link": "https://kikumatsu.thebase.in/",
-        "padding-top": 40,
-        "padding-bottom": 40
+        "padding-top": 60,
+        "padding-bottom": 50
       }
     }
   },
