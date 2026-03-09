@@ -59,7 +59,13 @@
       display: block;
       transition: transform 0.3s ease;
       object-fit: cover;
-      aspect-ratio: 16 / 9;
+      aspect-ratio: 16 /9.5;
+    }
+
+    @media (min-width: 1470px) {
+      .information-links-image-wrapper img {
+        aspect-ratio: 16 / 10;
+      }
     }
   
     .information-links-overlay {
