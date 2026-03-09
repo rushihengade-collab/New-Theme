@@ -320,7 +320,8 @@
         "richtext_EkEMLw"
       ],
       "custom_css": [
-        "p:not(p.h2) {font-size: 15px;}"
+        "p:not(p.h2) {font-size: 15px;}",
+        "image-with-text {background-color: #f8f9f9;}"
       ],
       "name": "t:sections.image_with_text.presets.image_with_text.name",
       "settings": {
