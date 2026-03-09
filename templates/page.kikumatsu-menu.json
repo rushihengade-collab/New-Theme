@@ -81,6 +81,23 @@
         "enable_parallax": false,
         "remove_vertical_spacing": true
       }
+    },
+    "kikumatsu_menu_richtext_EPKDwk": {
+      "type": "kikumatsu-menu-richtext",
+      "name": "Kikumatsu Menu Richtext",
+      "settings": {
+        "section_bg_image": "shopify://shop_images/img20151112164917666135_3606e813-1c23-4500-b374-4cf6afc0c351.png",
+        "title_1": " 清涼感を味覚で楽しむ。",
+        "title_1_color": "",
+        "title_2": "＊大人気！4～9月限定の季節商品です。",
+        "title_2_color": "",
+        "description": "<p>和歌山県産の天草を使用して作られた「心太（ところてん）」をはじめ、<br/>蒟蒻で作った「わらび餅」「さしみ蒟蒻」など、<br/>夏期ならではの、様々な美味しさ楽しさをご提案します。</p>",
+        "description_color": "",
+        "btn_img": "shopify://shop_images/img20151124134930296552.png",
+        "btn_link": "https://kikumatsu.thebase.in/",
+        "padding-top": 40,
+        "padding-bottom": 40
+      }
     }
   },
   "order": [
@@ -89,6 +106,7 @@
     "kikumatsu_menu_hero_RXpK3i",
     "image_with_text_block_94FpUY",
     "kikumatsu_menu_richtext_CL6HRp",
-    "image_with_text_block_Ufnwrg"
+    "image_with_text_block_Ufnwrg",
+    "kikumatsu_menu_richtext_EPKDwk"
   ]
 }
