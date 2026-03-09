@@ -120,14 +120,14 @@
 {% endstyle %}
 
 <div class="ai-content-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
-  <div class="ai-content-section__header-{{ ai_gen_id }}">
+  {% comment %} <div class="ai-content-section__header-{{ ai_gen_id }}">
     {% if block.settings.heading != blank %}
       <h2 class="ai-content-section__heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
     {% endif %}
     {% if block.settings.subheading != blank %}
       <div class="ai-content-section__subheading-{{ ai_gen_id }}">{{ block.settings.subheading }}</div>
     {% endif %}
-  </div>
+  </div> {% endcomment %}
 
   <div class="ai-content-section__main-{{ ai_gen_id }}">
     <div class="ai-content-section__content-{{ ai_gen_id }}">
