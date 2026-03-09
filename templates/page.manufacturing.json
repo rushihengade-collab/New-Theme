@@ -231,7 +231,9 @@
         "heading_6f4GyP",
         "richtext_iKRgUR"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "p{font-size:15px;}"
+      ],
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
         "color_scheme": "",
