@@ -98,6 +98,18 @@
         "padding-top": 60,
         "padding-bottom": 50
       }
+    },
+    "image_with_text_block_YHiB7x": {
+      "type": "image-with-text-block",
+      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "image_size": "auto",
+        "image": "shopify://shop_images/img20151124142707103443.png",
+        "content_width": "sm",
+        "enable_parallax": false,
+        "remove_vertical_spacing": true
+      }
     }
   },
   "order": [
@@ -107,6 +119,7 @@
     "image_with_text_block_94FpUY",
     "kikumatsu_menu_richtext_CL6HRp",
     "image_with_text_block_Ufnwrg",
-    "kikumatsu_menu_richtext_EPKDwk"
+    "kikumatsu_menu_richtext_EPKDwk",
+    "image_with_text_block_YHiB7x"
   ]
 }
