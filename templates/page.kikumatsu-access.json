@@ -30,96 +30,19 @@
         "remove_vertical_spacing": true
       }
     },
-    "kikumatsu_menu_hero_RXpK3i": {
-      "type": "kikumatsu-menu-hero",
-      "name": "Kikumatsu Menu Hero",
+    "kikumatsu_google_map_BfN7AT": {
+      "type": "kikumatsu-google-map",
+      "name": "Kikumatsu Google Map",
       "settings": {
-        "section_bg_image": "shopify://shop_images/img20151112164039717829.png",
-        "image": "shopify://shop_images/img20151124143227087256.png",
-        "description": "菊松には、通年ご提供しております生蒟蒻芋で作られた『木灰シリーズ』と、夏期限定の「心太」「蒟蒻やわらび餅」などがございます。\n季節に準じたご馳走を、どうぞお召し上がりください。",
-        "padding-top": 55,
-        "padding-bottom": 60
-      }
-    },
-    "image_with_text_block_94FpUY": {
-      "type": "image-with-text-block",
-      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
-      "settings": {
-        "color_scheme": "scheme-2",
-        "image_size": "auto",
-        "image": "shopify://shop_images/img20151124131624111308.png",
-        "content_width": "sm",
-        "enable_parallax": false,
-        "remove_vertical_spacing": true
-      }
-    },
-    "kikumatsu_menu_richtext_CL6HRp": {
-      "type": "kikumatsu-menu-richtext",
-      "name": "Kikumatsu Menu Richtext",
-      "settings": {
-        "section_bg_image": "shopify://shop_images/img20151112164917666135_3606e813-1c23-4500-b374-4cf6afc0c351.png",
-        "title_1": "本物の蒟蒻を味わう。",
-        "title_1_color": "",
-        "title_2": "",
-        "title_2_color": "",
-        "description": "<p>広島県産有機生芋100％で昔ながらの木灰で固められた「板こんにゃく」「糸こんにゃく」「突こんにゃく」<br/>　「サイコロこんにゃく」など、単品販売からボックス（詰め合わせ）までご用意しております。<br/>　ご家庭はもちろん、親しい方、大切な方への贈り物としてもご活用ください。</p>",
-        "description_color": "",
-        "btn_img": "shopify://shop_images/img20151124134930296552.png",
-        "btn_link": "https://kikumatsu.thebase.in/",
-        "padding-top": 40,
-        "padding-bottom": 40
-      }
-    },
-    "image_with_text_block_Ufnwrg": {
-      "type": "image-with-text-block",
-      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
-      "settings": {
-        "color_scheme": "scheme-2",
-        "image_size": "auto",
-        "image": "shopify://shop_images/img20151124131624111299.png",
-        "content_width": "sm",
-        "enable_parallax": false,
-        "remove_vertical_spacing": true
-      }
-    },
-    "kikumatsu_menu_richtext_EPKDwk": {
-      "type": "kikumatsu-menu-richtext",
-      "name": "Kikumatsu Menu Richtext",
-      "settings": {
-        "section_bg_image": "shopify://shop_images/img20151112153716564433.jpg",
-        "title_1": " 清涼感を味覚で楽しむ。",
-        "title_1_color": "",
-        "title_2": "＊大人気！4～9月限定の季節商品です。",
-        "title_2_color": "",
-        "description": "<p>和歌山県産の天草を使用して作られた「心太（ところてん）」をはじめ、<br/>蒟蒻で作った「わらび餅」「さしみ蒟蒻」など、<br/>夏期ならではの、様々な美味しさ楽しさをご提案します。</p>",
-        "description_color": "",
-        "btn_img": "shopify://shop_images/img20151124134930296552.png",
-        "btn_link": "https://kikumatsu.thebase.in/?mode=srh&cid=&keyword=",
-        "padding-top": 60,
-        "padding-bottom": 50
-      }
-    },
-    "image_with_text_block_YHiB7x": {
-      "type": "image-with-text-block",
-      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
-      "settings": {
-        "color_scheme": "scheme-2",
-        "image_size": "auto",
-        "image": "shopify://shop_images/img20151124142707103443.png",
-        "content_width": "sm",
-        "enable_parallax": false,
-        "remove_vertical_spacing": true
+        "google_map_embed_url": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.4879547395167!2d135.47032!3d34.5241482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000dae0c2c4579b%3A0x2f6a2d2fda1d7af7!2z5Lit5bC-6aOf5ZOB5bel5qWt5qCq5byP5Lya56S-!5e1!3m2!1sja!2sjp!4v1773076099096!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+        "margin_top": 0,
+        "margin_bottom": 40
       }
     }
   },
   "order": [
     "main",
     "image_with_text_block_nkkFfj",
-    "kikumatsu_menu_hero_RXpK3i",
-    "image_with_text_block_94FpUY",
-    "kikumatsu_menu_richtext_CL6HRp",
-    "image_with_text_block_Ufnwrg",
-    "kikumatsu_menu_richtext_EPKDwk",
-    "image_with_text_block_YHiB7x"
+    "kikumatsu_google_map_BfN7AT"
   ]
 }
