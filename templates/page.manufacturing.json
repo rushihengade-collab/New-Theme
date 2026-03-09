@@ -269,7 +269,7 @@
             "heading_font": "noto_sans_japanese_n4",
             "heading_size": 24,
             "heading_color": "#000000",
-            "text_size": 16,
+            "text_size": 15,
             "text_color": "#5c5c5c"
           },
           "blocks": {}
