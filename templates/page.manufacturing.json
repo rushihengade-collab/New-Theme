@@ -295,7 +295,7 @@
         "subtitle-font-size": 13,
         "subtitle-color": "#191971",
         "padding-top": 60,
-        "padding-bottom": 35
+        "padding-bottom": 0
       }
     },
     "image_with_text_rTdfTp": {
@@ -331,7 +331,7 @@
         "reveal_on_scroll": true,
         "image_position": "end",
         "content_width": "md",
-        "remove_vertical_spacing": true
+        "remove_vertical_spacing": false
       }
     },
     "177036464339662674": {
