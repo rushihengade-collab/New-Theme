@@ -69,7 +69,7 @@
         "text": "<p>今では堺で唯一のこんにゃく屋</p><p>こんにゃくの産地でもない堺のこんにゃく屋が、なぜお客様から愛されているか。それは、こんにゃく本来の美味しさや安全性を保つため、90年以上真っ当な作り方を研究し続けてきたからです。</p><p>じっくりと熟成させる為に労力や時間を惜しまない。</p><p>大切な部分は必ず人の手で行い、目で見て品質を確認する。</p><p>『 中尾のこんにゃくでなければ 』と、ご指名頂き続けられるように、これからも頑張ってまいります。</p>",
         "color_scheme": "",
         "section_width": "page-width",
-        "margin-top": 40,
+        "margin-top": 0,
         "margin-bottom": 40
       }
     },
@@ -231,6 +231,8 @@
       "name": "Featured Products",
       "settings": {
         "title": "おすすめ商品",
+        "add_shadow": false,
+        "show_1_columns_on_mobile": false,
         "padding-top": 70,
         "padding-bottom": 70
       }
