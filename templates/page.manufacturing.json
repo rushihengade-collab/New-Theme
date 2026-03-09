@@ -250,8 +250,8 @@
           "type": "ai_gen_block_ea5ecb0",
           "settings": {
             "desktop_width_percent": 80,
-            "section_padding": 40,
-            "horizontal_padding": 30,
+            "section_padding": 50,
+            "horizontal_padding": 0,
             "column_gap": 45,
             "content_gap": 15,
             "mobile_gap": 30,
