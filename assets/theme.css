@@ -82,6 +82,16 @@ button, label, summary, [role="button"], [type="checkbox"], [type="radio"] {
   cursor: pointer;
 }
 
+.container, image-with-text{
+
+  max-width:1440px;
+  margin-inline:auto !important;
+}
+.shopify-section{
+  max-width:1780px;
+  margin-inline:auto !important;
+}
+
 :-moz-focusring {
   outline: auto;
 }
