@@ -381,7 +381,7 @@
             "image_width": 50,
             "content_gap": 60,
             "mobile_content_gap": 35,
-            "padding_vertical": 30,
+            "padding_vertical": 0,
             "padding_horizontal": 30,
             "background_color": "#ffffff",
             "image_1": "shopify://shop_images/Slide2-1.jpg",
