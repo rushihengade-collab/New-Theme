@@ -1,0 +1,219 @@
+<div class="kikumatsu-inquiry-section">
+  <div class="container kikumatsu-inquiry__container">
+    {% if section.settings.title != blank %}
+      <h2 class="kikumatsu-inquiry__title">{{ section.settings.title }}</h2>
+    {% endif %}
+    {% if section.settings.description != blank %}
+      <div class="kikumatsu-inquiry__description">{{ section.settings.description }}</div>
+    {% endif %}
+    {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+      <a href="{{ section.settings.button_link }}" class="kikumatsu-inquiry__btn">{{ section.settings.button_text }}</a>
+    {% elsif section.settings.button_text != blank %}
+      <span class="kikumatsu-inquiry__btn kikumatsu-inquiry__btn--disabled">{{ section.settings.button_text }}</span>
+    {% endif %}
+    {% if section.settings.address != blank %}
+      <div class="kikumatsu-inquiry__address">{{ section.settings.address }}</div>
+    {% endif %}
+    {% if section.settings.footer_text != blank %}
+      <div class="kikumatsu-inquiry__footer">{{ section.settings.footer_text }}</div>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  .kikumatsu-inquiry-section {
+    {% if section.settings.section_bg_image != blank %}
+    background-image: url({{ section.settings.section_bg_image | image_url: width: 1920 }});
+    {% else %}
+    background-color: #f5f2ed;
+    {% endif %}
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: {{ section.settings.padding-top }}px;
+    padding-bottom: {{ section.settings.padding-bottom }}px;
+    margin-top: {{ section.settings.margin-top }}px;
+    margin-bottom: {{ section.settings.margin-bottom }}px;
+  }
+
+  .kikumatsu-inquiry__container {
+    text-align: center;
+    max-width: 720px;
+    margin-inline: auto;
+  }
+
+  .kikumatsu-inquiry__title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 600;
+    color: #333333;
+    margin: 0 0 1rem 0;
+    letter-spacing: 0.02em;
+  }
+
+  .kikumatsu-inquiry__description {
+    font-size: 0.9375rem;
+    color: #333333;
+    line-height: 1.7;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .kikumatsu-inquiry__description p {
+    margin: 0 0 0.5rem 0;
+  }
+
+  .kikumatsu-inquiry__description p:last-child {
+    margin-bottom: 0;
+  }
+
+  .kikumatsu-inquiry__btn {
+    display: inline-block;
+    background-color: #2F4F6D;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 0 1.5rem 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .kikumatsu-inquiry__btn:hover {
+    opacity: 0.9;
+  }
+
+  .kikumatsu-inquiry__btn--disabled {
+    cursor: default;
+  }
+
+  .kikumatsu-inquiry__address {
+    font-size: 0.9375rem;
+    color: #333333;
+    line-height: 1.7;
+    margin: 0 0 1rem 0;
+  }
+
+  .kikumatsu-inquiry__address p {
+    margin: 0 0 0.5rem 0;
+  }
+
+  .kikumatsu-inquiry__address p:last-child {
+    margin-bottom: 0;
+  }
+
+  .kikumatsu-inquiry__footer {
+    font-size: 0.9375rem;
+    color: #333333;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .kikumatsu-inquiry__footer p {
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .kikumatsu-inquiry-section {
+      padding-top: {{ section.settings.padding-top | times: 0.9 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.9 }}px;
+      margin-top: {{ section.settings.margin-top | times: 0.9 }}px;
+      margin-bottom: {{ section.settings.margin-bottom | times: 0.9 }}px;
+    }
+  }
+  @media (max-width: 480px) {
+    .kikumatsu-inquiry-section {
+      padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
+      margin-top: {{ section.settings.margin-top | times: 0.85 }}px;
+      margin-bottom: {{ section.settings.margin-bottom | times: 0.85 }}px;
+    }
+  }
+</style>
+{% schema %}
+{
+  "name": "Kikumatsu Inquiry",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "section_bg_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "richtext",
+      "id": "address",
+      "label": "Address"
+    },
+    {
+      "type": "richtext",
+      "id": "footer_text",
+      "label": "Footer Text"
+    },
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "margin-top",
+      "label": "Margin Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "margin-bottom",
+      "label": "Margin Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kikumatsu Inquiry"
+    }
+  ]
+}
+{% endschema %}

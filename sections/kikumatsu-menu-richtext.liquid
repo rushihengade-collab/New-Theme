@@ -1,0 +1,227 @@
+<div class="kikumatsu-menu-richtext-section">
+  <div class="kikumatsu-menu-richtext__container container">
+    <div class="kikumatsu-menu-richtext__content">
+      <h2 class="kikumatsu-menu-richtext__title">
+        {% if section.settings.title_1 != blank %}
+          <span class="kikumatsu-menu-richtext__title-1" style="{% if section.settings.title_1_color != blank %}color: {{ section.settings.title_1_color }};{% endif %}">{{ section.settings.title_1 }}</span>
+        {% endif %}
+        {% if section.settings.title_2 != blank %}
+          <span class="kikumatsu-menu-richtext__title-2" style="{% if section.settings.title_2_color != blank %}color: {{ section.settings.title_2_color }};{% endif %}">{{ section.settings.title_2 }}</span>
+        {% endif %}
+      </h2>
+      {% if section.settings.description != blank %}
+        <div class="kikumatsu-menu-richtext__description" style="{% if section.settings.description_color != blank %}color: {{ section.settings.description_color }};{% endif %}">
+          {{ section.settings.description }}
+        </div>
+      {% endif %}
+    </div>
+    {% if section.settings.btn_img != blank and section.settings.btn_link != blank %}
+      <div class="kikumatsu-menu-richtext__btn-wrapper">
+        <a href="{{ section.settings.btn_link }}" class="kikumatsu-menu-richtext__btn">
+          <img
+            src="{{ section.settings.btn_img | image_url: width: 500 }}"
+            alt="{{ section.settings.btn_img.alt | default: 'Button' }}"
+            width="500"
+            height="500"
+            loading="lazy"
+          >
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  .kikumatsu-menu-richtext-section {
+    background-image: url({{ section.settings.section_bg_image | image_url: width: 1920 }});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: {{ section.settings.padding-top }}px;
+    padding-bottom: {{ section.settings.padding-bottom }}px;
+  }
+
+  .kikumatsu-menu-richtext__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .kikumatsu-menu-richtext__content {
+    flex: 1;
+    text-align: left;
+  }
+
+  .kikumatsu-menu-richtext__title {
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-weight: 600;
+    line-height: 1.6;
+    margin: 0 0 1rem 0;
+    letter-spacing: 0.02em;
+  }
+
+  .kikumatsu-menu-richtext__title-1,
+  .kikumatsu-menu-richtext__title-2 {
+    color: #557a95;
+  }
+
+  .kikumatsu-menu-richtext__description {
+    font-size:15px;
+    margin: 0;
+  }
+
+  .kikumatsu-menu-richtext__description p {
+    margin: 0 0 0.5rem 0;
+  }
+
+  .kikumatsu-menu-richtext__description p:last-child {
+    margin-bottom: 0;
+  }
+
+  .kikumatsu-menu-richtext__btn-wrapper {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .kikumatsu-menu-richtext__btn {
+    display: block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .kikumatsu-menu-richtext__btn:hover {
+    transform: scale(1.03);
+    opacity: 0.95;
+  }
+
+  .kikumatsu-menu-richtext__btn img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .kikumatsu-menu-richtext-section {
+      padding-top: {{ section.settings.padding-top | times: 0.9 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.9 }}px;
+    }
+
+    .kikumatsu-menu-richtext__container {
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 0 1.25rem;
+    }
+
+    .kikumatsu-menu-richtext__content {
+      max-width: 100%;
+      text-align: left;
+    }
+
+    .kikumatsu-menu-richtext__btn-wrapper {
+      justify-content: center;
+    }
+
+    .kikumatsu-menu-richtext__btn img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .kikumatsu-menu-richtext-section {
+      padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
+      padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
+    }
+
+    .kikumatsu-menu-richtext__container {
+      padding: 0 1rem;
+      gap: 1.25rem;
+    }
+
+    .kikumatsu-menu-richtext__btn img {
+      width: 130px;
+      height: 130px;
+    }
+  }
+</style>
+{% schema %}
+{
+  "name": "Kikumatsu Menu Richtext",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "section_bg_image",
+      "label": "Section Background Image"
+    },
+    {
+      "type": "text",
+      "id": "title_1",
+      "label": "Title 1"
+    },
+    {
+      "type": "color",
+      "id": "title_1_color",
+      "label": "Title 1 Color"
+    },
+    {
+      "type": "text",
+      "id": "title_2",
+      "label": "Title 2"
+    },
+    {
+      "type": "color",
+      "id": "title_2_color",
+      "label": "Title 2 Color"
+    },
+
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description Color"
+    },
+    {
+      "type": "image_picker",
+      "id": "btn_img",
+      "label": "Button Image"
+    },
+    {
+      "type": "url",
+      "id": "btn_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kikumatsu Menu Richtext"
+    }
+  ]
+}
+{% endschema %}
