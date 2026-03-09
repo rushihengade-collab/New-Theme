@@ -40,11 +40,24 @@
         "padding-top": 55,
         "padding-bottom": 60
       }
+    },
+    "image_with_text_block_94FpUY": {
+      "type": "image-with-text-block",
+      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "image_size": "auto",
+        "image": "shopify://shop_images/img20151124131624111308.png",
+        "content_width": "sm",
+        "enable_parallax": false,
+        "remove_vertical_spacing": true
+      }
     }
   },
   "order": [
     "main",
     "image_with_text_block_nkkFfj",
-    "kikumatsu_menu_hero_RXpK3i"
+    "kikumatsu_menu_hero_RXpK3i",
+    "image_with_text_block_94FpUY"
   ]
 }
