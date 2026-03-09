@@ -252,7 +252,7 @@
             "desktop_width_percent": 80,
             "section_padding": 40,
             "horizontal_padding": 30,
-            "column_gap": 30,
+            "column_gap": 40,
             "content_gap": 15,
             "mobile_gap": 30,
             "image_1": "shopify://shop_images/man3.webp",
@@ -277,6 +277,9 @@
       },
       "block_order": [
         "ai_gen_block_ea5ecb0_pTHGeL"
+      ],
+      "custom_css": [
+        "three-column-images-ad2njdthmvmnaevk1taigenblockea5ecb0pthgel {margin-inline: auto;}"
       ],
       "name": "Three column images",
       "settings": {}
