@@ -164,7 +164,7 @@
       ],
       "name": "Featured Products",
       "settings": {
-        "title": "おすすめ商品",
+        "title": "商品情報",
         "add_shadow": true,
         "show_1_columns_on_mobile": true,
         "padding-top": 42,
