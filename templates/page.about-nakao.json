@@ -18,6 +18,20 @@
         "page_width": "xs"
       }
     },
+    "page_title_section_7gFbYg": {
+      "type": "page-title-section",
+      "name": "Page Title Section",
+      "settings": {
+        "title": "中尾について",
+        "title-font-size": 24,
+        "mobile-title-font-size": 24,
+        "subtitle": "~­­­ NAKAO ~­­­",
+        "subtitle-font-size": 13,
+        "subtitle-color": "#191971",
+        "padding-top": 45,
+        "padding-bottom": 30
+      }
+    },
     "about_nakao_hero_qRDaga": {
       "type": "about-nakao-hero",
       "name": "About Nakao",
@@ -494,6 +508,7 @@
   },
   "order": [
     "main",
+    "page_title_section_7gFbYg",
     "about_nakao_hero_qRDaga",
     "button_section_GtpnHB",
     "company_profile_ye4FzG",
