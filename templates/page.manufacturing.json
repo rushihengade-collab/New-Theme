@@ -18,6 +18,20 @@
         "page_width": "xs"
       }
     },
+    "page_title_section_RzpVbN": {
+      "type": "page-title-section",
+      "name": "Page Title Section",
+      "settings": {
+        "title": "製造について",
+        "title-font-size": 24,
+        "mobile-title-font-size": 24,
+        "subtitle": "~­­­ QUALITY MANAGEMENT ~­­­",
+        "subtitle-font-size": 13,
+        "subtitle-color": "#191971",
+        "padding-top": 42,
+        "padding-bottom": 65
+      }
+    },
     "1770378877609279aa": {
       "type": "_blocks",
       "blocks": {
@@ -129,6 +143,20 @@
       "settings": {
         "padding-top": 80,
         "padding-bottom": 28
+      }
+    },
+    "page_title_section_NeGRY9": {
+      "type": "page-title-section",
+      "name": "Page Title Section",
+      "settings": {
+        "title": "蒟蒻芋",
+        "title-font-size": 24,
+        "mobile-title-font-size": 24,
+        "subtitle": "~ INGREDIENTS ~",
+        "subtitle-font-size": 13,
+        "subtitle-color": "#191971",
+        "padding-top": 60,
+        "padding-bottom": 40
       }
     },
     "blocks_gWNxVC": {
@@ -1441,8 +1469,10 @@
   },
   "order": [
     "main",
+    "page_title_section_RzpVbN",
     "1770378877609279aa",
     "button_section_rUcabH",
+    "page_title_section_NeGRY9",
     "blocks_gWNxVC",
     "rich_text_GbUKXQ",
     "blocks_JTp9jK",
