@@ -284,35 +284,18 @@
       "name": "Three column images",
       "settings": {}
     },
-    "rich_text_M63mjC": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_pbDQKx": {
-          "type": "heading",
-          "settings": {
-            "text": "缶蒸製法",
-            "heading_tag": "h2"
-          }
-        },
-        "richtext_xn6d6h": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>~ HOW TO MAKE ~</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_pbDQKx",
-        "richtext_xn6d6h"
-      ],
-      "custom_css": [],
-      "name": "t:sections.rich_text.presets.rich_text.name",
+    "page_title_section_kPePDM": {
+      "type": "page-title-section",
+      "name": "Page Title Section",
       "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "content_width": "sm",
-        "text_position": "center",
-        "remove_vertical_spacing": false
+        "title": "缶蒸製法",
+        "title-font-size": 30,
+        "mobile-title-font-size": 24,
+        "subtitle": "~ HOW TO MAKE ~",
+        "subtitle-font-size": 13,
+        "subtitle-color": "#191971",
+        "padding-top": 60,
+        "padding-bottom": 19
       }
     },
     "image_with_text_rTdfTp": {
@@ -1481,7 +1464,7 @@
     "blocks_gWNxVC",
     "rich_text_GbUKXQ",
     "blocks_JTp9jK",
-    "rich_text_M63mjC",
+    "page_title_section_kPePDM",
     "image_with_text_rTdfTp",
     "177036464339662674",
     "17703776449e62d5c1",
