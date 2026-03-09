@@ -36,13 +36,31 @@
       "settings": {
         "google_map_embed_url": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.4879547395167!2d135.47032!3d34.5241482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000dae0c2c4579b%3A0x2f6a2d2fda1d7af7!2z5Lit5bC-6aOf5ZOB5bel5qWt5qCq5byP5Lya56S-!5e1!3m2!1sja!2sjp!4v1773076099096!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
         "margin_top": 0,
-        "margin_bottom": 40
+        "margin_bottom": 0
+      }
+    },
+    "kikumatsu_inquiry_c3JeJP": {
+      "type": "kikumatsu-inquiry",
+      "name": "Kikumatsu Inquiry",
+      "settings": {
+        "section_bg_image": "shopify://shop_images/img20151112153716564433.jpg",
+        "title": "お問い合わせ",
+        "description": "<p>菊松に関しまして、商品情報、会社情報など<br/>お気軽にお問い合わせください。</p>",
+        "button_text": "",
+        "button_link": "",
+        "address": "<p>〒593-8312 大阪府堺市西区草部715<br/>TEL : 072-273-4545     FAX :  072-273-2121</p>",
+        "footer_text": "<p>お電話でのお問い合わせは、<br/>9:00 ～ 17:00（土日・祝祭日・年末年始・夏期等の長期休暇を除く）</p>",
+        "padding-top": 58,
+        "padding-bottom": 60,
+        "margin-top": 0,
+        "margin-bottom": 0
       }
     }
   },
   "order": [
     "main",
     "image_with_text_block_nkkFfj",
-    "kikumatsu_google_map_BfN7AT"
+    "kikumatsu_google_map_BfN7AT",
+    "kikumatsu_inquiry_c3JeJP"
   ]
 }
