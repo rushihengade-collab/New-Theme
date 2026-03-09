@@ -23,6 +23,10 @@ body {
   margin: 0;
   position: relative;
 }
+h2{
+
+  font-family:"ヒラギノ明朝 ProN W3", HiraMinProN-W3, "ヒラギノ明朝 Pro W3", HG明朝, "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", "Hiragino Kaku Gothic ProN", メイリオ, serif;
+}
 
 hr {
   border-top-width: 1px;
