@@ -18,49 +18,18 @@
         "page_width": "xs"
       }
     },
-    "rich_text_TkHtJF": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_AtEYig": {
-          "type": "heading",
-          "settings": {
-            "text": "品質管理",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_d6BnWM": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>~Quality Control~</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_AtEYig",
-        "richtext_d6BnWM"
-      ],
-      "custom_css": [],
-      "name": "t:sections.rich_text.presets.rich_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "content_width": "sm",
-        "text_position": "center",
-        "remove_vertical_spacing": false
-      }
-    },
     "page_title_section_KtTrqX": {
       "type": "page-title-section",
       "name": "Page Title Section",
       "settings": {
         "title": "品質管理",
-        "title-font-size": 24,
+        "title-font-size": 36,
         "mobile-title-font-size": 24,
         "subtitle": "~Quality Control~",
         "subtitle-font-size": 13,
-        "subtitle-color": "#000000",
-        "padding-top": 0,
-        "padding-bottom": 0
+        "subtitle-color": "#191971",
+        "padding-top": 33,
+        "padding-bottom": 45
       }
     },
     "image_with_text_block_8Khtgt": {
@@ -531,7 +500,6 @@
   },
   "order": [
     "main",
-    "rich_text_TkHtJF",
     "page_title_section_KtTrqX",
     "image_with_text_block_8Khtgt",
     "177027309567aec5d6",
