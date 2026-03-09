@@ -49,6 +49,32 @@
         "remove_vertical_spacing": false
       }
     },
+    "page_title_section_KtTrqX": {
+      "type": "page-title-section",
+      "name": "Page Title Section",
+      "settings": {
+        "title": "品質管理",
+        "title-font-size": 24,
+        "mobile-title-font-size": 24,
+        "subtitle": "~Quality Control~",
+        "subtitle-font-size": 13,
+        "subtitle-color": "#000000",
+        "padding-top": 0,
+        "padding-bottom": 0
+      }
+    },
+    "image_with_text_block_8Khtgt": {
+      "type": "image-with-text-block",
+      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "md",
+        "image": "shopify://shop_images/q1.jpg",
+        "content_width": "sm",
+        "enable_parallax": false,
+        "remove_vertical_spacing": true
+      }
+    },
     "177027309567aec5d6": {
       "type": "_blocks",
       "blocks": {
@@ -90,18 +116,6 @@
         "ai_gen_block_3ac2188_mgahzQ"
       ],
       "settings": {}
-    },
-    "image_with_text_block_8Khtgt": {
-      "type": "image-with-text-block",
-      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
-      "settings": {
-        "color_scheme": "",
-        "image_size": "md",
-        "image": "shopify://shop_images/q1.jpg",
-        "content_width": "sm",
-        "enable_parallax": false,
-        "remove_vertical_spacing": true
-      }
     },
     "image_with_text_rTdfTp": {
       "type": "image-with-text",
@@ -518,6 +532,7 @@
   "order": [
     "main",
     "rich_text_TkHtJF",
+    "page_title_section_KtTrqX",
     "image_with_text_block_8Khtgt",
     "177027309567aec5d6",
     "image_with_text_rTdfTp",
