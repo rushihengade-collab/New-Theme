@@ -1,0 +1,418 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "rich_text_3FmxC4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_txfhxN": {
+          "type": "heading",
+          "settings": {
+            "text": "菊松について",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_ydyGRX": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>~­­­ KIKUMATSU ~­­­</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_txfhxN",
+        "richtext_ydyGRX"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_block_nkkFfj": {
+      "type": "image-with-text-block",
+      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "image_size": "auto",
+        "image": "shopify://shop_images/kiku1.webp",
+        "content_width": "sm",
+        "enable_parallax": false,
+        "remove_vertical_spacing": true
+      }
+    },
+    "rich_text_FUpChy": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_DzhALb": {
+          "type": "heading",
+          "settings": {
+            "text": "菊松への想い",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_6W4MDL": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>このこんにゃくは、三代目康司が本物を造りたいと試行錯誤した結果、開発に成功しました。<br/>そして、創業者である中尾菊松から名前をもらい、「菊松こんにゃく」と名付けました。</p><p>初代が創業し、二代目が会社を大きくし、三代目が製造技術を磨き、現在の代表である四代目が世に大きく広めようと日々邁進しております。<br/>当社を代表する商品としてこれからも末長く皆様に愛される商品となるよう、大切に造ってまいります。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DzhALb",
+        "richtext_6W4MDL"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_QqheP9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3tppJf": {
+          "type": "heading",
+          "settings": {
+            "text": "「こんなにおいしいこんにゃくは食べたことがない」",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_E4DckC": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>菊松こんにゃくを食べたお客様のほとんどが、そうおっしゃられます。<br/>時には、「これを食べると、舌が肥えてしまい他のこんにゃくが食べられなくなる」とまで言ってくださる方もいます。<br/>当社が営業に手が届いていない地域からも、個人のお客様からお問い合わせのお電話をいただくこともあり、従業員も驚くことがあります。</p><p>一般的なこんにゃくとの違いは、原材料と製法ですが、どちらも昔ながらのやり方です。<br/>昔の人はどうして最適な原料を用いることができたのかと考えるほど、色々な選択肢がある今の世の中で、<br/>どうして、ずっと昔から使われてきた「木の灰」を使うとこんなに美味しいのでしょうか。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3tppJf",
+        "richtext_E4DckC"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_bKkzQe": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_c4Vtt3": {
+          "type": "heading",
+          "settings": {
+            "text": "どんな風に、何故違うのか",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_Ym9n7G": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>「菊松のこんにゃくは、生で食べられますよ」　そう謳っています。<br/>一般的なこんにゃくに感じる\"臭み\"や\"エグみ\"が非常に少なく、水洗いのみでそのままお召し上がりいただけますという意味です。</p><p>菊松のこんにゃくがこのような品質であるのは、原料や凝固剤を始め、様々な理由があります。<br/>すべて手間や時間と製造技術が必要ですが、<br/>試行錯誤の結果、安定供給できるような体制を確立しました。<br/>その一部を写真付きで解説致します。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_c4Vtt3",
+        "richtext_Ym9n7G"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/images20180511180726.webp",
+        "mobile_image": "shopify://shop_images/images20180511180726.webp",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "lg",
+        "remove_vertical_spacing": false
+      }
+    },
+    "slide_image_with_text_DUQrw9": {
+      "type": "slide-image-with-text",
+      "blocks": {
+        "slide_image_with_text_8GfnBA": {
+          "type": "slide-image-with-text",
+          "settings": {
+            "image_1": "shopify://shop_images/IMGP2251_1.webp",
+            "image_2": "shopify://shop_images/IMGP2225.webp",
+            "image_3": "shopify://shop_images/IMGP2204.webp",
+            "title": "こんにゃく芋の解凍、すりつぶし",
+            "description": "菊松こんにゃくは、製粉されたこんにゃく粉は一切使わず、有機栽培した広島県産のこんにゃく芋だけを使用しています。また、通常、生芋の解凍には蒸気を用い効率的に解凍しますが、菊松こんにゃくを造る時は違います。タンクに冷凍生芋を入れ、水道水を用い一晩かけてゆっくりと解凍するのです。その後、仕込んだ解凍生芋まるごとを時間をかけてすりつぶし、水と混ぜてこんにゃくのりを作っていきます。"
+          }
+        },
+        "slide_image_with_text_yLewiH": {
+          "type": "slide-image-with-text",
+          "settings": {
+            "image_1": "shopify://shop_images/images20180511182745.jpg",
+            "image_2": "shopify://shop_images/images20180511182755.jpg",
+            "image_3": "shopify://shop_images/images20180511182757_1.jpg",
+            "title": "不要なものは入れない",
+            "description": "一般的なこんにゃくのほとんどが、海藻の粉末を入れて色を茶色や黒にしたり、芋の皮のようなつぶつぶを表現しています。入れないと真っ白になるため、こんにゃくらしさがないからです。\"生芋\"と表記されているものも、ほとんど粉をブレンドしていて海藻粉末も入っています。菊松こんにゃくは、こんにゃく芋を皮ごとすりつぶしているので、皮が入っていて、色はこんにゃく本来のものです。"
+          }
+        },
+        "slide_image_with_text_6nXphH": {
+          "type": "slide-image-with-text",
+          "settings": {
+            "image_1": "shopify://shop_images/images20180511182749_1.jpg",
+            "image_2": "shopify://shop_images/images20180511182751.jpg",
+            "image_3": "shopify://shop_images/images20180511182747.jpg",
+            "title": "製灰、アク水作り",
+            "description": "消石灰などは一切使用せず、木灰を溶いた水の上澄みだけを抽出したアク水と、補助的にホタテの貝殻を焼いて作ったカルシウムを溶いたアク水を混ぜて使っています。木灰は、農薬のない間伐材を 自社で燃やして灰にし、ふるいにかけ、精製しています。こんにゃくの保存性を左右する凝固剤ですが、消石灰のように人工的に精製されていて品質の安定しているものと違い、木の灰は自然のものですから、バラつきがあります。そんな中、一定の品質を保つ商品を数千丁単位で造れるようになるまで、試行錯誤を繰り返しました。"
+          }
+        },
+        "slide_image_with_text_E6Xjjc": {
+          "type": "slide-image-with-text",
+          "settings": {
+            "image_1": "shopify://shop_images/images20180511161014.jpg",
+            "image_2": "shopify://shop_images/images20180511160219.webp",
+            "image_3": "shopify://shop_images/images20180511161348.webp",
+            "title": "特別なお召し上がり方",
+            "description": "通常必要なことが多いアク抜きは不要です。おでんなど通常の料理にしても もちろんおいしいですが、菊松こんにゃくだから美味しく味わえる方法をご紹介します。【菊松板こんのお刺身】うす切りにした菊松板こんにゃくを、わさび醤油でやポン酢につける★上級アレンジ：大葉・大根おろしを混ぜたものを上にのせ、だし醤油をかけてもgood【菊松糸サラダ】きゅうり・ハムなどお好きな具材と菊松糸こんにゃくをポン酢で合える★上級アレンジ：錦糸卵を和えて中華サラダ風の味付けもgood"
+          }
+        }
+      },
+      "block_order": [
+        "slide_image_with_text_8GfnBA",
+        "slide_image_with_text_yLewiH",
+        "slide_image_with_text_6nXphH",
+        "slide_image_with_text_E6Xjjc"
+      ],
+      "name": "Slide Image with Text",
+      "settings": {
+        "padding-top": 63,
+        "padding-bottom": 78
+      }
+    },
+    "kikumatsu_product_lineup_bwxzqh": {
+      "type": "kikumatsu-product-lineup",
+      "blocks": {
+        "product_lineup_YapA3J": {
+          "type": "product-lineup",
+          "settings": {
+            "title_1": "有機生芋100％",
+            "title_2": "菊松〔板〕こんにゃく250g",
+            "image": "shopify://shop_images/about_img02_01.jpg",
+            "link": ""
+          }
+        },
+        "product_lineup_NWRA84": {
+          "type": "product-lineup",
+          "settings": {
+            "title_1": "有機生芋100％",
+            "title_2": "菊松〔糸〕こんにゃく180g",
+            "image": "shopify://shop_images/about_img03_01.jpg",
+            "link": ""
+          }
+        },
+        "product_lineup_y99gBp": {
+          "type": "product-lineup",
+          "settings": {
+            "title_1": "生芋100％",
+            "title_2": "菊松〔突〕こんにゃく200g",
+            "image": "shopify://shop_images/about_img04.webp",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_lineup_YapA3J",
+        "product_lineup_NWRA84",
+        "product_lineup_y99gBp"
+      ],
+      "name": "Kikumatsu Product Lineup",
+      "settings": {
+        "title": "菊松商品ラインナップ",
+        "padding-top": 15,
+        "padding-bottom": 91
+      }
+    },
+    "blocks_EExpMJ": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a200ea1_WiFxRp": {
+          "type": "ai_gen_block_a200ea1",
+          "settings": {
+            "layout": "image_right",
+            "desktop_width_percent": 90,
+            "gap": 40,
+            "mobile_gap": 30,
+            "image": "shopify://shop_images/gaiyo.webp",
+            "image_width": 50,
+            "image_border_radius": 0,
+            "content_gap": 10,
+            "heading": "About Kikumatsu",
+            "heading_size": 32,
+            "heading_color": "#000000",
+            "text": "<p>There's a saying, \"I've reached my peak of vitality.\" This passage from the \"Yōjōkun,\" written in the Edo period (1603), based on actual experience, suggests that when you're feeling energized, you should eat foods with the \"kon\" (con) in their name, such as konnyaku, daikon radish, lotus root, and kelp.Konnyaku has been a familiar food for so long, it's become an inseparable part of our diet.Our company has continued to produce konnyaku, and before we knew it, we were the only long-established konnyaku shop in Sakai, Osaka, with the baton handed down through four generations. Konnyaku has a long history, but the true nature of konnyaku is changing amid food globalization, increased manufacturing efficiency, and price competition . As a long-established company in the konnyaku manufacturing industry, we repeatedly asked ourselves The answer we came up with was to \"continue to produce authentic konnyaku.\"</p>",
+            "text_size": 16,
+            "text_color": "#1c1c1c",
+            "button_text": "Learn more",
+            "button_link": "",
+            "button_text_size": 16,
+            "button_padding_vertical": 12,
+            "button_padding_horizontal": 24,
+            "button_background": "#5c5c5c",
+            "button_text_color": "#ffffff",
+            "button_hover_background": "#000000",
+            "button_border_radius": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a200ea1_WiFxRp"
+      ],
+      "name": "Image with text",
+      "settings": {}
+    },
+    "blocks_kphLcP": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a200ea1_gt6mYT": {
+          "type": "ai_gen_block_a200ea1",
+          "settings": {
+            "layout": "image_left",
+            "desktop_width_percent": 90,
+            "gap": 40,
+            "mobile_gap": 30,
+            "image": "shopify://shop_images/kiku2.png",
+            "image_width": 50,
+            "image_border_radius": 0,
+            "content_gap": 10,
+            "heading": "About the material ",
+            "heading_size": 32,
+            "heading_color": "#000000",
+            "text": "<p>For example, our ingredients are organically grown fresh konnyaku yams, which are grown over two to three years in the fertile soil of the mountains of Fuchu City, Hiroshima Prefecture, surrounded by nature . We don't use any artificial coagulants, but instead solidify the yams with wood ash and seashells. We spare no effort or time in allowing the yams to mature slowly.<br/>While these are the polar opposite of efficiency and low cost, Kikumatsu believes they are essential conditions for konnyaku to retain its inherent flavor and be a safe food. This sentiment extends not only to konnyaku itself, but also to amagusa, the main ingredient in tokoroten. We preserve the original texture, mouthfeel, and flavor of konnyaku, and, based on that foundation, we are constantly striving to create new interpretations and experiments, striving to further \"deliciousness\" so that everyone can enjoy delicious konnyaku dishes with peace of mind. To achieve this, there are many hurdles to overcome, such as further learning, further efforts, and improvement of skills, but with pride and ambition as a konnyaku shop, and with the \"delicious smiles\" of our customers as our guide, we will continue to work hard as a fourth-generation konnyaku shop, as we have done until now and will continue to do so in the future.</p>",
+            "text_size": 16,
+            "text_color": "#1c1c1c",
+            "button_text": "Learn more",
+            "button_link": "",
+            "button_text_size": 16,
+            "button_padding_vertical": 12,
+            "button_padding_horizontal": 24,
+            "button_background": "#5c5c5c",
+            "button_text_color": "#ffffff",
+            "button_hover_background": "#000000",
+            "button_border_radius": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a200ea1_gt6mYT"
+      ],
+      "name": "Image with text",
+      "settings": {}
+    },
+    "177035974270ce3c8b": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c784b86_hfyfym": {
+          "type": "ai_gen_block_c784b86",
+          "settings": {
+            "image_1": "shopify://shop_images/kiku3.png",
+            "image_2": "shopify://shop_images/kiku4.png",
+            "image_3": "shopify://shop_images/kiku5.png",
+            "image_height": 400,
+            "padding_top": 40,
+            "padding_bottom": 40,
+            "padding_horizontal": 0,
+            "image_height_mobile": 200,
+            "padding_top_mobile": 20,
+            "padding_bottom_mobile": 20,
+            "padding_horizontal_mobile": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c784b86_hfyfym"
+      ],
+      "settings": {}
+    },
+    "rich_text_Hj8j6C": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cXaRr6": {
+          "type": "heading",
+          "settings": {
+            "text": "Kikumatsu's Thoughts",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_anwX7X": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Kikumatsu regularly visits the konnyaku fields in Hiroshima Prefecture.<br/>We drive up the mountain so much that the sky feels closer, and before we know it, we arrive at a village surrounded by greenery on all sides.<br/>We will check to see that the organically grown konnyaku potatoes are growing vigorously in the terraced fields in the mountains.</p><p>In order to make delicious and safe konnyaku that everyone can enjoy, it is essential that the ingredients are healthy.<br/>This is Kikumatsu's philosophy of \"reliable manufacturing,\" which is common not only to konnyaku potatoes but also to wood ash, water, and other materials.</p><p>The smile of the konnyaku farmer who said, \"The konnyaku is growing well again this year!\" was the same as Kikumatsu's smile after he received the baton.<br/>It is with this dream that we face konnyaku every day, hoping to bring even more smiles to our customers' dinner tables.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cXaRr6",
+        "richtext_anwX7X"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "custom_news_section_YEajjg": {
+      "type": "custom-news-section",
+      "name": "Custom News Section",
+      "settings": {
+        "title": "ニュース一覧",
+        "subtitle": "- NEWS -",
+        "btn_text": ">>過去のニュースはこちら",
+        "btn_link": "https://nakaoshokuhin.co.jp/news/",
+        "section_bg_color": "",
+        "margin-top": 2,
+        "margin-bottom": 40
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_3FmxC4",
+    "image_with_text_block_nkkFfj",
+    "rich_text_FUpChy",
+    "rich_text_QqheP9",
+    "image_with_text_bKkzQe",
+    "slide_image_with_text_DUQrw9",
+    "kikumatsu_product_lineup_bwxzqh",
+    "blocks_EExpMJ",
+    "blocks_kphLcP",
+    "177035974270ce3c8b",
+    "rich_text_Hj8j6C",
+    "custom_news_section_YEajjg"
+  ]
+}
