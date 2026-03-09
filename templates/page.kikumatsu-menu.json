@@ -52,12 +52,30 @@
         "enable_parallax": false,
         "remove_vertical_spacing": true
       }
+    },
+    "kikumatsu_menu_richtext_CL6HRp": {
+      "type": "kikumatsu-menu-richtext",
+      "name": "Kikumatsu Menu Richtext",
+      "settings": {
+        "section_bg_image": "shopify://shop_images/img20151112164917666135_3606e813-1c23-4500-b374-4cf6afc0c351.png",
+        "title_1": "本物の蒟蒻を味わう。",
+        "title_1_color": "",
+        "title_2": "",
+        "title_2_color": "",
+        "description": "<p>広島県産有機生芋100％で昔ながらの木灰で固められた「板こんにゃく」「糸こんにゃく」「突こんにゃく」<br/>　「サイコロこんにゃく」など、単品販売からボックス（詰め合わせ）までご用意しております。<br/>　ご家庭はもちろん、親しい方、大切な方への贈り物としてもご活用ください。</p>",
+        "description_color": "",
+        "btn_img": "shopify://shop_images/img20151124134930296552.png",
+        "btn_link": "https://kikumatsu.thebase.in/",
+        "padding-top": 40,
+        "padding-bottom": 40
+      }
     }
   },
   "order": [
     "main",
     "image_with_text_block_nkkFfj",
     "kikumatsu_menu_hero_RXpK3i",
-    "image_with_text_block_94FpUY"
+    "image_with_text_block_94FpUY",
+    "kikumatsu_menu_richtext_CL6HRp"
   ]
 }
