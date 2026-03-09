@@ -249,12 +249,12 @@
         "ai_gen_block_ea5ecb0_pTHGeL": {
           "type": "ai_gen_block_ea5ecb0",
           "settings": {
-            "desktop_width_percent": 80,
+            "desktop_width_percent": 75,
             "section_padding": 50,
             "horizontal_padding": 0,
-            "column_gap": 45,
+            "column_gap": 50,
             "content_gap": 15,
-            "mobile_gap": 30,
+            "mobile_gap": 45,
             "image_1": "shopify://shop_images/man3.webp",
             "heading_1": "こんにゃく畑の視察",
             "text_1": "こんにゃく芋の収穫は、年に一度、まとめて行います。社長である中尾は、収穫時期に現地に出向き、視察を行うとともに、収穫を手伝います。年々人手不足が進む農家さんの手助けにもなり、手で触った品を仕入れるので、安心感があります。",
