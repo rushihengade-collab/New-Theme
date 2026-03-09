@@ -249,10 +249,10 @@
         "ai_gen_block_ea5ecb0_pTHGeL": {
           "type": "ai_gen_block_ea5ecb0",
           "settings": {
-            "desktop_width_percent": 75,
+            "desktop_width_percent": 80,
             "section_padding": 50,
             "horizontal_padding": 0,
-            "column_gap": 50,
+            "column_gap": 60,
             "content_gap": 15,
             "mobile_gap": 45,
             "image_1": "shopify://shop_images/man3.webp",
