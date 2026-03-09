@@ -95,6 +95,7 @@
     {%- if request.page_type != 'password' -%}
       {%- sections 'header-group' -%}
       {%- sections 'overlay-group' -%}
+      {%- render 'fixed-tracking-banner' -%}
     {%- endif -%}
 
     <main id="main" class="anchor">

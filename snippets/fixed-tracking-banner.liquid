@@ -1,0 +1,114 @@
+<div id="fixed-tracking-banner" class="fixed-tracking-banner" role="complementary" aria-label="お取り寄せサイト">
+  <style>
+    .fixed-tracking-banner {
+      position: fixed;
+      z-index: 9999;
+      bottom: 20px;
+      max-width: 280px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      {% comment %} overflow: hidden; {% endcomment %}
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .fixed-tracking-banner.fixed-tracking-banner--hidden {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(20px);
+    }
+    @media (min-width: 768px) {
+      .fixed-tracking-banner {
+        right: 20px;
+        left: auto;
+        transform: none;
+      }
+      .fixed-tracking-banner.fixed-tracking-banner--hidden {
+        transform: translateY(20px);
+      }
+    }
+    @media (max-width: 767px) {
+      .fixed-tracking-banner {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        width: 90vw;
+        max-width:340px;
+      }
+      .fixed-tracking-banner.fixed-tracking-banner--hidden {
+        transform: translate(-50%, 20px);
+      }
+    }
+    .fixed-tracking-banner__link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+    }
+    .fixed-tracking-banner__link:hover {
+      opacity: 0.98;
+    }
+    .fixed-tracking-banner__image-wrap {
+      position: relative;
+      line-height: 0;
+    }
+    .fixed-tracking-banner__image-wrap img {
+      display: block;
+      width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+    @media (min-width: 768px) {
+      .fixed-tracking-banner__image-wrap img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+    }
+    .fixed-tracking-banner__close {
+      position: absolute;
+      top: -14px;
+      left: -10px;
+      width: 32px;
+      height: 32px;
+      border: none;
+      border-radius: 50%;
+      background: #fff;
+      color: #000;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      line-height: 1;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      z-index: 2;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .fixed-tracking-banner__close:hover {
+      background: #f5f5f5;
+      transform: scale(1.05);
+    }
+    .fixed-tracking-banner__close:focus {
+      outline: 2px solid currentColor;
+      outline-offset: 2px;
+    }
+    .fixed-tracking-banner__close svg {
+      height: 24px;
+    }
+  </style>
+
+  <a href="https://nakaoshokuhin.myshopify.com" class="fixed-tracking-banner__link" aria-label="詳細はこちら">
+    <div class="fixed-tracking-banner__image-wrap">
+      <button type="button" class="fixed-tracking-banner__close" aria-label="閉じる" onclick="event.preventDefault(); event.stopPropagation(); document.getElementById('fixed-tracking-banner').classList.add('fixed-tracking-banner--hidden');">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <picture>
+        <source media="(min-width: 768px)" srcset="{{ 'tracking-banner.webp' | asset_url }}">
+        <source media="(max-width: 767px)" srcset="{{ 'mobile-tracking-banner.webp' | asset_url }}">
+        <img src="{{ 'tracking-banner.webp' | asset_url }}" alt="お取り寄せサイト - 詳細はこちら" width="280" height="150">
+      </picture>
+    </div>
+  </a>
+</div>
+
