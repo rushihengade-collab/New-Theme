@@ -252,7 +252,7 @@
             "desktop_width_percent": 80,
             "section_padding": 40,
             "horizontal_padding": 30,
-            "column_gap": 40,
+            "column_gap": 45,
             "content_gap": 15,
             "mobile_gap": 30,
             "image_1": "shopify://shop_images/man3.webp",
