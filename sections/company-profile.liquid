@@ -25,6 +25,9 @@
   .company-profile-section-content{
     font-size:15px;
   }
+  .company-profile-section-title{
+    margin-bottom:1.5rem;
+  }
 
   .company-profile-section-{{ section.id }} .company-profile-section-content-item {
     display: flex;
@@ -35,10 +38,15 @@
     border-bottom: 1px solid #ddd;
   }
     .company-profile-section-content-item-title{
-        font-size:1rem;
         margin:0;
         line-height:1.7;
         min-width:220px;
+        font-weight:500;
+    }
+    @media (min-width: 1040px) {
+      .company-profile-section-content-item-title{
+        padding-inline:20px 0;
+      }
     }
   @media (max-width: 768px) {
     .company-profile-section-{{ section.id }} {
@@ -61,9 +69,6 @@
     .company-profile-section-{{ section.id }} {
       padding-top: {{ section.settings.padding-top | times: 0.85 }}px;
       padding-bottom: {{ section.settings.padding-bottom | times: 0.85 }}px;
-    }
-    .company-profile-section-{{ section.id }} .company-profile-section-content-item-title{
-      font-size: 1.2rem;
     }
   }
 </style>
