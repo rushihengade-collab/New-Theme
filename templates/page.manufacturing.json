@@ -232,7 +232,7 @@
         "richtext_iKRgUR"
       ],
       "custom_css": [
-        "p{font-size:15px;}"
+        "p {font-size: 15px;}"
       ],
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
@@ -249,7 +249,7 @@
         "ai_gen_block_ea5ecb0_pTHGeL": {
           "type": "ai_gen_block_ea5ecb0",
           "settings": {
-            "desktop_width_percent": 100,
+            "desktop_width_percent": 80,
             "section_padding": 40,
             "horizontal_padding": 30,
             "column_gap": 30,
