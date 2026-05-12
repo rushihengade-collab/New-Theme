@@ -218,7 +218,7 @@
           "type": "link",
           "settings": {
             "title": "四代目のこんにゃく話",
-            "link": "shopify://blogs/第四十八話-こんにゃくと慣用句２",
+            "link": "shopify://blogs/blog",
             "image": "shopify://shop_images/top_img07.webp"
           }
         }
@@ -292,7 +292,7 @@
         "title": "ニュース一覧",
         "subtitle": "- NEWS -",
         "btn_text": ">>過去のニュースはこちら",
-        "btn_link": "shopify://blogs/第四十八話-こんにゃくと慣用句２",
+        "btn_link": "shopify://blogs/blog",
         "section_bg_color": "",
         "margin-top": 40,
         "margin-bottom": 40
@@ -302,11 +302,11 @@
       "type": "custom-blogs",
       "name": "Custom Blogs",
       "settings": {
-        "blog": "第四十八話-こんにゃくと慣用句２",
+        "blog": "blog",
         "title": "四代目のこんにゃく話",
         "subtitle": "BLOG",
         "button_text": ">>四代目のこんにゃく話を全て見る",
-        "button_link": "shopify://blogs/第四十八話-こんにゃくと慣用句２",
+        "button_link": "shopify://blogs/blog",
         "padding-top": 50,
         "padding-bottom": 70
       }
