@@ -202,7 +202,7 @@
           "type": "link",
           "settings": {
             "title": "菊松について",
-            "link": "shopify://pages/about-kikumatsu",
+            "link": "shopify://pages/kikumatsu",
             "image": "shopify://shop_images/top_img05.webp"
           }
         },
