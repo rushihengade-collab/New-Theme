@@ -252,7 +252,7 @@
           "type": "product",
           "settings": {
             "image": "shopify://shop_images/kikumatu_ita_b-2.webp",
-            "link": "shopify://products/10323198"
+            "link": "shopify://products/kikumatsu-itakonnyaku-250g"
           }
         },
         "product_nygrJy": {
@@ -499,7 +499,7 @@
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "content_max_width": 780,
             "button_1_text": "",
-            "button_1_link": "shopify://products/10323198",
+            "button_1_link": "shopify://products/kikumatsu-itakonnyaku-250g",
             "button_1_style": "solid",
             "button_1_background": "#ffffff",
             "button_1_text_color": "#000000",
