@@ -756,7 +756,7 @@
         "collection_HpDdiU": {
           "type": "collection",
           "settings": {
-            "collection": "業務用",
+            "collection": "commercial-products",
             "products_count": 23,
             "title": "",
             "link_url": "",
