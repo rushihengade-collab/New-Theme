@@ -112,7 +112,7 @@
       "type": "tab-collection",
       "name": "Tab Collection",
       "settings": {
-        "collection": "こんにゃく",
+        "collection": "konjac",
         "product_not_found_text": "このカテゴリの商品は、現在取り扱いがありません。",
         "padding-top": 0,
         "padding-bottom": 48
