@@ -122,7 +122,7 @@
       "type": "tab-collection",
       "name": "Tab Collection",
       "settings": {
-        "collection": "ところてん-季節商品",
+        "collection": "tokoroten",
         "product_not_found_text": "このカテゴリの商品は、現在取り扱いがありません。",
         "padding-top": 0,
         "padding-bottom": 0
